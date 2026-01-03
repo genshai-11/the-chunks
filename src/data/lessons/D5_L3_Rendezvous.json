@@ -1,0 +1,1111 @@
+{
+  "lesson_name": "D5 - L3 - Rendezvous",
+  "categories": {
+    "Slang": [
+      {
+        "English": "Unexpectedly",
+        "Vietnamese": "Ai dè"
+      },
+      {
+        "English": "Like I said / Like I mentioned",
+        "Vietnamese": "Như tôi đã nói"
+      },
+      {
+        "English": "At worst / At the worst case",
+        "Vietnamese": "Cùng lắm"
+      },
+      {
+        "English": "Well said / well put / nice talk",
+        "Vietnamese": "Nói hay lắm"
+      },
+      {
+        "English": "All in all / all thing considered / on the whole",
+        "Vietnamese": "Tính ra"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Public land",
+        "Vietnamese": "Đất công"
+      },
+      {
+        "English": "Developed land",
+        "Vietnamese": "Đất đã quy hoạch"
+      },
+      {
+        "English": "Last time",
+        "Vietnamese": "Lần trước"
+      },
+      {
+        "English": "Share / stock",
+        "Vietnamese": "Cổ phiếu"
+      },
+      {
+        "English": "Deal with / cope with / handle",
+        "Vietnamese": "Deal / xử lý / giải quyết / đối phó"
+      },
+      {
+        "English": "Used to...",
+        "Vietnamese": "Từng..."
+      },
+      {
+        "English": "Production plant / factory",
+        "Vietnamese": "Nhà máy SX"
+      },
+      {
+        "English": "Keep/Stop V-ing",
+        "Vietnamese": "Cứ/Ngưng..."
+      },
+      {
+        "English": "Tunnel vision",
+        "Vietnamese": "Tầm nhìn hạn hẹp"
+      },
+      {
+        "English": "... and stuff / and everything",
+        "Vietnamese": "... các kiểu"
+      },
+      {
+        "English": "Especially",
+        "Vietnamese": "Đặc biệt là"
+      },
+      {
+        "English": "Budget",
+        "Vietnamese": "Ngân sách"
+      },
+      {
+        "English": "The thing is / the point is",
+        "Vietnamese": "Vấn đề là"
+      },
+      {
+        "English": "Stand out",
+        "Vietnamese": "Nổi bật (lên)"
+      },
+      {
+        "English": "Once V2",
+        "Vietnamese": "Có (một) lần..."
+      },
+      {
+        "English": "Competent",
+        "Vietnamese": "Có năng lực"
+      },
+      {
+        "English": "Get along with / be compatible",
+        "Vietnamese": "Hợp cạ"
+      },
+      {
+        "English": "Too obvious / too clear / too explicit",
+        "Vietnamese": "Quá rõ ràng"
+      },
+      {
+        "English": "An argument / a fight",
+        "Vietnamese": "Một cuộc cãi lộn"
+      },
+      {
+        "English": "Hall / hallway / corridor",
+        "Vietnamese": "Sảnh"
+      },
+      {
+        "English": "Propose to A",
+        "Vietnamese": "Cầu hôn với A"
+      },
+      {
+        "English": "Deputy director / vice director",
+        "Vietnamese": "Phó giám đốc"
+      },
+      {
+        "English": "At the time / at that time",
+        "Vietnamese": "Lúc đó"
+      },
+      {
+        "English": "Out of the blue / suddenly / out of sudden",
+        "Vietnamese": "Bất thình lình"
+      },
+      {
+        "English": "Title / headline / header",
+        "Vietnamese": "Tiêu đề"
+      },
+      {
+        "English": "Urgent email / emergency email",
+        "Vietnamese": "Email khẩn"
+      },
+      {
+        "English": "Immediately / at once / right away",
+        "Vietnamese": "Ngay lập lức"
+      },
+      {
+        "English": "The girl next door / the neighbor girl",
+        "Vietnamese": "Cô hàng xóm"
+      },
+      {
+        "English": "Dilemma",
+        "Vietnamese": "Tình huống khó xử"
+      },
+      {
+        "English": "Moral dilemma",
+        "Vietnamese": "Tình huống khó xử về đạo đức"
+      },
+      {
+        "English": "True story",
+        "Vietnamese": "Chuyện thiệt luôn"
+      },
+      {
+        "English": "Turns out / turned out",
+        "Vietnamese": "Hóa ra"
+      },
+      {
+        "English": "A prank",
+        "Vietnamese": "Một trò đùa / một trò chơi khăm"
+      },
+      {
+        "English": "Phishing email",
+        "Vietnamese": "Email lừa đảo"
+      },
+      {
+        "English": "The next day / the following day",
+        "Vietnamese": "Ngày hôm sau"
+      },
+      {
+        "English": "Expertise",
+        "Vietnamese": "Chuyên môn"
+      },
+      {
+        "English": "Pie chart",
+        "Vietnamese": "Biểu đồ tròn"
+      },
+      {
+        "English": "Figure out / find out",
+        "Vietnamese": "Mường tượng ra"
+      },
+      {
+        "English": "Bottleneck",
+        "Vietnamese": "\"Nút thắt cổ chai\""
+      },
+      {
+        "English": "... suck(s)",
+        "Vietnamese": "... dở tệ"
+      },
+      {
+        "English": "... all the time",
+        "Vietnamese": "... suốt"
+      },
+      {
+        "English": "Jerk",
+        "Vietnamese": "Đứa cà chớn"
+      },
+      {
+        "English": "The other day",
+        "Vietnamese": "Hôm bữa"
+      },
+      {
+        "English": "Just V2",
+        "Vietnamese": "Vừa mới..."
+      },
+      {
+        "English": "Warning letter",
+        "Vietnamese": "Thư cảnh cáo"
+      },
+      {
+        "English": "Seniority",
+        "Vietnamese": "Thâm niên"
+      },
+      {
+        "English": "Fringe benefit",
+        "Vietnamese": "Trợ cấp bên lề"
+      },
+      {
+        "English": "Holy cow / OMG",
+        "Vietnamese": "Trời đất quỷ thần"
+      },
+      {
+        "English": "Alive",
+        "Vietnamese": "Còn sống"
+      },
+      {
+        "English": "Be in charge of / be responsible for",
+        "Vietnamese": "Chịu trách nhiệm về"
+      },
+      {
+        "English": "Line manager / direct manager",
+        "Vietnamese": "Sếp trực tiếp"
+      },
+      {
+        "English": "Project A",
+        "Vietnamese": "Dự án A"
+      },
+      {
+        "English": "Ex-boss / former boss / previous boss",
+        "Vietnamese": "Sếp cũ"
+      },
+      {
+        "English": "Roadblock / hurdle / obstacle",
+        "Vietnamese": "Chướng ngại vật"
+      },
+      {
+        "English": "Terminate / end",
+        "Vietnamese": "Chấm dứt"
+      },
+      {
+        "English": "To be honest / honestly / actually",
+        "Vietnamese": "Thật ra"
+      },
+      {
+        "English": "Since yesterday",
+        "Vietnamese": "Từ hôm qua (đến) giờ"
+      },
+      {
+        "English": "Doesn't matter / it's nothing / never mind",
+        "Vietnamese": "Không có gì"
+      },
+      {
+        "English": "A moment ago / just now / just then",
+        "Vietnamese": "Lúc nãy"
+      },
+      {
+        "English": "Encounter",
+        "Vietnamese": "Đối đầu với"
+      },
+      {
+        "English": "Technically / literally",
+        "Vietnamese": "Đúng nghĩa (đen)"
+      },
+      {
+        "English": "Profitable",
+        "Vietnamese": "Có lời"
+      },
+      {
+        "English": "Bottom line / long story short / in summary",
+        "Vietnamese": "Tóm lại"
+      },
+      {
+        "English": "Sponsor",
+        "Vietnamese": "Nhà tài trợ"
+      },
+      {
+        "English": "Get it done / finish it",
+        "Vietnamese": "Làm xong"
+      },
+      {
+        "English": "Financial picture",
+        "Vietnamese": "Bức tranh tài chính"
+      },
+      {
+        "English": "Board of directors",
+        "Vietnamese": "Ban Giám Đốc"
+      },
+      {
+        "English": "Easter",
+        "Vietnamese": "Lễ Phục Sinh"
+      },
+      {
+        "English": "Plenty of time / much time / great deal of time",
+        "Vietnamese": "Nhiều thời gian"
+      },
+      {
+        "English": "IT developer",
+        "Vietnamese": "Lập trình viên IT"
+      },
+      {
+        "English": "More importantly / to be more important",
+        "Vietnamese": "Quan trọng hơn"
+      },
+      {
+        "English": "Reality show",
+        "Vietnamese": "Show thực tế"
+      },
+      {
+        "English": "Top priority",
+        "Vietnamese": "Thứ ưu tiên hàng đầu"
+      },
+      {
+        "English": "The engagement / connection",
+        "Vietnamese": "Sự gắn kết"
+      },
+      {
+        "English": "Low-cost / cost-effective / economical",
+        "Vietnamese": "Giá rẻ"
+      },
+      {
+        "English": "Take it easy / easy / relax / chill",
+        "Vietnamese": "Bình tĩnh"
+      },
+      {
+        "English": "The left column",
+        "Vietnamese": "Cột bên trái"
+      },
+      {
+        "English": "Reach out to...",
+        "Vietnamese": "Tiếp cận tới..."
+      },
+      {
+        "English": "A half of that / 50% of that",
+        "Vietnamese": "Nửa số đó"
+      },
+      {
+        "English": "Negative & positive result",
+        "Vietnamese": "Kết quả tiêu cực & tích cực"
+      },
+      {
+        "English": "I see / I get it",
+        "Vietnamese": "Tôi hiểu"
+      },
+      {
+        "English": "Give sb a call / ring sb",
+        "Vietnamese": "Gọi cho ai đó"
+      },
+      {
+        "English": "Parking fee",
+        "Vietnamese": "Phí gửi xe"
+      },
+      {
+        "English": "Bike / bicycle",
+        "Vietnamese": "Xe đạp"
+      },
+      {
+        "English": "Japanse / Korean / Chinese",
+        "Vietnamese": "Tiếng Nhật / Hàn / Trung"
+      },
+      {
+        "English": "Get promoted",
+        "Vietnamese": "Được thăng chức"
+      },
+      {
+        "English": "Fall down / crash",
+        "Vietnamese": "Sập xuống"
+      },
+      {
+        "English": "Chief accountant",
+        "Vietnamese": "Kế toán trưởng"
+      },
+      {
+        "English": "A financial problem",
+        "Vietnamese": "Một vấn đề tài chính"
+      },
+      {
+        "English": "Have a crush on... / fall in love with...",
+        "Vietnamese": "\"Kết\" ai đó"
+      },
+      {
+        "English": "Easy money",
+        "Vietnamese": "Dễ (kiếm tiền)"
+      },
+      {
+        "English": "Contract",
+        "Vietnamese": "Hợp đồng"
+      },
+      {
+        "English": "Sign a contract",
+        "Vietnamese": "Ký một cái hợp đồng"
+      },
+      {
+        "English": "First / firstly / first off",
+        "Vietnamese": "Trước tiên"
+      },
+      {
+        "English": "Negotiate",
+        "Vietnamese": "Thương lượng"
+      },
+      {
+        "English": "Noisy / loud-mouthed",
+        "Vietnamese": "Ồn ào / to mồm"
+      },
+      {
+        "English": "Coworker / colleague / office buddy",
+        "Vietnamese": "Đồng nghiệp"
+      },
+      {
+        "English": "Present / do presentation",
+        "Vietnamese": "Thuyết trình"
+      },
+      {
+        "English": "Colorless / black and white",
+        "Vietnamese": "Không màu / đen trắng"
+      },
+      {
+        "English": "Staff shortage / headcount problem",
+        "Vietnamese": "Vấn đề thiếu hụt nhân lực"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "It looks like your phone, doesn't it?",
+        "Vietnamese": "Nó trông như điện thoại của chị, phải không?"
+      },
+      {
+        "English": "Like I said, this case is not easy to deal with",
+        "Vietnamese": "Như tôi đã nói, ca này không dễ deal đâu"
+      },
+      {
+        "English": "I used to work for German government",
+        "Vietnamese": "Tôi từng làm việc cho chính phủ Đức"
+      },
+      {
+        "English": "There're 2 production plants in Cao Bang",
+        "Vietnamese": "Có 2 nhà máy sản xuất ở Cao Bằng"
+      },
+      {
+        "English": "My mentor keeps telling me I need to stand out",
+        "Vietnamese": "Mentor của tôi cứ bảo tôi cần phải nổi bật lên"
+      },
+      {
+        "English": "What it means by \"tunnel vision\"?",
+        "Vietnamese": "Tầm nhìn đường hầm nghĩa là sao?"
+      },
+      {
+        "English": "Especially when it has to do with budget",
+        "Vietnamese": "Đặc biệt là khi có liên quan đến ngân sách"
+      },
+      {
+        "English": "The thing is, you need to see deputy director",
+        "Vietnamese": "Cái vấn đề là, cậu phải gặp phó tổng"
+      },
+      {
+        "English": "My boss once bought me a coffee",
+        "Vietnamese": "Sếp tui có một lần mua tui ly cà phê"
+      },
+      {
+        "English": "No idea what to say",
+        "Vietnamese": "Chả biết phải nói gì luôn"
+      },
+      {
+        "English": "I guest she meant she's competent",
+        "Vietnamese": "Tôi đoán ý cổ là cổ có năng lực"
+      },
+      {
+        "English": "In order to become special and stuff",
+        "Vietnamese": "Để trở nên đặc biệt các kiểu"
+      },
+      {
+        "English": "I don't really get along with my CEO",
+        "Vietnamese": "Tui không thực sự hợp cạ với CEO"
+      },
+      {
+        "English": "You follow me? / You're with me?",
+        "Vietnamese": "Anh theo kịp tui không?"
+      },
+      {
+        "English": "The truth is my dad is a chairman",
+        "Vietnamese": "Sự thật thì bố tôi là chủ tịch"
+      },
+      {
+        "English": "What the heck is it???",
+        "Vietnamese": "Cái quái gì đây???"
+      },
+      {
+        "English": "We usually have big arguments at 5am",
+        "Vietnamese": "Bọn tôi thường cãi nhau to lúc 5 giờ sáng"
+      },
+      {
+        "English": "There was this one time",
+        "Vietnamese": "Có một lần như vầy"
+      },
+      {
+        "English": "Right in this hall, my boss has proposed to me",
+        "Vietnamese": "Ngay tại sảnh này, sếp đã cầu hôn tôi"
+      },
+      {
+        "English": "At the time, when I was writing a report, \n the sky fell down",
+        "Vietnamese": "Lúc đó, khi mà tôi đang viết report, \n trời sập"
+      },
+      {
+        "English": "Out of the blue, boss said hello to me",
+        "Vietnamese": "Bất thình lình, sếp chào tôi"
+      },
+      {
+        "English": "An email without a title",
+        "Vietnamese": "Một cái email không có tiêu đề"
+      },
+      {
+        "English": "Hey, chief accountant wants to see you immediately",
+        "Vietnamese": "Ê, kế toán trưởng muốn gặp cậu ngay đấy"
+      },
+      {
+        "English": "That's called a moral dilemma",
+        "Vietnamese": "Đó gọi là một tình huống khó xử về đạo đức"
+      },
+      {
+        "English": "Turned out it was a prank",
+        "Vietnamese": "Hóa ra đó là cú lừa"
+      },
+      {
+        "English": "Turned out it was a phishing email",
+        "Vietnamese": "Hóa ra đó là một cái phishing email"
+      },
+      {
+        "English": "I was the one who had to write the report",
+        "Vietnamese": "Tui mới là cái đứa phải viết report đây"
+      },
+      {
+        "English": "Right in front of boss",
+        "Vietnamese": "Ngay trước mặt sếp"
+      },
+      {
+        "English": "In sb's defense",
+        "Vietnamese": "Nói đi thì cũng nói lại, (về phần ai đó)"
+      },
+      {
+        "English": "Speaking of work / in terms of work",
+        "Vietnamese": "Nói về công việc"
+      },
+      {
+        "English": "Long is much better than me",
+        "Vietnamese": "Long giỏi hơn tôi nhiều"
+      },
+      {
+        "English": "Long has the best expertise in my team",
+        "Vietnamese": "Long có chuyên môn giỏi nhất trong team tôi"
+      },
+      {
+        "English": "Every time boss looks at me",
+        "Vietnamese": "Mỗi khi sếp nhìn tôi"
+      },
+      {
+        "English": "I can't figure that out",
+        "Vietnamese": "Tôi chưa thể mường tượng ra cái đó"
+      },
+      {
+        "English": "It only takes him 30 minutes to do that",
+        "Vietnamese": "Ổng chỉ tốn có 30 phút để làm chuyện đó"
+      },
+      {
+        "English": "It's very hard to find the bottlenecks",
+        "Vietnamese": "Nó rất là khó để tìm ra mấy cái nút thắt cổ chai"
+      },
+      {
+        "English": "Don't be a jerk",
+        "Vietnamese": "Đừng có cà chớn"
+      },
+      {
+        "English": "I receive warning letters all the time",
+        "Vietnamese": "Tôi nhận warning letter suốt ấy mà"
+      },
+      {
+        "English": "The other day, boss sent me a PDF file",
+        "Vietnamese": "Hôm bữa, sếp gửi tui một cái file PDF"
+      },
+      {
+        "English": "Johnny just received a warning letter",
+        "Vietnamese": "Johnny vừa \"ăn\" một cái warning letter xong"
+      },
+      {
+        "English": "Unexpectedly, boss has a crush on my sister",
+        "Vietnamese": "Ai dè, sếp \"kết\" bà chị tôi"
+      },
+      {
+        "English": "I'm too set in my ways",
+        "Vietnamese": "Tôi quen kiểu cũ quá rồi (ngựa quen đường cũ)"
+      },
+      {
+        "English": "All in all, this job is easy money",
+        "Vietnamese": "Tính ra, job này dễ (kiếm tiền) ấy chớ"
+      },
+      {
+        "English": "I had 3 years of seniority in FPT",
+        "Vietnamese": "Tôi có 3 năm thâm niên ở FPT"
+      },
+      {
+        "English": "My fringe benefits are very good",
+        "Vietnamese": "Phúc lợi bên lề của tôi tốt lắm"
+      },
+      {
+        "English": "Hey, boss is coming over",
+        "Vietnamese": "Ê, sếp đang qua kìa"
+      },
+      {
+        "English": "How have you been?",
+        "Vietnamese": "Dạo này sao rồi?"
+      },
+      {
+        "English": "I believe he's still alive",
+        "Vietnamese": "Tôi tin ổng còn sống"
+      },
+      {
+        "English": "Watch your language / watch your mouth / language!",
+        "Vietnamese": "Coi chừng cái mồm"
+      },
+      {
+        "English": "From today forward / from today on(wards)",
+        "Vietnamese": "Từ hôm nay trở đi"
+      },
+      {
+        "English": "Who's in charge of this task?",
+        "Vietnamese": "Ai phụ trách cái task này đây?"
+      },
+      {
+        "English": "Why haven't I been told about that?",
+        "Vietnamese": "Sao tôi không có được nói về việc này ta?"
+      },
+      {
+        "English": "That's no big deal",
+        "Vietnamese": "Cái đó ko phải chuyện lớn"
+      },
+      {
+        "English": "Any update from project A?",
+        "Vietnamese": "Có cập nhật gì từ dự án A không?"
+      },
+      {
+        "English": "Listen, who's your line manager?",
+        "Vietnamese": "Nghe này, ai là line manager của cậu?"
+      },
+      {
+        "English": "Wait, I already sent it to you!",
+        "Vietnamese": "Uả, tui gửi cậu rồi mà!"
+      },
+      {
+        "English": "Hit a big roadblock",
+        "Vietnamese": "Đụng phải một trở ngại lớn"
+      },
+      {
+        "English": "Terminate a contract",
+        "Vietnamese": "Chấm dứt một hợp đồng"
+      },
+      {
+        "English": "He hasn't replied my message yet",
+        "Vietnamese": "Ảnh vẫn chưa trả lời tin nhắn tôi"
+      },
+      {
+        "English": "I haven't seen him around since yesterday",
+        "Vietnamese": "Từ qua tới giờ tôi đâu có thấy ổng"
+      },
+      {
+        "English": "You're done / you're dead meat",
+        "Vietnamese": "Cậu xong phim rồi"
+      },
+      {
+        "English": "Doesn't matter, I just wanna know \n who your boss is",
+        "Vietnamese": "Không có gì, tui chỉ muốn biết \n sếp cậu là ai"
+      },
+      {
+        "English": "Well said but that's not your business",
+        "Vietnamese": "Nói hay lắm nhưng đó đâu phải chuyện của cậu"
+      },
+      {
+        "English": "We have to encounter a financial problem",
+        "Vietnamese": "Chúng tôi phải đương đầu với một vấn đến tài chính"
+      },
+      {
+        "English": "How noisy is your coworker?",
+        "Vietnamese": "Đồng nghiệp của cậu ồn ào đến cỡ nào?"
+      },
+      {
+        "English": "Technically, this project is a profitable",
+        "Vietnamese": "Đúng nghĩa thì dự án này có lời"
+      },
+      {
+        "English": "It's the money issue",
+        "Vietnamese": "Đó là vấn đề về tiền"
+      },
+      {
+        "English": "Money is no object",
+        "Vietnamese": "Tiền không thành vấn đề"
+      },
+      {
+        "English": "What's (wrong) with this woman???",
+        "Vietnamese": "Bà thím này bị sao vậy???"
+      },
+      {
+        "English": "It's easy for you to say",
+        "Vietnamese": "Chị nói thì dễ rồi"
+      },
+      {
+        "English": "There're 3 sponsors on the list",
+        "Vietnamese": "Có 3 sponsors trên danh sách"
+      },
+      {
+        "English": "What am I supposed to do now?",
+        "Vietnamese": "Tôi nên làm gì giờ?"
+      },
+      {
+        "English": "First, I'm gonna need you to negotiate",
+        "Vietnamese": "Đầu tiên, tôi sẽ cần cậu thương lượng"
+      },
+      {
+        "English": "We need to be on the same page",
+        "Vietnamese": "Chúng ta cần phải thống nhất với nhau"
+      },
+      {
+        "English": "I've got 10 questions for you",
+        "Vietnamese": "Tôi có 10 câu hỏi cho cậu"
+      },
+      {
+        "English": "I need to get it done by 10pm",
+        "Vietnamese": "Tôi cần xử lý nó xong trước 10 giờ tối"
+      },
+      {
+        "English": "I wanna know about your financial picture",
+        "Vietnamese": "Tôi muốn biết về bức tranh tài chính của cậu"
+      },
+      {
+        "English": "My financial picture is a colorless picture",
+        "Vietnamese": "Bức tranh tài chính của tui là một bức tranh không màu"
+      },
+      {
+        "English": "At worst, I'll present in front of the board",
+        "Vietnamese": "Cùng lắm, tôi sẽ present trước mặt ban lãnh đạo"
+      },
+      {
+        "English": "We still have plenty of time",
+        "Vietnamese": "Ta vẫn còn nhiều thời gian"
+      },
+      {
+        "English": "I think it's good to go",
+        "Vietnamese": "Tôi nghĩ nó ổn để triển khai"
+      },
+      {
+        "English": "More importantly, this is Vietnam market",
+        "Vietnamese": "Quan trọng hơn, đây là thị trường VN"
+      },
+      {
+        "English": "At the end of the day / eventually",
+        "Vietnamese": "Suy cho cùng"
+      },
+      {
+        "English": "Like I said, this product is not profitable",
+        "Vietnamese": "Như tôi đã nói, sản phẩm này không có lời"
+      },
+      {
+        "English": "Everything boils down to one thing",
+        "Vietnamese": "Mọi thứ đều quy về cùng một chuyện thôi"
+      },
+      {
+        "English": "Okay, I hear you",
+        "Vietnamese": "Okay, tôi nghe hiểu ý bạn"
+      },
+      {
+        "English": "Okay, I get the picture now",
+        "Vietnamese": "Okay, tôi hiểu bức tranh rồi"
+      },
+      {
+        "English": "From where I stand/sit",
+        "Vietnamese": "Từ góc độ của tôi"
+      },
+      {
+        "English": "All in all, money is not my top priority",
+        "Vietnamese": "Tính ra, tiền không phải là ưu tiên hàng đầu của tôi"
+      },
+      {
+        "English": "The engagement of the players",
+        "Vietnamese": "Sự gắn kết của những người chơi"
+      },
+      {
+        "English": "I prefer low-cost events",
+        "Vietnamese": "Tôi thích mấy cái event giá rẻ hơn"
+      },
+      {
+        "English": "Where can I get (kind of) money?",
+        "Vietnamese": "Tôi lấy đâu ra số tiền đó?"
+      },
+      {
+        "English": "Take it easy, would you?",
+        "Vietnamese": "Bình tĩnh, được chứ?"
+      },
+      {
+        "English": "Here you are",
+        "Vietnamese": "Của anh đây"
+      },
+      {
+        "English": "I believe we can reach out to their founder",
+        "Vietnamese": "Tôi tin ta có thể tiếp cận đến founder của họ"
+      },
+      {
+        "English": "I see but you have to do it yourself",
+        "Vietnamese": "Tôi hiểu nhưng cậu phải tự làm chuyện đó"
+      },
+      {
+        "English": "You can tell her I sent/recommended you",
+        "Vietnamese": "Cậu có thể nói cổ là tôi giới thiệu cậu qua"
+      },
+      {
+        "English": "Parking fee is very costly / expensive / pricey",
+        "Vietnamese": "Phí giữ xe rất là mắc"
+      },
+      {
+        "English": "I just got promoted",
+        "Vietnamese": "Tui vừa được thăng chức"
+      },
+      {
+        "English": "Hey, I've been looking for you since yesterday",
+        "Vietnamese": "Hey, tao kiếm mày từ hôm qua đến giờ"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "In order to become a competent employee \n you have to stand out",
+        "Vietnamese": "Để trở thành một nhân viên có năng lực,\n cậu phải nổi bật"
+      },
+      {
+        "English": "Like I said \n public land is much cheaper than developed land",
+        "Vietnamese": "Như tui đã nói, \n đất công rẻ hơn đất đã quy hoạch nhiều"
+      },
+      {
+        "English": "Too obvious \n the truth is everyone loves coke",
+        "Vietnamese": "Quá rõ ràng, \n sự thật thì ai ai cũng thích Coca"
+      },
+      {
+        "English": "There was this one time \n I was fired",
+        "Vietnamese": "Có một lần như vầy, \n tui bị đuổi"
+      },
+      {
+        "English": "Right in this room\n we once had a big argument",
+        "Vietnamese": "Ngay tại phòng này, \n bọn tôi từng có lần cãi nhau to"
+      },
+      {
+        "English": "Out of the blue\n boss sent me an email without a title",
+        "Vietnamese": "Bất thình lình, \n sếp gửi tôi một cái email không có tiêu đề"
+      },
+      {
+        "English": "I thought it was a prank \n but turned out it was not",
+        "Vietnamese": "Tôi tưởng đó là một cú lừa \n nhưng hóa ra không phải"
+      },
+      {
+        "English": "Right, he asked me that question \n right in front of the board",
+        "Vietnamese": "Phải, ổng hỏi tôi câu đó \n ngay trước mặt ban lãnh đạo"
+      },
+      {
+        "English": "When it comes to marketing \n my mentor is much better than me",
+        "Vietnamese": "Khi nói về marketing, \n mentor của tôi giỏi hơn tôi nhiều"
+      },
+      {
+        "English": "It only takes him less than 5 minutes \n to finish a report",
+        "Vietnamese": "Ổng chỉ tốn có chưa đầy 5 phút \n để hoàn thành một cái báo cáo"
+      },
+      {
+        "English": "The other day \n who helped Tam write her report?",
+        "Vietnamese": "Hôm bữa, \n đứa nào giúp con Tâm viết cái report?"
+      },
+      {
+        "English": "Well said \n why didn't you tell me earlier?",
+        "Vietnamese": "Nói hay lắm, \n sao anh không báo tôi sớm hơn?"
+      },
+      {
+        "English": "From today forward \n I'll be in charge of the design team",
+        "Vietnamese": "Từ hôm nay trở đi, \n tôi sẽ phụ trách team design"
+      },
+      {
+        "English": "That's no big deal \n I can do it myself",
+        "Vietnamese": "Chuyện đó nhỏ mà, \n tôi tự làm được"
+      },
+      {
+        "English": "I just sent him an email \n explaining why we decided to \n terminate the contract",
+        "Vietnamese": "Tui vừa gửi cho ảnh cái email \n giải thích vì sao chúng ta quyết định \n chấm dứt hợp đồng"
+      },
+      {
+        "English": "It's odd \n I haven't seen boss (around) since yesterday",
+        "Vietnamese": "Kỳ lạ. \n Từ qua đến giờ tui không thấy sếp"
+      },
+      {
+        "English": "It's easy for you to say \n you're good at English",
+        "Vietnamese": "Cậu nói thì dễ rồi, \n cậu giỏi tiếng Anh mà"
+      },
+      {
+        "English": "How many sponsors do you need \n for the event this time?",
+        "Vietnamese": "Cậu cần bao nhiêu nhà tài trợ \n cho cái event lần này?"
+      },
+      {
+        "English": "Bottom line \n I will get it done by Monday. Okay?",
+        "Vietnamese": "Tóm lại, \n tôi sẽ xong cái đó trước Thứ hai. Okay?"
+      }
+    ],
+    "Review": [
+      {
+        "English": "That's not your business",
+        "Vietnamese": "Đó không phải chuyện của cậu"
+      },
+      {
+        "English": "Public land or developed land",
+        "Vietnamese": "Đất công hay đất đã quy hoạch"
+      },
+      {
+        "English": "Where did we stop last time?",
+        "Vietnamese": "Lần trước mình dừng lại ở đâu nhỉ?"
+      },
+      {
+        "English": "How to deal with staff shortage?",
+        "Vietnamese": "Làm sao để đối phó với thiếu hụt nhân lực?"
+      },
+      {
+        "English": "She's quite noisy sometimes",
+        "Vietnamese": "Thỉnh thoảng bả khá là ồn ào"
+      },
+      {
+        "English": "He used to serve in the army",
+        "Vietnamese": "Ảnh từng phục vụ trong quân đội"
+      },
+      {
+        "English": "I used to have tunnel vision",
+        "Vietnamese": "Tôi từng có tầm nhìn hạn hẹp"
+      },
+      {
+        "English": "What's with your coworker?",
+        "Vietnamese": "Đồng nghiệp cậu bị sao vậy?"
+      },
+      {
+        "English": "Don't go over the budget",
+        "Vietnamese": "Đừng vượt quá budget"
+      },
+      {
+        "English": "You need to stand out",
+        "Vietnamese": "Cậu cần phải nổi bật"
+      },
+      {
+        "English": "Competent & incompetent",
+        "Vietnamese": "Có năng lực & ko có năng lực"
+      },
+      {
+        "English": "I can get along with anyone",
+        "Vietnamese": "Tôi có thể hợp rơ với bất kỳ ai"
+      },
+      {
+        "English": "We just had a big argument",
+        "Vietnamese": "Bọn tui vừa cãi nhau to"
+      },
+      {
+        "English": "Who just got promoted?",
+        "Vietnamese": "Ai vừa được thăng chức?"
+      },
+      {
+        "English": "At the time, I was sitting right here",
+        "Vietnamese": "Lúc đó, tôi đang ngồi ngay đây"
+      },
+      {
+        "English": "Who just proposed to boss?",
+        "Vietnamese": "Ai vừa cầu hôn sếp?"
+      },
+      {
+        "English": "Out of the blue, the sky fell down",
+        "Vietnamese": "Tự dưng, trời sập"
+      },
+      {
+        "English": "Don't forget the title",
+        "Vietnamese": "Đừng có quên cái tiêu đề"
+      },
+      {
+        "English": "A moral dilemma",
+        "Vietnamese": "Một tình huống khó xử về đạo đức"
+      },
+      {
+        "English": "Turns out nobody knows",
+        "Vietnamese": "Hóa ra chả ai biết"
+      },
+      {
+        "English": "Turned out it was a prank",
+        "Vietnamese": "Hóa ra đó là 1 cú lừa"
+      },
+      {
+        "English": "Dieu has the best expertise",
+        "Vietnamese": "Diệu có chuyên môn tốt nhất"
+      },
+      {
+        "English": "I'm good at reading pie charts",
+        "Vietnamese": "Tôi giỏi đọc đồ thị tròn"
+      },
+      {
+        "English": "I need some time to figure it out",
+        "Vietnamese": "Tôi cần ít thời gian để mường tượng nó"
+      },
+      {
+        "English": "Where are the bottlenecks?",
+        "Vietnamese": "Mấy cái nút thắt cổ chai nằm đâu?"
+      },
+      {
+        "English": "It's easy for you to say!",
+        "Vietnamese": "Cậu nói thì dễ rồi!"
+      },
+      {
+        "English": "That customer is such a jerk!",
+        "Vietnamese": "Gã khách đó quả là cà chớn!"
+      },
+      {
+        "English": "Is it the girl next door?",
+        "Vietnamese": "Đó là con bé hàng xóm phải không?"
+      },
+      {
+        "English": "I just received a warning letter",
+        "Vietnamese": "Tui vừa nhận warning letter xong"
+      },
+      {
+        "English": "What is fringe benefit?",
+        "Vietnamese": "Phúc lợi bên lề là gì?"
+      },
+      {
+        "English": "Who's in charge of this?",
+        "Vietnamese": "Ai phụ trách cái này?"
+      },
+      {
+        "English": "It took me 2 hours to get it done",
+        "Vietnamese": "Tui tốn 2 tiếng để làm xong"
+      },
+      {
+        "English": "Doesn't matter, my bad",
+        "Vietnamese": "Không có gì, lỗi tui"
+      },
+      {
+        "English": "Unexpectedly, it is profitable",
+        "Vietnamese": "Ai dè, nó có lời"
+      },
+      {
+        "English": "More importantly, I don't know her name",
+        "Vietnamese": "Quan trong hơn, tôi không biết tên bả"
+      },
+      {
+        "English": "We're having a big roadblock",
+        "Vietnamese": "Ta đang có một trở ngại lớn"
+      },
+      {
+        "English": "It's not hard to terminate a contract",
+        "Vietnamese": "Không có khó để chấm dứt một hợp đồng"
+      },
+      {
+        "English": "Easter is a holiday",
+        "Vietnamese": "Lễ phục sinh là một ngày lễ"
+      },
+      {
+        "English": "A moment ago, your boss just called me",
+        "Vietnamese": "Mới hồi nãy, sếp cậu vừa gọi cho tôi"
+      },
+      {
+        "English": "Bottom line, he's our sponsor",
+        "Vietnamese": "Nói tóm lại, ổng là sponsor của chúng ta"
+      },
+      {
+        "English": "Reach out to the potential customers",
+        "Vietnamese": "Reach tới những khách hàng tiềm năng"
+      },
+      {
+        "English": "This is gonna be a low-cost campaign",
+        "Vietnamese": "Đây sẽ là một chiến dịch giá rẻ"
+      },
+      {
+        "English": "Reality shows suck",
+        "Vietnamese": "Mấy cái show thực tế rất là tào lao"
+      },
+      {
+        "English": "At worst, I'll show you the financial picture",
+        "Vietnamese": "Cùng lắm, tui sẽ cho cậu coi cái bức tranh tài chính"
+      },
+      {
+        "English": "That machine is very costly!",
+        "Vietnamese": "Cái máy đó mắc lắm!"
+      },
+      {
+        "English": "Staff shortage is a big problem",
+        "Vietnamese": "Thiếu hụt nhân lực là một vấn đề lớn"
+      },
+      {
+        "English": "Take it easy, it's no big deal",
+        "Vietnamese": "Bình tĩnh, chuyện nhỏ mà"
+      },
+      {
+        "English": "I see, let me ask him",
+        "Vietnamese": "Tui hiểu, để tui hỏi ảnh"
+      },
+      {
+        "English": "Parking fee is getting higher",
+        "Vietnamese": "Phí giữ xe đang cao lên"
+      },
+      {
+        "English": "I haven't seen him since yesterday",
+        "Vietnamese": "Tui chẳng thấy ảnh từ hôm qua giờ"
+      }
+    ]
+  }
+}
