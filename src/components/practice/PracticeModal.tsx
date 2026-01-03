@@ -12,6 +12,7 @@ import { toast } from 'sonner';
 
 export const PracticeModal: React.FC = () => {
   const { selectedItem, setSelectedItem, currentLessonId, recordPracticeSession, userProgress } = useApp();
+  const [isSpeaking, setIsSpeaking] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
@@ -193,12 +194,56 @@ export const PracticeModal: React.FC = () => {
     ? userProgress.find(p => p.lessonId === currentLessonId && p.itemId === selectedItem.id)
     : null;
 
-  const speakTarget = () => {
-    if (!selectedItem) return;
-    const utterance = new SpeechSynthesisUtterance(selectedItem.English);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.85;
-    speechSynthesis.speak(utterance);
+  const speakTarget = async () => {
+    if (!selectedItem || isSpeaking) return;
+    
+    setIsSpeaking(true);
+    try {
+      // Use Deepgram TTS
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/deepgram-tts`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ 
+            text: selectedItem.English,
+            model: 'aura-asteria-en' // Natural female voice
+          }),
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('TTS request failed');
+      }
+
+      const audioBlob = await response.blob();
+      const audioUrl = URL.createObjectURL(audioBlob);
+      const audio = new Audio(audioUrl);
+      
+      audio.onended = () => {
+        setIsSpeaking(false);
+        URL.revokeObjectURL(audioUrl);
+      };
+      
+      audio.onerror = () => {
+        setIsSpeaking(false);
+        URL.revokeObjectURL(audioUrl);
+        toast.error('Failed to play audio');
+      };
+      
+      await audio.play();
+    } catch (error) {
+      console.error('TTS error:', error);
+      setIsSpeaking(false);
+      // Fallback to browser TTS
+      const utterance = new SpeechSynthesisUtterance(selectedItem.English);
+      utterance.lang = 'en-US';
+      utterance.rate = 0.85;
+      utterance.onend = () => setIsSpeaking(false);
+      speechSynthesis.speak(utterance);
+    }
   };
 
   const formatTime = (seconds: number) => {
@@ -244,10 +289,18 @@ export const PracticeModal: React.FC = () => {
           <div className="text-center mb-8">
             <button
               onClick={speakTarget}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted hover:bg-accent transition-colors mb-4"
+              disabled={isSpeaking}
+              className={cn(
+                "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted hover:bg-accent transition-colors mb-4",
+                isSpeaking && "opacity-70"
+              )}
             >
-              <Volume2 size={18} />
-              <span className="text-sm font-medium">Listen</span>
+              {isSpeaking ? (
+                <Loader2 size={18} className="animate-spin" />
+              ) : (
+                <Volume2 size={18} />
+              )}
+              <span className="text-sm font-medium">{isSpeaking ? 'Playing...' : 'Listen'}</span>
             </button>
             <p className="text-2xl font-medium text-foreground leading-relaxed">
               {selectedItem.English}
