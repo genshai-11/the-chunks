@@ -1,18 +1,21 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2 } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
 import { cn } from '@/lib/utils';
+import { curriculum } from '@/data/curriculum';
 
 export const PracticeModal: React.FC = () => {
-  const { selectedItem, setSelectedItem } = useApp();
+  const { selectedItem, setSelectedItem, currentLessonId, recordPracticeSession, userProgress } = useApp();
   const [isRecording, setIsRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
   const [audioUrl, setAudioUrl] = useState<string | null>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [recordingTime, setRecordingTime] = useState(0);
   const [analyzerData, setAnalyzerData] = useState<Uint8Array | null>(null);
+  const [practiceScore, setPracticeScore] = useState<number | null>(null);
+  const [isAnalyzing, setIsAnalyzing] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -108,7 +111,43 @@ export const PracticeModal: React.FC = () => {
     setAudioUrl(null);
     setIsPlaying(false);
     setRecordingTime(0);
+    setPracticeScore(null);
   };
+
+  const getWeekId = () => {
+    for (const week of curriculum) {
+      if (week.days.some(d => d.id === currentLessonId)) {
+        return week.id;
+      }
+    }
+    return 1;
+  };
+
+  const simulateAnalysis = () => {
+    if (!selectedItem || !audioBlob) return;
+    
+    setIsAnalyzing(true);
+    
+    // Simulate AI analysis with random score (will be replaced with real AI)
+    setTimeout(() => {
+      const score = Math.floor(Math.random() * 30) + 70; // 70-100 range
+      setPracticeScore(score);
+      setIsAnalyzing(false);
+      
+      // Record the practice session
+      recordPracticeSession({
+        lessonId: currentLessonId,
+        itemId: selectedItem.id,
+        category: selectedItem.category,
+        score,
+        weekId: getWeekId(),
+      });
+    }, 1500);
+  };
+
+  const existingProgress = selectedItem 
+    ? userProgress.find(p => p.lessonId === currentLessonId && p.itemId === selectedItem.id)
+    : null;
 
   const speakTarget = () => {
     if (!selectedItem) return;
@@ -138,7 +177,15 @@ export const PracticeModal: React.FC = () => {
       <div className="relative bg-card rounded-2xl shadow-xl w-full max-w-lg animate-scale-in overflow-hidden">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border">
-          <CategoryBadge category={selectedItem.category} size="md" />
+          <div className="flex items-center gap-2">
+            <CategoryBadge category={selectedItem.category} size="md" />
+            {existingProgress?.mastered && (
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-green-500/10 text-green-600 text-xs font-medium">
+                <CheckCircle size={12} />
+                Mastered
+              </span>
+            )}
+          </div>
           <button
             onClick={() => setSelectedItem(null)}
             className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -242,16 +289,49 @@ export const PracticeModal: React.FC = () => {
             />
           )}
 
-          {/* Analyze button (placeholder for AI integration) */}
-          {audioUrl && (
+          {/* Score display */}
+          {practiceScore !== null && (
+            <div className="mt-6 text-center animate-fade-in">
+              <div className={cn(
+                "inline-flex items-center justify-center w-20 h-20 rounded-full text-2xl font-bold mb-2",
+                practiceScore >= 80 ? "bg-green-500/10 text-green-600" : 
+                practiceScore >= 60 ? "bg-yellow-500/10 text-yellow-600" : 
+                "bg-red-500/10 text-red-600"
+              )}>
+                {practiceScore}
+              </div>
+              <p className="text-sm text-muted-foreground">
+                {practiceScore >= 80 ? "Great job! Item mastered!" : 
+                 practiceScore >= 60 ? "Good effort! Keep practicing." : 
+                 "Keep trying! You'll get there."}
+              </p>
+              {existingProgress && (
+                <p className="text-xs text-muted-foreground mt-1">
+                  Best: {existingProgress.bestScore} • Attempts: {existingProgress.attempts}
+                </p>
+              )}
+            </div>
+          )}
+
+          {/* Analyze button */}
+          {audioUrl && practiceScore === null && (
             <div className="mt-6 text-center">
               <button
-                className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-medium shadow-primary hover:opacity-90 transition-all"
+                onClick={simulateAnalysis}
+                disabled={isAnalyzing}
+                className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-medium shadow-primary hover:opacity-90 transition-all disabled:opacity-50"
               >
-                Analyze Speech
+                {isAnalyzing ? (
+                  <span className="flex items-center gap-2">
+                    <Loader2 size={18} className="animate-spin" />
+                    Analyzing...
+                  </span>
+                ) : (
+                  "Analyze Speech"
+                )}
               </button>
               <p className="text-xs text-muted-foreground mt-2">
-                AI analysis requires backend integration
+                Records your practice session
               </p>
             </div>
           )}

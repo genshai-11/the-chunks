@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { LessonData, PracticeItem, UserProgress } from '@/types/curriculum';
+import { LessonData, PracticeItem, UserProgress, PracticeSession } from '@/types/curriculum';
 
 interface AppContextType {
   currentLesson: LessonData | null;
@@ -14,6 +14,8 @@ interface AppContextType {
   setViewMode: (mode: 'list' | 'flashcard') => void;
   userProgress: UserProgress[];
   updateProgress: (progress: UserProgress) => void;
+  practiceSessions: PracticeSession[];
+  recordPracticeSession: (session: Omit<PracticeSession, 'id' | 'timestamp'>) => void;
   sidebarOpen: boolean;
   setSidebarOpen: (open: boolean) => void;
 }
@@ -27,6 +29,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   const [categoryFilter, setCategoryFilter] = useState<string>('all');
   const [viewMode, setViewMode] = useState<'list' | 'flashcard'>('list');
   const [userProgress, setUserProgress] = useState<UserProgress[]>([]);
+  const [practiceSessions, setPracticeSessions] = useState<PracticeSession[]>([]);
   const [sidebarOpen, setSidebarOpen] = useState(true);
 
   const loadLesson = async (filename: string) => {
@@ -75,24 +78,71 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     });
   };
 
-  // Load saved progress from localStorage
+  const recordPracticeSession = (session: Omit<PracticeSession, 'id' | 'timestamp'>) => {
+    const newSession: PracticeSession = {
+      ...session,
+      id: `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
+      timestamp: new Date(),
+    };
+    
+    setPracticeSessions(prev => [...prev, newSession]);
+
+    // Also update user progress
+    const existingProgress = userProgress.find(
+      p => p.lessonId === session.lessonId && p.itemId === session.itemId
+    );
+
+    const updatedProgress: UserProgress = {
+      lessonId: session.lessonId,
+      itemId: session.itemId,
+      category: session.category,
+      attempts: (existingProgress?.attempts || 0) + 1,
+      bestScore: Math.max(existingProgress?.bestScore || 0, session.score),
+      lastAttempt: new Date(),
+      mastered: session.score >= 80 || (existingProgress?.mastered || false),
+    };
+
+    updateProgress(updatedProgress);
+  };
+
+  // Load saved data from localStorage
   useEffect(() => {
-    const saved = localStorage.getItem('chunks_progress');
-    if (saved) {
+    const savedProgress = localStorage.getItem('chunks_progress');
+    const savedSessions = localStorage.getItem('chunks_sessions');
+    
+    if (savedProgress) {
       try {
-        setUserProgress(JSON.parse(saved));
+        setUserProgress(JSON.parse(savedProgress));
       } catch (e) {
         console.error('Failed to parse saved progress');
       }
     }
+    
+    if (savedSessions) {
+      try {
+        const sessions = JSON.parse(savedSessions);
+        setPracticeSessions(sessions.map((s: PracticeSession) => ({
+          ...s,
+          timestamp: new Date(s.timestamp)
+        })));
+      } catch (e) {
+        console.error('Failed to parse saved sessions');
+      }
+    }
   }, []);
 
-  // Save progress to localStorage
+  // Save data to localStorage
   useEffect(() => {
     if (userProgress.length > 0) {
       localStorage.setItem('chunks_progress', JSON.stringify(userProgress));
     }
   }, [userProgress]);
+
+  useEffect(() => {
+    if (practiceSessions.length > 0) {
+      localStorage.setItem('chunks_sessions', JSON.stringify(practiceSessions));
+    }
+  }, [practiceSessions]);
 
   return (
     <AppContext.Provider
@@ -109,6 +159,8 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         setViewMode,
         userProgress,
         updateProgress,
+        practiceSessions,
+        recordPracticeSession,
         sidebarOpen,
         setSidebarOpen,
       }}

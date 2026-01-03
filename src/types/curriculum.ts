@@ -50,8 +50,19 @@ export interface AnalysisResult {
 export interface UserProgress {
   lessonId: string;
   itemId: string;
+  category: string;
   attempts: number;
   bestScore: number;
   lastAttempt: Date;
   mastered: boolean;
+}
+
+export interface PracticeSession {
+  id: string;
+  lessonId: string;
+  itemId: string;
+  category: string;
+  score: number;
+  timestamp: Date;
+  weekId: number;
 }
