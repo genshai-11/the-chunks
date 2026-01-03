@@ -8,7 +8,7 @@ import { FlashcardView } from './FlashcardView';
 import { CategoryBadge } from './CategoryBadge';
 
 export const LessonView: React.FC = () => {
-  const { currentLesson, categoryFilter, setCategoryFilter, viewMode, setViewMode, setSelectedItem } = useApp();
+  const { currentLesson, currentLessonId, categoryFilter, setCategoryFilter, viewMode, setViewMode, setSelectedItem, userProgress } = useApp();
 
   const items = useMemo<PracticeItem[]>(() => {
     if (!currentLesson) return [];
@@ -61,7 +61,7 @@ export const LessonView: React.FC = () => {
                 {currentLesson.lesson_name}
               </h1>
               <p className="text-muted-foreground mt-1">
-                {items.length} items to practice
+                {items.length} items • {userProgress.filter(p => p.lessonId === currentLessonId && p.mastered).length} mastered
               </p>
             </div>
 
@@ -134,6 +134,7 @@ export const LessonView: React.FC = () => {
                 item={item}
                 onClick={() => setSelectedItem(item)}
                 style={{ animationDelay: `${index * 0.03}s` }}
+                progress={userProgress.find(p => p.lessonId === currentLessonId && p.itemId === item.id)}
               />
             ))}
           </div>
