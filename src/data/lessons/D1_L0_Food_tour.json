@@ -1,0 +1,311 @@
+{
+  "lesson_name": "D1 - L0 - Food tour",
+  "categories": {
+    "Slang": [
+      {
+        "English": "Blame yourself …",
+        "Vietnamese": "Ai biểu …"
+      },
+      {
+        "English": "A moment ago",
+        "Vietnamese": "Mới hồi nãy"
+      },
+      {
+        "English": "Who on earth would …",
+        "Vietnamese": "Ai đời …"
+      },
+      {
+        "English": "Seriously",
+        "Vietnamese": "Thiệt!"
+      },
+      {
+        "English": "Long story short",
+        "Vietnamese": "Tóm lại, …"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Tentacle",
+        "Vietnamese": "Râu mực / bạch tuột"
+      },
+      {
+        "English": "Herbs",
+        "Vietnamese": "Rau thơm"
+      },
+      {
+        "English": "Grilled pork / grilled beef",
+        "Vietnamese": "Heo nướng / bò nướng"
+      },
+      {
+        "English": "Go Dutch /\n split the bill / share the bill",
+        "Vietnamese": "Cưa “bill”"
+      },
+      {
+        "English": "It’s on me / my treat",
+        "Vietnamese": "Tôi mời"
+      },
+      {
+        "English": "Sweet & sour",
+        "Vietnamese": "Chua ngọt"
+      },
+      {
+        "English": "Coconut water / coconut juice",
+        "Vietnamese": "Nước dừa"
+      },
+      {
+        "English": "It’s a bomb / blast",
+        "Vietnamese": "Ngon banh xác"
+      },
+      {
+        "English": "Tasty / yummy / delicious / toothsome",
+        "Vietnamese": "Ngon"
+      },
+      {
+        "English": "Do the sights / go sightseeing",
+        "Vietnamese": "Tham quan"
+      },
+      {
+        "English": "What do you say/think?",
+        "Vietnamese": "Ý cậu sao?"
+      },
+      {
+        "English": "Is known / popular for…",
+        "Vietnamese": "Nổi tiếng vì…"
+      },
+      {
+        "English": "Gooey / sticky / gummy",
+        "Vietnamese": "Nhơm nhớp"
+      },
+      {
+        "English": "On the outside",
+        "Vietnamese": "Ở bên ngoài"
+      },
+      {
+        "English": "Steam / boil / deep fry",
+        "Vietnamese": "Hấp / luộc / chiên ngập dầu"
+      },
+      {
+        "English": "Lemongrass",
+        "Vietnamese": "Xả"
+      },
+      {
+        "English": "Big-ass / huge / sizeable / massive",
+        "Vietnamese": "To chà bá lửa"
+      },
+      {
+        "English": "… in advance / beforehand",
+        "Vietnamese": "… trước"
+      },
+      {
+        "English": "Steamed snails",
+        "Vietnamese": "Ốc bưu hấp"
+      },
+      {
+        "English": "Mekong delta",
+        "Vietnamese": "Đồng bằng sông cửu long"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "I'm getting kinda full now / \n I'm quite full now",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "This is the 1st time I've had \n grilled pork like this",
+        "Vietnamese": "Lần đầu tiên tôi ăn thịt heo nướng như thế này"
+      },
+      {
+        "English": "If you ever come to SG, \n definitely check out this place",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "It's on me tonight, next time it's your turn",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "It's been a long time since I last had banh mì",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "Now we'll go eat, what do you say?",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "We'll go Dutch, what do you say?",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "Trust me, it's a bomb",
+        "Vietnamese": "Tin tôi đi, nó là một quả bom"
+      },
+      {
+        "English": "I just ordered 6 of them, \n you wanna order more?",
+        "Vietnamese": "Tớ vừa đặt 6 cái, muốn đặt thêm không?"
+      },
+      {
+        "English": "This food will be served with coconut water",
+        "Vietnamese": "Món này sẽ được phục vụ kèm nước dừa."
+      },
+      {
+        "English": "I like doing the sights whenever \n I have a chance to visit a big city",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "Vietnamese street food culture",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "Sweet and sour fish sauce \n is all I want right now",
+        "Vietnamese": "Mắm nêm chua ngọt \n là cái tôi muốn ngay bây giờ"
+      },
+      {
+        "English": "I just ordered myself a big-ass tentacle",
+        "Vietnamese": "Tao vừa đặt một con mực khổng lồ cho mình đây."
+      },
+      {
+        "English": "You need to boil it in coconut water hours in advance",
+        "Vietnamese": "Bạn cần đun nó trong nước cốt dừa từ vài giờ trước."
+      },
+      {
+        "English": "There’re some fruits in the fridge, \n help yourself",
+        "Vietnamese": "Có một số trái cây trong tủ lạnh, tự lấy nhé"
+      },
+      {
+        "English": "On the outside, it's very gooey",
+        "Vietnamese": "Loading..."
+      },
+      {
+        "English": "This city is known for fried bananas",
+        "Vietnamese": "Thành phố này nổi tiếng với chuối chiên"
+      },
+      {
+        "English": "I'm gonna need a piece of lemongrass",
+        "Vietnamese": "Tôi cần một ít sả"
+      },
+      {
+        "English": "She must have deep fried it in advance",
+        "Vietnamese": "Loading..."
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "Seriously, \nthis grilled beef is a bomb, \nyou have to give it a try!",
+        "Vietnamese": "Thiệt, \nmón bò nướng này ngon banh xác, \ncậu là phải thử!"
+      },
+      {
+        "English": "Blame yourself \nyou asked me too late, \nmaybe some other time",
+        "Vietnamese": "Ai biểu \ncậu rủ tôi trễ quá, \nchắc để khi khác đi"
+      },
+      {
+        "English": "Who on earth would \neat rice with herbs???",
+        "Vietnamese": "Ai đời lại\n ăn cơm với rau thơm???"
+      },
+      {
+        "English": "Basically, \nthe tentacle will be served with sweet and sour fish sauce and herbs",
+        "Vietnamese": "Về cơ bản, \nrâu mực sẽ được phục vụ chung với nước mắm chua ngọt và rau thơm"
+      },
+      {
+        "English": "A moment ago,\n I saw you order 2 big-ass tentacles",
+        "Vietnamese": "Mới hồi nãy,\n tôi thấy cậu order 2 cái râu mực to chà bá mà"
+      },
+      {
+        "English": "Long story short,\n I need you to wash these tentacles, okay?",
+        "Vietnamese": "Nói tóm lại, \ntôi cần cậu rửa mấy cái râu mực này, okay?"
+      },
+      {
+        "English": "We'll do the sights,\n then we'll go eat steamed snails with lemongrass,\n what do you say?",
+        "Vietnamese": "Tụi mình sẽ đi tham quan, sau đó tụi mình đi ăn ốc bưu hấp xả, \ný cậu sao?"
+      },
+      {
+        "English": "I think \n 10 pieces of lemongrass will be more than enough for this food",
+        "Vietnamese": "Tôi nghĩ \n10 cọng xả sẽ là quá đủ cho món này"
+      },
+      {
+        "English": "On the outside, it's kinda gooey \n but on the inside, the meat of the snails is quite crunchy",
+        "Vietnamese": "Bên ngoài, nó khá là nhơm nhớp \nnhưng bên trong, thịt ốc bưu khá là sực sực"
+      }
+    ],
+    "Review": [
+      {
+        "English": "Blame yourself, you didn’t believe me!",
+        "Vietnamese": "Ai biểu cậu không tin tui!"
+      },
+      {
+        "English": "It’s a bomb, give it a try",
+        "Vietnamese": "Món này ngon banh xác, thử đi"
+      },
+      {
+        "English": "Seriously, this snail is so tasty",
+        "Vietnamese": "Thiệt, món ốc bưu này ngon lắm"
+      },
+      {
+        "English": "This beef is very crunchy",
+        "Vietnamese": "Thịt bò này rất là sực sực"
+      },
+      {
+        "English": "A moment ago, you said we were gonna go Dutch",
+        "Vietnamese": "Mới nãy, cậu bảo tụi mình sẽ cưa “bill” mà"
+      },
+      {
+        "English": "Remember to put the herbs on the top",
+        "Vietnamese": "Nhớ cho rau thơm lên trên"
+      },
+      {
+        "English": "Who on earth would eat fried bananas here???",
+        "Vietnamese": "Ai đời lại ăn chuối chiên ở đây???"
+      },
+      {
+        "English": "Dip it in the sweet and sour fish sauce",
+        "Vietnamese": "Nhúng nó vào nước mắm chua ngọt"
+      },
+      {
+        "English": "It’s on me tonight",
+        "Vietnamese": "Tối nay tôi mời"
+      },
+      {
+        "English": "On the outside, it looks quite gooey",
+        "Vietnamese": "Ở bên ngoài, nó trông khá là nhơm nhớp"
+      },
+      {
+        "English": "I’m getting kinda full now",
+        "Vietnamese": "Giờ tui hơi no no rồi đấy"
+      },
+      {
+        "English": "Grilled pork is the best!",
+        "Vietnamese": "Heo nướng là nhất!"
+      },
+      {
+        "English": "Vietnamese street food culture",
+        "Vietnamese": "Văn hóa ẩm thực đường phố VN"
+      },
+      {
+        "English": "Basically, I don’t like tentacle",
+        "Vietnamese": "Về cơ bản, tôi không thích râu mực"
+      },
+      {
+        "English": "The snails are very gooey",
+        "Vietnamese": "Ốc bưu rất là nhơm nhớp"
+      },
+      {
+        "English": "Seriously, Mekong delta is my hometown",
+        "Vietnamese": "Thiệt, DBSCL là quê tôi ấy"
+      },
+      {
+        "English": "Speaking of sauce, fish sauce is the best",
+        "Vietnamese": "Nói về nước chấm, nước mắm là nhất"
+      },
+      {
+        "English": "I prefer doing the sights",
+        "Vietnamese": "Tui thích đi tham quan hơn"
+      },
+      {
+        "English": "Manila is known for fried bananas",
+        "Vietnamese": "Manila nổi tiếng với món chuối chiên"
+      },
+      {
+        "English": "I need 10 pieces of lemongrass",
+        "Vietnamese": "Tôi cần 10 cọng xả"
+      }
+    ]
+  }
+}

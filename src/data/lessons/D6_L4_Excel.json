@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D6 - L4 - Excel",
+  "categories": {
+    "Slang": [
+      {
+        "English": "There you have it / That's it / simple as that / there you go",
+        "Vietnamese": "Có vậy thôi đó"
+      },
+      {
+        "English": "Why the long face? / Why you look so sad?",
+        "Vietnamese": "Sao mặt đưa đám vậy?"
+      },
+      {
+        "English": "9 times out of 10 / 99 times out of 100",
+        "Vietnamese": "Hết 9 trên 10 lần"
+      },
+      {
+        "English": "In times like these / In times like this",
+        "Vietnamese": "Trong những lúc như vầy"
+      },
+      {
+        "English": "If (it is) necessary / If needed / if required / if need be",
+        "Vietnamese": "Nếu cần"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "At the moment / At this point / currently / at this moment (in time) / now / at present / at the present time / for now / for the moment / for the time being",
+        "Vietnamese": "Vào lúc này"
+      },
+      {
+        "English": "The financial report",
+        "Vietnamese": "Báo cáo tài chính"
+      },
+      {
+        "English": "Up to half an hour / Up to 30 minutes",
+        "Vietnamese": "Lên tới nửa tiếng"
+      },
+      {
+        "English": "Here's the deal / Here's the thing",
+        "Vietnamese": "Chuyện là vầy"
+      },
+      {
+        "English": "Manual calculation",
+        "Vietnamese": "Tính tay"
+      },
+      {
+        "English": "The escape key / button",
+        "Vietnamese": "Phím escape"
+      },
+      {
+        "English": "Uninstall / remove a software",
+        "Vietnamese": "Gỡ một phần mềm"
+      },
+      {
+        "English": "Thousands of times",
+        "Vietnamese": "Cả ngàn lần"
+      },
+      {
+        "English": "Recalculate and reopen",
+        "Vietnamese": "Tính toán lại và mở lại"
+      },
+      {
+        "English": "Every single cell / Each cell",
+        "Vietnamese": "Mỗi một ô"
+      },
+      {
+        "English": "Except / Excluding / other than",
+        "Vietnamese": "Ngoại trừ"
+      },
+      {
+        "English": "Frustrating / Annoying / irritating / disturbing",
+        "Vietnamese": "Nản"
+      },
+      {
+        "English": "Run into / come across this issue",
+        "Vietnamese": "Đụng phải vấn đề này"
+      },
+      {
+        "English": "All day yesterday / All yesterday / the whole day yesterday / all of yesterday / \n the whole of yesterday",
+        "Vietnamese": "Cả ngày hôm qua"
+      },
+      {
+        "English": "A large file / A huge file",
+        "Vietnamese": "Một file lớn"
+      },
+      {
+        "English": "Taskbar",
+        "Vietnamese": "Thanh tác vụ"
+      },
+      {
+        "English": "Temporarily / Provisionally",
+        "Vietnamese": "Một cách tạm thời"
+      },
+      {
+        "English": "Turn off / Switch off / shut off / kill",
+        "Vietnamese": "Tắt"
+      },
+      {
+        "English": "Feature",
+        "Vietnamese": "Tính năng"
+      },
+      {
+        "English": "Install a feature",
+        "Vietnamese": "Cài đặt một tính năng"
+      },
+      {
+        "English": "Disable / Deactivate",
+        "Vietnamese": "Vô hiệu hóa"
+      },
+      {
+        "English": "Bother / Trouble / disturb",
+        "Vietnamese": "Làm phiền"
+      },
+      {
+        "English": "Suck at Excel / Bad at Excel / terrible at Excel / hopeless at Excel / no good at Excel",
+        "Vietnamese": "Rất cùi Excel"
+      },
+      {
+        "English": "Good at Excel / excellent at Excel / expert at Excel",
+        "Vietnamese": "Rất giỏi Excel"
+      },
+      {
+        "English": "Scroll it down",
+        "Vietnamese": "Lăn nó xuống"
+      },
+      {
+        "English": "All your formulas",
+        "Vietnamese": "Tất cả công thức của bạn"
+      },
+      {
+        "English": "On the left",
+        "Vietnamese": "Phía bên trái"
+      },
+      {
+        "English": "Hello, it's Phoebe",
+        "Vietnamese": "Alo, Phoebe nè"
+      },
+      {
+        "English": "As usual / as always",
+        "Vietnamese": "Như thường lệ"
+      },
+      {
+        "English": "Screen / monitor",
+        "Vietnamese": "Màn hình"
+      },
+      {
+        "English": "C drive / local disk C",
+        "Vietnamese": "Ổ C"
+      },
+      {
+        "English": "Hurriedly / in a hurry / hastily",
+        "Vietnamese": "Lật đật / một cách vội vã"
+      },
+      {
+        "English": "Urgent / emergency",
+        "Vietnamese": "Khẩn cấp"
+      },
+      {
+        "English": "…, though / Yet... /…, anyway",
+        "Vietnamese": "Dẫu vậy,…"
+      },
+      {
+        "English": "I wonder… / I ask myself... / I ponder",
+        "Vietnamese": "Tui thắc mắc…"
+      },
+      {
+        "English": "Switch to…",
+        "Vietnamese": "Chuyển sang…"
+      },
+      {
+        "English": "I knew it!",
+        "Vietnamese": "Tui biết ngay mà!"
+      },
+      {
+        "English": "Me either / me, too / likewise / same here",
+        "Vietnamese": "Tui cũng rứa"
+      },
+      {
+        "English": "Automatically",
+        "Vietnamese": "Một cách tự động"
+      },
+      {
+        "English": "Meanwhile / meantime / in the meantime",
+        "Vietnamese": "Trong lúc đó,…"
+      },
+      {
+        "English": "Allow / permit",
+        "Vietnamese": "Cho phép"
+      },
+      {
+        "English": "Wait,…",
+        "Vietnamese": "Uả,…"
+      },
+      {
+        "English": "This entire time / this whole time / \n for a while now",
+        "Vietnamese": "Nãy giờ"
+      },
+      {
+        "English": "Excel guru / Excel expert / Excel master",
+        "Vietnamese": "Bậc thầy Excel"
+      },
+      {
+        "English": "Boba (tea) / bubble tea / milk tea",
+        "Vietnamese": "Trà sữa trân châu"
+      },
+      {
+        "English": "What do you say? / What do you think?",
+        "Vietnamese": "Ý cậu sao?"
+      },
+      {
+        "English": "Okay, deal / done",
+        "Vietnamese": "Okay, chốt"
+      },
+      {
+        "English": "A boba with full toppings",
+        "Vietnamese": "Một ly trà sữa full toppings"
+      },
+      {
+        "English": "What for? / for what?",
+        "Vietnamese": "Để chi?"
+      },
+      {
+        "English": "Excel users",
+        "Vietnamese": "Những người dùng Excel"
+      },
+      {
+        "English": "Annoying / disturbing situations",
+        "Vietnamese": "Những tình huống khó chịu"
+      },
+      {
+        "English": "Don't push me / don't rush me / \n don't hurry me up",
+        "Vietnamese": "Đừng có hối tui"
+      },
+      {
+        "English": "Stay calm / easy / stay chill / chill (out)",
+        "Vietnamese": "Bình tĩnh"
+      },
+      {
+        "English": "In the corner",
+        "Vietnamese": "Ở trong góc"
+      },
+      {
+        "English": "Famous for… / known for...",
+        "Vietnamese": "Nổi tiếng vì…"
+      },
+      {
+        "English": "Computer illiteracy",
+        "Vietnamese": "Mù vi tính"
+      },
+      {
+        "English": "Attend / join the coding class",
+        "Vietnamese": "Tham gia lớp viết code"
+      },
+      {
+        "English": "Back then / Back in high school",
+        "Vietnamese": "Hồi đó / Hồi cấp ba"
+      },
+      {
+        "English": "Stop complaining / ranting / bitching",
+        "Vietnamese": "Đừng có càm ràm nữa"
+      },
+      {
+        "English": "Focus! / stay focused! / stay concentrated!",
+        "Vietnamese": "Tập trung nè!"
+      },
+      {
+        "English": "Zoom in / out",
+        "Vietnamese": "Zoom lớn / nhỏ"
+      },
+      {
+        "English": "Calculation time",
+        "Vietnamese": "Thời gian tính toán"
+      },
+      {
+        "English": "Prevent / stop",
+        "Vietnamese": "Ngăn cản"
+      },
+      {
+        "English": "Prevent / stop something from happening",
+        "Vietnamese": "Ngăn không cho điều gì đó xảy ra"
+      },
+      {
+        "English": "That file itself",
+        "Vietnamese": "Bản thân cái file đó"
+      },
+      {
+        "English": "Everybody knows (that)… / It's common knowledge that...",
+        "Vietnamese": "Ai cũng biết rằng…"
+      },
+      {
+        "English": "Version",
+        "Vietnamese": "Phiên bản"
+      },
+      {
+        "English": "Obsolete / outdated / out of date / \n old-fashioned / outmoded",
+        "Vietnamese": "Cũ / lỗi thời"
+      },
+      {
+        "English": "Thank you, though / anyway",
+        "Vietnamese": "Dẫu vậy cảm ơn nha"
+      },
+      {
+        "English": "55 hundred / 5 thousand 5 hundred",
+        "Vietnamese": "5500"
+      },
+      {
+        "English": "5500 rows / columns",
+        "Vietnamese": "5500 dòng / cột"
+      },
+      {
+        "English": "No wonder / no doubt / no question",
+        "Vietnamese": "Hèn gì / thảo nào"
+      },
+      {
+        "English": "It freaked me out / it scared the hell out of me",
+        "Vietnamese": "Nó làm tui sợ quá trời quá đất"
+      },
+      {
+        "English": "Including when…",
+        "Vietnamese": "Bao gồm cả khi…"
+      },
+      {
+        "English": "Evade taxes / avoid taxes / dodge taxes",
+        "Vietnamese": "Trốn thuế"
+      },
+      {
+        "English": "At this (late) hour",
+        "Vietnamese": "(Đêm khuya) giờ này"
+      },
+      {
+        "English": "There's a thing that…",
+        "Vietnamese": "Có một thứ mà…"
+      },
+      {
+        "English": "Completely / entirely / totally",
+        "Vietnamese": "Hoàn toàn"
+      },
+      {
+        "English": "Finish / get it done / complete",
+        "Vietnamese": "Hoàn thành"
+      },
+      {
+        "English": "Enter / input / key in",
+        "Vietnamese": "Nhập (liệu)"
+      },
+      {
+        "English": "The other night",
+        "Vietnamese": "Tối hôm bữa"
+      },
+      {
+        "English": "I'll buy you a house",
+        "Vietnamese": "Tôi sẽ mua cậu cái nhà"
+      },
+      {
+        "English": "Big deal!",
+        "Vietnamese": "Làm thấy ghê!"
+      },
+      {
+        "English": "Experience / go through",
+        "Vietnamese": "Trải qua"
+      },
+      {
+        "English": "Reduce / decrease / cut down",
+        "Vietnamese": "Giảm"
+      },
+      {
+        "English": "Pie chart",
+        "Vietnamese": "Biểu đồ tròn"
+      },
+      {
+        "English": "At the same time / at once",
+        "Vietnamese": "Cùng một lúc"
+      },
+      {
+        "English": "Solve a problem / resolve a problem / address a problem / tackle a problem / troubleshoot",
+        "Vietnamese": "Giải quyết một vấn đề"
+      },
+      {
+        "English": "Run a report",
+        "Vietnamese": "Chạy một báo cáo"
+      },
+      {
+        "English": "I thought… / I assume...",
+        "Vietnamese": "Tôi tưởng…"
+      },
+      {
+        "English": "(Way) too fast",
+        "Vietnamese": "Quá nhanh"
+      },
+      {
+        "English": "Sometimes / once in a while / at times / from time to time",
+        "Vietnamese": "Nhiều khi / có mấy lúc"
+      },
+      {
+        "English": "I'm afraid not",
+        "Vietnamese": "Tôi e là không"
+      },
+      {
+        "English": "Complicated / complex / like a mess",
+        "Vietnamese": "Phức tạp"
+      },
+      {
+        "English": "Select / choose / pick",
+        "Vietnamese": "Chọn"
+      },
+      {
+        "English": "Every 5 years",
+        "Vietnamese": "Mỗi 5 năm"
+      },
+      {
+        "English": "Usually / often / always / typically / normally",
+        "Vietnamese": "Thông thường"
+      },
+      {
+        "English": "Book cover & book spine",
+        "Vietnamese": "Bìa sách & gáy sách"
+      },
+      {
+        "English": "You'd better… / You should...",
+        "Vietnamese": "Tốt hơn là cậu nên…"
+      },
+      {
+        "English": "What'd you mean?",
+        "Vietnamese": "(Ý anh) là sao?"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "May I ask you a favor? / \n Can you do me a favor?",
+        "Vietnamese": "Tôi nhờ cậu một chuyện được không?"
+      },
+      {
+        "English": "I was told to delete the last sheet",
+        "Vietnamese": "Tôi được bảo xóa cái sheet cuối cùng"
+      },
+      {
+        "English": "Something went wrong, I can feel that.",
+        "Vietnamese": "Có cái gì đó sai sai, \n tui có thể cảm thấy vậy."
+      },
+      {
+        "English": "I realized something went wrong with numbers",
+        "Vietnamese": "Tôi nhận ra có gì đó bị sai với mấy con số"
+      },
+      {
+        "English": "If you don't mind me/my asking",
+        "Vietnamese": "Nếu anh không phiền tôi hỏi"
+      },
+      {
+        "English": "Which is why I'm here",
+        "Vietnamese": "Mà đó cũng là lý do tôi ở đây"
+      },
+      {
+        "English": "It usually takes up to half an hour to finish running",
+        "Vietnamese": "Nó thường tốn đến nửa tiếng để chạy xong"
+      },
+      {
+        "English": "Is there a possibility that... / \n Is there a chance that...",
+        "Vietnamese": "Liệu có khả năng nào..."
+      },
+      {
+        "English": "Switch to manual calculation",
+        "Vietnamese": "Chuyển qua tính tay"
+      },
+      {
+        "English": "I've tried hitting the escape key",
+        "Vietnamese": "Tôi đã thử bấm phím escape rồi"
+      },
+      {
+        "English": "But nothing changed either",
+        "Vietnamese": "Nhưng cũng chẳng có gì thay đổi"
+      },
+      {
+        "English": "It won't allow me to do anything",
+        "Vietnamese": "Nó đâu cho phép tôi làm gì đâu"
+      },
+      {
+        "English": "Except wait for it to finish",
+        "Vietnamese": "Ngoại trừ chờ nó hoàn thành"
+      },
+      {
+        "English": "I kept running into the same issue",
+        "Vietnamese": "Tôi cứ đụng phải cùng một vấn đề"
+      },
+      {
+        "English": "I have a little problem with…",
+        "Vietnamese": "Tôi có chút vấn đề với..."
+      },
+      {
+        "English": "Until I finish entering everything",
+        "Vietnamese": "Cho đến khi tôi nhập xong mọi thứ"
+      },
+      {
+        "English": "I'll come over to your place tonight",
+        "Vietnamese": "Tôi sẽ qua chỗ cậu tối nay"
+      },
+      {
+        "English": "Sorry to bother you at this (late) hour",
+        "Vietnamese": "Xin lỗi làm phiền cậu giờ này"
+      },
+      {
+        "English": "What friends are for?",
+        "Vietnamese": "Bạn bè để làm gì?"
+      },
+      {
+        "English": "Experience annoying situations like these",
+        "Vietnamese": "Trải qua những tình huống khó chịu kiểu này"
+      },
+      {
+        "English": "Didn't you realize that something went wrong?",
+        "Vietnamese": "Cậu không nhận ra có gì đó bị sai à?"
+      },
+      {
+        "English": "Run the financial report",
+        "Vietnamese": "Chạy cái báo cáo tài chính"
+      },
+      {
+        "English": "Make any changes in the worksheet",
+        "Vietnamese": "Thay đổi bất cứ thứ gì trong worksheet"
+      },
+      {
+        "English": "Why don't you try hitting F9?",
+        "Vietnamese": "Sao cậu không thử ấn F9?"
+      },
+      {
+        "English": "Then the screen went black completely",
+        "Vietnamese": "Sau đó cái màn hình đen thui luôn"
+      },
+      {
+        "English": "It took me 2 hours to install that software",
+        "Vietnamese": "Tôi tốn 2 tiếng để cài cái phần mềm đó"
+      },
+      {
+        "English": "Could we switch to manual calculation?",
+        "Vietnamese": "Ta có thể chuyển sang tính tay được không?"
+      },
+      {
+        "English": "There's thing I didn't tell you before",
+        "Vietnamese": "Có một thứ tui đã không nói cậu trước"
+      },
+      {
+        "English": "If she knew that, she's gonna kill me!",
+        "Vietnamese": "Nếu cổ mà biết, cổ cạo đầu tui mất!"
+      },
+      {
+        "English": "How long it takes you to read a book cover?",
+        "Vietnamese": "Cậu tốn bao lâu để đọc một cái bìa sách?"
+      },
+      {
+        "English": "It usually takes me up to \n15 minutes to finish",
+        "Vietnamese": "Tui thường tốn đến 15 phút để làm xong"
+      },
+      {
+        "English": "When you finish coding, I wanna talk with you.",
+        "Vietnamese": "Khi cậu code xong, \n tôi muốn nói chuyện với cậu"
+      },
+      {
+        "English": "Your Excel needs to be updated",
+        "Vietnamese": "Excel của cậu cần được update"
+      },
+      {
+        "English": "I wonder is there a possibility that…?",
+        "Vietnamese": "Tôi thắc mắc liệu có khả năng nào…?"
+      },
+      {
+        "English": "Window operating system",
+        "Vietnamese": "Hệ điều hành Window"
+      },
+      {
+        "English": "C drive has been being used to store the operating system",
+        "Vietnamese": "Ổ C đã và đang được dùng để chứa hệ điều hành"
+      },
+      {
+        "English": "I knew you were gonna say that!",
+        "Vietnamese": "Tui biết ngay cậu sẽ nói vậy mà!"
+      },
+      {
+        "English": "Nothing changed either",
+        "Vietnamese": "Cũng chả có gì thay đổi cả"
+      },
+      {
+        "English": "You don't know that?",
+        "Vietnamese": "Cậu không biết cái đó sao?"
+      },
+      {
+        "English": "It was so frustrating",
+        "Vietnamese": "Nó quá là nản luôn"
+      },
+      {
+        "English": "Are you with me? / do you follow me?",
+        "Vietnamese": "Cậu theo kịp tui không?"
+      },
+      {
+        "English": "You know what I usually do?",
+        "Vietnamese": "Cậu biết tui hay làm gì không?"
+      },
+      {
+        "English": "Click on the taskbar",
+        "Vietnamese": "Click vào cái thanh tác vụ đó"
+      },
+      {
+        "English": "What I'm saying is… / what I'm getting at is…",
+        "Vietnamese": "Ý tui đang muốn nói là…"
+      },
+      {
+        "English": "Is there any way that I can see him?",
+        "Vietnamese": "Có cách nào mà tui có thể gặp ảnh không?"
+      },
+      {
+        "English": "Should I turn off this feature?",
+        "Vietnamese": "Tui có nên tắt cái tính năng này đi không?"
+      },
+      {
+        "English": "Know what I mean? / Know what I'm saying?",
+        "Vietnamese": "Hiểu ý tui nói không?"
+      },
+      {
+        "English": "I (already) said I suck at Excel",
+        "Vietnamese": "Tui đã bảo tui cùi Excel rồi mà"
+      },
+      {
+        "English": "Wait, what'd you mean?",
+        "Vietnamese": "Uả, là sao?"
+      },
+      {
+        "English": "This entire time, you've been waiting for me here?",
+        "Vietnamese": "Nãy giờ, cậu chờ tui ở đây à?"
+      },
+      {
+        "English": "The other night I ordered 8 bobas \n at the same time",
+        "Vietnamese": "Tối hôm bữa tôi order 8 ly trà sữa \n cùng lúc"
+      },
+      {
+        "English": "I'll buy you a coffee, what do you say?",
+        "Vietnamese": "Tui sẽ mua cậu ly cà phê, ý cậu sao?"
+      },
+      {
+        "English": "Lemme do a quick check",
+        "Vietnamese": "Để tui kiểm tra nhanh cái"
+      },
+      {
+        "English": "(These) things happen",
+        "Vietnamese": "Mấy chuyện thế này xảy ra suốt ấy mà"
+      },
+      {
+        "English": "You will have to experience annoying situations",
+        "Vietnamese": "Cậu sẽ phải trải nghiệm những tình huống khó chịu"
+      },
+      {
+        "English": "There's nothing to worry about",
+        "Vietnamese": "Chả có gì phải lo lắng cả"
+      },
+      {
+        "English": "It's easy for you to say!",
+        "Vietnamese": "Cậu nói thì dễ rồi!"
+      },
+      {
+        "English": "Don't push me or you do it yourself!",
+        "Vietnamese": "Đừng có hối em còn không sếp tự làm đi!"
+      },
+      {
+        "English": "You see the menu on the left?",
+        "Vietnamese": "Cậu có thấy cái menu phía bên trái không?"
+      },
+      {
+        "English": "Don't tell me you selected manual \n in the corner",
+        "Vietnamese": "Đừng nói tui cậu đã chọn manual \n ở trong góc đó nha"
+      },
+      {
+        "English": "You've lost me right there",
+        "Vietnamese": "Chỗ đó cậu nói tui không hiểu lắm"
+      },
+      {
+        "English": "Don't give me that look / \n don't look at me like that",
+        "Vietnamese": "Đừng có mà nhìn tui vậy chứ"
+      },
+      {
+        "English": "My wife is famous for cooking illiteracy",
+        "Vietnamese": "Vợ tui nổi tiếng là mù nấu ăn"
+      },
+      {
+        "English": "The next time you come here, you'd better bring some fruits",
+        "Vietnamese": "Lần sau cậu qua đây, cậu tốt hơn là nên mang theo ít trái cây"
+      },
+      {
+        "English": "Just 2 books, big deal!",
+        "Vietnamese": "Có 2 cuốn sách, làm thấy ghê!"
+      },
+      {
+        "English": "Did you attend the computer class back then?",
+        "Vietnamese": "Hồi đó cậu có học lớp vi tính không vậy?"
+      },
+      {
+        "English": "Did you know about pie chart back \n in high school?",
+        "Vietnamese": "Hồi cấp ba cậu có biết về biểu đồ tròn không vậy?"
+      },
+      {
+        "English": "Told you he doesn't know about that feature",
+        "Vietnamese": "Đã nói mày nó không biết tính năng đó đâu"
+      },
+      {
+        "English": "How to reduce the calculation time?",
+        "Vietnamese": "Làm sao để giảm thời gian tính toán lại?"
+      },
+      {
+        "English": "This trick will prevent your Excel from recalculating that cell",
+        "Vietnamese": "Cái trick này sẽ tránh không cho Excel của cậu tính lại cái ô đó"
+      },
+      {
+        "English": "Which version of Word have you been using?",
+        "Vietnamese": "Cậu đang dùng Word phiên bản nào vậy?"
+      },
+      {
+        "English": "Were your brother good at Excel back then?",
+        "Vietnamese": "Anh cậu hồi đó có giỏi Excel không?"
+      },
+      {
+        "English": "Who doesn't know how to use Excel?",
+        "Vietnamese": "Ai lại không biết xài Excel?"
+      },
+      {
+        "English": "Manual calculation is not a good idea",
+        "Vietnamese": "Tính tay không phải là ý hay đâu"
+      },
+      {
+        "English": "It freaks me out whenever I think of presentation",
+        "Vietnamese": "Nó làm tôi sợ quá trời quá đất mỗi khi nghĩ về thuyết trình"
+      },
+      {
+        "English": "Actually I thought Excel was easy to use",
+        "Vietnamese": "Thực ra tui tưởng Excel dễ xài"
+      },
+      {
+        "English": "Including when you want to rename a folder",
+        "Vietnamese": "Bao gồm cả khi cậu muốn đặt tên lại \n 1 cái folder"
+      },
+      {
+        "English": "What do you mean by saying Excel sucks?",
+        "Vietnamese": "Cậu nói Excel cùi bắp là ý gì?"
+      },
+      {
+        "English": "No wonder he's good at Microsoft Office",
+        "Vietnamese": "Hèn gì hắn giỏi Microsoft Office"
+      },
+      {
+        "English": "You have to scroll it down to see",
+        "Vietnamese": "Cậu phải lăn nó xuống mới thấy"
+      },
+      {
+        "English": "Chill, it's not the end of the world!",
+        "Vietnamese": "Bình tĩnh, có phải tận thế đâu!"
+      },
+      {
+        "English": "Focus! You must not click on that link, okay?",
+        "Vietnamese": "Tập trung nè! Cậu không có được click vô cái link đó, okay?"
+      },
+      {
+        "English": "Computer illiteracy is not the thing you should be proud of",
+        "Vietnamese": "Mù vi tính không phải là thứ cậu nên \n tự hào đâu"
+      },
+      {
+        "English": "Have you ever experienced that?",
+        "Vietnamese": "Cậu đã bao giờ trải qua cảnh đó chưa?"
+      },
+      {
+        "English": "You have to pay attention to every single cell",
+        "Vietnamese": "Cậu phải để ý đến mỗi một ô ấy"
+      },
+      {
+        "English": "Okay, deal, I'll come over to your place tomorrow",
+        "Vietnamese": "Okay, chốt, mai tôi sẽ qua chỗ cậu"
+      },
+      {
+        "English": "This entire time, I didn't know that you called, sorry",
+        "Vietnamese": "Nãy giờ, tui không biết cậu gọi, sorry"
+      },
+      {
+        "English": "I was told to finish the report by Monday",
+        "Vietnamese": "Tui được bảo hoàn thành bài báo cáo trước thứ Hai"
+      },
+      {
+        "English": "Which version of Excel is the best?",
+        "Vietnamese": "Phiên bản Excel nào là tốt nhất?"
+      },
+      {
+        "English": "Here's the deal, Excel is not (that) hard to learn",
+        "Vietnamese": "Chuyện là vầy, Excel không có khó \n (đến vậy) để học"
+      },
+      {
+        "English": "There's a thing that every \n Excel users care about",
+        "Vietnamese": "Có một thứ mà mỗi người dùng Excel đều quan tâm"
+      },
+      {
+        "English": "Is there a possibility that we can use Excel on the phone?",
+        "Vietnamese": "Có khả năng nào mình có thể dùng Excel trên điện thoại không?"
+      },
+      {
+        "English": "I've tried that way thousands of times",
+        "Vietnamese": "Tui đã thử cách đó cả ngàn lần rồi"
+      },
+      {
+        "English": "Every rows are okay except row 222",
+        "Vietnamese": "Mỗi hàng đều okay hết trừ hàng 222"
+      },
+      {
+        "English": "No worries, it will automatically \n recalculate everything",
+        "Vietnamese": "Đừng lo, nó sẽ tự động tính toán lại hết mọi thứ"
+      },
+      {
+        "English": "Meanwhile, you can start learning VBA",
+        "Vietnamese": "Trong lúc đó, cậu có thể bắt đầu học VBA"
+      },
+      {
+        "English": "As usual, he opened 3 Excel files at the same time",
+        "Vietnamese": "Như thường lệ, ảnh mở 3 file Excel cùng lúc"
+      },
+      {
+        "English": "Everybody knows that Excel is \n very important to accountants",
+        "Vietnamese": "Ai cũng biết Excel là \n vô cùng quan trọng với dân kế toán"
+      },
+      {
+        "English": "Hey kiddo, have you finished coding?",
+        "Vietnamese": "Ê nhóc, cậu code xong chưa?"
+      },
+      {
+        "English": "She must have used the wrong formula",
+        "Vietnamese": "Chắc chắn là bả đã dùng sai công thức rồi"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "Is there a possibility that he didn't know \n how to run the financial report?",
+        "Vietnamese": "Liệu có khả năng nào\n hắn không biết cách chạy một cái báo cáo tài chính không?"
+      },
+      {
+        "English": "I've tried hitting escape thousands of times but nothing changed either.",
+        "Vietnamese": "Tôi đã thử bấm escape cả ngàn lần \n nhưng cũng chả có gì thay đổi cả."
+      },
+      {
+        "English": "In times like these, you can't do anything except wait for it to finish.",
+        "Vietnamese": "Trong những lúc như vầy, cậu đâu có làm được gì ngoại trừ việc chờ cho nó hoàn thành đâu."
+      },
+      {
+        "English": "9 times out of 10, Excel will automatically recalculate \n every single cell.",
+        "Vietnamese": "Hết 9 trên 10 lần, \n Excel sẽ tự động tính toán lại mỗi một ô."
+      },
+      {
+        "English": "If necessary, you have to turn off this feature before you can hit the close button.",
+        "Vietnamese": "Nếu cần, cậu phải tắt cái tính năng này \n trước khi cậu có thể bấm được nút close."
+      },
+      {
+        "English": "It's easy for you to say, you're not in my shoes!",
+        "Vietnamese": "Cậu nói thì dễ rồi, \n cậu đâu có ở trong cảnh tui!"
+      },
+      {
+        "English": "This entire time, you thought I was an Excel guru?",
+        "Vietnamese": "Nãy giờ, \n cậu tưởng tui là bậc thầy Excel á hả?"
+      },
+      {
+        "English": "Sorry to bother you at this hour, \n I had no choice but to ask you for help.",
+        "Vietnamese": "Xin lỗi làm phiền anh giờ này, \n tôi không có lựa chọn nào khác \n ngoài việc nhờ anh giúp cả."
+      },
+      {
+        "English": "Don't give me that look, I said I suck at developing!",
+        "Vietnamese": "Đừng có mà nhìn tui vậy, \n tui đã nói tui cùi lập trình lắm mà!"
+      },
+      {
+        "English": "There you have it, lemme know if you still run into the same issues.",
+        "Vietnamese": "Có vậy thôi đó, báo tôi biết nếu cậu còn đụng phải những vấn đề giống vậy."
+      },
+      {
+        "English": "This feature will prevent your Excel from being updated.",
+        "Vietnamese": "Tính năng này sẽ ngăn không cho Excel của cậu được update."
+      },
+      {
+        "English": "I tried hitting F9 as you said, then the screen went black completely.",
+        "Vietnamese": "Tui đã thử bấm F9 như cậu bảo, \n rồi sau đó cái màn hình tối thui luôn."
+      },
+      {
+        "English": "Really, if my wife knew that, she was gonna kill me!",
+        "Vietnamese": "Thiệt, \n vợ tui mà biết là bả cạo đầu tui luôn!"
+      },
+      {
+        "English": "My mom forced me to explain how Excel works which is why I left my home.",
+        "Vietnamese": "Má tui bắt tui giải thích cách Excel work, \n đó cũng là lý do tại sao tui bỏ nhà đi bụi."
+      },
+      {
+        "English": "No wonder he asked me to delete the first 5500 rows in the financial report.",
+        "Vietnamese": "Hèn gì hắn đòi tui xóa hết 5500 hàng đầu tiên \n trong báo cáo tài chính."
+      },
+      {
+        "English": "Sorry, can you repeat? You've lost me right there.",
+        "Vietnamese": "Xin lỗi, anh nói lại được không? \n Chỗ đó anh nói tui không hiểu."
+      },
+      {
+        "English": "I knew you were gonna say that my Excel version is obsolete.",
+        "Vietnamese": "Tui biết thế nào cậu cũng bảo rằng \n phiên bản Excel của tui lỗi thời mà."
+      },
+      {
+        "English": "Meanwhile, you can help me install that feature.",
+        "Vietnamese": "Trong lúc đó, \n cậu có thể giúp tôi cài đặt cái tính năng đó."
+      },
+      {
+        "English": "Meanwhile, Excel won't allow us to do anything except wait for it to finish.",
+        "Vietnamese": "Trong lúc đó, \n Excel nó sẽ không cho phép mình làm gì cả \n ngoài việc chờ nó hoàn thành."
+      },
+      {
+        "English": "What I'm saying is you need to be good at Excel and VBA.",
+        "Vietnamese": "Cái điều mà tui đang muốn nói là \n cậu cần phải giỏi Excel với VBA."
+      }
+    ],
+    "Review": [
+      {
+        "English": "Which version of Excel have you been using?",
+        "Vietnamese": "Cậu đang xài Excel version nào vậy?"
+      },
+      {
+        "English": "Sorry to bother you at this hour.",
+        "Vietnamese": "Xin lỗi làm phiền anh giờ này."
+      },
+      {
+        "English": "Why the long face?",
+        "Vietnamese": "Sao mặt đưa đám vậy?"
+      },
+      {
+        "English": "Disable a feature.",
+        "Vietnamese": "Vô hiệu hóa một tính năng."
+      },
+      {
+        "English": "In times like these, you have to listen to me.",
+        "Vietnamese": "Trong những lúc như vầy, cậu phải nghe tui."
+      },
+      {
+        "English": "Don't say that, what friends are for?",
+        "Vietnamese": "Đừng có nói vậy, bạn bè để làm gì?"
+      },
+      {
+        "English": "If necessary, I'll go with you.",
+        "Vietnamese": "Nếu cần, tôi sẽ đi với anh."
+      },
+      {
+        "English": "Nine times out of ten, my suggestion will work.",
+        "Vietnamese": "Hết 9 trên 10 lần, suggestion của tui sẽ work."
+      },
+      {
+        "English": "All day yesterday, I couldn't open Excel.",
+        "Vietnamese": "Cả ngày hôm qua, tui chả mở được Excel."
+      },
+      {
+        "English": "There you have it, congratulations!",
+        "Vietnamese": "Có vậy thôi đó, chúc mừng cậu!"
+      },
+      {
+        "English": "I'll help you reduce the calculation time.",
+        "Vietnamese": "Tôi sẽ giúp cậu giảm thời gian tính toán."
+      },
+      {
+        "English": "No, you have to turn off Excel first.",
+        "Vietnamese": "Không, cậu phải tắt Excel trước chứ."
+      },
+      {
+        "English": "Are you with me?",
+        "Vietnamese": "Cậu theo kịp tui không?"
+      },
+      {
+        "English": "My Excel didn't allow me to do anything.",
+        "Vietnamese": "Excel của tôi không có cho phép tôi làm cái gì cả."
+      },
+      {
+        "English": "If you still run into the same issues.",
+        "Vietnamese": "Nếu cậu còn đụng phải mấy vấn đề giống vậy."
+      },
+      {
+        "English": "Who told you I evaded taxes last year?!?",
+        "Vietnamese": "Ai bảo cậu năm ngoái tui trốn thuế?!?"
+      },
+      {
+        "English": "There's a thing I haven't told you (yet).",
+        "Vietnamese": "Có một chuyện tui chưa nói với cậu."
+      },
+      {
+        "English": "No wonder she said that to me.",
+        "Vietnamese": "Hèn gì bả nói tui vậy."
+      },
+      {
+        "English": "I think your Excel is obsolete.",
+        "Vietnamese": "Tui nghĩ Excel của cậu lỗi thời rồi."
+      },
+      {
+        "English": "What? 5500 rows but only 2 columns!",
+        "Vietnamese": "Cái gì? 5500 dòng mà chỉ có 2 cột!"
+      },
+      {
+        "English": "What a lengthy financial report!",
+        "Vietnamese": "Quả là một cái báo cáo tài chính dài dòng!"
+      },
+      {
+        "English": "Which feature needs to be disabled?",
+        "Vietnamese": "Tính năng nào cần phải được vô hiệu hóa?"
+      },
+      {
+        "English": "Everybody knows my dad is a Marketing guru.",
+        "Vietnamese": "Ai cũng biết tía tui là một bậc thầy Marketing."
+      },
+      {
+        "English": "Is there any way that you can reopen that form?",
+        "Vietnamese": "Có cách nào cậu mở lại cái form đó được không?"
+      },
+      {
+        "English": "Right, click on that icon.",
+        "Vietnamese": "Đúng rồi, click vô cái icon đó."
+      },
+      {
+        "English": "What prevents you from installing Excel?",
+        "Vietnamese": "Thứ gì ngăn cản cậu cài Excel?"
+      },
+      {
+        "English": "It will recalculate every single cell.",
+        "Vietnamese": "Nó sẽ tính toán lại mỗi một ô."
+      },
+      {
+        "English": "You've lost me right there.",
+        "Vietnamese": "Ngay chỗ đó tui không hiểu gì hết."
+      },
+      {
+        "English": "Just 2 bobas, big deal!",
+        "Vietnamese": "Có 2 ly trà sữa à, làm thấy ghê!"
+      },
+      {
+        "English": "Explain to me your formulas",
+        "Vietnamese": "Giải thích tui mấy cái công thức của cậu đi"
+      },
+      {
+        "English": "Stop complaining, dude!",
+        "Vietnamese": "Thôi đừng có càm ràm nữa, cha nội!"
+      },
+      {
+        "English": "Told you I suck at Powerpoint!",
+        "Vietnamese": "Đã bảo cậu tui cùi Powerpoint lắm mà!"
+      },
+      {
+        "English": "How long it takes you to install a software?",
+        "Vietnamese": "Cậu tốn bao lâu để cài một phần mềm?"
+      },
+      {
+        "English": "Zoom in, I can't see a thing!",
+        "Vietnamese": "Zoom lớn lên, tui chả thấy gì cả!"
+      },
+      {
+        "English": "Every time you make a change in the worksheet.",
+        "Vietnamese": "Mỗi khi cậu thay đổi cái gì đó trong worksheet."
+      },
+      {
+        "English": "You see the red button on the right?",
+        "Vietnamese": "Cậu thấy cái nút màu đỏ bên phải không?"
+      },
+      {
+        "English": "There you have it! Now you know how to use Excel.",
+        "Vietnamese": "Có vậy thôi đó! Giờ cậu biết xài Excel rồi đó."
+      },
+      {
+        "English": "If you don't mind me asking.",
+        "Vietnamese": "Nếu cậu không phiền tui hỏi."
+      },
+      {
+        "English": "Hey, don't give me that look!",
+        "Vietnamese": "Ê, đừng có nhìn tui vậy chớ!"
+      },
+      {
+        "English": "Okay, deal, see you next week.",
+        "Vietnamese": "Okay, chốt. Gặp anh tuần sau nha."
+      },
+      {
+        "English": "The next time you come here, bring me some mangoes.",
+        "Vietnamese": "Lần sau bà qua đây, mang tui ít xoài."
+      },
+      {
+        "English": "Including when you don't know Excel.",
+        "Vietnamese": "Kể cả khi cậu không biết Excel."
+      },
+      {
+        "English": "Computer illiteracy.",
+        "Vietnamese": "Mù máy tính."
+      },
+      {
+        "English": "He's gonna kill me if he knows about this.",
+        "Vietnamese": "Nếu ổng mà biết cái này ổng cạo đầu tui luôn."
+      },
+      {
+        "English": "These things happen.",
+        "Vietnamese": "Mấy chuyện kiểu này xảy ra hoài ấy mà."
+      },
+      {
+        "English": "Scroll it down then you're gonna see it.",
+        "Vietnamese": "Lăn nó xuống rồi cậu sẽ thấy."
+      },
+      {
+        "English": "You see the logo in the corner?",
+        "Vietnamese": "Cậu có thấy cái logo ở trong góc không?"
+      },
+      {
+        "English": "It was really frustrating!",
+        "Vietnamese": "Nó rất là nản luôn!"
+      },
+      {
+        "English": "Exactly, Excel will automatically recalculate everything.",
+        "Vietnamese": "Chính xác, Excel sẽ tự động tính lại mọi thứ."
+      },
+      {
+        "English": "Meanwhile, I'll help you remove that app.",
+        "Vietnamese": "Trong lúc đó, tui sẽ giúp cậu gỡ cái app đó ra."
+      }
+    ]
+  }
+}

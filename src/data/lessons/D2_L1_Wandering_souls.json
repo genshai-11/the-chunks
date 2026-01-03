@@ -1,0 +1,1107 @@
+{
+  "lesson_name": "D2 - L1 - Wandering souls",
+  "categories": {
+    "Slang": [
+      {
+        "English": "It seems",
+        "Vietnamese": "Hình như"
+      },
+      {
+        "English": "No wonder",
+        "Vietnamese": "Hèn gì"
+      },
+      {
+        "English": "Sounds good",
+        "Vietnamese": "Nghe được đấy"
+      },
+      {
+        "English": "What’d you mean???",
+        "Vietnamese": "Là sao???"
+      },
+      {
+        "English": "Just so you know",
+        "Vietnamese": "Báo cho cậu biết luôn"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Seriously! / Really! / No joke!",
+        "Vietnamese": "Thiệt!"
+      },
+      {
+        "English": "For what??? / What for???",
+        "Vietnamese": "Để chi???"
+      },
+      {
+        "English": "Boarding pass / Flight ticket",
+        "Vietnamese": "Vé máy bay"
+      },
+      {
+        "English": "(Loose) change",
+        "Vietnamese": "Tiền lẻ"
+      },
+      {
+        "English": "Back pocket & Front pocket",
+        "Vietnamese": "Túi sau & túi trước"
+      },
+      {
+        "English": "Rice cooker",
+        "Vietnamese": "Nồi cơm điện"
+      },
+      {
+        "English": "Sleeping bag",
+        "Vietnamese": "Túi ngủ"
+      },
+      {
+        "English": "Customs officer",
+        "Vietnamese": "Nhân viên hải quan"
+      },
+      {
+        "English": "Hotel address",
+        "Vietnamese": "Địa chỉ khách sạn"
+      },
+      {
+        "English": "How come you did that?!?",
+        "Vietnamese": "Sao chị lại có thể làm vậy?!?"
+      },
+      {
+        "English": "At the time / At that time",
+        "Vietnamese": "Lúc đó"
+      },
+      {
+        "English": "Any chance...? / Any possibility...?",
+        "Vietnamese": "Có khả năng nào...?"
+      },
+      {
+        "English": "Just leave it on the table",
+        "Vietnamese": "Cứ để nó trên bàn"
+      },
+      {
+        "English": "Forget (about) it",
+        "Vietnamese": "Thôi bỏ đi"
+      },
+      {
+        "English": "Cart / trolley",
+        "Vietnamese": "Xe đẩy"
+      },
+      {
+        "English": "Patient",
+        "Vietnamese": "Bệnh nhân"
+      },
+      {
+        "English": "Socket & plug",
+        "Vietnamese": "Ổ cắm & phích cắm"
+      },
+      {
+        "English": "Funny / hilarious",
+        "Vietnamese": "Hài"
+      },
+      {
+        "English": "Hungry / starving",
+        "Vietnamese": "Đói"
+      },
+      {
+        "English": "Detour",
+        "Vietnamese": "Đường vòng / tránh"
+      },
+      {
+        "English": "How about...? (Let's...)",
+        "Vietnamese": "Hay là...?"
+      },
+      {
+        "English": "Food court",
+        "Vietnamese": "Khu vực ăn uống"
+      },
+      {
+        "English": "Painkillers / Pain relievers / Advil",
+        "Vietnamese": "Thuốc giảm đau"
+      },
+      {
+        "English": "Carsick & seasick",
+        "Vietnamese": "Say xe & say sóng"
+      },
+      {
+        "English": "Homesick & lovesick",
+        "Vietnamese": "Nhớ nhà & thất tình"
+      },
+      {
+        "English": "Check-in counter",
+        "Vietnamese": "Quầy check-in"
+      },
+      {
+        "English": "Transit",
+        "Vietnamese": "Quá cảnh"
+      },
+      {
+        "English": "Flip-flops",
+        "Vietnamese": "Dép Lào"
+      },
+      {
+        "English": "Put on / take off",
+        "Vietnamese": "Mặc vào / cởi ra"
+      },
+      {
+        "English": "Figure / imagine",
+        "Vietnamese": "Hình dung"
+      },
+      {
+        "English": "Uniform",
+        "Vietnamese": "Đồng phục"
+      },
+      {
+        "English": "Old / ancient temples",
+        "Vietnamese": "Mấy cái đền cổ cổ"
+      },
+      {
+        "English": "Tuktuk",
+        "Vietnamese": "Xe lam"
+      },
+      {
+        "English": "Monks",
+        "Vietnamese": "Mấy ông sư"
+      },
+      {
+        "English": "Night market",
+        "Vietnamese": "Chợ đêm"
+      },
+      {
+        "English": "Show (off) / brag / boast",
+        "Vietnamese": "Khoe khoang"
+      },
+      {
+        "English": "Window seat / aisle seat",
+        "Vietnamese": "Ghế cạnh cửa sổ / ghế cạnh lối đi"
+      },
+      {
+        "English": "Washroom / restroom",
+        "Vietnamese": "Nhà vệ sinh"
+      },
+      {
+        "English": "Too / way too / far too...",
+        "Vietnamese": "Quá..."
+      },
+      {
+        "English": "Crap! / Sh*t!",
+        "Vietnamese": "Chết bà!"
+      },
+      {
+        "English": "Misread",
+        "Vietnamese": "Đọc nhầm"
+      },
+      {
+        "English": "Departure time",
+        "Vietnamese": "Giờ khởi hành"
+      },
+      {
+        "English": "Hey, buddy / man / dude / mate / pal",
+        "Vietnamese": "Hey, (anh) bạn"
+      },
+      {
+        "English": "Oversleep",
+        "Vietnamese": "Ngủ quên"
+      },
+      {
+        "English": "Sleep in",
+        "Vietnamese": "Ngủ nướng"
+      },
+      {
+        "English": "Diarrhea",
+        "Vietnamese": "Tiêu chảy"
+      },
+      {
+        "English": "Only... / it’s just",
+        "Vietnamese": "Ngặt nỗi / Chỉ là..."
+      },
+      {
+        "English": "Leftover rice",
+        "Vietnamese": "Cơm nguội"
+      },
+      {
+        "English": "A lot of / lots of / many / much",
+        "Vietnamese": "Nhiều"
+      },
+      {
+        "English": "MSG (Monosodium Glutamate)",
+        "Vietnamese": "Bột ngọt"
+      },
+      {
+        "English": "Every day / on a daily basis",
+        "Vietnamese": "Hàng ngày"
+      },
+      {
+        "English": "Allergic to peanut",
+        "Vietnamese": "Dị ứng với đậu phộng"
+      },
+      {
+        "English": "My bad",
+        "Vietnamese": "Lỗi tui"
+      },
+      {
+        "English": "Make up",
+        "Vietnamese": "Đền bù / Trang điểm"
+      },
+      {
+        "English": "Ride the duck paddle boat",
+        "Vietnamese": "Đạp vịt"
+      },
+      {
+        "English": "Gas station / petrol station",
+        "Vietnamese": "Cây xăng"
+      },
+      {
+        "English": "The local (people)",
+        "Vietnamese": "Dân địa phương"
+      },
+      {
+        "English": "Shortcut",
+        "Vietnamese": "Đường tắt"
+      },
+      {
+        "English": "Mango tree",
+        "Vietnamese": "Cây xoài"
+      },
+      {
+        "English": "Too risky / too dangerous / too hazardous",
+        "Vietnamese": "Quá liều"
+      },
+      {
+        "English": "The main road",
+        "Vietnamese": "Đường chính"
+      },
+      {
+        "English": "Road / street signs",
+        "Vietnamese": "Những biển báo giao thông"
+      },
+      {
+        "English": "Milestone / milepost",
+        "Vietnamese": "Cột cây số"
+      },
+      {
+        "English": "Intersection / crossroads / junctions",
+        "Vietnamese": "Chỗ giao nhau"
+      },
+      {
+        "English": "At worst / in the worst case",
+        "Vietnamese": "Cùng lắm"
+      },
+      {
+        "English": "Battery",
+        "Vietnamese": "Pin"
+      },
+      {
+        "English": "Mars",
+        "Vietnamese": "Sao Hỏa"
+      },
+      {
+        "English": "Lucky / fortunate",
+        "Vietnamese": "Hên"
+      },
+      {
+        "English": "Grab / buy / get me a coffee",
+        "Vietnamese": "Lụm tui ly cafe"
+      },
+      {
+        "English": "Museum",
+        "Vietnamese": "Bảo tàng"
+      },
+      {
+        "English": "National hero",
+        "Vietnamese": "Anh hùng dân tộc"
+      },
+      {
+        "English": "Helmet",
+        "Vietnamese": "Nón bảo hiểm"
+      },
+      {
+        "English": "Pickpocket",
+        "Vietnamese": "Móc túi"
+      },
+      {
+        "English": "Beware of... / Stay alert to... / Keep your eyes open for...",
+        "Vietnamese": "Cẩn thận/coi chừng..."
+      },
+      {
+        "English": "Stay away from... / Steer clear of...",
+        "Vietnamese": "Tránh xa..."
+      },
+      {
+        "English": "Controversial / debatable / disputable",
+        "Vietnamese": "Gây tranh cãi"
+      },
+      {
+        "English": "Public hospital",
+        "Vietnamese": "Bệnh viện công"
+      },
+      {
+        "English": "A budget motel / hostel / inn",
+        "Vietnamese": "Một nhà nghỉ bình dân"
+      },
+      {
+        "English": "Europe",
+        "Vietnamese": "Châu Âu"
+      },
+      {
+        "English": "Egg fried rice",
+        "Vietnamese": "Cơm chiên trứng"
+      },
+      {
+        "English": "Regularly / very often",
+        "Vietnamese": "Một cách thường xuyên"
+      },
+      {
+        "English": "Night owl",
+        "Vietnamese": "Cú đêm"
+      },
+      {
+        "English": "Stay up late",
+        "Vietnamese": "Thức khuya"
+      },
+      {
+        "English": "Wake up / get up early",
+        "Vietnamese": "Dậy sớm"
+      },
+      {
+        "English": "Sunrise / sunset",
+        "Vietnamese": "Bình minh / hoàng hôn"
+      },
+      {
+        "English": "Moonless & starless",
+        "Vietnamese": "Không trăng & không sao"
+      },
+      {
+        "English": "Rambutan",
+        "Vietnamese": "Chôm chôm"
+      },
+      {
+        "English": "Full moon / half moon",
+        "Vietnamese": "Trăng tròn / trăng khuyết"
+      },
+      {
+        "English": "Seasonal fruit",
+        "Vietnamese": "Trái cây theo mùa"
+      },
+      {
+        "English": "Traffic accident",
+        "Vietnamese": "Tai nạn giao thông"
+      },
+      {
+        "English": "Traffic police",
+        "Vietnamese": "Cảnh sát giao thông"
+      },
+      {
+        "English": "Travel abroad / travel overseas",
+        "Vietnamese": "Du lịch nước ngoài"
+      },
+      {
+        "English": "Convenient store",
+        "Vietnamese": "Cửa hàng tiện lợi"
+      },
+      {
+        "English": "Nearby / around here / locally",
+        "Vietnamese": "Gần đây (địa lý)"
+      },
+      {
+        "English": "Tie",
+        "Vietnamese": "Cà vạt"
+      },
+      {
+        "English": "Keychain",
+        "Vietnamese": "Đồ móc khóa"
+      },
+      {
+        "English": "Pop in / out",
+        "Vietnamese": "Tạt vào / ra một chút"
+      },
+      {
+        "English": "Pick up sb",
+        "Vietnamese": "Đón ai đó"
+      },
+      {
+        "English": "Drop sb off",
+        "Vietnamese": "Cho ai đó xuống"
+      },
+      {
+        "English": "Medicated oil",
+        "Vietnamese": "Dầu gió"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "Don't give me that look",
+        "Vietnamese": "Đừng có mà nhìn tui vậy chớ"
+      },
+      {
+        "English": "I'm not being funny",
+        "Vietnamese": "Tui không có (đang) đùa"
+      },
+      {
+        "English": "I took your chair for what???",
+        "Vietnamese": "Tui lấy ghế cậu chi???"
+      },
+      {
+        "English": "Are you nervous?",
+        "Vietnamese": "Cậu lo không?"
+      },
+      {
+        "English": "We still have plenty of time",
+        "Vietnamese": "Mình còn nhiều thời gian mà"
+      },
+      {
+        "English": "On the street",
+        "Vietnamese": "Ngoài đường"
+      },
+      {
+        "English": "No wonder they sleep on the street",
+        "Vietnamese": "Hèn gì họ ngủ ngoài đường"
+      },
+      {
+        "English": "Between the Earth and Mars, where do you prefer living on?",
+        "Vietnamese": "Giữa trái đất và sao Hỏa, \n cậu thích ở đâu hơn?"
+      },
+      {
+        "English": "It's lucky I didn't say that",
+        "Vietnamese": "Cũng hên tui không có nói vậy"
+      },
+      {
+        "English": "How come you did that to the customers?!?",
+        "Vietnamese": "Sao cậu lại có thể làm vậy \n với khách?!?"
+      },
+      {
+        "English": "What were you thinking at the time?",
+        "Vietnamese": "Lúc đó cậu nghĩ cái gì vậy hả???"
+      },
+      {
+        "English": "Any chance he's coming tomorrow?",
+        "Vietnamese": "Có khả năng nào ổng (sẽ) tới không ta?"
+      },
+      {
+        "English": "I remember leaving my phone right here",
+        "Vietnamese": "Tui nhớ là đã để cái điện thoại ngay đây"
+      },
+      {
+        "English": "You've got 3 seconds to answer",
+        "Vietnamese": "Cậu có 3 giây để trả lời"
+      },
+      {
+        "English": "Bring it back here",
+        "Vietnamese": "Mang nó về lại đây"
+      },
+      {
+        "English": "What kind of hospital that...?",
+        "Vietnamese": "Bệnh viện kiểu quái gì...?"
+      },
+      {
+        "English": "I'll be right back",
+        "Vietnamese": "Tui trở lại liền"
+      },
+      {
+        "English": "Just ring me / just give me a call",
+        "Vietnamese": "Cứ gọi tui"
+      },
+      {
+        "English": "Now I still don't know his name",
+        "Vietnamese": "Giờ tui vẫn không biết tên ảnh"
+      },
+      {
+        "English": "Make/take a detour",
+        "Vietnamese": "Đi đường vòng/tránh"
+      },
+      {
+        "English": "Grab some medicines",
+        "Vietnamese": "Lụm/mua ít thuốc"
+      },
+      {
+        "English": "I don't know \n if we have to buy it (or not)",
+        "Vietnamese": "Tui ko biết liệu bọn mình có phải mua hay là ko"
+      },
+      {
+        "English": "This is the first time I've been to Toronto",
+        "Vietnamese": "Đây là lần đầu tui đến Toronto"
+      },
+      {
+        "English": "I figure \n we will go visit that church",
+        "Vietnamese": "Tớ hình dung \n bọn mình sẽ đi thăm cái nhà thờ đó"
+      },
+      {
+        "English": "You don't need to put on the uniform",
+        "Vietnamese": "Cậu không cần phải mặc đồng phục"
+      },
+      {
+        "English": "I wanna take a photo with her",
+        "Vietnamese": "Tui muốn chụp một tấm với cổ"
+      },
+      {
+        "English": "Tons of photos / tons of pictures",
+        "Vietnamese": "Cả tấn hình"
+      },
+      {
+        "English": "When you get back",
+        "Vietnamese": "Khi cậu về/trở lại"
+      },
+      {
+        "English": "Why it takes so long???",
+        "Vietnamese": "Sao lâu vậy ta???"
+      },
+      {
+        "English": "What took you so long?",
+        "Vietnamese": "Sao cậu lâu vậy?"
+      },
+      {
+        "English": "What will be will be / que sera sera",
+        "Vietnamese": "Chuyện gì tới sẽ tới thôi"
+      },
+      {
+        "English": "Thank God you're here",
+        "Vietnamese": "Ơn giời cậu đây rồi"
+      },
+      {
+        "English": "I didn't mean to / I didn't do that on purpose",
+        "Vietnamese": "Tui không định/ko cố tình"
+      },
+      {
+        "English": "Now you tell me!!!",
+        "Vietnamese": "Sao giờ cậu mới nói!!!"
+      },
+      {
+        "English": "How long have you been waiting here?",
+        "Vietnamese": "Cậu chờ ở đây lâu chưa?"
+      },
+      {
+        "English": "I just finished 2 projects",
+        "Vietnamese": "Tui vừa xử xong 2 cái dự án"
+      },
+      {
+        "English": "Long enough to finish cooking",
+        "Vietnamese": "Đủ lâu để nấu ăn xong"
+      },
+      {
+        "English": "He has/got diarrhea",
+        "Vietnamese": "Ổng bị tiêu chảy"
+      },
+      {
+        "English": "On the way here",
+        "Vietnamese": "Trên đường đến đây"
+      },
+      {
+        "English": "Take the medicines",
+        "Vietnamese": "Uống thuốc"
+      },
+      {
+        "English": "Don't tell me \n you don't know that",
+        "Vietnamese": "Đừng nói tui cậu không biết cái đó nha"
+      },
+      {
+        "English": "What am I supposed to do now?",
+        "Vietnamese": "Giờ tui nên làm sao đây?"
+      },
+      {
+        "English": "Wait, I'm not supposed to say that?",
+        "Vietnamese": "Tui không được nói vậy hả?"
+      },
+      {
+        "English": "There's a lot of things to learn every day",
+        "Vietnamese": "Có rất nhiều thứ để học \n mỗi ngày"
+      },
+      {
+        "English": "To make it up to you",
+        "Vietnamese": "Để đền bù cho cậu"
+      },
+      {
+        "English": "I'll take you to the museum",
+        "Vietnamese": "Tui sẽ dắt cậu đi bảo tàng"
+      },
+      {
+        "English": "What do you say? / What do you think?",
+        "Vietnamese": "Ý cậu sao?"
+      },
+      {
+        "English": "How to ride the duck paddle boat?",
+        "Vietnamese": "Làm sao để đạp vịt?"
+      },
+      {
+        "English": "Out of battery",
+        "Vietnamese": "Hết pin"
+      },
+      {
+        "English": "Did you lose your mind? / Are you crazy?",
+        "Vietnamese": "Cậu có mất trí không?"
+      },
+      {
+        "English": "We're in the middle of nowhere / in the backwoods",
+        "Vietnamese": "Ta đang ở cái chỗ khỉ ho cò gáy"
+      },
+      {
+        "English": "I've got the plan",
+        "Vietnamese": "Tui có cách/kế hoạch rồi"
+      },
+      {
+        "English": "Do the trekking",
+        "Vietnamese": "Đi trek / đi đường rừng"
+      },
+      {
+        "English": "If my memory serves (me right)",
+        "Vietnamese": "Nếu tui nhớ đúng"
+      },
+      {
+        "English": "1A National Highway",
+        "Vietnamese": "Quốc Lộ 1A"
+      },
+      {
+        "English": "Make a right / turn right",
+        "Vietnamese": "Quẹo phải"
+      },
+      {
+        "English": "Let's grab something to eat",
+        "Vietnamese": "Tụi mình kiếm/lụm gì đó ăn đi"
+      },
+      {
+        "English": "Take off the shoes",
+        "Vietnamese": "Cởi giày"
+      },
+      {
+        "English": "That is \n our national hero",
+        "Vietnamese": "Đó là \n anh hùng dân tộc của bọn tui"
+      },
+      {
+        "English": "Who took my helmet?",
+        "Vietnamese": "Ai lấy cái nón bảo hiểm của tui rồi?"
+      },
+      {
+        "English": "Where are you up to / going?",
+        "Vietnamese": "Cậu (tính) đi đâu đấy?"
+      },
+      {
+        "English": "Give me a ride / lift",
+        "Vietnamese": "Cho tui đi nhờ"
+      },
+      {
+        "English": "It's too risky to \n travel alone",
+        "Vietnamese": "Quá là liều để \n du lịch một mình"
+      },
+      {
+        "English": "Beware of pickpockets",
+        "Vietnamese": "Cận thận móc túi"
+      },
+      {
+        "English": "Stay away from that hotel",
+        "Vietnamese": "Tránh xa cái khách sạn đó ra"
+      },
+      {
+        "English": "Have you ever been to Greece?",
+        "Vietnamese": "Cậu có bao giờ đi Hi Lạp chưa?"
+      },
+      {
+        "English": "I always \n choose budget motels",
+        "Vietnamese": "Tui luôn \n chọn mấy cái nhà nghỉ bình dân"
+      },
+      {
+        "English": "How far from here to the airport?",
+        "Vietnamese": "Từ đây ra sân bay bao xa?"
+      },
+      {
+        "English": "Have you ordered yet?",
+        "Vietnamese": "Cậu order chưa?"
+      },
+      {
+        "English": "It seems she wanna book 2 tickets",
+        "Vietnamese": "Có vẻ cổ muốn book 2 vé"
+      },
+      {
+        "English": "I love egg fried rice",
+        "Vietnamese": "Tui thích cơm chiên trứng"
+      },
+      {
+        "English": "She goes to Europe very often",
+        "Vietnamese": "Cổ rất hay đi Châu Âu"
+      },
+      {
+        "English": "Are you an night owl?",
+        "Vietnamese": "Cậu là cú đêm à?"
+      },
+      {
+        "English": "I never stay up late",
+        "Vietnamese": "Tui không bao giờ thức khuya"
+      },
+      {
+        "English": "I have to wake up at 5am",
+        "Vietnamese": "Tui phải dậy lúc 5am"
+      },
+      {
+        "English": "Let him sleep in",
+        "Vietnamese": "Để ảnh ngủ nướng đi"
+      },
+      {
+        "English": "Enjoy the sunrise",
+        "Vietnamese": "Ngắm bình minh"
+      },
+      {
+        "English": "On the beach",
+        "Vietnamese": "Trên bãi biển"
+      },
+      {
+        "English": "A starless night",
+        "Vietnamese": "Một đêm không sao"
+      },
+      {
+        "English": "A moonless night",
+        "Vietnamese": "Một đêm không trăng"
+      },
+      {
+        "English": "On the full moon day",
+        "Vietnamese": "Vào ngày trăng tròn"
+      },
+      {
+        "English": "My favorite season is Fall",
+        "Vietnamese": "Mùa thích nhất của tui là mùa thu"
+      },
+      {
+        "English": "June is durian season",
+        "Vietnamese": "Tháng 6 là mùa sầu riêng"
+      },
+      {
+        "English": "It's been a long time since (V2)",
+        "Vietnamese": "Cũng lâu rồi từ khi..."
+      },
+      {
+        "English": "Lie on the beach",
+        "Vietnamese": "Nằm dài trên bãi biển"
+      },
+      {
+        "English": "I just ran into the traffic police",
+        "Vietnamese": "Tui vừa đụng phải CSGT"
+      },
+      {
+        "English": "Pop into the drugstore",
+        "Vietnamese": "Tạt vô nhà thuốc"
+      },
+      {
+        "English": "Everyone likes travelling abroad",
+        "Vietnamese": "Ai cũng thích du lịch nước ngoài"
+      },
+      {
+        "English": "Who doesn't love travelling?",
+        "Vietnamese": "Ai lại không thích du lịch?"
+      },
+      {
+        "English": "Is there any convenient store nearby?",
+        "Vietnamese": "Có cửa hàng tiện lợi nào gần đây không?"
+      },
+      {
+        "English": "Take off your glasses first",
+        "Vietnamese": "Cởi mắt kính ra trước"
+      },
+      {
+        "English": "Go to the movies",
+        "Vietnamese": "Đi coi phim"
+      },
+      {
+        "English": "Don't buy me keychains",
+        "Vietnamese": "Đừng có mua tôi mấy cái móc khóa"
+      },
+      {
+        "English": "I used to love going to war museums",
+        "Vietnamese": "Tui từng thích \n đi bảo tàng chiến tranh"
+      },
+      {
+        "English": "My leg is killing me!",
+        "Vietnamese": "Chân tui mỏi/đau quá!"
+      },
+      {
+        "English": "No wonder he wants to pick me up",
+        "Vietnamese": "Hèn gì \n ảnh muốn đón tui"
+      },
+      {
+        "English": "You have medicated oil there?",
+        "Vietnamese": "Cậu có dầu gió đó không?"
+      },
+      {
+        "English": "You can drop me off at the hotel",
+        "Vietnamese": "Cậu có thể thả tui xuống ở khách sạn"
+      },
+      {
+        "English": "Durian is Vietnamese specialty",
+        "Vietnamese": "Sầu riêng là đặc sản Việt Nam"
+      },
+      {
+        "English": "Rambutan is a seasonal fruit",
+        "Vietnamese": "Chôm chôm là trái cây theo mùa"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "What kind of hospital that doesn't have a single patient???",
+        "Vietnamese": "Bệnh viện kiểu gì mà không có đến một bệnh nhân nữa???"
+      },
+      {
+        "English": "Just so you know, now I still don't know what his name is",
+        "Vietnamese": "Nói luôn với cậu, giờ tui vẫn không biết tên ảnh là gì"
+      },
+      {
+        "English": "It seems we have to take a detour to avoid an traffic accident",
+        "Vietnamese": "Có vẻ như là chúng ta phải đi đường vòng  để tránh một tai nạn giao thông"
+      },
+      {
+        "English": "This summer, Xuan Huong lake will provide the service of riding duck paddle boat",
+        "Vietnamese": "Mùa hè này, hồ Xuân Hương sẽ cung cấp dịch vụ đạp vịt"
+      },
+      {
+        "English": "You need to put on the tie if you wanna join the event tonight",
+        "Vietnamese": "Cậu cần phải đeo cà vạt nếu cậu muốn join cái event tối nay"
+      },
+      {
+        "English": "It's pouring outside, how long have you been waiting here?",
+        "Vietnamese": "Ở ngoài trời mưa lớn quá, cậu chờ ở đây lâu chưa?"
+      },
+      {
+        "English": "No wonder today I've had to see the customer twice",
+        "Vietnamese": "Hèn gì hôm nay tôi phải gặp khách hàng hai lần"
+      },
+      {
+        "English": "Seriously? Don't tell me you forgot your passport",
+        "Vietnamese": "Thiệt hả? Đừng nói tui là cậu quên passport rồi nha"
+      },
+      {
+        "English": "Seriously, this is the first time I've been to Singapore with my family",
+        "Vietnamese": "Thiệt, đây là lần đầu tiên tui đi Singapore với gia đình"
+      },
+      {
+        "English": "How to put it? I'm not supposed to see this client?",
+        "Vietnamese": "Nói sao nhỉ? Tôi không được gặp khách hàng này à?"
+      },
+      {
+        "English": "Sorry? Do you have beer? I'm allergic to coke.",
+        "Vietnamese": "Xin lỗi, cô có beer không? Tôi dị ứng với coca."
+      },
+      {
+        "English": "Is there anything I can do to make it up to you?",
+        "Vietnamese": "Có thứ gì đó tôi có thể làm để đền bù cho cậu không?"
+      },
+      {
+        "English": "Now we go to the movies, what do you say?",
+        "Vietnamese": "Giờ mình đi coi phim, ý anh sao?"
+      },
+      {
+        "English": "It's been a long time since I had a chance to lie on the beach",
+        "Vietnamese": "Cũng đã lâu rồi từ khi tui có cơ hội để nằm dài trên bãi biển"
+      },
+      {
+        "English": "Did you lose your mind? You wanna camp on top of the mountain???",
+        "Vietnamese": "Cậu mất trí rồi à? Cậu muốn cắm trại trên đỉnh núi hả???"
+      },
+      {
+        "English": "Go along this road until you see a school then make a right",
+        "Vietnamese": "Đi dọc theo con đường này đến khi cậu thấy một cái trường học, sau đó quẹo phải"
+      },
+      {
+        "English": "It's not that far, it's just 10 meters away from the main road",
+        "Vietnamese": "Đâu có xa vậy, nó cách đường chính có 10 mét à"
+      },
+      {
+        "English": "Where are you up to? Can you give me a ride to the airport?",
+        "Vietnamese": "Cậu đi đâu đấy? Cho tôi quá giang ra sân bay được không?"
+      },
+      {
+        "English": "You should stay away from the controversial issues",
+        "Vietnamese": "Cậu nên tránh xa khỏi những vấn đề gây tranh cãi"
+      }
+    ],
+    "Review": [
+      {
+        "English": "No wonder they went to the US",
+        "Vietnamese": "Hèn gì họ đi Mỹ"
+      },
+      {
+        "English": "Seriously, go ask her",
+        "Vietnamese": "Thiệt, đi hỏi cổ đi"
+      },
+      {
+        "English": "Sleeping bag is a bag",
+        "Vietnamese": "Túi ngủ là một cái túi"
+      },
+      {
+        "English": "Back pocket is a pocket",
+        "Vietnamese": "Túi sau là một cái túi"
+      },
+      {
+        "English": "I'm the big fan of durian",
+        "Vietnamese": "Tui là fan ruột của sầu riêng"
+      },
+      {
+        "English": "We're in the raining season",
+        "Vietnamese": "Ta đang ở trong mùa mưa"
+      },
+      {
+        "English": "Carsick is worse than lovesick",
+        "Vietnamese": "Say xe còn tệ hơn thất tình"
+      },
+      {
+        "English": "Rice cooker is very convenient",
+        "Vietnamese": "Nồi cơm điện rất là tiện"
+      },
+      {
+        "English": "Where did you leave my key?",
+        "Vietnamese": "Cậu để chìa khóa tui ở đâu vậy?"
+      },
+      {
+        "English": "I'm allergic to boys",
+        "Vietnamese": "Tui dị ứng với trai"
+      },
+      {
+        "English": "My phone was out of battery",
+        "Vietnamese": "Điện thoại tui hết pin rồi"
+      },
+      {
+        "English": "We walk there, what do you say?",
+        "Vietnamese": "Chúng ta đi bộ đến đó, ý cậu sao?"
+      },
+      {
+        "English": "Don't touch my cart",
+        "Vietnamese": "Đừng động vào xe đẩy của tôi"
+      },
+      {
+        "English": "Are you nervous?",
+        "Vietnamese": "Cậu có lo không?"
+      },
+      {
+        "English": "Food court is so crowded",
+        "Vietnamese": "Khu vực ăn uống rất là đông"
+      },
+      {
+        "English": "Painkillers don't kill pain",
+        "Vietnamese": "Thuốc giảm đau không có giảm đau"
+      },
+      {
+        "English": "Socket or plug",
+        "Vietnamese": "Ổ cắm hoặc phích cắm"
+      },
+      {
+        "English": "Flip flops have nothing to do with Laos",
+        "Vietnamese": "Dép Lào chả liên quan gì đến Lào"
+      },
+      {
+        "English": "Take off your shoes first",
+        "Vietnamese": "Cởi giày ra trước"
+      },
+      {
+        "English": "What will be will be",
+        "Vietnamese": "Chuyện gì tới sẽ tới thôi"
+      },
+      {
+        "English": "Misread the contract",
+        "Vietnamese": "Đọc nhầm hợp đồng"
+      },
+      {
+        "English": "Ride the duck paddle boat",
+        "Vietnamese": "Đạp vịt"
+      },
+      {
+        "English": "Beware of that",
+        "Vietnamese": "Coi chừng cái đó"
+      },
+      {
+        "English": "Leftover rice",
+        "Vietnamese": "Cơm nguội"
+      },
+      {
+        "English": "Road signs",
+        "Vietnamese": "Biển báo"
+      },
+      {
+        "English": "What’d you mean???",
+        "Vietnamese": "Là sao???"
+      },
+      {
+        "English": "There's no milestone",
+        "Vietnamese": "Không có cột cây số"
+      },
+      {
+        "English": "Stay away from that",
+        "Vietnamese": "Tránh xa khỏi cái đó"
+      },
+      {
+        "English": "War museum",
+        "Vietnamese": "Bảo tàng chiến tranh"
+      },
+      {
+        "English": "A controversial topic",
+        "Vietnamese": "Một chủ đề gây tranh cãi"
+      },
+      {
+        "English": "Keychain sucks",
+        "Vietnamese": "Móc khóa chán òm"
+      },
+      {
+        "English": "You need to put on a tie",
+        "Vietnamese": "Cậu cần phải đeo cà vạt"
+      },
+      {
+        "English": "Papaya is not a seasonal fruit",
+        "Vietnamese": "Đu đủ không phải là trái theo mùa"
+      },
+      {
+        "English": "A starless night",
+        "Vietnamese": "Một đêm không sao"
+      },
+      {
+        "English": "Do you have medicated oil?",
+        "Vietnamese": "Cậu có dầu gió không?"
+      },
+      {
+        "English": "There's a shortcut next to the car",
+        "Vietnamese": "Có một đường tắt kế bên cái xe hơi"
+      },
+      {
+        "English": "Checked luggage",
+        "Vietnamese": "Hành lý ký gửi"
+      },
+      {
+        "English": "In the middle of nowhere",
+        "Vietnamese": "Giữa chốn khỉ ho cò gáy"
+      },
+      {
+        "English": "It's too risky to do that",
+        "Vietnamese": "Quá mạo hiểm để làm việc đó"
+      },
+      {
+        "English": "It's 10 meters away from the hall",
+        "Vietnamese": "Cách cái sảnh 10 mét"
+      },
+      {
+        "English": "If my memory serves me right",
+        "Vietnamese": "Nếu tôi nhớ không nhầm"
+      },
+      {
+        "English": "I’m at the intersection",
+        "Vietnamese": "Tôi đang ở ngã tư"
+      },
+      {
+        "English": "Make a right",
+        "Vietnamese": "Quẹo phải"
+      },
+      {
+        "English": "1A national highway",
+        "Vietnamese": "Quốc lộ 1A"
+      },
+      {
+        "English": "What took you so long?",
+        "Vietnamese": "Sao cậu lâu quá vậy?"
+      },
+      {
+        "English": "Hey, don't give me that look",
+        "Vietnamese": "Ê, đừng có nhìn tôi kiểu đó"
+      },
+      {
+        "English": "No one doesn't like oversleeping",
+        "Vietnamese": "Không ai không thích ngủ quên"
+      },
+      {
+        "English": "I got diarrhea",
+        "Vietnamese": "Tôi bị tiêu chảy"
+      },
+      {
+        "English": "Take the medicines",
+        "Vietnamese": "Uống thuốc"
+      }
+    ]
+  }
+}
