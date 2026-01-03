@@ -1,0 +1,4 @@
+project_id = "pxbkhnojqrfebhryriml"
+
+[functions.analyze-speech]
+verify_jwt = false
