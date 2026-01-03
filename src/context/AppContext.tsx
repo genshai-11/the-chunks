@@ -40,6 +40,15 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
         'D4_Freetalk_1.json': () => import('@/data/lessons/D4_Freetalk_1.json').then(m => m.default as LessonData),
         'D5_L3_Rendezvous.json': () => import('@/data/lessons/D5_L3_Rendezvous.json').then(m => m.default as LessonData),
         'D6_L4_Excel.json': () => import('@/data/lessons/D6_L4_Excel.json').then(m => m.default as LessonData),
+        'D7_Freetalk_2.json': () => import('@/data/lessons/D7_Freetalk_2.json').then(m => m.default as LessonData),
+        'D8_L5_Ecommerce.json': () => import('@/data/lessons/D8_L5_Ecommerce.json').then(m => m.default as LessonData),
+        'D9_L6_Smarketing.json': () => import('@/data/lessons/D9_L6_Smarketing.json').then(m => m.default as LessonData),
+        'D10_Freetalk_3.json': () => import('@/data/lessons/D10_Freetalk_3.json').then(m => m.default as LessonData),
+        'D11_L7_Chart.json': () => import('@/data/lessons/D11_L7_Chart.json').then(m => m.default as LessonData),
+        'D12_L8_Viettel.json': () => import('@/data/lessons/D12_L8_Viettel.json').then(m => m.default as LessonData),
+        'D13_Freetalk_4.json': () => import('@/data/lessons/D13_Freetalk_4.json').then(m => m.default as LessonData),
+        'D14_L9_Electronic_Mail.json': () => import('@/data/lessons/D14_L9_Electronic_Mail.json').then(m => m.default as LessonData),
+        'D15_L10_Food_Porn.json': () => import('@/data/lessons/D15_L10_Food_Porn.json').then(m => m.default as LessonData),
       };
 
       const loader = lessonModules[filename];

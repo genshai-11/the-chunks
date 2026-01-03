@@ -1,0 +1,737 @@
+{
+  "lesson_name": "D13 - Freetalk 4",
+  "categories": {
+    "Mono 1": [
+      {
+        "English": "Hello, my name is Katherine, \nthis is the first time I've been to Vietnam",
+        "Vietnamese": "Hello, tên tôi là Katherine, \nđây là lần đầu tôi đến Việt Nam"
+      },
+      {
+        "English": "It's my pleasure to be here today \nto pitch our new project to you",
+        "Vietnamese": "Thật là vinh dự cho tôi khi ở đây để pitch về dự án mới của chúng tôi tới mọi người"
+      },
+      {
+        "English": "Apple is one of the most recognizable brands in the world",
+        "Vietnamese": "Apple là một trong những thương hiệu dễ nhận diện nhất trên thế giới"
+      },
+      {
+        "English": "It's undeniable that Apple has been revolutionizing the way we use our phones",
+        "Vietnamese": "Không thể phủ nhận rằng Apple đã và đang cách mạng hóa cái cách mà chúng ta sử dụng điện thoại"
+      },
+      {
+        "English": "Do you know how long ago Apple was founded?",
+        "Vietnamese": "Đố bạn Apple được thành lập cách đây bao lâu?"
+      },
+      {
+        "English": "BTW the last April was our 46th birthday",
+        "Vietnamese": "Nhân tiện \ntháng 4 rồi là sinh nhật lần thứ 46 của chúng tôi"
+      },
+      {
+        "English": "Statistics show that",
+        "Vietnamese": "Thống kê chỉ ra rằng"
+      },
+      {
+        "English": "Apple controls 22% of the global smartphone market",
+        "Vietnamese": "Apple kiểm soát 22% thị trường smartphone toàn cầu"
+      },
+      {
+        "English": "That means 1 out of every 4 people will choose to buy an iphone rather than other smartphones",
+        "Vietnamese": "Điều đó có nghĩa là cứ 4 người thì có 1 người sẽ chọn mua iphone thay vì các smartphone khác"
+      },
+      {
+        "English": "you may wanna look at the pie chart on the top left corner",
+        "Vietnamese": "Có thể mọi người sẽ muốn nhìn vào cái biểu đồ tròn ở phía trên bên trái"
+      },
+      {
+        "English": "This is our quarterly revenue by category",
+        "Vietnamese": "Đây là doanh thu hằng quý của chúng tôi tính theo danh mục"
+      },
+      {
+        "English": "Here, the revenue from iphones segment accounts for 52%",
+        "Vietnamese": "Ngay đây, doanh thu từ mảng iPhone chiếm 52%"
+      },
+      {
+        "English": "which means more than a half of the total revenue came from iphone sales",
+        "Vietnamese": "Điều đó có nghĩa là hơn một nửa của tổng doanh thu đến từ doanh số iPhone"
+      },
+      {
+        "English": "In general, our revenue has increased at a rate of 12.9%",
+        "Vietnamese": "Nhìn chung, doanh thu của chúng tôi đã tăng với tốc độ 12.9%"
+      },
+      {
+        "English": "To be accurate, our revenue in the most recent quarter is $97 million",
+        "Vietnamese": "Nói chính xác thì doanh thu của chúng tôi ở quý gần nhất là 97 triệu đô"
+      },
+      {
+        "English": "Up 9 percent over the same period last year",
+        "Vietnamese": "Tăng 9% so với cùng kỳ năm ngoái"
+      },
+      {
+        "English": "Some of you might be wondering about our \nbreak-even analysis",
+        "Vietnamese": "Vài người trong số các bạn có thể đang tự hỏi về cái phân tích hòa vốn"
+      },
+      {
+        "English": "If you look at the bar chart on the right",
+        "Vietnamese": "Nếu bạn nhìn vào cái biểu đồ cột ở bên phải"
+      },
+      {
+        "English": "The starting prices for each new model have been fluctuating a lot",
+        "Vietnamese": "Giá khởi điểm của mỗi cái mẫu mới đã và đang dao động rất là nhiều"
+      },
+      {
+        "English": "Currently, our latest iphone retails between $900 and $1400",
+        "Vietnamese": "Hiện tại, iPhone mới nhất của chúng tôi bán lẻ trong khoảng từ 900 đô và 1400 đô"
+      },
+      {
+        "English": "But our wholesale revenue is around $450 per phone",
+        "Vietnamese": "Nhưng mà doanh thu bán sỉ của chúng tôi đang vào khoảng $450 trên một điện thoại"
+      },
+      {
+        "English": "In that $450, the unit variable cost is $200",
+        "Vietnamese": "Trong số $450 đó, chi phí biến đổi đơn vị là $200"
+      },
+      {
+        "English": "Which means the unit fixed cost would be up to $250,",
+        "Vietnamese": "Điều đó có nghĩa là chi phí cố định đơn vị sẽ lên tới $250"
+      },
+      {
+        "English": "If that's the case, we will have a profit margin of 44%",
+        "Vietnamese": "Nếu đúng là như vậy, chúng tôi sẽ có tỉ suất lợi nhuận 44%"
+      },
+      {
+        "English": "As I mentioned in the email",
+        "Vietnamese": "Như tôi đã đề cập trong email"
+      },
+      {
+        "English": "What concerns me the most right now is the \ntotal fixed costs",
+        "Vietnamese": "Điều làm tôi băn khoăn nhất ngay lúc này chính là tổng chi phí cố định"
+      },
+      {
+        "English": "Which is approximately $50 million",
+        "Vietnamese": "Cái thứ xấp xỉ vào khoảng 50 triệu đô"
+      },
+      {
+        "English": "Based on these numbers",
+        "Vietnamese": "Dựa trên những con số này,"
+      },
+      {
+        "English": "If we divide 50 million by 250, the result will be 200,000",
+        "Vietnamese": "Nếu chúng ta chia 50 triệu cho 250, kết quả sẽ là 200,000"
+      },
+      {
+        "English": "It means we would break even once we sell 200,000 phones",
+        "Vietnamese": "Nó có nghĩa là chúng ta sẽ hòa vốn một khi chúng ta bán được 200,000 cái điện thoại"
+      },
+      {
+        "English": "But our wholesale revenue is around $450 per phone",
+        "Vietnamese": "Nhưng mà doanh thu bán sỉ của chúng tôi đang vào khoảng $450 trên một điện thoại"
+      },
+      {
+        "English": "In that $450, the unit variable cost is $200",
+        "Vietnamese": "Trong số $450 đó, chi phí biến đổi đơn vị là $200"
+      },
+      {
+        "English": "It may take us 1.5 years to hit this break even point",
+        "Vietnamese": "Ta có thể tốn 1 năm rưỡi để đạt đến điểm hòa vốn này"
+      },
+      {
+        "English": "Actually 1.5 years is not that bad but...",
+        "Vietnamese": "Thực ra 1 năm rưỡi cũng không tệ đến vậy nếu như..."
+      },
+      {
+        "English": "It seems Tim Cook is not really happy about the current variable costs",
+        "Vietnamese": "Có vẻ như Tim Cook không thực sự happy về những cái chi phí biến đổi hiện tại"
+      },
+      {
+        "English": "And he wishes we could cut the costs down by reducing the labor cost",
+        "Vietnamese": "Và ổng ước rằng chúng ta có thể cắt giảm chi phí xuống bằng cách giảm chi phí nhân công"
+      },
+      {
+        "English": "We all know the labor cost in California is way too high",
+        "Vietnamese": "Chúng ta đều biết rằng chi phí nhân cộng tại California đang quá là cao"
+      },
+      {
+        "English": "Therefore, we've been looking for \nan opportunity for cooperation in Asia",
+        "Vietnamese": "Do đó, chúng tôi đang tìm kiếm một cơ hội cộng tác tại châu Á"
+      },
+      {
+        "English": "Earlier this year, Apple has \nmoved some of the production from China to Vietnam",
+        "Vietnamese": "Hồi đầu năm nay, Apple đã di chuyển một vài các hoạt động SX từ TQ về VN"
+      },
+      {
+        "English": "Logistically, Binh Duong makes the most sense to ship our products to Dong Nai port",
+        "Vietnamese": "Nói về logistics, Binh Duong là hợp lý nhất để ship sản phẩm đến cảng Đồng Nai"
+      },
+      {
+        "English": "The thing is variable costs are directly proportional to the break even point",
+        "Vietnamese": "Cái vấn đề là chi phí thay đổi tỉ lệ thuận với điểm hòa vốn"
+      },
+      {
+        "English": "Overall, this project is expected to reduce the labor cost by at least 30%",
+        "Vietnamese": "Nhìn chung, dự án này được kỳ vọng sẽ giảm được chi phí nhân công đi ít nhất 30%"
+      }
+    ],
+    "Dia 1": [
+      {
+        "English": "K: Hi Sharks, I've done my presentation, \nbefore I pass it on to my CEO",
+        "Vietnamese": "K: Chào các sharks, tôi đã trình bày xong phần của mình, trước khi nhường lời lại cho CEO của tôi"
+      },
+      {
+        "English": "K: If you have any questions for me, please go ahead",
+        "Vietnamese": "K: Nếu các bạn có bất kỳ câu hỏi nào cho tôi, xin cứ tự nhiên"
+      },
+      {
+        "English": "TN: First off, I've gotta say I was impressed by your presentation",
+        "Vietnamese": "TN: Đầu tiên, tôi phải nói là tôi rất là bị ấn tượng bởi cái bài thuyết trình của cô"
+      },
+      {
+        "English": "TN: I'm still thinking, Mr. Vuong, you can go first",
+        "Vietnamese": "TN: Tôi đang suy nghĩ, anh Vượng, anh có thể hỏi trước"
+      },
+      {
+        "English": "V: Katherine, could you go back to the line chart in slide 11?",
+        "Vietnamese": "V: Katherine, cô có thể quay lại cái biểu đồ đường thẳng ở slide 11 không?"
+      },
+      {
+        "English": "V: To be honest, my 1st impression looking at this chart was not really good",
+        "Vietnamese": "V: Nói thật thì, cái ấn tượng đầu của tôi nhìn vào cái chart này không được tốt cho lắm"
+      },
+      {
+        "English": "K: Uh huh, may I ask you why?",
+        "Vietnamese": "K: Uh huh, tôi có thể hỏi tại sao được không?"
+      },
+      {
+        "English": "V: First, It shocked me that Samsung has been \nconstantly outperforming Apple throughout a decade",
+        "Vietnamese": "V: Trước hết, tôi bị sốc khi Samsung đã và đang liên tục perform tốt hơn Apple trong suốt một thập kỷ"
+      },
+      {
+        "English": "TN: I don't think Samsung stands a chance of winning this game in the long run",
+        "Vietnamese": "TN: Tôi không nghĩ là Samsung có cửa để thắng cái game này về lâu về dài"
+      },
+      {
+        "English": "TN: But what is being shown on the screen is true",
+        "Vietnamese": "TN: Nhưng mà những gì đang được show trên màn hình thì là đúng"
+      },
+      {
+        "English": "TN: I'll give you that",
+        "Vietnamese": "TN: Cái đó thì tôi đồng ý với anh"
+      },
+      {
+        "English": "K: Excuse me, Mr. TN, could you go into details, please?",
+        "Vietnamese": "K: Xin lỗi ông Trung Nguyên, ông có thể nói chi tiết hơn được không?"
+      },
+      {
+        "English": "TN: I'm well aware of the fact that...",
+        "Vietnamese": "TN: Tôi ý thức rõ được cái sự thật rằng..."
+      },
+      {
+        "English": "TN: It took Samsung double time to be where they are now",
+        "Vietnamese": "TN: Samsung cần double thời gian để tới được cái nơi mà nó ở bây giờ"
+      },
+      {
+        "English": "V: Hold on, I also noticed that Apple has dethroned Samsung 2 times in 2017. Why?",
+        "Vietnamese": "V: Chờ chút, tôi cũng nhận ra rằng Apple đã soán ngôi Samsung 2 lần trong năm 2017. Why?"
+      },
+      {
+        "English": "K: To be accurate, 3 times",
+        "Vietnamese": "K: Nói cho chính xác thì, 3 lần"
+      },
+      {
+        "English": "V: Right, \nthe first time occured somewhere in the end of 2011",
+        "Vietnamese": "V: Đúng rồi, \nlần thứ nhất xảy ra đâu đó vào cuối năm 2011"
+      },
+      {
+        "English": "TN: Is it because of the launch of iphone 8?",
+        "Vietnamese": "TN: Nó có phải là vì cái việc tung ra iphone 8 không?"
+      },
+      {
+        "English": "V: No, I personally believe this event is caused by the recall of Galaxy Note 7",
+        "Vietnamese": "V: Không, bản thân tôi tin rằng sự kiện này là do cái việc thu hồi Galaxy Note 7"
+      },
+      {
+        "English": "K: Yes, because of this, Samsung has dropped to 2nd place for the 3rd time in the decade",
+        "Vietnamese": "K: Phải, vì cái vụ này, Samsung đã rớt xuống vị trí thứ hai lần thứ ba trong một thập kỷ"
+      },
+      {
+        "English": "TN: Really? No wonder their sales plunged by 10% at the end of the chart",
+        "Vietnamese": "TN: Vậy hả? Hèn gì doanh số của họ đã tụt dốc đi 10% ở cuối cái chart"
+      },
+      {
+        "English": "V: Having said that, that's a pity",
+        "Vietnamese": "V: Nói đi thì cũng phải nói lại, thật là tiếc"
+      },
+      {
+        "English": "V: This line of product was really cool back then, I had 4 of them",
+        "Vietnamese": "V: Cái dòng sản phẩm này rất là cool hồi đó luôn, tôi có 4 cái"
+      },
+      {
+        "English": "V: I admit that I used to be a big fan of the Galaxy Note series",
+        "Vietnamese": "V: Tôi thừa nhận rằng tôi từng là fan ruột của cái dòng Galaxy Note"
+      },
+      {
+        "English": "TN: Word on the street is that...",
+        "Vietnamese": "TN: Ở ngoài đường người ta đồn rằng..."
+      },
+      {
+        "English": "TN: This serious trouble originated from the faulty battery",
+        "Vietnamese": "TN: Cái vấn đề nghiêm trọng này bắt nguồn từ cục pin bị lỗi"
+      },
+      {
+        "English": "V: Yeah, I once read about this in a Korean newspaper",
+        "Vietnamese": "V: Yeah, tôi có lần đọc về cái vụ này trong một tờ báo Hàn Quốc"
+      },
+      {
+        "English": "V: it was overheating and even caught fire very easily while charging",
+        "Vietnamese": "V: Nó bị quá nhiệt rồi thậm chí rất là dễ bắt lửa trong lúc đang sạc"
+      },
+      {
+        "English": "K: Yes, Samsung has made it clear that you should stop using it and return it ASAP",
+        "Vietnamese": "K: Phải, Samsung đã nói rất là rõ ràng rằng bạn nên dừng sử dụng và gửi trả nó lại càng sớm càng tốt"
+      },
+      {
+        "English": "TN: I heard that 85% of US customers chose to return the phone in exchange for a different Galaxy phone",
+        "Vietnamese": "TN: Tôi nghe bảo 85% khách hàng Mỹ đã chọn return lại để đổi lấy một cái điện thoại Galaxy khác"
+      },
+      {
+        "English": "V: Okay guys, back to the chart on the screen, please",
+        "Vietnamese": "V: Được rồi mọi người, quay trở lại cái biểu đồ trên màn hình đi"
+      },
+      {
+        "English": "V: I wonder why the blue line rocketted to more than 80 million in 2013?",
+        "Vietnamese": "V: Tôi thắc mắc là tại sao cái đường màu xanh lại tăng vọt lên tới hơn 80 triệu trong năm 2013?"
+      },
+      {
+        "English": "TN: I think the legendary Galaxy S4 \nmust be the reason here",
+        "Vietnamese": "TN: Tôi nghĩ cái con Galaxy S4 huyền thoại chắc hẳn là lý do ở đây"
+      },
+      {
+        "English": "TN: Interesting, I also notice that...",
+        "Vietnamese": "TN: Interesting, tôi cũng để ý rằng..."
+      },
+      {
+        "English": "TN: Apple's revenue always \nhit the bottom in the middle of the year. You guys see that?",
+        "Vietnamese": "TN: Doanh số Apple luôn chạm đáy vào cái đoạn giữa năm. Mọi người thấy không?"
+      },
+      {
+        "English": "V: Good observation, Mr. TN, pretty much every year",
+        "Vietnamese": "V: Quan sát tốt đó, anh Trung Nguyên, gần như là mỗi năm"
+      },
+      {
+        "English": "K: I believe it's because of our release calendar",
+        "Vietnamese": "K: Tôi tin rằng đó là vì cái lịch ra mắt sản phẩm của bọn tôi"
+      },
+      {
+        "English": "K: We usually launch our new model in late September or early October",
+        "Vietnamese": "K: Chúng tôi luôn tung ra mẫu mới vào cuối tháng 9 hay đầu tháng 10"
+      },
+      {
+        "English": "V: Wait a minute, something doesn't add up here",
+        "Vietnamese": "V: Khoan khoan, có cái gì đó không hợp lý ở đây"
+      },
+      {
+        "English": "V: It boggles my mind, what is your real motivation when you choose Binh Duong?",
+        "Vietnamese": "V: Nó làm tôi hơi rối não, cái động lực thật sự của các bạn là gì khi chọn Bình Dương?"
+      },
+      {
+        "English": "V: I mean, what attracts Apple to \ninvest into Vietnam market at the moment?",
+        "Vietnamese": "V: Ý tôi là, cái gì thu hút Apple đầu tư vào thị trường Việt Nam ở thời điểm hiện tại?"
+      },
+      {
+        "English": "TN: It's way too obvious, labor cost",
+        "Vietnamese": "TN: Nó quá là rõ ràng, chi phí nhân công"
+      },
+      {
+        "English": "TN: Smartphone market is a mature market",
+        "Vietnamese": "TN: Thị trường smartphone là một thị trường đã phát triển"
+      },
+      {
+        "English": "TN: There's nothing really new in this market anymore",
+        "Vietnamese": "TN: Không có thứ gì thật sự là mới trong cái thị trường này nữa"
+      },
+      {
+        "English": "V: Okay, but to run a factory in China, what is your \nannual operating costs?",
+        "Vietnamese": "V: Okay, nhưng mà để chạy một cái nhà máy ở TQ, chi phí vận hành hàng năm của các bạn là bao nhiêu?"
+      },
+      {
+        "English": "K: To answer this question, I'll show you a \nline chart in the last slide",
+        "Vietnamese": "K: Để trả lời cho câu hỏi này, tôi sẽ cho ông xem cái line chart ở slide cuối"
+      },
+      {
+        "English": "V: At first glance, I can see most of your operating costs come from machinery and equipment. Right?",
+        "Vietnamese": "V: Thoạt nhìn, tôi có thể thấy là hầu hết chi phí vận hành của các bạn đến từ máy móc và trang thiết bị. Đúng không?"
+      },
+      {
+        "English": "TN: But I believe the real pain points originated from the supply chain shortage",
+        "Vietnamese": "TN: Nhưng mà tôi tin rằng cái nỗi đau thật sự bắt nguồn từ sự cạn kiệt chuỗi cung ứng"
+      },
+      {
+        "English": "K: Yes, due to COVID pandemic, Chinese goverment has shut down a lot of our factories in Shanghai",
+        "Vietnamese": "K: Đúng, do đại dịch COVID, chính phủ TQ đã đóng cửa rất nhiều nhà máy của chúng tôi ở Thượng Hải"
+      },
+      {
+        "English": "V: I see, but I don't think I can be much of a help in this project. So, I'm out.",
+        "Vietnamese": "V: Tôi hiểu rồi, nhưng mà tôi không nghĩ là tôi có thể giúp được gì nhiều trong cái dự án này. Cho nên, tôi xin rút"
+      }
+    ],
+    "Mono 2": [
+      {
+        "English": "Hello, May I speak to Teo?",
+        "Vietnamese": "Alo, tôi nói chuyện với Tèo được không?"
+      },
+      {
+        "English": "Hi Teo, I'm Miwako, calling from ONE",
+        "Vietnamese": "Chào Tèo, chị là Miwako, gọi từ ONE"
+      },
+      {
+        "English": "I'm calling to ask you something about your resume",
+        "Vietnamese": "Chị gọi để hỏi em vài thứ về cái resume của em"
+      },
+      {
+        "English": "It seems you have the skills and abilities that, we've been concerned about",
+        "Vietnamese": "Có vẻ như em có cái kỹ năng và chuyên môn mà bên chị đang quan tâm"
+      },
+      {
+        "English": "Our regional HR manager, Mr. AB, has flown to VN to join this interview",
+        "Vietnamese": "Giám đốc nhân sự vùng của tụi chị, anh AB, đã bay sang VN để tham gia buổi PV này"
+      },
+      {
+        "English": "He will conduct the interview directly",
+        "Vietnamese": "Ảnh sẽ thực hiện phỏng vấn trực tiếp"
+      },
+      {
+        "English": "He had me call you personally",
+        "Vietnamese": "Ảnh nhờ chị gọi riêng cho em,"
+      },
+      {
+        "English": "He said he wants to interview you before lunch time next Friday",
+        "Vietnamese": "Ảnh nói ảnh muốn PV em trước giờ nghỉ trưa thứ sáu tới"
+      },
+      {
+        "English": "Can you make it?",
+        "Vietnamese": "Em tới được chứ?"
+      },
+      {
+        "English": "Okay, perfect, if you don't have any other question, see you on Friday",
+        "Vietnamese": "Okay, perfect, nếu em không hỏi gì thì gặp em thứ sáu nha"
+      },
+      {
+        "English": "Hang on, please grab a pen and a piece of paper",
+        "Vietnamese": "Mà khoan, em lấy một cây viết với một miếng giấy đi"
+      },
+      {
+        "English": "I forgot to send you the address of the interview place",
+        "Vietnamese": "Chị quên gửi em địa chỉ cái chỗ phỏng vấn"
+      },
+      {
+        "English": "Okay, jot it down, mPlaza building, 39 Le Duan, district 1",
+        "Vietnamese": "Okay, ghi xuống nè, tòa nhà mPlaza, 39 Le Duan, quận 1"
+      },
+      {
+        "English": "Please come at 10:30, I'll send you a confirmation email by 6pm today",
+        "Vietnamese": "Em tới 10 rưỡi nha, chị sẽ gửi e cái email xác nhận trước 6h hôm nay"
+      },
+      {
+        "English": "In the email, there will be date, time and place in case you forget",
+        "Vietnamese": "Trong email, sẽ có ngày tháng, thời gian, địa điểm trong trường hợp em quên"
+      },
+      {
+        "English": "You'd better print this email out and bring it with you",
+        "Vietnamese": "Em nên in cái email này ra rồi mang nó theo"
+      },
+      {
+        "English": "You're gonna need that to be interviewed",
+        "Vietnamese": "Em sẽ cần cái đó để được phỏng vấn"
+      },
+      {
+        "English": "Wait, let me brief you about the agenda of the interview on that day, okay?",
+        "Vietnamese": "À, để chị brief em qua về lịch trình PV buổi hôm đó nha, okay?"
+      },
+      {
+        "English": "Have you ever joined an MT before?",
+        "Vietnamese": "Em có bao giờ tham gia MT trước đây chưa?"
+      },
+      {
+        "English": "Okay, good, this one is quite the same with an MT exam",
+        "Vietnamese": "Okay, good, cái này nó cũng na ná với kỳ thi MT vậy ấy"
+      },
+      {
+        "English": "This interview will consist of 3 rounds, including screening interview",
+        "Vietnamese": "Buổi PV này sẽ bao gồm 3 vòng, tính luôn cả PV sàn lọc"
+      },
+      {
+        "English": "First and foremost, Mr. AB will interview you directly to know whether your characteristics and your background fit this job",
+        "Vietnamese": "Đầu tiên và trên hết, anh AB sẽ PV em để biết tính cách và background em có hợp job này hay không"
+      },
+      {
+        "English": "Mr AB is the one I just mentioned a moment ago",
+        "Vietnamese": "Anh AB là cái anh chị vừa mention hồi nãy đấy"
+      },
+      {
+        "English": "Round 2 will be for group activities",
+        "Vietnamese": "Vòng 2 sẽ là vòng làm việc nhóm"
+      },
+      {
+        "English": "You and 9 other promising candidates will join in a special group activity",
+        "Vietnamese": "Em với 9 bạn thí sinh đầy hứa hẹn khác sẽ tham gia vào 1 hoạt động nhóm đặc biệt"
+      },
+      {
+        "English": "The content of the game will be kept confidential until the interview day",
+        "Vietnamese": "Nội dung trò chơi sẽ dc giữ bí mật đến buổi PV"
+      },
+      {
+        "English": "Lemme give you a heads up, the interview will be in English 100%",
+        "Vietnamese": "Để chị báo trước với em, buổi PV sẽ bằng tiếng Anh 100%"
+      },
+      {
+        "English": "You'd better have some preparation to be able to speak confidently",
+        "Vietnamese": "E nên chuẩn bị trước để có thể nói cho tự tin"
+      },
+      {
+        "English": "If you're lucky enough to pass round 2",
+        "Vietnamese": "Nếu e may mắn qua được vòng 2"
+      },
+      {
+        "English": "Round 3 will be the direct interview with your line manager",
+        "Vietnamese": "Vòng 3 sẽ là pv trực tiếp với line manager của e"
+      },
+      {
+        "English": "This guy is an French expat",
+        "Vietnamese": "Anh này là 1 expat người Pháp"
+      },
+      {
+        "English": "What? What you said? Could you speak up a bit?",
+        "Vietnamese": "Hả? Em nói sao? Em nói lớn lên chút được không?"
+      },
+      {
+        "English": "Ahh, I see, you're talking about starting salary",
+        "Vietnamese": "À, chị hiểu rồi, em đang nói về lương khởi điểm"
+      },
+      {
+        "English": "I'm sorry but I can not share those information regarding salary with you at the moment",
+        "Vietnamese": "Chị rất tiếc nhưng chị ko thể chia sẻ các thông tin về salary với em lúc này được"
+      },
+      {
+        "English": "But don't worry, though",
+        "Vietnamese": "Nhưng dẫu vậy đừng có lo,"
+      },
+      {
+        "English": "The working environment at ONE is really cool",
+        "Vietnamese": "Môi trường làm việc ở ONE rất là cool"
+      },
+      {
+        "English": "If you do your homework, then you're gonna see the benefit here is also a big plus",
+        "Vietnamese": "Nếu e có tìm hiểu thì em sẽ thấy phúc lợi ở đây cũng là một điểm cộng lớn"
+      },
+      {
+        "English": "ONE always highly appreciates the position of night security guard",
+        "Vietnamese": "ONE luôn đánh giá cao vị trí bảo vệ ca đêm"
+      },
+      {
+        "English": "I believe they will reward you handsomely",
+        "Vietnamese": "Chị tin họ sẽ trả em hậu hĩnh thôi"
+      },
+      {
+        "English": "You think about it, Mr. AB will cover this topic on Friday",
+        "Vietnamese": "Em cứ suy nghĩ đi, anh AB sẽ cover chủ đề này vào thứ 6"
+      }
+    ],
+    "Dia 2": [
+      {
+        "English": "Hello, thanks for calling Vinamilk",
+        "Vietnamese": "DL: Alô, cám ơn đã gọi đến Vinamilk"
+      },
+      {
+        "English": "I'm Dutch Lady, how may I help you, sir?",
+        "Vietnamese": "DL: Em là Dutch Lady, em có thể giúp được gì cho anh ạ?"
+      },
+      {
+        "English": "Hello, HELLO? Can you hear me okay?",
+        "Vietnamese": "T: Alo, ALO? Cô nghe tôi okay không?"
+      },
+      {
+        "English": "Actually I wanna pick up where we left off yesterday",
+        "Vietnamese": "T: Thật ra tôi muốn nói tiếp cái chỗ hôm qua mà ta dừng lại ấy"
+      },
+      {
+        "English": "Yesterday I did call but my problems haven't been solved yet",
+        "Vietnamese": "T: Hôm qua tôi có gọi nhưng mà vấn đề của tôi vẫn chưa được giải quyết"
+      },
+      {
+        "English": "Sorry, first and foremost, may I have your name, sir?",
+        "Vietnamese": "DL: Sorry, đầu tiên và trên hết, cho em xin tên anh được chứ ạ?"
+      },
+      {
+        "English": "I need to check on the system to know who talked to you yesterday",
+        "Vietnamese": "DL: Em cần check trên hệ thống để biết ai đã nói chuyện với anh hôm qua"
+      },
+      {
+        "English": "My name is Tho, Phuoc Loc Tho, I made a phonecall around 11 pm, you can check",
+        "Vietnamese": "T: Anh tên Thọ, Phuoc Loc Tho, anh gọi khoảng 11h tối, em có thể kiểm tra"
+      },
+      {
+        "English": "Please hold the line for a while, if you don't mind",
+        "Vietnamese": "DL: Xin anh giữ máy một chút nha, nếu anh không phiền"
+      },
+      {
+        "English": "Actually you don't need to check, dear",
+        "Vietnamese": "T: Thật ra em không cần check đâu, cưng"
+      },
+      {
+        "English": "There're totally 3 things that took me all afternoon to think about",
+        "Vietnamese": "T: Có tổng cộng 3 điều mà làm anh tốn cả buổi chiều để nghĩ về"
+      },
+      {
+        "English": "First, I thought I bought myself a big box of condensed milk",
+        "Vietnamese": "T: Thứ nhất, anh nghĩ anh đã mua cho mình một thùng sữa đặc to"
+      },
+      {
+        "English": "But turned out condensed milk was not condensed at all",
+        "Vietnamese": "T: nhưng hóa ra sữa đặc lại không đặc chút nào"
+      },
+      {
+        "English": "Sorry but I'm not sure I get what you mean",
+        "Vietnamese": "DL: Xin lỗi nhưng em không chắc em hiểu ý anh cho lắm"
+      },
+      {
+        "English": "When I opened that up and looked inside, it was out of my expectation",
+        "Vietnamese": "T: Khi mà anh khui nó ra rồi nhìn vô bên trong, nó vượt quá mong đợi của anh luôn"
+      },
+      {
+        "English": "Sorry to interrupt you right there but...",
+        "Vietnamese": "DL: Xin lỗi cắt ngang lời anh ngay đó nhưng mà ..."
+      },
+      {
+        "English": "What is your definition of expectation?",
+        "Vietnamese": "DL: Cái định nghĩa của anh về sự mong đợi là cái gì vậy?"
+      },
+      {
+        "English": "I don't know but I expect condensed milk will be a lot more condensed",
+        "Vietnamese": "T: Anh không biết nhưng mà anh mong đợi sữa đặc thì phải đặc hơn rất là nhiều"
+      },
+      {
+        "English": "Okay, I hear what you're saying, thank for your valuable comments on this",
+        "Vietnamese": "DL: Okay, em nghe thì hiểu những gì anh đang nói, cám ơn anh vì những lời comment đáng giá cho vấn đề này"
+      },
+      {
+        "English": "I think I'll pass it down to R&D team",
+        "Vietnamese": "DL: Em nghĩ em sẽ pass nó xuống cho team R&D"
+      },
+      {
+        "English": "Okay, next, I know the thing I'm about to tell you might sound a bit ridiculous",
+        "Vietnamese": "T: Okay, tiếp theo, anh biết là cái điều anh sắp nói em nghe có thể khá là buồn cười"
+      },
+      {
+        "English": "Ridiculous??? Hold on, I knew what you were gonna say",
+        "Vietnamese": "DL: Buồn cười? Khoan, em biết anh sắp nói gì nè"
+      },
+      {
+        "English": "You're gonna tell me sth about packaging, right?",
+        "Vietnamese": "DL: Anh tính nói em cái gì đó về đóng gói đúng không?"
+      },
+      {
+        "English": "Holy cow, you're such a mind reader, dear",
+        "Vietnamese": "T: Trời đất ơi, em đi guốc trong bụng anh rồi, cưng"
+      },
+      {
+        "English": "This morning, the moment my wife opened the box,",
+        "Vietnamese": "T: Sáng nay, cái lúc mà bà vợ anh bả khui cái thùng ra"
+      },
+      {
+        "English": "She looked daggers at me, then she went, like",
+        "Vietnamese": "T: Bả nhìn anh với ánh mắt hình viên đạn, rồi bả nói kiểu"
+      },
+      {
+        "English": "Hey, old man, you got no hair and you bought this much shampoo for what?",
+        "Vietnamese": "T: \"Ê ông già, ông không có tóc mà mua chi nhiều dầu gọi dzầy?\""
+      },
+      {
+        "English": "I feel you, thank you for your sharing, though",
+        "Vietnamese": "DL: Em hiểu mà, dù sao cũng cám ơn anh đã chia sẻ"
+      },
+      {
+        "English": "Actually recently, we've received a lot of complaints about the new packaging design",
+        "Vietnamese": "DL: thật ra dạo này, bọn em nhận rất nhiều lời complain về cái thiết kế bao bì mới"
+      },
+      {
+        "English": "Most of the time, they said it looks quite identical with a single-use shampoo sachet",
+        "Vietnamese": "DL: Hầu hết mọi lúc, họ đều nói nó trông gần như y hệt một bịch dầu gọi dùng 1 lần ấy"
+      },
+      {
+        "English": "Actually it's not really an issue, you know",
+        "Vietnamese": "T: Thật ra, cái đó nó không hẳn là một vấn đề, em cũng biết rồi đó"
+      },
+      {
+        "English": "I know packaging's got nothing to do with product quality",
+        "Vietnamese": "T: Anh biết bao bì thì có liên quan gì đến chất lượng sản phẩm đâu"
+      },
+      {
+        "English": "No, no, no, your feedback means a lot to us, really!",
+        "Vietnamese": "DL: Ko, ko, ko, phản hồi của anh rất là có ý nghĩa với bên em, thiệt!"
+      },
+      {
+        "English": "Thank you for bringing this to our attention",
+        "Vietnamese": "DL: Cám ơn anh đã làm bọn em để ý đến cái này"
+      },
+      {
+        "English": "As you already know, during the course of 46 years",
+        "Vietnamese": "DL: Như anh cũng biết rồi, trong suốt 46 năm"
+      },
+      {
+        "English": "The number of our loyal customers has been increasing steadily",
+        "Vietnamese": "DL: Số khách hàng trung thành của bọn em đã và đang tăng dần lên một cách ổn định"
+      },
+      {
+        "English": "Because very often, to meet market demand",
+        "Vietnamese": "DL: Bời vì thường thì, để thỏa mãn nhu cầu thị trường"
+      },
+      {
+        "English": "we put a lot of effort to find out on-trend flavors",
+        "Vietnamese": "DL: Bọn em đã bỏ rất nhiều nỗ lực để tìm ra những cái mùi vị đang hợp với xu hướng"
+      },
+      {
+        "English": "and then try to innovate the flavors of our products",
+        "Vietnamese": "DL: Rồi sau đó cố gắng cải tiến mùi vị các sản phẩm của mình"
+      },
+      {
+        "English": "Totally! I believe flavors are very important to dairy products",
+        "Vietnamese": "T: Chắc hẳn là vậy! Anh tin mùi vị rất là quan trọng đối với các sản phẩm về sữa"
+      },
+      {
+        "English": "Hold on, now that you mention it",
+        "Vietnamese": "T: Mà khoan, sẵn tiện em nhắc đến cái vụ đó"
+      },
+      {
+        "English": "Speaking of flavor, I'm not sure your new one is a breakthrough",
+        "Vietnamese": "T: Nói về mùi vị nha, anh không chắc cái vị mới của bọn em là một bước đột phá đâu nhé"
+      },
+      {
+        "English": "Sorry, could you tell me more about this?",
+        "Vietnamese": "DL: Sorry, anh nói em thêm về cái này được không?"
+      },
+      {
+        "English": "I don't mean to be rude but it tastes, like... dishwater",
+        "Vietnamese": "T: Anh không có ý chê bai nhưng mà nó có vị, kiểu... nhạt như nước ốc ấy"
+      },
+      {
+        "English": "Hmm... lemme see if I have this right",
+        "Vietnamese": "DL: Hmmmm để em xem liệu em có đang hiểu đúng vấn đề hay là không nhé"
+      },
+      {
+        "English": "You're telling me that you simply don't like our new flavor. Right?",
+        "Vietnamese": "DL: Ý anh đang muốn nói em là anh đơn giản chỉ là không thích cái vị mới của bọn em. Đúng không?"
+      },
+      {
+        "English": "Okay, as an immediate solution, I'll ship to you a new box tomorrow",
+        "Vietnamese": "DL: Okay, giải pháp tức thời của em, em sẽ ship cho anh một thùng mới ngày mai"
+      },
+      {
+        "English": "Hmmm, you know what? It doesn't matter, actually yesterday your coworker really pissed me off",
+        "Vietnamese": "T: Hmmm, em biết sao không? Chuyện này cũng chẳng có gì. Thật ra hôm qua đồng nghiệp của em nó làm anh bực mình quá"
+      },
+      {
+        "English": "But today it was really different talking to you. That's it, have a nice day",
+        "Vietnamese": "T: Nhưng mà hôm nay rất là khác khi nói chuyện với em. Vậy thôi, chúc em một ngày vui vẻ nha"
+      }
+    ]
+  }
+}

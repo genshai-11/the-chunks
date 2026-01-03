@@ -1,0 +1,761 @@
+{
+  "lesson_name": "D10 - Freetalk 3",
+  "categories": {
+    "Mono 1": [
+      {
+        "English": "Good morning everyone",
+        "Vietnamese": "Chào buổi sáng mọi người"
+      },
+      {
+        "English": "I'm Solie, I've been working for more than 5 years in the e-commerce industry",
+        "Vietnamese": "Tôi là Solie, tôi đã và đang làm việc hơn 5 năm trong ngành TMDT"
+      },
+      {
+        "English": "Today I wanna raise a question about our position in this dynamic market",
+        "Vietnamese": "Hôm nay tôi muốn raise lên 1 câu hỏi về vị thế của chúng ta trong cái thị trường tăng động này"
+      },
+      {
+        "English": "If you look at the screen, see that?",
+        "Vietnamese": "Nếu các bạn nhìn lên màn hình, thấy cái đó không?"
+      },
+      {
+        "English": "I'm talking about slide 20",
+        "Vietnamese": "Tôi đang nói về slide 20"
+      },
+      {
+        "English": "Right there, the orange pie chart on the left, I mean",
+        "Vietnamese": "Ngay đó, ý tôi là cái biểu đồ tròn màu cam bên trái"
+      },
+      {
+        "English": "It might sound crazy but it seems this is what's happening nowadays",
+        "Vietnamese": "Nghe thì có vẻ điên rồ nhưng mà có vẻ đây chính là những gì đang diễn ra ngày nay"
+      },
+      {
+        "English": "We've been through a lot of difficulties together \n in the past 7 years",
+        "Vietnamese": "Chúng ta đã kinh qua vô vàn những khó khăn cùng nhau trong suốt 7 năm qua"
+      },
+      {
+        "English": "I'm well aware that this is a cash-burning game",
+        "Vietnamese": "Tôi ý thức rõ được rằng đây là một trò chơi đốt tiền"
+      },
+      {
+        "English": "The point is, I'm myself a big fan of online shopping",
+        "Vietnamese": "Cái vấn đề là, chính bản thân tôi là fan ruột của online shopping"
+      },
+      {
+        "English": "Basically I'm not a bargain hunter",
+        "Vietnamese": "Về cơ bản tôi không phải kiểu người săn sale"
+      },
+      {
+        "English": "I'm not a \"see see look look\" customer either",
+        "Vietnamese": "Tôi cũng không phải kiểu khách hàng \"dòm dòm ngó ngó\""
+      },
+      {
+        "English": "In terms of shopping,",
+        "Vietnamese": "Nói về shopping,"
+      },
+      {
+        "English": "To some extent,",
+        "Vietnamese": "Ở một mức độ nào đó,"
+      },
+      {
+        "English": "I think I'm more of an impulsive spender",
+        "Vietnamese": "Tôi nghĩ tôi giống một người chi tiêu tùy hứng hơn"
+      },
+      {
+        "English": "What do I mean by impulsive spender?",
+        "Vietnamese": "Tôi nói người chi tiêu tùy hứng là ý gì?"
+      },
+      {
+        "English": "It means when I'm in a very good mood",
+        "Vietnamese": "Nó có nghĩa là khi mà tôi có tâm trạng vui"
+      },
+      {
+        "English": "Whatever it takes, I'm gonna buy something",
+        "Vietnamese": "Bằng mọi giá tôi sẽ mua cái gì đó"
+      },
+      {
+        "English": "There's a famous saying that goes",
+        "Vietnamese": "Có một câu nói nổi tiếng nói rằng"
+      },
+      {
+        "English": "You get what you pay for",
+        "Vietnamese": "Tiền nào thì của đó"
+      },
+      {
+        "English": "I feel like, Shopee always offers me a lot of deals at competitive prices",
+        "Vietnamese": "Tôi cảm thấy kiểu, Shopee luôn offer tôi rất là nhiều cái deal với mức giá cạnh tranh"
+      },
+      {
+        "English": "The Flash sales program is a perfect example of this",
+        "Vietnamese": "Chương trình Flash sales là một ví dụ điển hình cho cái này"
+      },
+      {
+        "English": "Have you ever wondered",
+        "Vietnamese": "Các bạn có bao giờ tự hỏi"
+      },
+      {
+        "English": "What percentage of time you spend shopping online every day?",
+        "Vietnamese": "Bao nhiêu % thời lượng bạn dành cho shopping online mỗi ngày?"
+      },
+      {
+        "English": "The answer will definitely blow your mind!",
+        "Vietnamese": "Câu trả lời chắc chắn sẽ làm bạn hú hồn chim én!"
+      },
+      {
+        "English": "Lemme tell you upfront, 90%",
+        "Vietnamese": "Để tôi nói luôn, 90%"
+      },
+      {
+        "English": "YES, the time my mom spends on Shopee platform accounts for around 90% of her day",
+        "Vietnamese": "PHẢI, thời lượng má tôi dành cho nền tảng Shopee chiếm khoảng 90% một ngày của bả"
+      },
+      {
+        "English": "And you know what?!?",
+        "Vietnamese": "Rồi các bạn biết sao không?!?"
+      },
+      {
+        "English": "This horrible fact shows no sign of stopping!",
+        "Vietnamese": "Cái sự thật kinh khủng khiếp này vẫn chưa có dấu hiệu dừng lại!"
+      },
+      {
+        "English": "Since when did we not wanna go to the supermarket anymore???",
+        "Vietnamese": "Từ khi nào chúng ta không còn muốn đi siêu thị nữa vậy?"
+      },
+      {
+        "English": "Since when did we \n prefer shopping online to hanging around in the malls?",
+        "Vietnamese": "Từ khi nào chúng ta thích shopping online hơn là đi lòng vòng trong mấy cái mall?"
+      },
+      {
+        "English": "Lemme put it this way,",
+        "Vietnamese": "Để tôi nói vầy đi,"
+      },
+      {
+        "English": "Our society is depending more and more on e-commerce platforms",
+        "Vietnamese": "XH của chúng ta đang ngày càng phụ thuộc vào các nền tảng TMDT"
+      },
+      {
+        "English": "I once asked a buddy of mine",
+        "Vietnamese": "Tôi từng có lần hỏi một đứa bạn tôi"
+      },
+      {
+        "English": "Would it kill you just to stop shopping for a day???",
+        "Vietnamese": "Mày ngưng shopping một ngày bộ chết hả?"
+      },
+      {
+        "English": "By the way, his name is Tuan Anh",
+        "Vietnamese": "Nhân tiện, tên bạn này là Tuấn Anh"
+      },
+      {
+        "English": "Trust me, you must have seen him around",
+        "Vietnamese": "Tin tôi đi, hẳn là mọi người đã gặp ảnh lòng vòng ở đây rồi"
+      },
+      {
+        "English": "At the time, he turned to me and gave me a dirty look,",
+        "Vietnamese": "Lúc đó, hắn quay sang rồi nhìn tôi khinh bỉ,"
+      },
+      {
+        "English": "Tell me about it!",
+        "Vietnamese": "Chứ còn gì nữa!"
+      },
+      {
+        "English": "Then he even showed me what to do to \n enhance my shopping experience",
+        "Vietnamese": "Rồi hắn còn thậm chí show cho tôi cách làm để tăng cường trải nghiệm mua sắm nữa"
+      },
+      {
+        "English": "What excites me the most is the shopping experience",
+        "Vietnamese": "Cái điều mà làm tôi phấn khích nhất chính là trải nghiệm mua sắm"
+      },
+      {
+        "English": "I don't know why, but there's always something to buy on Shopee",
+        "Vietnamese": "Tôi không biết tại sao nhưng mà luôn có cái gì đó để mua trên Shopee"
+      },
+      {
+        "English": "People say that there's no such thing as a free lunch in life",
+        "Vietnamese": "Người ta bảo chả có gì là miễn phí ở đời đâu"
+      },
+      {
+        "English": "But that advice just doesn't apply to Shopee at all",
+        "Vietnamese": "Nhưng cái lời khuyên đó chả hề áp dụng với Shopee"
+      },
+      {
+        "English": "Yes, you can definitely find free stuff on shopee!",
+        "Vietnamese": "Phải, bạn hoàn toàn có thể tìm thấy mấy thứ free trên Shopee!"
+      },
+      {
+        "English": "Deals hunting is the keyword here",
+        "Vietnamese": "Săn sales chính là từ khóa ở đây"
+      },
+      {
+        "English": "And I know deals hunting has to do with sales funnel and the conversion rate",
+        "Vietnamese": "Và tôi biết săn sale thì có liên quan đến phễu bán hàng với tỉ lệ chuyển đổi"
+      },
+      {
+        "English": "To wrap it up, please bear in mind that",
+        "Vietnamese": "Để kết thúc, hãy nhớ rằng"
+      },
+      {
+        "English": "Vietnam is the 2nd largest digital economy in the region",
+        "Vietnamese": "Việt Nam đang là nền kinh tế số lớn thứ 2 trong khu vực"
+      }
+    ],
+    "Dia 1": [
+      {
+        "English": "Tracey - Hey, are you that famous Nemo in the cartoon?",
+        "Vietnamese": "Tracey - Hey, cậu là cái con Nemo nổi tiếng trong hoạt hình phải không?"
+      },
+      {
+        "English": "Nemo - Hi ma'am, you see my dad around here?",
+        "Vietnamese": "Nemo - Hi thím, thím thấy ba tui lòng vòng đây không?"
+      },
+      {
+        "English": "N - I've been looking for him since morning",
+        "Vietnamese": "N - Tui đang tìm ổng sáng giờ"
+      },
+      {
+        "English": "N - He told me he was having a group interview somewhere in the Indian sea",
+        "Vietnamese": "N - Ổng bảo tui ổng có một buổi phỏng vấn nhóm đâu đó bên Ấn Độ dương"
+      },
+      {
+        "English": "T - Wait, what you said? Indian sea?",
+        "Vietnamese": "T - Khoan, cậu nói gì? Ấn Độ dương hả?"
+      },
+      {
+        "English": "T - You must have misheard him,",
+        "Vietnamese": "T - Chắc cậu nghe nhầm ổng rồi,"
+      },
+      {
+        "English": "T - I'm sure he didn't say that,",
+        "Vietnamese": "T - Tui chắc chắn ổng không có nói vậy,"
+      },
+      {
+        "English": "T - By the way, why you're here, dear?",
+        "Vietnamese": "T - Mà, sao lại ở đây, cưng?"
+      },
+      {
+        "English": "T - This is 19th floor, Sonatus building, Shopee's pantry area",
+        "Vietnamese": "T - Đây là lầu 19, tòa nhà Sonatus, khu vực Pantry của Shopee mà"
+      },
+      {
+        "English": "T - You know what I mean?",
+        "Vietnamese": "T - Cậu hiểu ý tui không?"
+      },
+      {
+        "English": "N - Hold on, you just said \"Shopee\"?",
+        "Vietnamese": "N - Khoan, thím vừa bảo \"Shopee\" hả?"
+      },
+      {
+        "English": "N - That rings a bell!",
+        "Vietnamese": "N - Cái đó nghe quen lắm nha!"
+      },
+      {
+        "English": "N - Lately my dad has been singing an odd song",
+        "Vietnamese": "N - Dạo gần đây ba tui ổng đang ca một cái bài rất kỳ lạ"
+      },
+      {
+        "English": "N - It sounds like \"Pì pi - pi pi pi pi pi pi\"",
+        "Vietnamese": "N - Nó nghe như kiểu \"Pì pi - pi pi pi pi pi pi\""
+      },
+      {
+        "English": "T - Wow, you know our lucky song??? Quite catchy, right?",
+        "Vietnamese": "T - Wow, cậu biết cả bài hát phong thủy của bọn này hả??? Khá là bắt tai, phải không?"
+      },
+      {
+        "English": "T - Okay, I'm on the way to the client meeting, so I'll be brief",
+        "Vietnamese": "T - Okay, Chị đang trên đường qua họp khách hàng, nên chị sẽ ngắn gọn"
+      },
+      {
+        "English": "T - I believe I ran into your dad this morning in the elevator",
+        "Vietnamese": "T - Chị tin chị có đụng phải ba em sáng nay trong thang máy"
+      },
+      {
+        "English": "T - He said he wanna become a professional BD",
+        "Vietnamese": "T - Ổng bảo ổng muốn trở thành một BD chuyên nghiệp"
+      },
+      {
+        "English": "T - It seemed he wanna learn more about the \n check-out flow",
+        "Vietnamese": "T - Có vẻ như ổng muốn học về quy trình thanh toán"
+      },
+      {
+        "English": "N - No way, it doesn't sound like my daddy at all!",
+        "Vietnamese": "N - Làm gì có chuyện đó, nghe chả giống tía em gì cả!"
+      },
+      {
+        "English": "N - My dad is not that numerate to become a BD!",
+        "Vietnamese": "N - Tía em ổng đâu có giỏi số đến vậy để thành một BD!"
+      },
+      {
+        "English": "N - You must have mistaken him for someone else",
+        "Vietnamese": "N - Chắc là chị nhầm ổng với người khác rồi"
+      },
+      {
+        "English": "N - Trust me, metrics are just not his things",
+        "Vietnamese": "N - Tin em đi, mấy thông số đo không phải sở thích của ổng đâu"
+      },
+      {
+        "English": "N - He even can not \n tell the difference between churn rate and retention rate",
+        "Vietnamese": "N - Ổng thậm chí còn không thể nói được điểm khác biệt giữa churn rate với retention rate mà"
+      },
+      {
+        "English": "N - Plus my dad sucks at closing deals, really!",
+        "Vietnamese": "N - Với lại tía em ổng dở chốt deal lắm, thiệt!"
+      },
+      {
+        "English": "N - I think my dad prefers a position in logistics",
+        "Vietnamese": "N - Em nghĩ tía em ổng thích một vị trí bên logistics hơn ấy chị"
+      },
+      {
+        "English": "T - Uh huh? Has he ever been in a \n delivery rejection situation before?",
+        "Vietnamese": "T - Uh huh? Ổng có bao giờ ở vào trong cảnh bị bom hàng trước đây chưa?"
+      },
+      {
+        "English": "N - Tell me about it, that situation is almost inevitable",
+        "Vietnamese": "N - Chứ còn gì nữa, tình cảnh đó là gần như không thể tránh khỏi rồi"
+      },
+      {
+        "English": "N - Believe it or not, 3 years ago,",
+        "Vietnamese": "N - Chị tin hay không thì tùy, 3 năm trước,"
+      },
+      {
+        "English": "N - He once shipped a sunscreen kit all the way to Africa",
+        "Vietnamese": "N - Ổng có lần ship một bộ kem chống nắng qua tận Châu Phi"
+      },
+      {
+        "English": "T - Lemme stop you right there",
+        "Vietnamese": "T - Cho chị ngắt lời em ngay đó"
+      },
+      {
+        "English": "T - Everyone knows that Africa is still an undeliverable area",
+        "Vietnamese": "T - Ai ai cũng biết Châu Phi nó vẫn là một khu vực không thể giao hàng mà"
+      },
+      {
+        "English": "T - There's not many banks there that could help you perform a transaction",
+        "Vietnamese": "T - Đâu có nhiều ngân hàng bên đó có thể giúp em thực hiện một giao dịch"
+      },
+      {
+        "English": "N - You bet! I didn't say anything about banks or digital wallet",
+        "Vietnamese": "N - Chính xác! Em đâu có nói gì về ngân hàng hay ví điện tử gì đâu"
+      },
+      {
+        "English": "T - Then what you're gonna use to pay?",
+        "Vietnamese": "T - Thế em sẽ dùng cái gì để thanh toán?"
+      },
+      {
+        "English": "N - In case like this, I guess COD might be the best solution",
+        "Vietnamese": "N - Trong trường hợp này, em đoán COD có thể là giải pháp tốt nhất"
+      },
+      {
+        "English": "T - Uh huh, maybe you're right but I still don't buy it",
+        "Vietnamese": "T - Uh huh, có thể em đúng nhưng mà chị vẫn không tin"
+      },
+      {
+        "English": "T - Point is, how can your dad \n deal with border congestion?",
+        "Vietnamese": "T - Vấn đề là sao tía em có thể deal được với tắt nghẽn biên giới chứ?"
+      },
+      {
+        "English": "N - No idea but this is not his first time",
+        "Vietnamese": "N - Chả biết nhưng mà đây không phải lần đầu của ổng"
+      },
+      {
+        "English": "T - Okay, you mean your dad always takes initiative to troubleshoot like this?",
+        "Vietnamese": "T - Okay, ý em là ba em ổng luôn chủ động để giải quyết vấn đề kiểu vầy à?"
+      },
+      {
+        "English": "N - Yeah, he's one of the best shippers I've ever seen in my life",
+        "Vietnamese": "N - Yeah, ổng là một trong những shipper đỉnh nhất em từng thấy trong đời luôn ấy"
+      },
+      {
+        "English": "N - Let me put it this way",
+        "Vietnamese": "N - Để em nói vầy đi"
+      },
+      {
+        "English": "N - It's not a good idea to let him become a BD",
+        "Vietnamese": "N - Để cho ổng làm BD không phải là ý hay đâu"
+      },
+      {
+        "English": "T - Really? Is he good at inventory management?",
+        "Vietnamese": "T - Vậy hả? Ổng có giỏi quản lý hàng hóa không?"
+      },
+      {
+        "English": "T - Actually we've been performing mass recruitment for Shopee Xpress team",
+        "Vietnamese": "T - Thực ra bọn chị đang tuyển hàng loạt cho cái đội Shopee Xpress"
+      },
+      {
+        "English": "T - What concerns me the most right now is delivery time",
+        "Vietnamese": "T - Cái điều làm chị băn khoăn nhất lúc này chính là thời gian giao hàng"
+      },
+      {
+        "English": "N - You mean how to shorten the delivery time?",
+        "Vietnamese": "N - Ý chị là làm sao để giảm thời gian giao hàng phải không?"
+      },
+      {
+        "English": "T - You bet, I gotta go, see you around",
+        "Vietnamese": "T - Chính xác, thôi chị phải đi đây, gặp nhóc sau"
+      },
+      {
+        "English": "T - \"It's odd, how come I talked to a fish today???\"",
+        "Vietnamese": "T - \"Kỳ lạ, sao hôm nay mình lại nói chuyện với một con cá nhỉ???\""
+      }
+    ],
+    "Mono 2": [
+      {
+        "English": "As far as I'm concerned, ...",
+        "Vietnamese": "Theo như tôi thấy, ..."
+      },
+      {
+        "English": "There's a naked truth in this field",
+        "Vietnamese": "Có một sự thật trần trụi trong ngành này"
+      },
+      {
+        "English": "A business can not survive without customers",
+        "Vietnamese": "Một cái business không thể tồn tại được mà không có khách hàng"
+      },
+      {
+        "English": "That's the reason why we all care about \n the term \"customer insight\"",
+        "Vietnamese": "Đó là lý do mà tất cả chúng ta đều care về cái cụm từ \"Insight khách hàng\""
+      },
+      {
+        "English": "At the end of the day,",
+        "Vietnamese": "Suy cho cùng,"
+      },
+      {
+        "English": "A product has to be marketable. Right?",
+        "Vietnamese": "Một sản phẩm thì phải bán được, right?"
+      },
+      {
+        "English": "You're Vietnamese, you know Highland?",
+        "Vietnamese": "Cậu là người Việt, cậu biết Highland không?"
+      },
+      {
+        "English": "Yeah, they're been using this tactic very successfully",
+        "Vietnamese": "Yeah, họ đã và đang dùng cái chiến thuật này rất là thành công"
+      },
+      {
+        "English": "The sandwiches in their menu are dirt cheap, 19k",
+        "Vietnamese": "Bánh mì trong menu của họ nó rẻ bèo à, 19k"
+      },
+      {
+        "English": "Yeah, you heard it right, less than a dollar",
+        "Vietnamese": "Yeah, cậu nghe đúng rồi đó, dưới một đô"
+      },
+      {
+        "English": "What can you buy in this day and age with 19k?",
+        "Vietnamese": "Thời buổi này cậu có thể mua được cái gì với 19k?"
+      },
+      {
+        "English": "But they didn't lose their mind",
+        "Vietnamese": "Nhưng mà họ không có bị mất trí đâu nha"
+      },
+      {
+        "English": "Actually that is a \"sales gimmick\"",
+        "Vietnamese": "Thật ra cái đó là một cái \"mánh bán hàng\""
+      },
+      {
+        "English": "They use sandwich to attract the customers to their shop",
+        "Vietnamese": "Họ dùng bánh mì để thu hút khách hàng vào quán của họ"
+      },
+      {
+        "English": "Once the customers decided to step inside",
+        "Vietnamese": "Một khi mà khách đã quyết định bước vào trong"
+      },
+      {
+        "English": "9 times out of 10,",
+        "Vietnamese": "Hết 9 trên 10 lần"
+      },
+      {
+        "English": "This tactic works like a charm",
+        "Vietnamese": "Cái chiến thuật này nó hiệu quả như thuốc tiên ấy"
+      },
+      {
+        "English": "A typical customer will never get into a coffee shop",
+        "Vietnamese": "Một khách hàng điển hình sẽ chẳng có bao giờ đi vào một quán cà phê"
+      },
+      {
+        "English": "and only grab themselves a sandwich",
+        "Vietnamese": "Và chỉ lụm cho mình một ổ bánh mì cả"
+      },
+      {
+        "English": "Make sense?",
+        "Vietnamese": "Hợp lý chứ?"
+      },
+      {
+        "English": "BTW, when it comes to pricing,",
+        "Vietnamese": "Nhân tiện, khi nói về định giá,"
+      },
+      {
+        "English": "In this marketing world,",
+        "Vietnamese": "Trong thế giới marketing này,"
+      },
+      {
+        "English": "There's no one that doesn't know about...",
+        "Vietnamese": "Không có ai mà không biết về ..."
+      },
+      {
+        "English": "the so-called decoy effect",
+        "Vietnamese": "Cái gọi là hiệu ứng chim mồi cả"
+      },
+      {
+        "English": "It has to do with pricing strategies",
+        "Vietnamese": "Nó có liên quan đến mấy cái chiến lược định giá"
+      },
+      {
+        "English": "Take Starbucks,",
+        "Vietnamese": "Lấy ví dụ Starbucks,"
+      },
+      {
+        "English": "They are master at this",
+        "Vietnamese": "Họ là master cái này"
+      },
+      {
+        "English": "Their menu is very customer-friendly",
+        "Vietnamese": "Menu của họ rất là thân thiện với khách hàng"
+      },
+      {
+        "English": "Simply put,",
+        "Vietnamese": "Nói một cách đơn giản,"
+      },
+      {
+        "English": "If you get yourself a starbucks",
+        "Vietnamese": "Nếu cậu mua cho cậu một ly starbucks"
+      },
+      {
+        "English": "Imagine, if they only give you 2 options: Small and large",
+        "Vietnamese": "Tưởng tượng, nếu họ chỉ cho cậu 2 cái option: nhỏ và lớn"
+      },
+      {
+        "English": "The small one will cost you 3.5 dollars",
+        "Vietnamese": "Cái ly nhỏ sẽ có giá 3 đô rưỡi"
+      },
+      {
+        "English": "While the big one will cost you 6 dollars",
+        "Vietnamese": "Trong khi cái ly lớn sẽ có giá 6 đô"
+      },
+      {
+        "English": "If you were that customer,",
+        "Vietnamese": "Nếu cậu là cái người khách hàng đó,"
+      },
+      {
+        "English": "Which one would you go for?",
+        "Vietnamese": "Cậu sẽ chọn cái nào?"
+      },
+      {
+        "English": "I believe most of us will go for the small one",
+        "Vietnamese": "Tôi tin là hầu hết chúng ta sẽ chọn cái ly nhỏ"
+      },
+      {
+        "English": "There are not many people willing to pay 6 dollars just for a coffee",
+        "Vietnamese": "Chẳng có mấy người sẵn sàng trả 6 đô chỉ cho 1 ly cà phê đâu"
+      },
+      {
+        "English": "That's the reason why they will give you a third option",
+        "Vietnamese": "Đó là lý do tại sao họ sẽ cho cậu một cái option thứ ba"
+      },
+      {
+        "English": "And this 3rd option falls right between 2 previous options",
+        "Vietnamese": "Và cái option thứ ba này rơi đúng ngay vào giữa 2 cái option trước"
+      },
+      {
+        "English": "The term \"decoy effect\" has been around since then",
+        "Vietnamese": "Cái thuật ngữ \"hiệu ứng chim mồi\" đã có từ lúc đó"
+      }
+    ],
+    "Dia 2": [
+      {
+        "English": "Bill: Hello, may I speak to Mark?",
+        "Vietnamese": "Bill: Alo, cho tôi nói chuyện với Mark được không?"
+      },
+      {
+        "English": "Mark: Hi boss, it's me, what's up?",
+        "Vietnamese": "Mark: Hi sếp, em đây, có gì không?"
+      },
+      {
+        "English": "B: Not much, sorry to call you at this hour",
+        "Vietnamese": "B: Cũng không có gì nhiều, xin lỗi vì gọi cậu giờ này"
+      },
+      {
+        "English": "B: Are you available to talk now?",
+        "Vietnamese": "B: Giờ cậu có tiện nói chuyện không?"
+      },
+      {
+        "English": "M: I'm okay, you're so strange today",
+        "Vietnamese": "M: Em okay, nay sếp lạ vậy?"
+      },
+      {
+        "English": "B: Really? I'm on vacation in Con Dao",
+        "Vietnamese": "B: Vậy hả? Tôi đang nghỉ mát ở Côn Đảo"
+      },
+      {
+        "English": "B: Quick question, who’s handled the packaging design this time?",
+        "Vietnamese": "B: Hỏi nhanh cái, đứa nào lo cái thiết kế bao bì lần này vậy?"
+      },
+      {
+        "English": "M: If my memory serves me right,",
+        "Vietnamese": "M: Nếu em nhớ không nhầm thì..."
+      },
+      {
+        "English": "M: I has assigned this task to Steve",
+        "Vietnamese": "M: Em đã giao cái task này cho thằng Steve"
+      },
+      {
+        "English": "B: Well, I got bad news for him then",
+        "Vietnamese": "B: Ý chà, vậy thì tôi có tin xấu cho nó rồi"
+      },
+      {
+        "English": "M: At first, actually I planned to do that myself",
+        "Vietnamese": "M: Lúc đầu, thật ra em tính tự làm"
+      },
+      {
+        "English": "M: But then, there was some minor issues with our agency in Thailand",
+        "Vietnamese": "M: Nhưng mà sau đó, có vài vấn đề nhỏ với agency của mình ở bên Thái"
+      },
+      {
+        "English": "M: That's why I had to fly to Bangkok urgently last Monday",
+        "Vietnamese": "M: Đó là lý do em phải bay gấp qua Bangkok thứ 2 tuần trước"
+      },
+      {
+        "English": "B: Mark, I don't know how to put it but...",
+        "Vietnamese": "B: Mark, tôi không biết nói sao nhưng mà..."
+      },
+      {
+        "English": "B: Okay, lemme get this straight,",
+        "Vietnamese": "B: Okay, thôi để tôi nói thẳng nha"
+      },
+      {
+        "English": "B: I don't know if he told you yet but...",
+        "Vietnamese": "B: Tôi không biết liệu nó có nói cậu chưa nhưng mà..."
+      },
+      {
+        "English": "B: He went three times over the budget",
+        "Vietnamese": "B: Nó đã vượt ngân sách gấp 3 lần"
+      },
+      {
+        "English": "M: Wait, wait, wait, lemme explain",
+        "Vietnamese": "M: Khoan, khoan, khoan, cho em giải thích cái"
+      },
+      {
+        "English": "M: Our products this time were designed for niche market, right?",
+        "Vietnamese": "M: Mấy cái sản phẩm lần này của mình được design cho thị trường ngách mà, phải không?"
+      },
+      {
+        "English": "B: Keep going",
+        "Vietnamese": "B: Cứ nói tiếp"
+      },
+      {
+        "English": "M: So, our strategy is gonna be exclusive distribution",
+        "Vietnamese": "M: Cho nên, chiến lược của mình sẽ là phân phối độc quyền"
+      },
+      {
+        "English": "M: Not intensive distribution",
+        "Vietnamese": "M: Chứ không phải phân phối đại trà"
+      },
+      {
+        "English": "M: I think of course the cost will get a little bit higher",
+        "Vietnamese": "M: Em nghĩ tất nhiên là giá sẽ hơi cao hơn một tẹo"
+      },
+      {
+        "English": "B: Keep it short, Mark, I don’t have all day",
+        "Vietnamese": "B: Ngắn gọn thôi, Mark, tôi không có rảnh cả ngày đâu"
+      },
+      {
+        "English": "M: Then lemme finish,",
+        "Vietnamese": "M: Thì để em nói xong đã,"
+      },
+      {
+        "English": "M: Purchasing power at the moment is not strong enough",
+        "Vietnamese": "M: Sức mua ở thời điểm hiện tại không có đủ mạnh"
+      },
+      {
+        "English": "B: The point is I want you to increase market coverage. Okay?",
+        "Vietnamese": "B: Cái vấn đề là tôi muốn cậu tăng cái độ phủ thị trường lên. Okay?"
+      },
+      {
+        "English": "M: Nooo, I don't think so, this is door-to-door sales",
+        "Vietnamese": "M: Nôôô, em không nghĩ vậy, \n cái này là tiếp thị đến từng nhà mà"
+      },
+      {
+        "English": "B: Uh huh, what’s the difference???",
+        "Vietnamese": "B: Oh hớ, có gì khác nhau?"
+      },
+      {
+        "English": "M: It is, very different, I’m talking about word of mouth",
+        "Vietnamese": "M: Có chớ, rất là khác, em đang nói về truyền miệng nha"
+      },
+      {
+        "English": "B: Hold on, do you know what’s our long-term target?",
+        "Vietnamese": "B: Khoan, cậu có biết mục tiêu dài hạn của chúng ta là gì không?"
+      },
+      {
+        "English": "M: Of course I know, We wanna make marketable products",
+        "Vietnamese": "M: Đương nhiên là em biết, chúng ta muốn tạo ra những sản phẩm bán được"
+      },
+      {
+        "English": "B: Okay, good. Have you finished the break-even analysis yet?",
+        "Vietnamese": "B: Okay, good. Cậu xong cái phân tích điểm hòa vốn chưa?"
+      },
+      {
+        "English": "M: Not yet, boss, please give me 2 more days",
+        "Vietnamese": "M: Dạ chưa sếp, cho em thêm 2 ngày đi"
+      },
+      {
+        "English": "M: I promise I will pinpoint the root cause",
+        "Vietnamese": "M: Em hứa em sẽ chỉ ra cái nguyên nhân gốc rễ"
+      },
+      {
+        "English": "M: Rest assured! We won’t have to withdraw the products",
+        "Vietnamese": "M: Yên chí! Chúng ta sẽ không phải thu hồi sản phẩm đâu"
+      },
+      {
+        "English": "B: Okay, sure, I know you’re an expert at this",
+        "Vietnamese": "B: Okay, sure, tôi biết cậu là chuyên gia trong vụ này mà"
+      },
+      {
+        "English": "B: I’ll let you handle this",
+        "Vietnamese": "B: Tôi sẽ để cậu xử lý vụ này"
+      },
+      {
+        "English": "M: Do you want me to apply digital wallet?",
+        "Vietnamese": "M: Sếp có muốn em áp dụng ví điện tử không?"
+      },
+      {
+        "English": "B: Good idea, I'll leave that to you",
+        "Vietnamese": "B: Good idea, tôi sẽ để cậu quyết định"
+      },
+      {
+        "English": "B: What worries me now is the shipping time",
+        "Vietnamese": "B: Cái điều làm tôi lo lắng bây giờ là thời gian giao hàng"
+      },
+      {
+        "English": "B: Not to mention issuing an invoice will take much time",
+        "Vietnamese": "B: Chưa kể đến việc xuất hóa đơn đỏ sẽ mất rất là nhiều thời gian"
+      },
+      {
+        "English": "M: Exactly! But most of our income comes from walk-in customers",
+        "Vietnamese": "M: Chính xác! Nhưng hầu hết thu nhập của chúng ta là từ khách vãng lai mà"
+      },
+      {
+        "English": "B: But not many walk-in customers are willing to pay $1000 dollars for this product",
+        "Vietnamese": "B: Nhưng chẳng có mấy khách vãng lai sẵn lòng trả $1000 cho cái sản phẩm này"
+      },
+      {
+        "English": "M: I know but we have already used all the marketing tactics we know",
+        "Vietnamese": "M: Em biết nhưng mà chúng ta đã dùng hết mấy cái mánh marketing mà chúng ta biết rồi"
+      },
+      {
+        "English": "M: Boss, what do you think about this potential market?",
+        "Vietnamese": "M: Sếp, sếp nghĩ sao về cái thị trường tiềm năng này?"
+      },
+      {
+        "English": "B: I don’t wanna use the word “unfair competition”",
+        "Vietnamese": "B: Tôi không có muốn dùng cái từ \"cạnh tranh không lành mạnh\""
+      },
+      {
+        "English": "B: But it seems we’re facing (with) what we fear the most",
+        "Vietnamese": "B: Nhưng có vẻ như chúng ta đang đối mặt với cái điều mà chúng ta sợ nhất"
+      },
+      {
+        "English": "M: Okay, boss, I got it, let’s see",
+        "Vietnamese": "M: Okay, sếp, em hiểu rồi, để coi sao"
+      }
+    ]
+  }
+}

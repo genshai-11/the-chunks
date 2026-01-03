@@ -1,0 +1,785 @@
+{
+  "lesson_name": "D7 - Freetalk 2",
+  "categories": {
+    "Mono 1": [
+      {
+        "English": "Here, this is the public land I told you about last time",
+        "Vietnamese": "Đây, đây là chỗ đất công tôi nói anh lần trước nè"
+      },
+      {
+        "English": "It looks like developed land, doesn't it?",
+        "Vietnamese": "Nó trông như đất đã quy hoạch, phải ko?"
+      },
+      {
+        "English": "Actually I have some shares in this company",
+        "Vietnamese": "Thực ra tôi có một ít cổ phiếu trong công ty này"
+      },
+      {
+        "English": "Look, I don't think this case is easy to deal with",
+        "Vietnamese": "Nè, tôi ko nghĩ ca này dễ deal đâu"
+      },
+      {
+        "English": "We used to have 2 production plants there",
+        "Vietnamese": "Ta từng có 2 cái nhà máy sản xuất ở đó."
+      },
+      {
+        "English": "My boss keeps telling me I've got \n \"tunnel vision\" and stuff",
+        "Vietnamese": "Thằng cha sếp tôi thì cứ bảo tôi có \"tầm nhìn hạn hẹp\" các kiểu"
+      },
+      {
+        "English": "Especially when he talks about budget",
+        "Vietnamese": "Đặc biệt là khi chả nói về budget"
+      },
+      {
+        "English": "The thing is, he once told me that \"You need to stand out\"",
+        "Vietnamese": "Vấn đề là, ổng từng bảo tôi là \"Cậu cần phải stand out\""
+      },
+      {
+        "English": "No idea what the heck it means \"stand out\"",
+        "Vietnamese": "Chả biết stand out là cái quái gì"
+      },
+      {
+        "English": "I guess he meant I need to be special and stuff",
+        "Vietnamese": "Tôi đoán ý ổng là tôi cần phải đặc biệt các kiểu"
+      },
+      {
+        "English": "The truth is, I don't really get along with this guy",
+        "Vietnamese": "Sự thật thì tôi ko hợp cạ với cha này lắm"
+      },
+      {
+        "English": "You follow me?",
+        "Vietnamese": "Anh theo kịp tui không?"
+      },
+      {
+        "English": "Too obvious, everybody sees that",
+        "Vietnamese": "Quá rõ ràng, ai cũng thấy vậy hết"
+      },
+      {
+        "English": "We usually have big arguments every morning",
+        "Vietnamese": "Bọn tôi hay cãi nhau to mỗi sáng"
+      },
+      {
+        "English": "Believe it or not",
+        "Vietnamese": "Tin hay ko tùy,"
+      },
+      {
+        "English": "There was this one time,",
+        "Vietnamese": "Có 1 lần như vầy,"
+      },
+      {
+        "English": "Right in this hall",
+        "Vietnamese": "Ngay tại cái sảnh này"
+      },
+      {
+        "English": "At the time I was talking to Bach, our deputy director",
+        "Vietnamese": "Lúc đó tôi đang nói chuyện với Bach, cha phó tổng của mình đó"
+      },
+      {
+        "English": "Out of the blue,",
+        "Vietnamese": "Tự dưng,"
+      },
+      {
+        "English": "He sent me an email without a title",
+        "Vietnamese": "Ổng gửi tôi cái email mà ko có tiêu đề"
+      },
+      {
+        "English": "Said that it was an urgent email",
+        "Vietnamese": "Bảo rằng đó là email khẩn"
+      },
+      {
+        "English": "and told me to call him immediately",
+        "Vietnamese": "rồi nói tôi gọi cho ổng liền"
+      },
+      {
+        "English": "At the time, I actually planned to go home,",
+        "Vietnamese": "Lúc đó là, tôi thực sự tính về nhà,"
+      },
+      {
+        "English": "to the birthday of the girl next door",
+        "Vietnamese": "Qua sinh nhật con bé hàng xóm"
+      },
+      {
+        "English": "People usually call that a \"moral dilemma\"",
+        "Vietnamese": "Người ta hay gọi đó là một \"tình huống khó xử về đạo đức\""
+      },
+      {
+        "English": "True story, I opened that up",
+        "Vietnamese": "Chuyện thật luôn, tôi mở cái đó lên"
+      },
+      {
+        "English": "Turned out it was a prank,",
+        "Vietnamese": "Hóa ra đó là 1 cú lừa,"
+      },
+      {
+        "English": "That was a phishing email",
+        "Vietnamese": "Đó là 1 cái phising email"
+      },
+      {
+        "English": "The next day",
+        "Vietnamese": "Bữa hôm sau,"
+      },
+      {
+        "English": "I was the guy who had to answer for that sh*t",
+        "Vietnamese": "Tôi mới là cái thẳng phải trả lời cho cái sh*t đó"
+      },
+      {
+        "English": "right in front of the Board",
+        "Vietnamese": "ngay trước mặt ban giám đốc"
+      },
+      {
+        "English": "You know what,",
+        "Vietnamese": "Anh biết sao không,"
+      },
+      {
+        "English": "In my boss's defense,",
+        "Vietnamese": "Nói đi thì cũng phải nói lại,"
+      },
+      {
+        "English": "Speaking of work, my boss is much better than me",
+        "Vietnamese": "Nói về công việc, sếp tôi ổng giỏi hơn tôi nhiều"
+      },
+      {
+        "English": "Actually, he's the one who has the best expertise that I've ever met",
+        "Vietnamese": "Thực sự, ổng là người mà có chuyên môn tốt nhất mà tôi từng gặp"
+      },
+      {
+        "English": "Every time he looks at a pie chart",
+        "Vietnamese": "Mỗi lần mà ổng nhìn vào 1 cái biểu đồ tròn"
+      },
+      {
+        "English": "It only takes him 30 seconds to figure out the bottlenecks",
+        "Vietnamese": "Ổng chỉ mất có 30 giây để nhìn ra mấy cái chỗ bottlenecks"
+      },
+      {
+        "English": "But speaking of dealing with people",
+        "Vietnamese": "Nhưng mà nói về đối nhân xử thế"
+      },
+      {
+        "English": "I tell ya, that guy sucks",
+        "Vietnamese": "Tôi nói anh nghe, cha đó ổng chán lắm"
+      },
+      {
+        "English": "Guys in this room keep calling him \"jerk\" all the time",
+        "Vietnamese": "Mấy đứa phòng này cứ gọi ổng là \"đồ cà chớn\" suốt ấy mà"
+      },
+      {
+        "English": "The other day, he just received a warning letter for that",
+        "Vietnamese": "Bữa, ổng mới nhận 1 cái warning letter vì cái vụ đó xong"
+      },
+      {
+        "English": "I thought he's gonna change",
+        "Vietnamese": "Tôi tưởng ổng sẽ thay đổi"
+      },
+      {
+        "English": "Unexpectedly,",
+        "Vietnamese": "Ai dè,"
+      },
+      {
+        "English": "He's too set in his ways",
+        "Vietnamese": "Ngựa quen đường cũ"
+      },
+      {
+        "English": "All in all,",
+        "Vietnamese": "Tính ra,"
+      },
+      {
+        "English": "He had 15 years of seniority in this company",
+        "Vietnamese": "Ổng có 15 năm thâm niên trong công ty này"
+      },
+      {
+        "English": "The salary was not really high but the fringe benefit was huge",
+        "Vietnamese": "Lương ko cao lắm nhưng phúc lợi bên lề khủng lắm nha"
+      },
+      {
+        "English": "Hey, hey, he's coming over,",
+        "Vietnamese": "ê, ê, ổng đang qua,"
+      },
+      {
+        "English": "Back to work, don't tell anyone...",
+        "Vietnamese": "Thôi đi làm, đừng có kể ai nghe đó..."
+      }
+    ],
+    "Dia 1": [
+      {
+        "English": "001 - Hi son, how have you been?",
+        "Vietnamese": "001 - Chào con trai, dạo này sao rồi?"
+      },
+      {
+        "English": "456 - Holy cow, you're still alive, old man?",
+        "Vietnamese": "456 - Trời đất quỷ thần, ông còn sống hả, ông già?"
+      },
+      {
+        "English": "001 - Watch your language, I'm your new boss",
+        "Vietnamese": "001 - Coi chừng cái mồm, tui là sếp mới của cậu đó nha"
+      },
+      {
+        "English": "456 - What do you mean \"I'm your new boss\"?",
+        "Vietnamese": "456 - \"Tui là sếp mới của cậu\" là ông ý gì?"
+      },
+      {
+        "English": "001 - From today forward, I'm gonna be your new line manager",
+        "Vietnamese": "001 - Từ hôm nay trở đi, tui sẽ là line manager của cậu"
+      },
+      {
+        "English": "456 - Wow, why haven't I been told about this?",
+        "Vietnamese": "456 - Wow, sao tui không có được báo về vụ này ta?"
+      },
+      {
+        "English": "001 - That's no big deal",
+        "Vietnamese": "001 - Đó đâu phải chuyện lớn"
+      },
+      {
+        "English": "001 - Anw, any update for the Squid Game No.2 project?",
+        "Vietnamese": "001 - Mà thôi, có cập nhật gì từ cái dự án Squid Game số 2 không?"
+      },
+      {
+        "English": "456 - Listen, I don't know how to put it but",
+        "Vietnamese": "456 - Nghe nè, tui không biết nói sao nhưng mà"
+      },
+      {
+        "English": "456 - Actually I already sent a very long email to my ex-boss...",
+        "Vietnamese": "456 - Thực ra tui đã gửi một cái email rất là dài tới ông sếp cũ của tui..."
+      },
+      {
+        "English": "456 - explaining why this project is \n hitting a big broadblock",
+        "Vietnamese": "456 - giải thích tại sao cái dự án này đang gặp phải một cái trở ngại lớn"
+      },
+      {
+        "English": "456 - But he hasn't replied my email yet",
+        "Vietnamese": "456 - Nhưng mà ổng vẫn chưa trả lời email tui"
+      },
+      {
+        "English": "456 - To be honest, I haven't seen him around since yesterday",
+        "Vietnamese": "456 - Thiệt tình là hôm qua đến giờ tui cũng không có thấy ổng lòng vòng đây nữa"
+      },
+      {
+        "English": "001 - He's done",
+        "Vietnamese": "001 - Nó done rồi"
+      },
+      {
+        "English": "456 - Sorry, he's what???",
+        "Vietnamese": "456 - Ông nói sao? ổng bị làm sao???"
+      },
+      {
+        "English": "001 - Doesn't matter, that's not your business anyway",
+        "Vietnamese": "001 - Không có gì, dù sao cũng không phải chuyện của cậu"
+      },
+      {
+        "English": "001 - A moment ago, you said we're encoutering a big roadblock",
+        "Vietnamese": "001 - Mới nãy, cậu nói chúng ta đang đối đầu với một cái trở ngại lớn"
+      },
+      {
+        "English": "001 - How big is it?",
+        "Vietnamese": "001 - Lớn cỡ nào?"
+      },
+      {
+        "English": "456 - Bottom line, it's not technically the \"size\" \n of the problem",
+        "Vietnamese": "456 - Nói tóm lại, nó không phải nghĩa đen cái \"kích thước\" của cái vấn đề"
+      },
+      {
+        "English": "456 - It's the money issue",
+        "Vietnamese": "456 - Nó là vấn đề về tiền"
+      },
+      {
+        "English": "001 - Money is no object",
+        "Vietnamese": "001 - Tiền không thành vấn đề"
+      },
+      {
+        "English": "456 - Wait, Hello? What's with this old man?!?",
+        "Vietnamese": "456 - Uả, Alo? Ông già này bị gì dzậy?!?"
+      },
+      {
+        "English": "456 - You're boss, it's easy for you to say",
+        "Vietnamese": "456 - Ông là sếp, ông nói thì dễ rồi"
+      },
+      {
+        "English": "456 - The thing is I can't get enough sponsors for this project",
+        "Vietnamese": "456 - Cái vấn đề là tui không có lấy đủ được sponsor cho cái dự này"
+      },
+      {
+        "English": "456 - What am I supposed to do now?",
+        "Vietnamese": "456 - Tui nên làm gì giờ đây?"
+      },
+      {
+        "English": "001 - Okay, first, I wanna make sure we’re \n on the same page",
+        "Vietnamese": "001 - Okay, đầu tiên, tui muốn make sure là chúng ta thống nhất với nhau vài thứ"
+      },
+      {
+        "English": "001 - I've got 3 questions for you:",
+        "Vietnamese": "001 - Tui có 3 câu hỏi cho cậu:"
+      },
+      {
+        "English": "001 - 1. Time, when do you need to get this done?",
+        "Vietnamese": "001 - 1. Thời gian, khi nào thì cậu cần phải xong?"
+      },
+      {
+        "English": "001 - 2. Money, tell me about our financial picture",
+        "Vietnamese": "001 - 2. Tiền, nói tôi nghe về bức tranh tài chính của chúng ta"
+      },
+      {
+        "English": "001 - 3. Human, how many people are there in your team now?",
+        "Vietnamese": "001 - 3. Con người, bây giờ trong team cậu có bao nhiêu người?"
+      },
+      {
+        "English": "456 - Okay, about time, I need to get it done by Easter",
+        "Vietnamese": "456 - Okay, về thời gian, tui cần phải xong trước lễ Phục Sinh"
+      },
+      {
+        "English": "456 - Which means we still have plenty of time",
+        "Vietnamese": "456 - Điều đó nghĩa là chúng ta vẫn còn nhiều thời gian"
+      },
+      {
+        "English": "456 - About people, if you give me one more \n IT developer,",
+        "Vietnamese": "456 - Về con người, nếu ông cho tui thêm một đứa lập trình IT,"
+      },
+      {
+        "English": "456 - I think it's good to go",
+        "Vietnamese": "456 - Tui nghĩ sẽ ổn để tiến hành"
+      },
+      {
+        "English": "456 - And more importantly, at the end of the day",
+        "Vietnamese": "456 - Và quan trọng hơn, suy cho cùng"
+      },
+      {
+        "English": "456 - Like I said, everything boils down to money",
+        "Vietnamese": "456 - Như tui đã nói, mọi thứ đều quy về tiền cả thôi"
+      },
+      {
+        "English": "001 - Okay, I hear you",
+        "Vietnamese": "001 - Okay, tui nghe hiểu những gì cậu nói"
+      },
+      {
+        "English": "001 - I get the picture now",
+        "Vietnamese": "001 - Giờ tui hiểu bức tranh rồi"
+      },
+      {
+        "English": "001 - So, from where I stand",
+        "Vietnamese": "001 - Cho nên, từ góc độ của tui"
+      },
+      {
+        "English": "001 - Because this event will be like a reality show",
+        "Vietnamese": "001 - Bởi vì cái event này sẽ như là một cái show thực tế"
+      },
+      {
+        "English": "001 - I would say our top priority is gonna be...",
+        "Vietnamese": "001 - Tui sẽ nói là ưu tiên hàng đầu của chúng ta sẽ là..."
+      },
+      {
+        "English": "001 - the engagement of the players",
+        "Vietnamese": "001 - Cái sự gắn kết của những người chơi"
+      },
+      {
+        "English": "001 - Bottom line, it doesn't need to be a low-cost event",
+        "Vietnamese": "001 - Tóm lại, nó không cần phải là một cái event giá rẻ"
+      },
+      {
+        "English": "456 - Well said, but where can I get that kind of money???",
+        "Vietnamese": "456 - Nói hay lắm, nhưng mà tui lấy đâu ra số tiền đó đây???"
+      },
+      {
+        "English": "456 - That's the thing I'm been talking to you about",
+        "Vietnamese": "456 - Đó là cái thứ mà tui đang nói ông nãy giờ đó"
+      },
+      {
+        "English": "001 - Take it easy, would you?",
+        "Vietnamese": "001 - Bình tĩnh, được chưa?"
+      },
+      {
+        "English": "001 - Show me your potential sponsors list",
+        "Vietnamese": "001 - Cho tui coi cái danh sách sponsor của cậu"
+      },
+      {
+        "English": "456 - Here you are, page 2, the left column",
+        "Vietnamese": "456 - Đây, trang 2, cái cột bên trái"
+      },
+      {
+        "English": "456 - Actually I have reached out to a half of that",
+        "Vietnamese": "456 - Thực ra tui đã reach tới một nửa trong số đó"
+      },
+      {
+        "English": "456 - All negative results",
+        "Vietnamese": "456 - Toàn là kết quả xấu"
+      },
+      {
+        "English": "001 - I see, I'll give you a name",
+        "Vietnamese": "001 - Tui hiểu rồi, tui sẽ cho cậu một cái tên"
+      },
+      {
+        "English": "001 - But you have to give him a call yourself",
+        "Vietnamese": "001 - Nhưng mà cậu phải tự gọi cho ổng"
+      },
+      {
+        "English": "001 - You can tell him I sent you",
+        "Vietnamese": "001 - Cậu có thể nói ổng là tui giới thiệu cậu qua"
+      },
+      {
+        "English": "001 - That's all I can do for you, see ya later",
+        "Vietnamese": "001 - Đó là tất cả những gì mà tui có thể làm cho cậu, gặp cậu sau"
+      },
+      {
+        "English": "001 - Parking fee here is very costly, 9k for a bike",
+        "Vietnamese": "001 - Phí giữ xe ở đây mắc lắm, chiếc xe đạp 9 ngàn"
+      }
+    ],
+    "Mono 2": [
+      {
+        "English": "Hello, Morgan, it's Michi.",
+        "Vietnamese": "Alo, Morgan, tui Miki nè."
+      },
+      {
+        "English": "May I ask you a favor? It's urgent!",
+        "Vietnamese": "Tui nhờ ông chuyện được không? Gấp!"
+      },
+      {
+        "English": "Cool, I have a little problem with my Excel file at the moment.",
+        "Vietnamese": "Cool, hiện tại tui đang có một vấn đề nho nhỏ với cái Excel của tui."
+      },
+      {
+        "English": "I don't know what's wrong with it, really!",
+        "Vietnamese": "Tui không biết nó bị sao á, thiệt!"
+      },
+      {
+        "English": "But here's the deal, lemme tell you,",
+        "Vietnamese": "Nhưng mà chuyện là vầy, để tui kể ông nghe,"
+      },
+      {
+        "English": "Yesterday, as usual, when I was running the financial report.",
+        "Vietnamese": "Hôm qua, như thường lệ, lúc tui đang chạy cái báo cáo tài chính."
+      },
+      {
+        "English": "Then I realized something went wrong with the loading time.",
+        "Vietnamese": "Sau đó tui nhận ra có cái gì đó sai sai \n với cái thời gian loading."
+      },
+      {
+        "English": "Especially when I made any changes in the last worksheet.",
+        "Vietnamese": "Đặc biệt là lúc tui thay đổi bất cứ cái gì trong cái worksheet cuối cùng."
+      },
+      {
+        "English": "Then I hurriedly tried to hit CTRL S to save the results to C drive.",
+        "Vietnamese": "Rồi tui vội vã cố bấm CTRL S để save lại kết quả vào ổ C."
+      },
+      {
+        "English": "You know what? out of sudden, the screen went black completely.",
+        "Vietnamese": "Ông biết sao không? tự dưng, cái màn hình nó đen thui luôn."
+      },
+      {
+        "English": "It freaked me out at the time",
+        "Vietnamese": "Lúc đó tui sợ quá trời quá đất."
+      },
+      {
+        "English": "If my boss knew that, he was gonna kill me!",
+        "Vietnamese": "Sếp tui ổng mà biết chắc ổng cạo đầu tui quá!"
+      },
+      {
+        "English": "The fact is it was a large file,",
+        "Vietnamese": "Thực sự là cái file đó nó cũng lớn,"
+      },
+      {
+        "English": "Which is why it usually takes up to 5 minutes to finish running.",
+        "Vietnamese": "Đó cũng là lý do nó thường tốn cả 5 phút để chạy xong."
+      },
+      {
+        "English": "I have a question, though.",
+        "Vietnamese": "Dẫu vậy, tui có một câu hỏi."
+      },
+      {
+        "English": "I wonder is there a possibility that I can \n switch to manual calculation?",
+        "Vietnamese": "Tui thắc mắc có khả năng nào tui chuyển qua tính tay được không?"
+      },
+      {
+        "English": "I have tried hitting the Escape key, like, thousands of times.",
+        "Vietnamese": "Tui đã thử bấm cái nút Escape chắc phải đến \n cả nghìn lần."
+      },
+      {
+        "English": "But it didn't work. Really!",
+        "Vietnamese": "Nhưng mà nó không có work. Thiệt!"
+      },
+      {
+        "English": "I knew it!",
+        "Vietnamese": "Biết ngay mà!"
+      },
+      {
+        "English": "I knew you were gonna say try hitting F9.",
+        "Vietnamese": "Tui biết thế nào ông cũng bảo tui thử bấm F9 đi."
+      },
+      {
+        "English": "I did, nothing changed either.",
+        "Vietnamese": "Tui làm rồi, cũng đâu có gì thay đổi đâu."
+      },
+      {
+        "English": "I notice every time I hit Enter,",
+        "Vietnamese": "Tui để ý mỗi lần tui bấm Enter,"
+      },
+      {
+        "English": "Excel will automatically recalculate every single cell.",
+        "Vietnamese": "Excel nó sẽ tự động tính toán lại mỗi một ô."
+      },
+      {
+        "English": "Wow, how come, you don't know that?",
+        "Vietnamese": "Wow, how come, ông không biết cái đó hả?"
+      },
+      {
+        "English": "Meanwhile, it won't allow you to do anything except wait for it to finish.",
+        "Vietnamese": "Trong lúc đó, nó sẽ không có cho ông làm bất cứ thứ gì ngoài việc chờ nó hoàn thành."
+      },
+      {
+        "English": "It was really frustrating!",
+        "Vietnamese": "Nó rất là nản luôn!"
+      },
+      {
+        "English": "Because I kept running into this issue all day yesterday.",
+        "Vietnamese": "Bởi vì tui cứ đụng hoài cái vấn đề này suốt cả ngày hôm qua."
+      },
+      {
+        "English": "Sometimes I had no choice but to hit the Close button,",
+        "Vietnamese": "Nhiều khi tui chả có cách nào khác ngoài việc bấm cái nút Close,"
+      },
+      {
+        "English": "But the thing is I couldn't close any files.",
+        "Vietnamese": "Nhưng cái vấn đề là tui có đóng được cái file nào đâu."
+      },
+      {
+        "English": "Are you with me?",
+        "Vietnamese": "Ông theo kịp tui không?"
+      },
+      {
+        "English": "In times like these, do you know what I usually do?",
+        "Vietnamese": "Trong những lúc như vầy, ông biết tui hay làm sao không?"
+      },
+      {
+        "English": "I will click on the taskbar and select the Task manager to close it manually",
+        "Vietnamese": "Tui sẽ click phải vào thanh tác vụ rồi chọn Task Manager để đóng bằng tay."
+      },
+      {
+        "English": "What I'm saying is,",
+        "Vietnamese": "Ý tui đang muốn nói là,"
+      },
+      {
+        "English": "Is there any way that I can temporarily turn off this feature?",
+        "Vietnamese": "Có cách nào để tui tạm thời tắt cái tính năng này đi không?"
+      },
+      {
+        "English": "If necessary, I want to disable it...",
+        "Vietnamese": "Nếu cần, tôi muốn vô hiệu hóa nó."
+      },
+      {
+        "English": "until I finish entering everything.",
+        "Vietnamese": "Cho đến khi tui nhập xong mọi thứ luôn."
+      },
+      {
+        "English": "Know what I mean?",
+        "Vietnamese": "Ông hiểu ý tui không?"
+      },
+      {
+        "English": "Wait, this entire time you haven't been listening to me???",
+        "Vietnamese": "Uả, nãy giờ ông không có đang nghe tui hả???"
+      },
+      {
+        "English": "Alright, alright, alright, maybe I'll have to \n come over to your place tonight, what do you say?",
+        "Vietnamese": "Alright, alright, alright, chắc tối nay tui qua chỗ ông quá. Ý ông sao?"
+      },
+      {
+        "English": "Okay, deal, I owe you a boba with full toppings!",
+        "Vietnamese": "Okay, chốt, tui nợ ông một ly trà sữa full toppings!"
+      }
+    ],
+    "Dia 2": [
+      {
+        "English": "P: Hey, why the long face?",
+        "Vietnamese": "P: Ê, sao mặt đưa đám vậy?"
+      },
+      {
+        "English": "Z: Sorry to bother you at this hour but you know I suck at Excel.",
+        "Vietnamese": "Z: Xin lỗi làm phiền ông giờ này nhưng mà ông biết tui cùi Excel lắm."
+      },
+      {
+        "English": "P: Don't say that, what friends are for?",
+        "Vietnamese": "P: Đừng có nói vậy chớ, bạn bè để làm gì?"
+      },
+      {
+        "English": "P: OK, listen, this is not really a new problem.",
+        "Vietnamese": "P: OK, nghe nè, cái này thực ra chả phải vấn đề mới mẻ gì."
+      },
+      {
+        "English": "Z: What's wrong with it, anyway?",
+        "Vietnamese": "Z: Nhưng mà nó bị gì vậy?"
+      },
+      {
+        "English": "P: Let me do a quick check.",
+        "Vietnamese": "P: Để tui check nhanh cái."
+      },
+      {
+        "English": "P: Don't worry, these things happen.",
+        "Vietnamese": "P: Đừng có lo, mấy chuyện như này như cơm bữa ấy mà."
+      },
+      {
+        "English": "P: Nine times out of ten Excel users will have to experience annoying situations like these.",
+        "Vietnamese": "P: Hết 9 trên 10 lần mấy người dùng Excel sẽ phải trải qua những cái tình thế phiền phức như vầy."
+      },
+      {
+        "English": "P: Anyway there's nothing to worry about.",
+        "Vietnamese": "P: Mà dù sao ông cũng đừng có lo."
+      },
+      {
+        "English": "Z: You're good at Excel, it's easy for you to say!",
+        "Vietnamese": "Z: Ông giỏi Excel, ông nói thì dễ rồi!"
+      },
+      {
+        "English": "Z: If 6am tomorrow I don't have the financial report for my boss,",
+        "Vietnamese": "Z: Nếu 6h sáng mai tui mà không có cái báo cáo tài chính cho sếp tui,"
+      },
+      {
+        "English": "Z: He's surely gonna kill me, really!",
+        "Vietnamese": "Z: Chắc chắn là ổng cạo đầu tui luôn, thiệt!"
+      },
+      {
+        "English": "P: Alright, alright, alright, but don't push me, OK?",
+        "Vietnamese": "P: Được rồi, được rồi, được rồi, nhưng mà ông đừng có hối tui, OK?"
+      },
+      {
+        "English": "P: In times like these, the most important thing to do is stay calm.",
+        "Vietnamese": "P: Trong mấy cái lúc như vầy á, cái điều quan trọng nhất là giữ bình tĩnh."
+      },
+      {
+        "English": "P: Here, you click options in the menu on the left. See?",
+        "Vietnamese": "P: Đây, ông click vào options trong cái menu ở bên trái. Thấy không?"
+      },
+      {
+        "English": "P: Then you scroll it down, wait, select manual \n in the corner.",
+        "Vietnamese": "P: Sau đó ông lăn nó xuống, khoan, chọn cái manual trong góc á."
+      },
+      {
+        "English": "Z: Hold on, hold on, too fast, way too fast, dude.",
+        "Vietnamese": "Z: Khoan, khoan, nhanh quá, nhanh quá, cha."
+      },
+      {
+        "English": "Z: You've lost me right there.",
+        "Vietnamese": "Z: Ngay chỗ đó ông nói tui hông hiểu gì hết."
+      },
+      {
+        "English": "Z: Come on, don't give me that look.",
+        "Vietnamese": "Z: Thôi mà, đừng có nhìn tui vậy chớ."
+      },
+      {
+        "English": "Z: You know I'm famous for computer illiteracy, don't you?",
+        "Vietnamese": "Z: Ông biết tui nổi tiếng mù máy tính mà, phải không?"
+      },
+      {
+        "English": "P: The next time you come here, you'd better \n buy me 2 coffee. OK?",
+        "Vietnamese": "P: Lần sau ông qua đây, ông tốt hơn là nên mua tui 2 ly café đi, OK?"
+      },
+      {
+        "English": "Z: Okay, deal!",
+        "Vietnamese": "Z: Okay, chốt!"
+      },
+      {
+        "English": "Z: \"Just 2 cups of coffee, big deal!\" \n (Zelensky thought to himself)",
+        "Vietnamese": "Z: \"Có 2 ly café mà làm thấy ghê!\" \n (Zelensky nghĩ bụng)"
+      },
+      {
+        "English": "P: Look, you see that little button on the right?",
+        "Vietnamese": "P: Nhìn nè, ông thấy cái nút nhỏ nhỏ bên phải đó không?"
+      },
+      {
+        "English": "P: No, no, no, no, that big X is Close button, dude!",
+        "Vietnamese": "P: Không, không, không, không, cái nút X bự đó là nút tắt, cha ơi!"
+      },
+      {
+        "English": "P: Hey, did you attend the \n Computer class back in high school???",
+        "Vietnamese": "P: Ê, ông có học lớp vi tính hồi xưa cấp 3 không vậy???"
+      },
+      {
+        "English": "Z: Stop complaining, 2 more bobas, okay???",
+        "Vietnamese": "Z: Thôi đừng có càm ràm nữa, cho thêm 2 ly trà sữa, được chưa???"
+      },
+      {
+        "English": "Z: Told you I suck at Excel.",
+        "Vietnamese": "Z: Đã bảo ông tui cùi Excel mà."
+      },
+      {
+        "English": "P: Focus, zoom in, now you see that?",
+        "Vietnamese": "P: Tập trung nè, zoom vô, \n rồi giờ ông thấy cái đó chưa?"
+      },
+      {
+        "English": "P: That's right, click on that.",
+        "Vietnamese": "P: Đúng oy, click vô cái đó."
+      },
+      {
+        "English": "P: Done, there you have it.",
+        "Vietnamese": "P: Xong, có vậy thôi đó."
+      },
+      {
+        "English": "P: Actually you can always use this way to reduce the calculation time.",
+        "Vietnamese": "P: Thực ra lúc nào ông cũng có thể dùng cách này để giảm cái thời gian tính toán lại."
+      },
+      {
+        "English": "P: This will prevent all your formulas from being recalculated every time you change something.",
+        "Vietnamese": "P: Cái này sẽ ngăn chặn toàn bộ công thức của ông bị tính toán lại mỗi khi ông thay đổi cái gì đó."
+      },
+      {
+        "English": "P: Including when you want to reopen that file itself.",
+        "Vietnamese": "P: Kể cả khi ông muốn mở lại chính cái file đó."
+      },
+      {
+        "English": "Z: Hmmm, I get it",
+        "Vietnamese": "Z: Hmmm, tui hiểu rồi."
+      },
+      {
+        "English": "Z: It's quite complicated to me, though.",
+        "Vietnamese": "Z: Nhưng mà dù sao nó vẫn khá là phức tạp với tui."
+      },
+      {
+        "English": "Z: Is there any shorter way for me?",
+        "Vietnamese": "Z: Có cách nào ngắn gọn hơn cho tui không?"
+      },
+      {
+        "English": "Z: Please, everybody knows you're Excel guru.",
+        "Vietnamese": "Z: Đi mà, ai cũng biết ông là bậc thầy Excel mà."
+      },
+      {
+        "English": "P: I'm afraid not, we'll see.",
+        "Vietnamese": "P: Tui e là không, mà để coi."
+      },
+      {
+        "English": "P: Hold on, which version of Excel are you using?",
+        "Vietnamese": "P: Mà khoan, \n ông đang dùng Excel version nào vậy?"
+      },
+      {
+        "English": "Z: 2016, maybe, I'm not sure anyway.",
+        "Vietnamese": "Z: 2016, chắc vậy, mà tui cũng không chắc nữa."
+      },
+      {
+        "English": "P: That one is now obsolete.",
+        "Vietnamese": "P: Cái đó nó lỗi thời rồi."
+      },
+      {
+        "English": "P: Actually your Excel needs to be updated every three years.",
+        "Vietnamese": "P: Thực ra Excel của ông cần phải được update mỗi ba năm."
+      },
+      {
+        "English": "P: Why your financial report is always super long?",
+        "Vietnamese": "P: Mà sao báo cáo tài chính của ông lúc nào cũng dài thòong vậy?"
+      },
+      {
+        "English": "P: If you don't mind me asking.",
+        "Vietnamese": "P: Nếu ông không ngại tui hỏi."
+      },
+      {
+        "English": "P: Lemme check, what??? More than 5500 rows!",
+        "Vietnamese": "P: Để tui check thử coi, gì??? Hơn 5500 hàng!"
+      },
+      {
+        "English": "P: No wonder it always takes more than half an hour just to calculate.",
+        "Vietnamese": "P: Hèn gì lúc nào nó cũng ngốn hơn nửa tiếng chỉ để tính thôi đó."
+      },
+      {
+        "English": "Z: Uhmmm, there's a thing I didn't tell you before",
+        "Vietnamese": "Z: Uhmmm, \n có một chuyện tui chưa có nói ông trước đây."
+      },
+      {
+        "English": "Z: Actually I was told to create a lot of rows like that to try to evade taxes.",
+        "Vietnamese": "Z: Thực ra tui được dặn tạo ra nhiều dòng như vậy là để cố gắng trốn thuế."
+      }
+    ]
+  }
+}

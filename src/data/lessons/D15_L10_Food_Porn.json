@@ -1,0 +1,1191 @@
+{
+  "lesson_name": "D15 - L10- Food Porn",
+  "categories": {
+    "Slang": [
+      {
+        "English": "You think (so)?",
+        "Vietnamese": "Cậu nghĩ thế à?"
+      },
+      {
+        "English": "If I knew that,...",
+        "Vietnamese": "Biết vậy,…"
+      },
+      {
+        "English": "Give me a break,...",
+        "Vietnamese": "Tha cho tui đi, …"
+      },
+      {
+        "English": "..., let alone...",
+        "Vietnamese": "Chứ nói gì đến…"
+      },
+      {
+        "English": "At all costs / whatever it takes",
+        "Vietnamese": "Bằng mọi giá"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Also known as (aka)",
+        "Vietnamese": "Cũng được biết đến như"
+      },
+      {
+        "English": "Have you ever ...?",
+        "Vietnamese": "Cậu có từng...?"
+      },
+      {
+        "English": "Take a sip / drink a bit",
+        "Vietnamese": "Làm ngụm đi"
+      },
+      {
+        "English": "Food heaven",
+        "Vietnamese": "Thiên đường ẩm thực"
+      },
+      {
+        "English": "Be allergic to peanut",
+        "Vietnamese": "Dị ứng với đậu phộng"
+      },
+      {
+        "English": "Fruit stall / stand / kiosk",
+        "Vietnamese": "Quầy trái cây"
+      },
+      {
+        "English": "The locals / local people",
+        "Vietnamese": "Dân địa phương"
+      },
+      {
+        "English": "Snakefish & catfish",
+        "Vietnamese": "Cá chép & cá trê"
+      },
+      {
+        "English": "Dish / side dish / main dish",
+        "Vietnamese": "Món / món ăn kèm / món chính"
+      },
+      {
+        "English": "Italian restaurant / bistro",
+        "Vietnamese": "Nhà hàng Ý"
+      },
+      {
+        "English": "Nearby / around here / locally",
+        "Vietnamese": "Gần đây (địa lý)"
+      },
+      {
+        "English": "Recommendation / advice / guidance",
+        "Vietnamese": "Lời chỉ dẫn"
+      },
+      {
+        "English": "Throughout / during",
+        "Vietnamese": "Xuyên suốt / trong suốt"
+      },
+      {
+        "English": "Broken rice",
+        "Vietnamese": "Cơm tấm"
+      },
+      {
+        "English": "Truly / really / actually / honestly",
+        "Vietnamese": "Thực sự"
+      },
+      {
+        "English": "Scooter / motorbike",
+        "Vietnamese": "Xe máy"
+      },
+      {
+        "English": "Sidewalk / pavement",
+        "Vietnamese": "Vỉa hè"
+      },
+      {
+        "English": "Cool / interesting / intriguing",
+        "Vietnamese": "Hay ho"
+      },
+      {
+        "English": "And the like / stuff / everything",
+        "Vietnamese": "Và các thứ đại loại"
+      },
+      {
+        "English": "Delicious / yummy / toothsome / tasty",
+        "Vietnamese": "Ngon"
+      },
+      {
+        "English": "Greasy / oily / fatty",
+        "Vietnamese": "Nhiều dầu mỡ"
+      },
+      {
+        "English": "A tiny /small guy",
+        "Vietnamese": "Một anh chàng nhỏ nhắn"
+      },
+      {
+        "English": "Slang words",
+        "Vietnamese": "Những từ lóng"
+      },
+      {
+        "English": "Sieve / sifter",
+        "Vietnamese": "Cái rây"
+      },
+      {
+        "English": "The ladle / scoop",
+        "Vietnamese": "Cái mui múc canh"
+      },
+      {
+        "English": "Lose weight",
+        "Vietnamese": "Giảm cân"
+      },
+      {
+        "English": "Instant noodles / instant coffee",
+        "Vietnamese": "Mì gói / cà phê gói"
+      },
+      {
+        "English": "Whisker",
+        "Vietnamese": "Cái đồ đánh trứng"
+      },
+      {
+        "English": "I can't afford",
+        "Vietnamese": "Tôi không mua nổi"
+      },
+      {
+        "English": "Dirty / unhygienic food",
+        "Vietnamese": "Thực phẩm bẩn"
+      },
+      {
+        "English": "Stomach ache / upset stomach",
+        "Vietnamese": "Đau bụng"
+      },
+      {
+        "English": "Dizzy & nauseous",
+        "Vietnamese": "Chóng mặt & buồn nôn"
+      },
+      {
+        "English": "Who knows, maybe ...",
+        "Vietnamese": "Không chừng..."
+      },
+      {
+        "English": "Diarrhea",
+        "Vietnamese": "Tiêu chảy"
+      },
+      {
+        "English": "Acute / chronic diarrhea",
+        "Vietnamese": "Tiêu chảy cấp tính / mãn tính"
+      },
+      {
+        "English": "As you wish / like / prefer / okey-dokey",
+        "Vietnamese": "Thích thì chiều"
+      },
+      {
+        "English": "Specialty",
+        "Vietnamese": "Đặc sản"
+      },
+      {
+        "English": "Boiled jackfruit seed",
+        "Vietnamese": "Hạt mít luộc"
+      },
+      {
+        "English": "Dried lotus seed",
+        "Vietnamese": "Hạt sen sấy khô"
+      },
+      {
+        "English": "Seedless / boneless",
+        "Vietnamese": "Không hạt / không xương"
+      },
+      {
+        "English": "Oh crap!...",
+        "Vietnamese": "Chết bà!"
+      },
+      {
+        "English": "Sugar-free / Fat-free",
+        "Vietnamese": "Không đường / không chất béo"
+      },
+      {
+        "English": "Quai egg",
+        "Vietnamese": "Trứng cút"
+      },
+      {
+        "English": "Fried quail with butter and garlic",
+        "Vietnamese": "Cút chiên bơ tỏi"
+      },
+      {
+        "English": "Homemade / ready-made",
+        "Vietnamese": "Nhà làm / làm sẵn"
+      },
+      {
+        "English": "Handy / clever with hands / dexterous",
+        "Vietnamese": "Khéo tay"
+      },
+      {
+        "English": "Diabetes",
+        "Vietnamese": "Tiểu đường"
+      },
+      {
+        "English": "Long story",
+        "Vietnamese": "Chuyện dài lắm"
+      },
+      {
+        "English": "Enjoy your meal! / bon appétit!",
+        "Vietnamese": "Chúc ngon miệng!"
+      },
+      {
+        "English": "Chicken sticky rice",
+        "Vietnamese": "Xôi gà"
+      },
+      {
+        "English": "Count me in!",
+        "Vietnamese": "Count me in!"
+      },
+      {
+        "English": "Starving / hungry & thirsty",
+        "Vietnamese": "Đói & khát"
+      },
+      {
+        "English": "Deserted / empty",
+        "Vietnamese": "Vắng tanh"
+      },
+      {
+        "English": "Dog meat",
+        "Vietnamese": "Thịt chó"
+      },
+      {
+        "English": "(Rice) noodles",
+        "Vietnamese": "Bún (gạo)"
+      },
+      {
+        "English": "Beef / pork / lamb / veal",
+        "Vietnamese": "Thịt bò / thịt heo / thịt cừu / thịt bê"
+      },
+      {
+        "English": "Frozen food",
+        "Vietnamese": "Thực phẩm đông lạnh"
+      },
+      {
+        "English": "Stand / stay aside!",
+        "Vietnamese": "Đứng qua một bên!"
+      },
+      {
+        "English": "peel",
+        "Vietnamese": "Gọt vỏ"
+      },
+      {
+        "English": "Hot sauce / ketchup / hoising sauce / plum sauce",
+        "Vietnamese": "Tương ớt / cà / đen / xí muội"
+      },
+      {
+        "English": "Toothpick & dental floss pick",
+        "Vietnamese": "Tăm & chỉ nha khoa"
+      },
+      {
+        "English": "Food court",
+        "Vietnamese": "Khu vực ăn uống"
+      },
+      {
+        "English": "Have a drink / booze",
+        "Vietnamese": "Đi uống / đi nhậu"
+      },
+      {
+        "English": "Soft drinks / Coke",
+        "Vietnamese": "Nước ngọt"
+      },
+      {
+        "English": "Rice wine",
+        "Vietnamese": "Rượu đế"
+      },
+      {
+        "English": "Alcoholic drinks / alcohol / booze",
+        "Vietnamese": "Đồ uống có cồn"
+      },
+      {
+        "English": "Chopping board / cutting board",
+        "Vietnamese": "Cái thớt"
+      },
+      {
+        "English": "On the rocks / with ice",
+        "Vietnamese": "Có đá"
+      },
+      {
+        "English": "Neat / no ice",
+        "Vietnamese": "Không đá"
+      },
+      {
+        "English": "Leftovers",
+        "Vietnamese": "Thức ăn thừa"
+      },
+      {
+        "English": "Consume / eat",
+        "Vietnamese": "Tiêu thụ"
+      },
+      {
+        "English": "Canned tuna",
+        "Vietnamese": "Cá ngừ đóng hộp"
+      },
+      {
+        "English": "Chemical additives",
+        "Vietnamese": "Phụ gia hóa học"
+      },
+      {
+        "English": "Cut down on...",
+        "Vietnamese": "Cut down on..."
+      },
+      {
+        "English": "Dehydrate",
+        "Vietnamese": "Làm mất nước"
+      },
+      {
+        "English": "Monosodium glutamate (MSG)",
+        "Vietnamese": "Bột ngọt"
+      },
+      {
+        "English": "Drink (way) too much / hit the bottle",
+        "Vietnamese": "Uống quá nhiều"
+      },
+      {
+        "English": "Cheers!",
+        "Vietnamese": "Dzooo!"
+      },
+      {
+        "English": "Sober",
+        "Vietnamese": "Tỉnh táo (tỉnh rượu)"
+      },
+      {
+        "English": "Tipsy",
+        "Vietnamese": "Say ngà ngà"
+      },
+      {
+        "English": "Strong wine / drink",
+        "Vietnamese": "Rượu mạnh"
+      },
+      {
+        "English": "A case/pack of beer",
+        "Vietnamese": "Một két bia"
+      },
+      {
+        "English": "Alcohol tolerance",
+        "Vietnamese": "Tửu lượng"
+      },
+      {
+        "English": "Drinking buddy / boozy friend",
+        "Vietnamese": "Bạn nhậu"
+      },
+      {
+        "English": "Looks hygienic / clean",
+        "Vietnamese": "Trông vệ sinh đấy"
+      },
+      {
+        "English": "Bottoms up! / Drink up!",
+        "Vietnamese": "Bottoms up! / Drink up!"
+      },
+      {
+        "English": "Egg white / egg yolk",
+        "Vietnamese": "Lòng trắng trứng / lòng đỏ trứng"
+      },
+      {
+        "English": "Never mind / Doesn't matter",
+        "Vietnamese": "Không sao / không có gì"
+      },
+      {
+        "English": "Hospitable / welcoming",
+        "Vietnamese": "Hiếu khách"
+      },
+      {
+        "English": "Spit it out",
+        "Vietnamese": "Nhả ra"
+      },
+      {
+        "English": "Love handles",
+        "Vietnamese": "Ngấn mỡ bụng"
+      },
+      {
+        "English": "Teetotal",
+        "Vietnamese": "Không uống rượu bia (adj)"
+      },
+      {
+        "English": "Acid reflux",
+        "Vietnamese": "Trào ngược dạ dày"
+      },
+      {
+        "English": "Heartburn",
+        "Vietnamese": "Ợ nóng"
+      },
+      {
+        "English": "Stop eating at night / before bed",
+        "Vietnamese": "Đừng ăn khuya nữa"
+      },
+      {
+        "English": "Blood sugar",
+        "Vietnamese": "Đường huyết"
+      },
+      {
+        "English": "Food poisoning",
+        "Vietnamese": "Ngộ độc thực phẩm"
+      },
+      {
+        "English": "Metabolism",
+        "Vietnamese": "Sự trao đổi chất"
+      },
+      {
+        "English": "Snacks / light meal",
+        "Vietnamese": "Đồ ăn vặt"
+      },
+      {
+        "English": "Shortly after the meal",
+        "Vietnamese": "Ngay sau khi ăn"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "This place is called Food courtc",
+        "Vietnamese": "Chỗ này gọi là khu ăn uống"
+      },
+      {
+        "English": "Have you ever heard of that restaurant?",
+        "Vietnamese": "Cậu có từng nghe về cái nhà hàng đó chưa?"
+      },
+      {
+        "English": "That's Teo Em, aslo known as a cook",
+        "Vietnamese": "Đó là Tèo Em, cũng được biết đến là một đầu bếp"
+      },
+      {
+        "English": "I don't eat beef, let alone pork!",
+        "Vietnamese": "Thịt bò tui còn không ăn, nói gì đến thịt hêu!"
+      },
+      {
+        "English": "I was born in Danang 20 years ago",
+        "Vietnamese": "Tôi được sinh ra ở Đà Nẵng 20 năm trước"
+      },
+      {
+        "English": "Heard that banh mi in Hoi An is the best",
+        "Vietnamese": "Nghe bảo bánh mì ở Hội An là nhất"
+      },
+      {
+        "English": "Saigon is also known as a crowded place",
+        "Vietnamese": "Saigon cũng được biết đến như là một nơi đông đúc"
+      },
+      {
+        "English": "(Then) you're gonna understand",
+        "Vietnamese": "Rồi cậu sẽ hiểu"
+      },
+      {
+        "English": "That's the place where the locals often eat",
+        "Vietnamese": "Đó là cái nơi mà dân địa phương hay ăn"
+      },
+      {
+        "English": "Do you know any Chinese restaurant nearby?",
+        "Vietnamese": "Cậu biết cái quán Tàu nào gần đây không?"
+      },
+      {
+        "English": "I've got a friend named Trung",
+        "Vietnamese": "Tôi có một người bạn tên Trung"
+      },
+      {
+        "English": "My dad's got a lot of food recommendations",
+        "Vietnamese": "Tía tôi có rất nhiều cái chỉ dẫn hay ho"
+      },
+      {
+        "English": "I'm not gonna lie to you",
+        "Vietnamese": "Tôi không xạo anh làm gì"
+      },
+      {
+        "English": "This is the best spaghetti I've ever had",
+        "Vietnamese": "Đây cái spaghetti nhất tôi từng ăn đấy"
+      },
+      {
+        "English": "My dad's got acid reflux",
+        "Vietnamese": "Ba tui bị trào ngược dạ dày"
+      },
+      {
+        "English": "You've gotta be there to see",
+        "Vietnamese": "Cậu phải ở đó mới thấy"
+      },
+      {
+        "English": "It's crazy fun to eat on the sidewalk",
+        "Vietnamese": "Ăn trên vỉa hè vui như điên"
+      },
+      {
+        "English": "Spit it out if you find it bitter",
+        "Vietnamese": "Cứ nhả ra nếu cậu thấy nó đắng"
+      },
+      {
+        "English": "The locals there are very hospitable",
+        "Vietnamese": "Dân địa phương ở đó rất là hiếu khách"
+      },
+      {
+        "English": "Delicious, nourishing, cheap and stuff",
+        "Vietnamese": "Ngon, bổ, rẻ các thứ"
+      },
+      {
+        "English": "He keeps talking about the price",
+        "Vietnamese": "Ổng cứ nói về giá cả"
+      },
+      {
+        "English": "That food tour was led by a local",
+        "Vietnamese": "Food tour đó được dắt bởi 1 người địa phương"
+      },
+      {
+        "English": "I know a friend of Trang's",
+        "Vietnamese": "Tôi biết 1 đứa bạn của Trang"
+      },
+      {
+        "English": "The menu there was ridiculously long",
+        "Vietnamese": "Cái menu ở đó dài thôi rồi"
+      },
+      {
+        "English": "Believe it or not, I'm not good at cooking",
+        "Vietnamese": "Tin hay ko tùy, tui ko có giỏi nấu ăn"
+      },
+      {
+        "English": "Learn to use slang words with locals",
+        "Vietnamese": "Học dùng từ lóng với dân địa phương"
+      },
+      {
+        "English": "Her traveling knowledge is super",
+        "Vietnamese": "Kiến thức du lịch của cổ rất siêu"
+      },
+      {
+        "English": "She should have been living in Dalat for 30 years",
+        "Vietnamese": "Hẳn cổ đã và đang sống ở Đà Lạt được 30 năm"
+      },
+      {
+        "English": "Wait, thought you are in Cambodia!",
+        "Vietnamese": "Uả, tưởng cậu đang bên Miên chứ!"
+      },
+      {
+        "English": "Don't you see I'm eating?",
+        "Vietnamese": "Anh ko thấy tôi đang ăn à?"
+      },
+      {
+        "English": "Hey, hey, hey, I'm the one who needa ask you that question!",
+        "Vietnamese": "Ê, ê, ê, tui mới là cái người cần hỏi câu đó nè!"
+      },
+      {
+        "English": "Heard that you've been there twice",
+        "Vietnamese": "Nghe bảo cậu đến 2 lần rồi"
+      },
+      {
+        "English": "Yeah, I eat that all the time",
+        "Vietnamese": "Yeah, tôi ăn cái đó suốt ấy mà"
+      },
+      {
+        "English": "You think? I sh*t you not!",
+        "Vietnamese": "Cậu nghĩ vậy hả? Tui xạo cậu chi!"
+      },
+      {
+        "English": "Hey, I don't think we can afford that",
+        "Vietnamese": "Ê, tui ko nghĩ ta mua nổi cái đó đâu"
+      },
+      {
+        "English": "There was a day, when I was sitting there",
+        "Vietnamese": "Có một hôm, khi tui đang ngồi ở đó"
+      },
+      {
+        "English": "My stomach is killing me, guys",
+        "Vietnamese": "Đau bụng quá tụi bây"
+      },
+      {
+        "English": "Spit it out, do you feel nauseous?",
+        "Vietnamese": "Nhả ra, cậu có cảm thấy buồn nôn ko?"
+      },
+      {
+        "English": "I love the local specialty there",
+        "Vietnamese": "Tôi thích cái đặc sản địa phương ở đó"
+      },
+      {
+        "English": "Who knows maybe the blood sugar will increase",
+        "Vietnamese": "Ko chừng đường máu sẽ tăng"
+      },
+      {
+        "English": "I think he has chronic diarrhea",
+        "Vietnamese": "Tui nghĩ ổng bị tiêu chảy mãn tính"
+      },
+      {
+        "English": "Heartburn is caused by stomach acid",
+        "Vietnamese": "Ợ nóng bị gây ra bởi acid dạ dày"
+      },
+      {
+        "English": "Eating at night is not good at all",
+        "Vietnamese": "Ăn khuya thì không tốt chút nào"
+      },
+      {
+        "English": "Wait, you're local police or what?",
+        "Vietnamese": "Ủa, anh là công an phường hay gì?"
+      },
+      {
+        "English": "As you wish, I'm available this afternoon",
+        "Vietnamese": "Thích thì chiều, đằng nào chiều nay tui cũng rảnh"
+      },
+      {
+        "English": "Shortly after the meal, he called me",
+        "Vietnamese": "Không lâu sau bữa ăn, ổng gọi tui"
+      },
+      {
+        "English": "It's got nothing to do with what we're talking about!",
+        "Vietnamese": "Nó đâu có liên quan gì đến điều ta đang nói!"
+      },
+      {
+        "English": "It's on me, what do you say / think?",
+        "Vietnamese": "Anh mời, ý em sao?"
+      },
+      {
+        "English": "Mom, can I have my friends over?",
+        "Vietnamese": "Má, con mời bạn qua chơi được ko?"
+      },
+      {
+        "English": "Has he answered yet?",
+        "Vietnamese": "Ảnh trả lời chưa?"
+      },
+      {
+        "English": "When it comes to cooking, mom is the best",
+        "Vietnamese": "Khi nói đến chuyện nấu nướng, má là nhất"
+      },
+      {
+        "English": "Really! this cake is a bomb!",
+        "Vietnamese": "Thiệt! cái bánh này ngon banh xác!"
+      },
+      {
+        "English": "At all costs, you gotta give this a try",
+        "Vietnamese": "Bằng mọi giá, mày phải thử cái món này"
+      },
+      {
+        "English": "I don't know if this is sugar-free",
+        "Vietnamese": "Tui ko biết cái này có ko đường hay là ko"
+      },
+      {
+        "English": "If that's the case, I'll pay!",
+        "Vietnamese": "Nếu đúng là vậy, tôi trả cho!"
+      },
+      {
+        "English": "Wow, just knew that you're that handy",
+        "Vietnamese": "Wow, mới biết cậu khéo tay vậy luôn"
+      },
+      {
+        "English": "My dog has diabetes",
+        "Vietnamese": "Chó nhà tui bị tiểu đường"
+      },
+      {
+        "English": "It's on me / my treat / I'll pay today",
+        "Vietnamese": "Hôm nay tui mời"
+      },
+      {
+        "English": "How long it takes to cook a meal?",
+        "Vietnamese": "Cậu tốn bao lâu để nấu một bữa?"
+      },
+      {
+        "English": "I'm the big fan of sticky rice",
+        "Vietnamese": "Tui là fan ruột của xôi"
+      },
+      {
+        "English": "Hello, I wanna book a table for 4",
+        "Vietnamese": "Alo, tui muốn đặt 1 bàn cho 4 người"
+      },
+      {
+        "English": "Who told you I ate your cookie?",
+        "Vietnamese": "Ai bảo cậu tui ăn cái cookie của cậu?"
+      },
+      {
+        "English": "Wait, wait, you didn't count me in???",
+        "Vietnamese": "Ủa, ủa, cậu ko tính tui vào à???"
+      },
+      {
+        "English": "I'm starving! Let's grab sth to eat!",
+        "Vietnamese": "Tui đói quá rồi! Đi ăn thôi!"
+      },
+      {
+        "English": "Do you like eating rice noodle?",
+        "Vietnamese": "Cậu thich ăn bún ko?"
+      },
+      {
+        "English": "then why you said that?",
+        "Vietnamese": "Thế sao cậu lại nói vậy?"
+      },
+      {
+        "English": "Who would eat phở in this restaurant?",
+        "Vietnamese": "Ai lại ăn phở ở nhà hàng này?"
+      },
+      {
+        "English": "At the end of the day, what is the metabolism?",
+        "Vietnamese": "Suy cho cùng, sự trao đổi là cái gì?"
+      },
+      {
+        "English": "Peel it first, then you can enjoy",
+        "Vietnamese": "Gọt vỏ trước, sau đó cậu có thể thưởng thức"
+      },
+      {
+        "English": "This food is always served with hot sauce",
+        "Vietnamese": "Món này luôn được phục vụ chung với tương ớt"
+      },
+      {
+        "English": "You're not allowed to eat on the sidewalk",
+        "Vietnamese": "Cậu ko được phép ăn trên vỉa hè"
+      },
+      {
+        "English": "Nutritious food is good for your health",
+        "Vietnamese": "Thức ăn giàu dinh dưỡng thì tốt cho sức khỏe của cậu"
+      },
+      {
+        "English": "I don't know, you pick the place",
+        "Vietnamese": "Tao ko biết, mày chọn chỗ đi"
+      },
+      {
+        "English": "Do you serve soft drinks here?",
+        "Vietnamese": "Chị có phục vụ nước ngọt ở đây ko?"
+      },
+      {
+        "English": "I love all alcoholic drinks",
+        "Vietnamese": "Tui thích tất cả thức uống có cồn"
+      },
+      {
+        "English": "A whiskey on the rocks",
+        "Vietnamese": "1 ly whiskey có đá"
+      },
+      {
+        "English": "I usually take the leftovers home",
+        "Vietnamese": "Tui luôn mang đồ ăn thừa về nhà"
+      },
+      {
+        "English": "Hey, have you guys ordered yet?",
+        "Vietnamese": "Ê, tuị bây order chưa?"
+      },
+      {
+        "English": "Give me a break, snacks are not that dangerous",
+        "Vietnamese": "Tha tao đi, đồ ăn vặt đâu có nguy hiểm đến vậy!"
+      },
+      {
+        "English": "There's a lot of chemical additives in that bowl",
+        "Vietnamese": "Có rất nhiều phụ gia hóa học trong cái tô đó"
+      },
+      {
+        "English": "I'm trying to cut down on the amount of beer",
+        "Vietnamese": "Tui đang cố cắt giảm lượng bia"
+      },
+      {
+        "English": "This food will surely dehydrate you",
+        "Vietnamese": "Món này chắc chắn sẽ làm cậu mất nước"
+      },
+      {
+        "English": "She put a lot of MSG inside",
+        "Vietnamese": "Bả bỏ quá trời bột ngọt vào trong"
+      },
+      {
+        "English": "I think your dad drank way too much",
+        "Vietnamese": "Tao nghĩ tía mày uống quá chèn rồi"
+      },
+      {
+        "English": "Cheers! To the new job!",
+        "Vietnamese": "Zdo! Mừng job mới!"
+      },
+      {
+        "English": "Let go off me, you know who I am?",
+        "Vietnamese": "Buông bố ra, mày biết bố là ai ko?"
+      },
+      {
+        "English": "It seems he's still sober",
+        "Vietnamese": "Có vẻ ổng còn tỉnh lắm"
+      },
+      {
+        "English": "Sorry, yesterday, I was so hammered",
+        "Vietnamese": "Sorry, hôm qua, tui bị say chả biết trời trăng gì"
+      },
+      {
+        "English": "Silence gives consent",
+        "Vietnamese": "Im lặng là đồng ý"
+      },
+      {
+        "English": "If I knew that, I would have invited him",
+        "Vietnamese": "Biết vậy, tao đã mời nó rồi"
+      },
+      {
+        "English": "That's ok, the more the merrier",
+        "Vietnamese": "Được thôi, càng đông càng vui"
+      },
+      {
+        "English": "Last one, I think I got tipsy already",
+        "Vietnamese": "Ly cuối nha, tui nghĩ tui ngà ngà rồi"
+      },
+      {
+        "English": "What's your alcohol tolerance?",
+        "Vietnamese": "Tửu tượng bồ nhiêu?"
+      },
+      {
+        "English": "Lemme introduce, this is my drinking buddy",
+        "Vietnamese": "Để tui giới thiệu, đây là bạn nhậu của tui"
+      },
+      {
+        "English": "Com'on, just wet your lips",
+        "Vietnamese": "Thôi, nhấp môi cái thôi"
+      },
+      {
+        "English": "Right, that place looks kinda hygienic",
+        "Vietnamese": "Phải, chỗ đó trông cũng khá vệ sinh"
+      },
+      {
+        "English": "What you're waiting for? Dig in!",
+        "Vietnamese": "Mọi người chờ gì nữa? \"chén\" thôi"
+      },
+      {
+        "English": "The food is getting cold, help yourself",
+        "Vietnamese": "Đồ ăn nguội rồi, cứ tự nhiên nhé"
+      },
+      {
+        "English": "Take a sip! This cocktail is a bomb",
+        "Vietnamese": "Làm ngụm đi! Cocktail này ngon banh xác"
+      },
+      {
+        "English": "No, love handles look quite cute",
+        "Vietnamese": "Đâu có, mấy ngấn mỡ bụng nhìn cưng mà"
+      }
+    ],
+    "Mono": [
+      {
+        "English": "Hi everyone, how are you doing?",
+        "Vietnamese": "Chào mọi người, mọi người khỏe không?"
+      },
+      {
+        "English": "I find it quite uneasy to say goodbye via email like this",
+        "Vietnamese": "Tôi thấy thật là áy náy để nói lời chia tay qua email thế này"
+      },
+      {
+        "English": "I don't know why but people always try to cut short their farewell emails",
+        "Vietnamese": "Tôi không biết tại sao nhưng mà người ta luôn cố cắt ngắn những cái email chia tay lại"
+      },
+      {
+        "English": "Yet I'm not gonna do that now",
+        "Vietnamese": "Dẫu vậy bây giờ tôi sẽ không có làm thế"
+      },
+      {
+        "English": "Having said that,",
+        "Vietnamese": "Nói đi thì cũng phải nói lại,"
+      },
+      {
+        "English": "I know I'm not a good talker, so maybe emailing would a better choice for me",
+        "Vietnamese": "Tôi biết tôi không phải là một người giỏi ăn nói, nên có thể email là lựa chọn tốt hơn cho tôi"
+      },
+      {
+        "English": "All good things must come to an end",
+        "Vietnamese": "Buổi tiệc nào rồi cũng có lúc tàn"
+      },
+      {
+        "English": "At the end of this month",
+        "Vietnamese": "Cuối tháng này"
+      },
+      {
+        "English": "I will officially leave the company and my design team",
+        "Vietnamese": "Tôi sẽ chính thức rời công ty và team design của tôi"
+      },
+      {
+        "English": "I'm very sad to announce that...",
+        "Vietnamese": "Tôi rất là buồn khi phải thông báo rằng..."
+      },
+      {
+        "English": "This April 30th will be my last working day",
+        "Vietnamese": "ngày 30 tháng 4 này sẽ là ngày làm việc cuối của tôi"
+      },
+      {
+        "English": "From the bottom of my heart",
+        "Vietnamese": "Từ tận đáy lòng"
+      },
+      {
+        "English": "I know I'm gonna miss you guys a lot, especially Timothy",
+        "Vietnamese": "Tôi biết tôi sẽ rất là nhớ mọi người, đặc biệt là Timothy"
+      },
+      {
+        "English": "Some of you might be wondering",
+        "Vietnamese": "Một vài người trong số các bạn có thể là đang tự hỏi"
+      },
+      {
+        "English": "Why in the first place did I choose to work for our company?",
+        "Vietnamese": "Tại sao ngay từ đầu tôi lại chọn làm việc cho công ty chúng ta?"
+      },
+      {
+        "English": "I didn't see it back then but now I had it all figured out",
+        "Vietnamese": "Hồi đó tôi không nhìn thấy nhưng mà giờ thì tôi đã mường tượng ra tất cả rồi"
+      },
+      {
+        "English": "7 years ago, I majored in accounting but deep inside",
+        "Vietnamese": "Bảy năm trước, tôi chuyên ngành kế toán nhưng sâu bên trong"
+      },
+      {
+        "English": "My gut tells me that accounting is not my thing",
+        "Vietnamese": "Linh cảm mách bảo tôi rằng kế toán không phải là sở thích của tôi"
+      },
+      {
+        "English": "In a way, I believe this kind of situation relates to everyone",
+        "Vietnamese": "Một cách nào đó, tôi tin rằng mấy cái kiểu tình huống này có liên quan đến mọi người"
+      },
+      {
+        "English": "I was always inspired by Steve Jobs' commencement speech in 2005",
+        "Vietnamese": "Tôi đã được truyền cảm hứng bởi cái bài diễn văn tốt nghiệp của Steve Jobs năm 2005"
+      },
+      {
+        "English": "If you have been using iphone, you should have known Steve",
+        "Vietnamese": "Nếu bạn đã và đang dùng iPhone thì hẳn là bạn biết Steve"
+      },
+      {
+        "English": "Truth be told, his words blew my mind at the time",
+        "Vietnamese": "Thật lòng mà nói, những lời nói của ổng đã làm tôi rất kinh ngạc thời điểm đó"
+      },
+      {
+        "English": "I admire his perspective and attitude toward life",
+        "Vietnamese": "Tôi ngưỡng mộ quan điểm và thái độ về cuộc sống của ông ấy"
+      },
+      {
+        "English": "Like Steve, I dropped out of University of Banking to start over",
+        "Vietnamese": "Cũng như Steve, tôi đã bỏ Đại học ngân hàng để bắt đầu lại từ đầu"
+      },
+      {
+        "English": "It was quite scary back then",
+        "Vietnamese": "Hồi đó nó khá là đáng sợ"
+      },
+      {
+        "English": "Then I spent the next 2 years learning about graphic design and UI/UX",
+        "Vietnamese": "Rồi sau đó tôi dành 2 năm học graphic design với UI / UX"
+      },
+      {
+        "English": "It was one of the best decisions I ever made in my life",
+        "Vietnamese": "Đó là một trong những lựa chọn tốt nhất mà tôi đã làm trong đời"
+      },
+      {
+        "English": "Steve once said something like this",
+        "Vietnamese": "Steve có lần đã nói như vầy"
+      },
+      {
+        "English": "The only way to do great work is to love what you do",
+        "Vietnamese": "Cách duy nhất để làm một công việc tuyệt vời là yêu cái thứ bạn làm"
+      },
+      {
+        "English": "If you haven't found it yet, keep searching, don't settle",
+        "Vietnamese": "Nếu bạn chưa tìm được nó, hãy tiếp tục tìm kiếm, đừng ngừng lại"
+      },
+      {
+        "English": "Those words haunted me ever since",
+        "Vietnamese": "Mấy cái từ đó đã ám tôi từ lúc đóMấy cái từ đó đã ám tôi từ lúc đó"
+      },
+      {
+        "English": "The thing is we human are so scared",
+        "Vietnamese": "Cái vấn đề là con người chúng ta quá sợ hãi"
+      },
+      {
+        "English": "We're just so scared of the uncertainty of the future",
+        "Vietnamese": "Chúng ta chỉ là quá sợ cái sự bất định trong tương lai"
+      },
+      {
+        "English": "We don't have the courage to face with this question",
+        "Vietnamese": "Chúng ta không có can đảm để đối mặt với câu hỏi này"
+      },
+      {
+        "English": "What if we never find the thing we love to do?",
+        "Vietnamese": "Nhỡ chúng ta không bao giờ tìm được cái thứ mà chúng ta thích làm thì sao?"
+      },
+      {
+        "English": "Just like you, I have no idea",
+        "Vietnamese": "Cũng như bạn thôi, tôi có biết đâu"
+      },
+      {
+        "English": "Trust me, no one knows what will happen tomorrow",
+        "Vietnamese": "Tin tôi đi, không ai biết chuyện gì sẽ xảy ra ngày mai đâu"
+      },
+      {
+        "English": "I'm so grateful for having a chance to be a part of our design team",
+        "Vietnamese": "Tôi rất biết ơn vì đã có cơ hội là một phần của team design của chúng ta"
+      },
+      {
+        "English": "Please forgive me for my mistakes during my time here",
+        "Vietnamese": "Xin thứ lỗi cho những thiếu sót của tôi trong suốt thời gian tôi ở đây"
+      },
+      {
+        "English": "To wrap it up, who knows, maybe we'll have a 2nd chance to work with each other in the future",
+        "Vietnamese": "Để kết thúc lại, hổng chừng chúng ta sẽ có cơ hội lần thứ 2 để làm việc cùng nhau trong tương lai"
+      }
+    ],
+    "Dia": [
+      {
+        "English": "M: Hello Mr. Park, I hope you had a wonderful weekend with your family",
+        "Vietnamese": "M: Hello ông Park, tôi hy vọng ông đã có một cái cuối tuần tuyệt vời bên gia đình"
+      },
+      {
+        "English": "M: My name is Leonel Messi",
+        "Vietnamese": "M: Tên tôi là Leonel Messi"
+      },
+      {
+        "English": "P: Holy Moses, what a surprise! Who am I talking to now?!?",
+        "Vietnamese": "P: Trời đất ơi, bất ngờ quá vậy! Tôi đang nói chuyện với ai đây!!?"
+      },
+      {
+        "English": "M: It seems you're looking for an assistant coach. Right?",
+        "Vietnamese": "M: Hình như ông đang tìm một trợ lý HLV, phải không?"
+      },
+      {
+        "English": "P: Yeah, you must have seen this piece of advertisement on our official fanpage",
+        "Vietnamese": "P: Yeah, chắc hẳn cậu đã thấy cái mẩu quảng cáo này trên fanpage chính thức của tụi tôi"
+      },
+      {
+        "English": "M: Hmm, I've been thinking if I should apply for this position",
+        "Vietnamese": "M: Hmm, tôi đang nghĩ liệu tôi có nên apply cho cái vị trí này hay không"
+      },
+      {
+        "English": "P: What? Come on, stop pulling my leg!!!",
+        "Vietnamese": "P: Hả? Thôi, đừng có chọc tôi nữa!!!"
+      },
+      {
+        "English": "P: You're the legendary Leonel Messi, what are you talking about???",
+        "Vietnamese": "P: Cậu là Leonel Messi huyền thoại mà, cậu đang nói cái gì vậy???"
+      },
+      {
+        "English": "M: Okay, I know it sounds crazy",
+        "Vietnamese": "M: Okay, tôi biết là nó nghe crazy"
+      },
+      {
+        "English": "M: But everything happens for a reason",
+        "Vietnamese": "M: Nhưng mà mọi thứ xảy ra đều có lý do của nó cả"
+      },
+      {
+        "English": "M: 5 years ago, I happened to watch a football match between Vietnam and Uzbekistan",
+        "Vietnamese": "M: 5 năm trước, tôi vô tình xem một trận bóng giữa VN và Uzbekistan"
+      },
+      {
+        "English": "M: Actually I've been following your interesting journey ever since",
+        "Vietnamese": "M: Thực ra tôi đã và đang follow cái hành trình thú vị của ông từ đó"
+      },
+      {
+        "English": "M: In a way, you're the endless inspiration for me,",
+        "Vietnamese": "M: Một cách nào đó, ông là cái nguồn cảm hứng bất tận cho tôi"
+      },
+      {
+        "English": "P: Thank you for your kind words,",
+        "Vietnamese": "P: Cám ơn vì những lời tử tế của cậu,"
+      },
+      {
+        "English": "P: But you must have mistaken me for someone else",
+        "Vietnamese": "P: Nhưng chắc hẳn là cậu đã nhầm tôi với ai đó khác rồi"
+      },
+      {
+        "English": "M: No, I didn't, my 3-year-old son is a big fan of you either",
+        "Vietnamese": "M: Không, đâu có, đứa con trai 3 tuổi của tôi cũng là fan ruột của ông mà"
+      },
+      {
+        "English": "M: I myself always look up to those coaches who can stand up for their students",
+        "Vietnamese": "M: Chính bản thân tôi luôn nể trọng những HLV mà có thể đứng lên bênh vực cho học trò của mình"
+      },
+      {
+        "English": "M: There's not many coaches out there who have the courage to do this",
+        "Vietnamese": "M: Không có nhiều HLV ngoài kia có cái can đảm để làm chuyện này đâu"
+      },
+      {
+        "English": "P: Well, I'm flattered",
+        "Vietnamese": "P: Well, tôi rất là cảm kích"
+      },
+      {
+        "English": "P: Interesting, it's such a small world!",
+        "Vietnamese": "P: Interesting, trái đất tròn thật!"
+      },
+      {
+        "English": "P: The other day, my wife just told me she is a huge fan of Barcelona",
+        "Vietnamese": "P: Hôm bữa, vợ tôi vừa bảo tôi bả là fan ruột của Barcelona xong"
+      },
+      {
+        "English": "P: She wishes one day she would have a chance to ask for your autograph!",
+        "Vietnamese": "P: Bả ước ngày nào đó bả sẽ có cơ hội để xin chữ ký cậu đó!"
+      },
+      {
+        "English": "M: Please tell her it's my pleasure to do that",
+        "Vietnamese": "M: Xin hãy nói bà là tôi rất là vui để làm điều đó"
+      },
+      {
+        "English": "M: I know I'm supposed to write you a proper cover letter",
+        "Vietnamese": "M: Tôi biết là tôi nên viết ông một cái cover letter chỉnh chu"
+      },
+      {
+        "English": "M: But I really don't know how to start or how to articulate my thoughts",
+        "Vietnamese": "M: Nhưng mà thực sự tôi không biết bắt đầu như nào hay là diễn đạt suy nghĩ ra sao"
+      },
+      {
+        "English": "P: Wait, this entire time, you've been serious?",
+        "Vietnamese": "P: Uả, nãy giờ cậu nghiêm túc á hả?"
+      },
+      {
+        "English": "M: Duh, it took me 3 days in a row preparing for this video call",
+        "Vietnamese": "M: Còn phải hỏi, tôi tốn 3 ngày liền để chuẩn bị cho cái video call này đây"
+      },
+      {
+        "English": "M: In a way, I wanna make a positive impact as a coach",
+        "Vietnamese": "M: Một cách nào đó, tôi muốn tạo ra một tác động tích cực ở cương vị HLV"
+      },
+      {
+        "English": "M: Just like the way you did for Vietnamese national football team",
+        "Vietnamese": "M: Cũng như cái cách mà ông đã làm cho đội tuyển bóng đá VN"
+      },
+      {
+        "English": "M: I'm not trying to exaggerate",
+        "Vietnamese": "M: Tôi không có đang cố để nói quá lên"
+      },
+      {
+        "English": "M: But to me, your success was quite a phenomenon",
+        "Vietnamese": "M: Nhưng mà với tôi, cái thành công của ông khá là một hiện tượng đấy"
+      },
+      {
+        "English": "P: Do you think you're a bit overqualified for this position?",
+        "Vietnamese": "P: Cậu có nghĩ là cậu hơi vượt quá tiêu chuẩn cho cái vị trí này không?"
+      },
+      {
+        "English": "P: I mean we didn't expect a big name like you would apply for this job",
+        "Vietnamese": "P: Ý tôi là bọn tôi không hi vọng một tên tuổi lớn như cậu sẽ apply vào cái job này"
+      },
+      {
+        "English": "M: I've been playing football as a professional footballer for more than 18 years",
+        "Vietnamese": "M: Tôi đã và đang chơi bóng như một cầu thủ chuyên nghiệp hơn 18 năm rồi"
+      },
+      {
+        "English": "M: I've spent the last 4 years researching aboutfootball strategies",
+        "Vietnamese": "M: Tôi đã dành 4 năm vừa qua để nghiên cứu về những chiến lược bóng đá"
+      },
+      {
+        "English": "M: Especially those strategies used in team managing",
+        "Vietnamese": "M: Đặc biệt là những chiến lược được dùng trong việc quản lý team"
+      },
+      {
+        "English": "P: Okay, have you ever managed any football clubs?",
+        "Vietnamese": "P: Okay, cậu có từng quản lý bất kỳ CLB bóng đá nào chưa?"
+      },
+      {
+        "English": "M: Not yet but I was just assigned to become the head coach last April",
+        "Vietnamese": "M: Chưa nhưng mà tôi vừa được giao làm HLV trưởng tháng 4 vừa rồi"
+      },
+      {
+        "English": "M: I know that I'm nowhere near as dedicated as you are",
+        "Vietnamese": "M: Tôi biết rằng tôi còn khuya mới có tâm được như ông"
+      },
+      {
+        "English": "P: Don't say that, at least you don't have tostart from scratch",
+        "Vietnamese": "P: Đừng nói vậy, ít nhất cậu đâu có phải bắt đầu từ số 0 đâu"
+      },
+      {
+        "English": "P: You're one of the greatest footballers of all time, so to speak",
+        "Vietnamese": "P: Cậu là một trong những cầu thủ vĩ đại nhất mọi thời đại, có thể nói vậy"
+      },
+      {
+        "English": "P: In terms of management, my philosophy is communication always comes first",
+        "Vietnamese": "P: Nói về quản trị, nguyên tắc của tôi là giao tiếp chính là ưu tiên hàng đầu"
+      },
+      {
+        "English": "M: You're right, I totally agree with you",
+        "Vietnamese": "M: Ông nói phải, tôi hoàn toàn đồng ý với ông"
+      },
+      {
+        "English": "M: For the time being, I've been working on my Korean",
+        "Vietnamese": "M: Ở hiện tại, tôi đã và đang cải thiện tiếng Hàn của tôi"
+      },
+      {
+        "English": "M: I can't wait to talk to you in person",
+        "Vietnamese": "M: Tôi nôn nói chuyện trực tiếp với ông quá"
+      },
+      {
+        "English": "P: Don't get me wrong",
+        "Vietnamese": "P: Đừng hiểu nhầm ý tôi nha"
+      },
+      {
+        "English": "P: A moment ago I said that doesn't mean you suck at communication",
+        "Vietnamese": "P: Hồi nãy tôi nói vậy không có nghĩa là cậu cùi về giao tiếp"
+      },
+      {
+        "English": "P: Alright, if you're really interested in this position, just drop me an email by Sunday",
+        "Vietnamese": "P: Alright, nếu cậu thực sự hứng thú với cái vị trí này, cứ gửi tôi cái email trước CN"
+      },
+      {
+        "English": "M: Okay, I'll sleep on it, stay in touch",
+        "Vietnamese": "M: Okay, tôi sẽ suy nghĩ thêm, giữ liên lạc nha"
+      }
+    ]
+  }
+}
