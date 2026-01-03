@@ -45,6 +45,25 @@ export interface AnalysisResult {
   emotion: number;
   overallScore: number;
   feedback: string[];
+  transcription?: string;
+  pauseAnalysis?: {
+    startDelayMs: number;
+    longestPauseMs: number;
+    pauseCount: number;
+    hasProblem: boolean;
+  };
+  detailedBreakdown?: {
+    pronunciation: string;
+    rhythm: string;
+    intonation: string;
+  };
+  config?: {
+    pauseThresholdMs: number;
+    accuracyWeight: number;
+    fluencyWeight: number;
+    emotionWeight: number;
+    strictness: string;
+  };
 }
 
 export interface UserProgress {
@@ -65,4 +84,5 @@ export interface PracticeSession {
   score: number;
   timestamp: Date;
   weekId: number;
+  analysisResult?: AnalysisResult;
 }

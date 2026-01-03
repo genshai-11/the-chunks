@@ -1,10 +1,14 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, AlertTriangle, Clock } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
 import { cn } from '@/lib/utils';
 import { curriculum } from '@/data/curriculum';
+import { getAnalysisConfig } from '@/config/analysisConfig';
+import { AnalysisResult } from '@/types/curriculum';
+import { supabase } from '@/integrations/supabase/client';
+import { toast } from 'sonner';
 
 export const PracticeModal: React.FC = () => {
   const { selectedItem, setSelectedItem, currentLessonId, recordPracticeSession, userProgress } = useApp();
@@ -14,7 +18,7 @@ export const PracticeModal: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [recordingTime, setRecordingTime] = useState(0);
   const [analyzerData, setAnalyzerData] = useState<Uint8Array | null>(null);
-  const [practiceScore, setPracticeScore] = useState<number | null>(null);
+  const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
@@ -54,8 +58,9 @@ export const PracticeModal: React.FC = () => {
       };
       updateVisualizer();
 
-      // Set up MediaRecorder
-      mediaRecorderRef.current = new MediaRecorder(stream);
+      // Set up MediaRecorder with WAV-compatible format
+      const mimeType = MediaRecorder.isTypeSupported('audio/webm') ? 'audio/webm' : 'audio/mp4';
+      mediaRecorderRef.current = new MediaRecorder(stream, { mimeType });
       const chunks: BlobPart[] = [];
 
       mediaRecorderRef.current.ondataavailable = (e) => {
@@ -63,7 +68,7 @@ export const PracticeModal: React.FC = () => {
       };
 
       mediaRecorderRef.current.onstop = () => {
-        const blob = new Blob(chunks, { type: 'audio/webm' });
+        const blob = new Blob(chunks, { type: mimeType });
         setAudioBlob(blob);
         setAudioUrl(URL.createObjectURL(blob));
         stream.getTracks().forEach(track => track.stop());
@@ -79,6 +84,7 @@ export const PracticeModal: React.FC = () => {
       }, 1000);
     } catch (error) {
       console.error('Failed to start recording:', error);
+      toast.error('Failed to access microphone');
     }
   };
 
@@ -111,7 +117,7 @@ export const PracticeModal: React.FC = () => {
     setAudioUrl(null);
     setIsPlaying(false);
     setRecordingTime(0);
-    setPracticeScore(null);
+    setAnalysisResult(null);
   };
 
   const getWeekId = () => {
@@ -123,26 +129,64 @@ export const PracticeModal: React.FC = () => {
     return 1;
   };
 
-  const simulateAnalysis = () => {
+  const analyzeWithAI = async () => {
     if (!selectedItem || !audioBlob) return;
     
     setIsAnalyzing(true);
     
-    // Simulate AI analysis with random score (will be replaced with real AI)
-    setTimeout(() => {
-      const score = Math.floor(Math.random() * 30) + 70; // 70-100 range
-      setPracticeScore(score);
-      setIsAnalyzing(false);
+    try {
+      const config = getAnalysisConfig();
+      
+      // Create form data with audio file
+      const formData = new FormData();
+      formData.append('audio', audioBlob, 'recording.webm');
+      formData.append('targetText', selectedItem.English);
+      formData.append('config', JSON.stringify(config));
+
+      // Call the edge function
+      const response = await fetch(
+        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/analyze-speech`,
+        {
+          method: 'POST',
+          body: formData,
+        }
+      );
+
+      if (!response.ok) {
+        const error = await response.json();
+        if (response.status === 429) {
+          toast.error('Rate limit reached. Please try again in a moment.');
+          return;
+        }
+        if (response.status === 402) {
+          toast.error('Usage limit reached. Please add credits.');
+          return;
+        }
+        throw new Error(error.error || 'Analysis failed');
+      }
+
+      const result: AnalysisResult = await response.json();
+      setAnalysisResult(result);
       
       // Record the practice session
       recordPracticeSession({
         lessonId: currentLessonId,
         itemId: selectedItem.id,
         category: selectedItem.category,
-        score,
+        score: result.overallScore,
         weekId: getWeekId(),
+        analysisResult: result,
       });
-    }, 1500);
+
+      if (result.overallScore >= config.masteryThreshold) {
+        toast.success('Great job! Item mastered!');
+      }
+    } catch (error) {
+      console.error('Analysis failed:', error);
+      toast.error('Failed to analyze speech. Please try again.');
+    } finally {
+      setIsAnalyzing(false);
+    }
   };
 
   const existingProgress = selectedItem 
@@ -174,7 +218,7 @@ export const PracticeModal: React.FC = () => {
       />
 
       {/* Modal */}
-      <div className="relative bg-card rounded-2xl shadow-xl w-full max-w-lg animate-scale-in overflow-hidden">
+      <div className="relative bg-card rounded-2xl shadow-xl w-full max-w-lg animate-scale-in overflow-hidden max-h-[90vh] overflow-y-auto">
         {/* Header */}
         <div className="flex items-center justify-between p-4 border-b border-border">
           <div className="flex items-center gap-2">
@@ -289,24 +333,104 @@ export const PracticeModal: React.FC = () => {
             />
           )}
 
-          {/* Score display */}
-          {practiceScore !== null && (
-            <div className="mt-6 text-center animate-fade-in">
-              <div className={cn(
-                "inline-flex items-center justify-center w-20 h-20 rounded-full text-2xl font-bold mb-2",
-                practiceScore >= 80 ? "bg-green-500/10 text-green-600" : 
-                practiceScore >= 60 ? "bg-yellow-500/10 text-yellow-600" : 
-                "bg-red-500/10 text-red-600"
-              )}>
-                {practiceScore}
+          {/* Analysis Results */}
+          {analysisResult && (
+            <div className="mt-6 animate-fade-in space-y-4">
+              {/* Overall Score */}
+              <div className="text-center">
+                <div className={cn(
+                  "inline-flex items-center justify-center w-20 h-20 rounded-full text-2xl font-bold mb-2",
+                  analysisResult.overallScore >= 80 ? "bg-green-500/10 text-green-600" : 
+                  analysisResult.overallScore >= 60 ? "bg-yellow-500/10 text-yellow-600" : 
+                  "bg-red-500/10 text-red-600"
+                )}>
+                  {analysisResult.overallScore}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {analysisResult.overallScore >= 80 ? "Great job! Item mastered!" : 
+                   analysisResult.overallScore >= 60 ? "Good effort! Keep practicing." : 
+                   "Keep trying! You'll get there."}
+                </p>
               </div>
-              <p className="text-sm text-muted-foreground">
-                {practiceScore >= 80 ? "Great job! Item mastered!" : 
-                 practiceScore >= 60 ? "Good effort! Keep practicing." : 
-                 "Keep trying! You'll get there."}
-              </p>
+
+              {/* Score Breakdown */}
+              <div className="grid grid-cols-3 gap-3">
+                <div className="bg-muted rounded-lg p-3 text-center">
+                  <div className="text-lg font-bold text-primary">{analysisResult.accuracy}</div>
+                  <div className="text-xs text-muted-foreground">Accuracy</div>
+                </div>
+                <div className="bg-muted rounded-lg p-3 text-center">
+                  <div className="text-lg font-bold text-primary">{analysisResult.fluency}</div>
+                  <div className="text-xs text-muted-foreground">Fluency</div>
+                </div>
+                <div className="bg-muted rounded-lg p-3 text-center">
+                  <div className="text-lg font-bold text-primary">{analysisResult.emotion}</div>
+                  <div className="text-xs text-muted-foreground">Emotion</div>
+                </div>
+              </div>
+
+              {/* Pause Analysis */}
+              {analysisResult.pauseAnalysis && (
+                <div className={cn(
+                  "rounded-lg p-3",
+                  analysisResult.pauseAnalysis.hasProblem 
+                    ? "bg-amber-500/10 border border-amber-500/20" 
+                    : "bg-muted"
+                )}>
+                  <div className="flex items-center gap-2 mb-2">
+                    {analysisResult.pauseAnalysis.hasProblem ? (
+                      <AlertTriangle size={14} className="text-amber-600" />
+                    ) : (
+                      <Clock size={14} className="text-muted-foreground" />
+                    )}
+                    <span className="text-sm font-medium">Timing Analysis</span>
+                  </div>
+                  <div className="grid grid-cols-3 gap-2 text-xs">
+                    <div>
+                      <span className="text-muted-foreground">Start delay: </span>
+                      <span className="font-medium">{analysisResult.pauseAnalysis.startDelayMs}ms</span>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Longest pause: </span>
+                      <span className={cn(
+                        "font-medium",
+                        analysisResult.pauseAnalysis.hasProblem && "text-amber-600"
+                      )}>{analysisResult.pauseAnalysis.longestPauseMs}ms</span>
+                    </div>
+                    <div>
+                      <span className="text-muted-foreground">Pauses: </span>
+                      <span className="font-medium">{analysisResult.pauseAnalysis.pauseCount}</span>
+                    </div>
+                  </div>
+                </div>
+              )}
+
+              {/* Transcription */}
+              {analysisResult.transcription && (
+                <div className="bg-muted rounded-lg p-3">
+                  <div className="text-xs text-muted-foreground mb-1">What we heard:</div>
+                  <div className="text-sm italic">"{analysisResult.transcription}"</div>
+                </div>
+              )}
+
+              {/* Feedback */}
+              {analysisResult.feedback && analysisResult.feedback.length > 0 && (
+                <div className="space-y-1">
+                  <div className="text-sm font-medium">Feedback:</div>
+                  <ul className="space-y-1">
+                    {analysisResult.feedback.map((item, i) => (
+                      <li key={i} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <span className="text-primary mt-1">•</span>
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Previous stats */}
               {existingProgress && (
-                <p className="text-xs text-muted-foreground mt-1">
+                <p className="text-xs text-muted-foreground text-center">
                   Best: {existingProgress.bestScore} • Attempts: {existingProgress.attempts}
                 </p>
               )}
@@ -314,24 +438,24 @@ export const PracticeModal: React.FC = () => {
           )}
 
           {/* Analyze button */}
-          {audioUrl && practiceScore === null && (
+          {audioUrl && !analysisResult && (
             <div className="mt-6 text-center">
               <button
-                onClick={simulateAnalysis}
+                onClick={analyzeWithAI}
                 disabled={isAnalyzing}
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-medium shadow-primary hover:opacity-90 transition-all disabled:opacity-50"
               >
                 {isAnalyzing ? (
                   <span className="flex items-center gap-2">
                     <Loader2 size={18} className="animate-spin" />
-                    Analyzing...
+                    Analyzing with AI...
                   </span>
                 ) : (
                   "Analyze Speech"
                 )}
               </button>
               <p className="text-xs text-muted-foreground mt-2">
-                Records your practice session
+                AI will evaluate accuracy, fluency & emotion
               </p>
             </div>
           )}

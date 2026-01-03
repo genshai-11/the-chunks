@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
-import { LessonData, PracticeItem, UserProgress, PracticeSession } from '@/types/curriculum';
+import { LessonData, PracticeItem, UserProgress, PracticeSession, AnalysisResult } from '@/types/curriculum';
+import { getAnalysisConfig } from '@/config/analysisConfig';
 
 interface AppContextType {
   currentLesson: LessonData | null;
@@ -87,7 +88,8 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     
     setPracticeSessions(prev => [...prev, newSession]);
 
-    // Also update user progress
+    // Also update user progress with configurable mastery threshold
+    const config = getAnalysisConfig();
     const existingProgress = userProgress.find(
       p => p.lessonId === session.lessonId && p.itemId === session.itemId
     );
@@ -99,7 +101,7 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
       attempts: (existingProgress?.attempts || 0) + 1,
       bestScore: Math.max(existingProgress?.bestScore || 0, session.score),
       lastAttempt: new Date(),
-      mastered: session.score >= 80 || (existingProgress?.mastered || false),
+      mastered: session.score >= config.masteryThreshold || (existingProgress?.mastered || false),
     };
 
     updateProgress(updatedProgress);
