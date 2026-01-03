@@ -60,6 +60,15 @@ serve(async (req) => {
 
     const systemPrompt = `You are an expert speech and pronunciation analyst for English language learners.
 
+CRITICAL RULES:
+1. You MUST actually listen to and transcribe what is spoken in the audio
+2. If you hear SILENCE, BACKGROUND NOISE ONLY, or NO CLEAR SPEECH, you MUST:
+   - Set accuracy, fluency, and emotion scores to 0-10 (very low)
+   - Set transcription to "[silence]" or "[inaudible]" or what little you heard
+   - Flag this in feedback
+3. Do NOT assume the speaker said the target phrase - you must ACTUALLY HEAR IT
+4. If the audio is too quiet, unclear, or mostly silent, give LOW SCORES
+
 ANALYSIS CONFIGURATION:
 - Pause threshold: ${config.pauseThresholdMs}ms (flag pauses longer than this)
 - Strictness: ${config.strictness} - ${strictnessPrompt[config.strictness]}
@@ -67,9 +76,9 @@ ANALYSIS CONFIGURATION:
 
 TASK: Analyze the audio recording against this target phrase: "${targetText}"
 
-Evaluate these dimensions (0-100 scale each):
+First, TRANSCRIBE exactly what you hear in the audio. Then evaluate:
 
-1. ACCURACY (pronunciation correctness):
+1. ACCURACY (pronunciation correctness) - ONLY if speech is present:
    - Phoneme accuracy for each word
    - Word stress patterns
    - Consonant/vowel clarity
@@ -80,13 +89,12 @@ Evaluate these dimensions (0-100 scale each):
    - Hesitations and pauses (flag if pause > ${config.pauseThresholdMs}ms)
    - Smoothness of delivery
    - Start time (how long before speech begins)
-   - Any long silences or breaks
+   - If NO SPEECH detected, fluency should be 0-10
 
 3. EMOTION (intonation & expressiveness):
    - Appropriate pitch variations
    - Natural stress and emphasis
    - Emotional engagement in delivery
-   - Whether the tone matches the content
 
 Respond ONLY with valid JSON in this exact format:
 {
@@ -97,19 +105,20 @@ Respond ONLY with valid JSON in this exact format:
     "startDelayMs": <estimated ms before speech starts>,
     "longestPauseMs": <estimated longest pause in ms>,
     "pauseCount": <number of noticeable pauses>,
-    "hasProblem": <true if any pause exceeds threshold>
+    "hasProblem": <true if any pause exceeds threshold OR no speech detected>
   },
   "feedback": [
     "<specific feedback point 1>",
     "<specific feedback point 2>",
     "<specific feedback point 3>"
   ],
-  "transcription": "<what you heard them say>",
+  "transcription": "<EXACTLY what you heard - use [silence] if nothing>",
   "detailedBreakdown": {
     "pronunciation": "<brief note on pronunciation quality>",
     "rhythm": "<brief note on rhythm and pacing>",
     "intonation": "<brief note on emotional expression>"
-  }
+  },
+  "speechDetected": <true if clear speech was heard, false if silence/noise only>
 }`;
 
     const response = await fetch("https://ai.gateway.lovable.dev/v1/chat/completions", {
@@ -179,6 +188,20 @@ Respond ONLY with valid JSON in this exact format:
     } catch (parseError) {
       console.error("Failed to parse AI response:", content);
       throw new Error("Failed to parse AI analysis response");
+    }
+
+    // Check if speech was detected
+    const speechDetected = analysis.speechDetected !== false && 
+      !analysis.transcription?.toLowerCase().includes('[silence]') &&
+      !analysis.transcription?.toLowerCase().includes('[inaudible]') &&
+      analysis.transcription?.trim().length > 0;
+
+    // If no speech detected, enforce low scores
+    if (!speechDetected) {
+      analysis.accuracy = Math.min(analysis.accuracy, 10);
+      analysis.fluency = Math.min(analysis.fluency, 10);
+      analysis.emotion = Math.min(analysis.emotion, 10);
+      console.log("No speech detected - enforcing low scores");
     }
 
     // Calculate weighted overall score
