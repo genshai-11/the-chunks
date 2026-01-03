@@ -1,5 +1,6 @@
 import React from 'react';
-import { ChevronDown, ChevronRight, BookOpen, Calendar, Menu, X } from 'lucide-react';
+import { ChevronDown, ChevronRight, BookOpen, Calendar, Menu, X, BarChart3 } from 'lucide-react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { curriculum } from '@/data/curriculum';
 import { useApp } from '@/context/AppContext';
 import { cn } from '@/lib/utils';
@@ -8,6 +9,8 @@ import logo from '@/assets/logo.png';
 export const Sidebar: React.FC = () => {
   const { currentLessonId, setCurrentLessonId, loadLesson, sidebarOpen, setSidebarOpen } = useApp();
   const [expandedWeeks, setExpandedWeeks] = React.useState<number[]>([1]);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   const toggleWeek = (weekId: number) => {
     setExpandedWeeks(prev =>
@@ -19,6 +22,7 @@ export const Sidebar: React.FC = () => {
     if (!lessonFile) return;
     setCurrentLessonId(dayId);
     loadLesson(lessonFile);
+    navigate('/');
     if (window.innerWidth < 768) {
       setSidebarOpen(false);
     }
@@ -58,6 +62,22 @@ export const Sidebar: React.FC = () => {
         <nav className={cn("flex-1 overflow-y-auto p-3", !sidebarOpen && "hidden md:block")}>
           {sidebarOpen ? (
             <div className="space-y-2">
+              {/* Dashboard Link */}
+              <button
+                onClick={() => navigate('/dashboard')}
+                className={cn(
+                  "w-full flex items-center gap-3 p-3 rounded-lg transition-colors",
+                  location.pathname === '/dashboard'
+                    ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
+                    : "hover:bg-sidebar-accent text-sidebar-foreground"
+                )}
+              >
+                <BarChart3 size={18} className={location.pathname === '/dashboard' ? "text-primary" : "text-sidebar-primary"} />
+                <span className="font-medium">Dashboard</span>
+              </button>
+
+              <div className="h-px bg-sidebar-border my-2" />
+
               {curriculum.map(week => (
                 <div key={week.id} className="animate-fade-in">
                   <button
@@ -84,13 +104,13 @@ export const Sidebar: React.FC = () => {
                           disabled={!day.lessonFile}
                           className={cn(
                             "w-full flex items-center gap-3 p-2.5 pl-4 rounded-lg text-left text-sm transition-all",
-                            currentLessonId === day.id
+                            currentLessonId === day.id && location.pathname === '/'
                               ? "bg-sidebar-accent text-sidebar-accent-foreground font-medium"
                               : "text-sidebar-foreground hover:bg-sidebar-accent/50",
                             !day.lessonFile && "opacity-40 cursor-not-allowed"
                           )}
                         >
-                          <BookOpen size={16} className={currentLessonId === day.id ? "text-primary" : "text-muted-foreground"} />
+                          <BookOpen size={16} className={currentLessonId === day.id && location.pathname === '/' ? "text-primary" : "text-muted-foreground"} />
                           <span className="truncate">{day.name}</span>
                         </button>
                       ))}
@@ -101,6 +121,17 @@ export const Sidebar: React.FC = () => {
             </div>
           ) : (
             <div className="flex flex-col items-center gap-2">
+              <button
+                onClick={() => navigate('/dashboard')}
+                className={cn(
+                  "p-3 rounded-lg transition-colors",
+                  location.pathname === '/dashboard' ? "bg-sidebar-accent" : "hover:bg-sidebar-accent"
+                )}
+                title="Dashboard"
+              >
+                <BarChart3 size={20} className={location.pathname === '/dashboard' ? "text-primary" : "text-sidebar-primary"} />
+              </button>
+              <div className="h-px w-8 bg-sidebar-border" />
               {curriculum.map(week => (
                 <button
                   key={week.id}
