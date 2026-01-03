@@ -46,49 +46,4 @@ export const curriculum: Week[] = [
       { id: 'd15', name: 'Day 15 - Food Porn', lessonFile: 'D15_L10_Food_Porn.json' },
     ],
   },
-  {
-    id: 6,
-    name: 'Week 6',
-    days: [
-      { id: 'd16', name: 'Day 16 - Coming Soon', lessonFile: '' },
-      { id: 'd17', name: 'Day 17 - Coming Soon', lessonFile: '' },
-      { id: 'd18', name: 'Day 18 - Coming Soon', lessonFile: '' },
-    ],
-  },
-  {
-    id: 7,
-    name: 'Week 7',
-    days: [
-      { id: 'd19', name: 'Day 19 - Coming Soon', lessonFile: '' },
-      { id: 'd20', name: 'Day 20 - Coming Soon', lessonFile: '' },
-      { id: 'd21', name: 'Day 21 - Coming Soon', lessonFile: '' },
-    ],
-  },
-  {
-    id: 8,
-    name: 'Week 8',
-    days: [
-      { id: 'd22', name: 'Day 22 - Coming Soon', lessonFile: '' },
-      { id: 'd23', name: 'Day 23 - Coming Soon', lessonFile: '' },
-      { id: 'd24', name: 'Day 24 - Coming Soon', lessonFile: '' },
-    ],
-  },
-  {
-    id: 9,
-    name: 'Week 9',
-    days: [
-      { id: 'd25', name: 'Day 25 - Coming Soon', lessonFile: '' },
-      { id: 'd26', name: 'Day 26 - Coming Soon', lessonFile: '' },
-      { id: 'd27', name: 'Day 27 - Coming Soon', lessonFile: '' },
-    ],
-  },
-  {
-    id: 10,
-    name: 'Week 10',
-    days: [
-      { id: 'd28', name: 'Day 28 - Coming Soon', lessonFile: '' },
-      { id: 'd29', name: 'Day 29 - Coming Soon', lessonFile: '' },
-      { id: 'd30', name: 'Day 30 - Coming Soon', lessonFile: '' },
-    ],
-  },
 ];
