@@ -43,11 +43,8 @@ export const Sidebar: React.FC = () => {
       >
         {/* Header */}
         <div className="p-4 border-b border-sidebar-border flex items-center justify-between">
-          <div className={cn("flex items-center gap-3", !sidebarOpen && "md:justify-center")}>
-            <img src={logo} alt="Chunks" className="h-8 w-auto" />
-            {sidebarOpen && (
-              <span className="font-display text-2xl text-primary">CHUNKS</span>
-            )}
+          <div className={cn("flex items-center", !sidebarOpen && "md:justify-center")}>
+            <img src={logo} alt="Chunks" className="h-10 w-auto" />
           </div>
           <button
             onClick={() => setSidebarOpen(!sidebarOpen)}

@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D8 - L5 - Ecommerce",
+  "categories": {
+    "Slang": [
+      {
+        "English": "No way! / Not a chance",
+        "Vietnamese": "Làm gì có chuyện đó"
+      },
+      {
+        "English": "Point is... / the problem is... / the thing is...",
+        "Vietnamese": "Vấn đề là"
+      },
+      {
+        "English": "Believe it or not",
+        "Vietnamese": "Tin hay không thì tuỳ"
+      },
+      {
+        "English": "You know what? / Lemme tell you this / I'm telling you / just so you know",
+        "Vietnamese": "Cậu biết sao không"
+      },
+      {
+        "English": "Tell me about it! / Of course / no need to say",
+        "Vietnamese": "Chứ còn gì nữa"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "E-commerce industry",
+        "Vietnamese": "Ngành TMDT"
+      },
+      {
+        "English": "Pie chart",
+        "Vietnamese": "Biểu đồ tròn"
+      },
+      {
+        "English": "Nowadays / today / these days / in this day and age",
+        "Vietnamese": "Ngày nay"
+      },
+      {
+        "English": "Difficulties / challenges / roadblocks / obstacles / hurdles",
+        "Vietnamese": "Những khó khăn"
+      },
+      {
+        "English": "Dynamic market / busy market",
+        "Vietnamese": "Thị trường sôi động"
+      },
+      {
+        "English": "Aware",
+        "Vietnamese": "Nhận thức"
+      },
+      {
+        "English": "Cash-burning game",
+        "Vietnamese": "Trò chơi đốt tiền"
+      },
+      {
+        "English": "Basically speaking",
+        "Vietnamese": "Về cơ bản"
+      },
+      {
+        "English": "Bargain hunter / deal hunter",
+        "Vietnamese": "Người săn sale"
+      },
+      {
+        "English": "Impulsive spender",
+        "Vietnamese": "Người chi tiêu tùy hứng"
+      },
+      {
+        "English": "See see look look / windowshop",
+        "Vietnamese": "Nhìn nhìn ngó ngó"
+      },
+      {
+        "English": "Me either / me neither / me too / me as well / same here / same to me",
+        "Vietnamese": "Tui cũng vậy"
+      },
+      {
+        "English": "Whatever it takes / no matter what / at all costs",
+        "Vietnamese": "Bằng mọi giá"
+      },
+      {
+        "English": "Competitive prices / reasonable prices / affordable prices",
+        "Vietnamese": "Giá cạnh tranh"
+      },
+      {
+        "English": "I myself...",
+        "Vietnamese": "Chính tôi..."
+      },
+      {
+        "English": "Promotion program",
+        "Vietnamese": "Chương trình khuyến mãi"
+      },
+      {
+        "English": "Mood / vibe",
+        "Vietnamese": "Hứng / tâm trạng"
+      },
+      {
+        "English": "Definitely / absolutely / surely",
+        "Vietnamese": "Chắc chắn"
+      },
+      {
+        "English": "Account for / make up 3%",
+        "Vietnamese": "Chiếm 3%"
+      },
+      {
+        "English": "Fashion sector",
+        "Vietnamese": "Mảng thời trang"
+      },
+      {
+        "English": "Horrible fact",
+        "Vietnamese": "Sự thật kinh khủng khiếp"
+      },
+      {
+        "English": "Plus / additionally / however",
+        "Vietnamese": "Với lại..."
+      },
+      {
+        "English": "Since when?",
+        "Vietnamese": "Từ khi nào?"
+      },
+      {
+        "English": "Prefer / like... better",
+        "Vietnamese": "Thích... hơn"
+      },
+      {
+        "English": "Hang around / wander around / go around",
+        "Vietnamese": "Đi lòng vòng"
+      },
+      {
+        "English": "Mall",
+        "Vietnamese": "Trung tâm mua sắm"
+      },
+      {
+        "English": "Commission",
+        "Vietnamese": "Hoa hồng"
+      },
+      {
+        "English": "Fixed salary",
+        "Vietnamese": "Lương cứng"
+      },
+      {
+        "English": "Cash",
+        "Vietnamese": "Tiền mặt"
+      },
+      {
+        "English": "Stimulate / trigger (off)",
+        "Vietnamese": "Kích thích"
+      },
+      {
+        "English": "Society",
+        "Vietnamese": "Xã hội"
+      },
+      {
+        "English": "Digital wallet",
+        "Vietnamese": "Ví điện tử"
+      },
+      {
+        "English": "I once... (V2)",
+        "Vietnamese": "Có một lần tôi..."
+      },
+      {
+        "English": "Deliver / ship",
+        "Vietnamese": "Giao hàng"
+      },
+      {
+        "English": "Thai commercial / Thai ads / Thai advertisement",
+        "Vietnamese": "Quảng cáo Thái Lan"
+      },
+      {
+        "English": "At the time / at that time",
+        "Vietnamese": "Lúc đó"
+      },
+      {
+        "English": "Turn to / toward me",
+        "Vietnamese": "Quay sang tôi"
+      },
+      {
+        "English": "Shopping experience",
+        "Vietnamese": "Trải nghiệm mua sắm"
+      },
+      {
+        "English": "Enhance / boost / improve",
+        "Vietnamese": "Thúc đẩy"
+      },
+      {
+        "English": "Concern / worry / trouble",
+        "Vietnamese": "Làm lo lắng"
+      },
+      {
+        "English": "... at all / whatsoever",
+        "Vietnamese": "... chút nào"
+      },
+      {
+        "English": "Attitude",
+        "Vietnamese": "Thái độ"
+      },
+      {
+        "English": "Deals hunting / sales hunting / bargain hunting",
+        "Vietnamese": "Săn sale"
+      },
+      {
+        "English": "Sales funnel / conversion funnel",
+        "Vietnamese": "Phễu bán hàng"
+      },
+      {
+        "English": "Conversion rate",
+        "Vietnamese": "Tỉ lệ chuyển đổi"
+      },
+      {
+        "English": "Matter of time",
+        "Vietnamese": "Vấn đề thời gian"
+      },
+      {
+        "English": "Niche market",
+        "Vietnamese": "Thị trường ngách"
+      },
+      {
+        "English": "Dominate",
+        "Vietnamese": "Thống lĩnh"
+      },
+      {
+        "English": "As soon as possible / ASAP",
+        "Vietnamese": "Càng sớm càng tốt"
+      },
+      {
+        "English": "Digital economy",
+        "Vietnamese": "Nền kinh tế số"
+      },
+      {
+        "English": "The 2nd largest economy",
+        "Vietnamese": "Nền kinh tế lớn thứ 2"
+      },
+      {
+        "English": "In the region / in the area",
+        "Vietnamese": "Trong khu vực"
+      },
+      {
+        "English": "Cartoon",
+        "Vietnamese": "Phim hoạt hình"
+      },
+      {
+        "English": "Hi sir / Hi ma'am",
+        "Vietnamese": "Chào ông / chào bà"
+      },
+      {
+        "English": "Membership card / rewards card",
+        "Vietnamese": "Thẻ hội viên"
+      },
+      {
+        "English": "Since morning / all morning",
+        "Vietnamese": "Sáng (tới) giờ"
+      },
+      {
+        "English": "Telesales / cold call",
+        "Vietnamese": "Bán hàng qua DT"
+      },
+      {
+        "English": "Group interview",
+        "Vietnamese": "Phỏng vấn nhóm"
+      },
+      {
+        "English": "The Indian sea",
+        "Vietnamese": "Ấn Độ Dương"
+      },
+      {
+        "English": "Misheard",
+        "Vietnamese": "Nghe nhầm"
+      },
+      {
+        "English": "Dear / honey",
+        "Vietnamese": "Cưng"
+      },
+      {
+        "English": "Hold on / wait / hang on / wait a minute",
+        "Vietnamese": "Chờ đã"
+      },
+      {
+        "English": "Lately / recently / in the recent time / these days",
+        "Vietnamese": "Gần đây"
+      },
+      {
+        "English": "It sounds like...",
+        "Vietnamese": "Nó nghe như kiểu..."
+      },
+      {
+        "English": "Lucky name",
+        "Vietnamese": "Tên phong thủy"
+      },
+      {
+        "English": "Catchy",
+        "Vietnamese": "Bắt tai"
+      },
+      {
+        "English": "Client meeting / customer meeting",
+        "Vietnamese": "Họp khách hàng"
+      },
+      {
+        "English": "Elevator",
+        "Vietnamese": "Thang máy"
+      },
+      {
+        "English": "Brief / short / consise / succinct",
+        "Vietnamese": "Ngắn gọn"
+      },
+      {
+        "English": "Ran into / bump into",
+        "Vietnamese": "Đụng phải (chạm mặt)"
+      },
+      {
+        "English": "Professional",
+        "Vietnamese": "Chuyên nghiệp"
+      },
+      {
+        "English": "Check-out flow",
+        "Vietnamese": "Quy trình thanh toán"
+      },
+      {
+        "English": "Numerate / good at numbers",
+        "Vietnamese": "Giỏi về số"
+      },
+      {
+        "English": "Suck at numbers",
+        "Vietnamese": "Dở ẹt về số"
+      },
+      {
+        "English": "Mistake A for B / confuse A and B",
+        "Vietnamese": "Lộn A với B"
+      },
+      {
+        "English": "My thing / my hobby / my cup of tea",
+        "Vietnamese": "Sở thích của tôi"
+      },
+      {
+        "English": "Metrics",
+        "Vietnamese": "Các thông số đo"
+      },
+      {
+        "English": "Churn rate & retention rate",
+        "Vietnamese": "Tỉ lệ rời bỏ & tỉ lệ ở lại"
+      },
+      {
+        "English": "Close the deal / finalize the deal",
+        "Vietnamese": "Chốt deal"
+      },
+      {
+        "English": "Delivery rejection",
+        "Vietnamese": "Bom hàng"
+      },
+      {
+        "English": "Inevitable / unavoidable / unpreventable",
+        "Vietnamese": "Không tránh khỏi"
+      },
+      {
+        "English": "Sunscreen kit / sunblock kit",
+        "Vietnamese": "Bộ kem chống nắng"
+      },
+      {
+        "English": "Africa",
+        "Vietnamese": "Châu Phi"
+      },
+      {
+        "English": "Undeliverable area",
+        "Vietnamese": "Khu vực không thể giao hàng được"
+      },
+      {
+        "English": "Everyone knows that...",
+        "Vietnamese": "Ai cũng biết rằng..."
+      },
+      {
+        "English": "Consume / use",
+        "Vietnamese": "Tiêu thụ"
+      },
+      {
+        "English": "Perform a transaction",
+        "Vietnamese": "Thực hiện 1 giao dịch"
+      },
+      {
+        "English": "You bet! / exactly! / definitely! / right on!",
+        "Vietnamese": "Chính xác!"
+      },
+      {
+        "English": "Cash On Delivery (COD)",
+        "Vietnamese": "Thanh toán khi nhận hàng"
+      },
+      {
+        "English": "I guess / I suppose / I think",
+        "Vietnamese": "Tôi đoán"
+      },
+      {
+        "English": "Deal with / cope with / handle",
+        "Vietnamese": "Đối phó với"
+      },
+      {
+        "English": "Border congestion",
+        "Vietnamese": "Tắc nghẽn biên giới"
+      },
+      {
+        "English": "No idea / don't know / no clue / beats me",
+        "Vietnamese": "Chả biết"
+      },
+      {
+        "English": "Troubleshoot / solve problems / resolve problems / tackle problems",
+        "Vietnamese": "Giải quyết vấn đề"
+      },
+      {
+        "English": "Take initiative",
+        "Vietnamese": "Chủ động"
+      },
+      {
+        "English": "Shipper / delivery man",
+        "Vietnamese": "Anh giao hàng"
+      },
+      {
+        "English": "Inventory management",
+        "Vietnamese": "Quản lý hàng hóa"
+      },
+      {
+        "English": "Delivery time / shipping time",
+        "Vietnamese": "Thời gian giao hàng"
+      },
+      {
+        "English": "See you around / later",
+        "Vietnamese": "Gặp cậu sau nhé"
+      },
+      {
+        "English": "It's odd / it's weird / it's strange",
+        "Vietnamese": "Kỳ lạ thật"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "Raise a question about sales funnel",
+        "Vietnamese": "Raise lên 1 câu hỏi về phễu bán hàng"
+      },
+      {
+        "English": "I've been working for 3 years in the warehouse",
+        "Vietnamese": "Tôi đã và đang làm được 3 năm trong nhà kho"
+      },
+      {
+        "English": "The bar chart on the left",
+        "Vietnamese": "Cái biểu đồ cột ở bên trái"
+      },
+      {
+        "English": "It might sound crazy but Shopee is just 7 years old",
+        "Vietnamese": "Nó nghe thì điên rồ nhưng mà Shopee mới chỉ có 7 tuổi thôi"
+      },
+      {
+        "English": "This is exactly what's happening nowadays",
+        "Vietnamese": "Đây chính xác là những gì đang diễn ra ngày nay"
+      },
+      {
+        "English": "A lot of difficulties",
+        "Vietnamese": "Vô vàn khó khăn"
+      },
+      {
+        "English": "We've been through a lot of difficulties together",
+        "Vietnamese": "Chúng ta đã kinh qua vô vàn khó khăn cùng nhau"
+      },
+      {
+        "English": "In the past/last 7 years",
+        "Vietnamese": "Trong 7 năm vừa qua"
+      },
+      {
+        "English": "I'm well aware that...",
+        "Vietnamese": "Tôi nhận thức rõ được rằng..."
+      },
+      {
+        "English": "To wrap it up",
+        "Vietnamese": "Để kết thúc lại"
+      },
+      {
+        "English": "I myself a big fan of fashion",
+        "Vietnamese": "Chính bản thân tôi là fan ruột của thời trang"
+      },
+      {
+        "English": "My wife is not a \"see see look look\" customer",
+        "Vietnamese": "Vợ tôi không phải loại khách hàng \"nhìn nhìn ngó ngó\""
+      },
+      {
+        "English": "In terms of... / In... terms / speak of... / when it comes to...",
+        "Vietnamese": "Nói về..."
+      },
+      {
+        "English": "To some extent / in a sense / in some respects",
+        "Vietnamese": "Ở một mức độ nào đó"
+      },
+      {
+        "English": "He's more of a bargain hunter",
+        "Vietnamese": "Ảnh giống một kẻ săn sale hơn"
+      },
+      {
+        "English": "What do you mean by saying \"sellers\"?",
+        "Vietnamese": "Cậu nói \"sellers\" là ý gì?"
+      },
+      {
+        "English": "When I'm in a very good mood",
+        "Vietnamese": "Khi tôi có tâm trạng vui"
+      },
+      {
+        "English": "I'm gonna see him / I will see him / I'm going to see him / I'll be seeing him / I'mma see him",
+        "Vietnamese": "Tôi sẽ gặp ảnh"
+      },
+      {
+        "English": "There's a famous saying that goes \"...\"",
+        "Vietnamese": "Có một câu nói nổi tiếng nói rằng \"...\""
+      },
+      {
+        "English": "You get what you pay for",
+        "Vietnamese": "Tiền nào của đó thôi"
+      },
+      {
+        "English": "Offer a deal at competitive price",
+        "Vietnamese": "Đưa ra 1 cái deal với giá cả cạnh tranh"
+      },
+      {
+        "English": "I'm myself an online shopper",
+        "Vietnamese": "Chính bản thân tôi là một người mua sắm online"
+      },
+      {
+        "English": "Promotion program is a perfect example of this",
+        "Vietnamese": "Chương trình khuyến mãi là một ví dụ điển hình cho điều này"
+      },
+      {
+        "English": "Have you ever wondered...?",
+        "Vietnamese": "Cậu có bao giờ tự hỏi...?"
+      },
+      {
+        "English": "What percentage of time do you spend cooking?",
+        "Vietnamese": "Bao nhiêu % thời lượng cậu dành cho nấu ăn?"
+      },
+      {
+        "English": "Blow your mind / Make your jaw drop",
+        "Vietnamese": "Làm bạn hết hồn chim én"
+      },
+      {
+        "English": "Lemme tell you upfront",
+        "Vietnamese": "Để tôi nói (thẳng) luôn"
+      },
+      {
+        "English": "Fashion sector accounts for 50% of our sales",
+        "Vietnamese": "Mảng thời trang chiếm tới 50% doanh số của ta"
+      },
+      {
+        "English": "Labor cost accounts for only 10% in this project",
+        "Vietnamese": "Chi phí nhân công chỉ chiếm có 10% \n trong dự án này"
+      },
+      {
+        "English": "It shows no sign of stopping!",
+        "Vietnamese": "Nó chưa có dấu hiệu dừng lại"
+      },
+      {
+        "English": "Don't wanna go to the market anymore",
+        "Vietnamese": "Không muốn đi chợ nữa"
+      },
+      {
+        "English": "Since when did we prefer commission?",
+        "Vietnamese": "Từ khi nào cậu thích hoa hồng hơn vậy?"
+      },
+      {
+        "English": "Pay in cash",
+        "Vietnamese": "Trả bằng tiền mặt"
+      },
+      {
+        "English": "Lemme put it this way / in other words",
+        "Vietnamese": "Để tui nói vầy đi (cho dễ)"
+      },
+      {
+        "English": "We are depending more and more on e-commerce",
+        "Vietnamese": "Chúng ta đang phụ thuộc ngày càng nhiều vào TMDT"
+      },
+      {
+        "English": "A buddy of mine",
+        "Vietnamese": "Một đứa bạn của tôi"
+      },
+      {
+        "English": "Would it kill you just to stop facebooking a day?",
+        "Vietnamese": "Cậu ngưng Facebook một ngày bộ chết hả?"
+      },
+      {
+        "English": "I must have seen you before",
+        "Vietnamese": "Hẳn là tôi đã gặp cậu trước đây rồi nè"
+      },
+      {
+        "English": "At the time, there were 3 visitors on our website",
+        "Vietnamese": "Lúc đó, có 3 khách trên website của chúng ta"
+      },
+      {
+        "English": "Give me a dirty look",
+        "Vietnamese": "Nhìn đểu tôi"
+      },
+      {
+        "English": "Tell me about it, who wants to shop on Amazon?",
+        "Vietnamese": "Chứ còn gì nữa, ai lại muốn mua hàng trên Amazon?"
+      },
+      {
+        "English": "Who doesn't like buying books on Tiki?",
+        "Vietnamese": "Ai lại không thích mua sách trên Tiki?"
+      },
+      {
+        "English": "How to enhance customers' shopping experience?",
+        "Vietnamese": "Làm sao để tăng cường trải nghiệm mua hàng của khách"
+      },
+      {
+        "English": "What excites me the most about Ebay is...",
+        "Vietnamese": "Điều làm tôi phấn khích nhất về Ebay đó là..."
+      },
+      {
+        "English": "What concerns/worries me the most right now is...",
+        "Vietnamese": "Điều làm tôi lo nhất ngay bây giờ đó là..."
+      },
+      {
+        "English": "There's always someone visiting our website every morning",
+        "Vietnamese": "Luôn có ai đó ghé thăm website của chúng ta mỗi sáng"
+      },
+      {
+        "English": "There's no such thing as a free lunch",
+        "Vietnamese": "Chả có gì là miễn phí đâu"
+      },
+      {
+        "English": "That saying doesn't apply to me",
+        "Vietnamese": "Cái câu nói đó không có áp dụng với tôi"
+      },
+      {
+        "English": "I don't like that attitude at all",
+        "Vietnamese": "Tôi chả thích thái độ đó chút nào"
+      },
+      {
+        "English": "Who doesn't like deals hunting nowadays?",
+        "Vietnamese": "Ngày nay ai lại không thích săn sale?"
+      },
+      {
+        "English": "A has to do with B / A relates to B / A is related to B / A is relevant to B",
+        "Vietnamese": "A có liên quan đến B"
+      },
+      {
+        "English": "100% sales funnel has to do with conversion rate",
+        "Vietnamese": "100% phễu bán hàng có liên quan đến tỉ lệ chuyển đổi"
+      },
+      {
+        "English": "Please bear in mind that this is just the matter of time",
+        "Vietnamese": "Hãy nhớ rằng đó chỉ là vấn đề thời gian thôi"
+      },
+      {
+        "English": "We need to dominate the niche market as soon as possible",
+        "Vietnamese": "Ta cần thống lĩnh thị trường ngách càng sớm càng tốt"
+      },
+      {
+        "English": "Vietnam is the 2nd largest economy in the region",
+        "Vietnamese": "Việt Nam là nền kinh tế lớn thứ 2 trong khu vực"
+      },
+      {
+        "English": "Hi sir, you see my membership card around?",
+        "Vietnamese": "Chào ông, ông thấy thẻ hội viên của tôi đâu không?"
+      },
+      {
+        "English": "I've been trying to reach 10 sellers since morning",
+        "Vietnamese": "Tôi đã và đang cố reach tới 10 sellers sáng giờ"
+      },
+      {
+        "English": "Are you afraid of telesales?",
+        "Vietnamese": "Cậu có sợ telesales không?"
+      },
+      {
+        "English": "Your marketing manager has been looking for you since morning",
+        "Vietnamese": "Trưởng phòng marketing của cậu đang tìm cậu sáng giờ đấy"
+      },
+      {
+        "English": "He told me he was having a group interview soon",
+        "Vietnamese": "Ổng nói tôi là ổng sẽ sớm có một cuộc phỏng vấn nhóm"
+      },
+      {
+        "English": "Have you ever been to India (yet)?",
+        "Vietnamese": "Cậu từng đến Ấn Độ bao giờ chưa?"
+      },
+      {
+        "English": "What you said? / what did you say? / Sorry",
+        "Vietnamese": "Cậu nói gì cơ?"
+      },
+      {
+        "English": "How may I help you, dear?",
+        "Vietnamese": "Chị giúp gì được cho cưng?"
+      },
+      {
+        "English": "You know what I mean? You know what I'm saying? / You know?",
+        "Vietnamese": "Cậu hiểu ý tôi không?"
+      },
+      {
+        "English": "That rings a bell! / It sounds familiar!",
+        "Vietnamese": "Cái đó nghe quen lắm nha!"
+      },
+      {
+        "English": "Lately, have you seen Chris Feng?",
+        "Vietnamese": "Gần đây, cậu có gặp Chris Feng không?"
+      },
+      {
+        "English": "It sounds like he's a big fan of online shopping",
+        "Vietnamese": "Nghe như kiểu hắn là fan ruột của online shopping"
+      },
+      {
+        "English": "My lucky name sounds really catchy",
+        "Vietnamese": "Tên phong thủy của tôi nghe bắt tai lắm nha"
+      },
+      {
+        "English": "I'm on the way to the client meeting",
+        "Vietnamese": "Tôi đang trên đường đi họp khách hàng"
+      },
+      {
+        "English": "I'll be brief / I'll keep it brief",
+        "Vietnamese": "Tôi sẽ ngắn gọn"
+      },
+      {
+        "English": "I just ran into your boss",
+        "Vietnamese": "Tớ vừa đụng phải sếp cậu xong"
+      },
+      {
+        "English": "You need to learn about the check-out flow first",
+        "Vietnamese": "Cậu cần phải học về quy trình thanh toán trước"
+      },
+      {
+        "English": "It doesn't sound like my boss at all!",
+        "Vietnamese": "Nghe chả giống sếp tôi tí nào cả!"
+      },
+      {
+        "English": "My mentor is so numerate",
+        "Vietnamese": "Mentor của tôi giỏi về số lắm"
+      },
+      {
+        "English": "Seriously, BD is not my thing",
+        "Vietnamese": "Thiệt, BD không phải sở thích của tôi"
+      },
+      {
+        "English": "Which metrics are you talking about?",
+        "Vietnamese": "Cậu đang nói về thông số đo nào vậy?"
+      },
+      {
+        "English": "What's the difference between churn rate & retention rate?",
+        "Vietnamese": "Điểm khác biệt giữa churn rate và retention rate là gì?"
+      },
+      {
+        "English": "Seriously, I suck at marketing",
+        "Vietnamese": "Thiệt, tui dở marketing lắm"
+      },
+      {
+        "English": "Delivery rejection situation",
+        "Vietnamese": "Tình huống bị bom hàng"
+      },
+      {
+        "English": "That situation is quite inevitable",
+        "Vietnamese": "Tình cảnh đó khá là khó tránh khỏi"
+      },
+      {
+        "English": "Believe it or not, I never use sunscreen whatsoever",
+        "Vietnamese": "Tin hay không thì tùy, tôi chả bao giờ dùng kem chống nắng"
+      },
+      {
+        "English": "He once shipped a sunscreen kit to me",
+        "Vietnamese": "Ảnh từng có lần ship cho tôi một bộ kem chống nắng"
+      },
+      {
+        "English": "Let me stop you right there",
+        "Vietnamese": "Để tôi ngắt lời cậu ngay đó"
+      },
+      {
+        "English": "Everyone knows that African consume a lot of sunscreen",
+        "Vietnamese": "Ai cũng biết rằng Người châu Phi tiêu thụ rất nhiều kem chống nắng"
+      },
+      {
+        "English": "Momo could help us perform a transaction faster",
+        "Vietnamese": "Momo có thể giúp ta thực hiện giao dịch nhanh hơn đấy"
+      },
+      {
+        "English": "You bet, I didn't say it's your fault",
+        "Vietnamese": "Đúng! Tui đâu có bảo đó là lỗi cậu"
+      },
+      {
+        "English": "In case like this / in cases like these / in this case",
+        "Vietnamese": "Trong trường hợp kiểu như thế này"
+      },
+      {
+        "English": "I don't buy it / I don't believe it",
+        "Vietnamese": "Tui chả tin"
+      },
+      {
+        "English": "How do you deal with customer complaint?",
+        "Vietnamese": "Cậu đối phó với complaint khách hàng thế nào vậy?"
+      },
+      {
+        "English": "What concerns me now is border congestion",
+        "Vietnamese": "Điều làm tôi băn khoăn bây giờ là việc tắt nghẽn biên giới"
+      },
+      {
+        "English": "Listen, you need to take initiative",
+        "Vietnamese": "Nghe nè, cậu cần phải chủ động"
+      },
+      {
+        "English": "That is one of the most yummiest shippers I've seen",
+        "Vietnamese": "Đó là một trong những anh shipper ngon nhất tôi từng gặp"
+      },
+      {
+        "English": "Perform mass recruitment",
+        "Vietnamese": "Thực hiện tuyển dụng hàng loạt"
+      },
+      {
+        "English": "How to shorten delivery time?",
+        "Vietnamese": "Làm sao để giảm thời gian giao hàng?"
+      },
+      {
+        "English": "How come you said that to boss???",
+        "Vietnamese": "Sao cậu nói vậy với sếp được???"
+      },
+      {
+        "English": "It's odd, how come she said that to me?",
+        "Vietnamese": "Lạ thiệt, sao cổ lại nói vậy với tôi?"
+      },
+      {
+        "English": "There're 30 orders in the cart",
+        "Vietnamese": "Có 30 cái order trong giỏ hàng ấy"
+      },
+      {
+        "English": "How come I talked to this woman?",
+        "Vietnamese": "Sao tôi lại nói chuyện với bà thím này nhỉ?"
+      },
+      {
+        "English": "I'm not a bargain hunter, I'm an impulsive spender",
+        "Vietnamese": "Tôi không phải kẻ săn sale, tôi là đứa chi tiêu tùy hứng"
+      },
+      {
+        "English": "Told ya, this campaign doesn't work!",
+        "Vietnamese": "Đã bảo cậu rồi, chiến dịch này không có work!"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "Point is today there's a lot of hot deals \n on e-commerce platforms",
+        "Vietnamese": "Vấn đề là, ngày nay có rất nhiều hot deals trên các nền tảng TMDT"
+      },
+      {
+        "English": "Since when did we prefer commission to fixed salary?",
+        "Vietnamese": "Từ khi nào cậu thích hoa hồng hơn lương cứng thế?"
+      },
+      {
+        "English": "Lemme put it this way I want to become a seller \n on your platform",
+        "Vietnamese": "Để tui nói vầy đi, tôi muốn trở thành seller trên nền tảng của chị"
+      },
+      {
+        "English": "Believe it or not a buddy of mine \n once asked me to deliver drug",
+        "Vietnamese": "Tin hay không thì tùy, một đứa bạn của tôi từng nhờ tôi vận chuyển \"mai thúy\""
+      },
+      {
+        "English": "Would it kill you just to stop spending money a day?",
+        "Vietnamese": "Cậu ngưng xài tiền một ngày bộ chết hả?"
+      },
+      {
+        "English": "Point is I must have seen this commercial before",
+        "Vietnamese": "Vấn đề là, hẳn là tôi đã xem cái quảng cáo này trước đây rồi"
+      },
+      {
+        "English": "Tell me about it Wayfair is the worst e-commerce platform I've ever used",
+        "Vietnamese": "Chứ còn gì nữa, Wayfair là cái nền tảng TMDT tệ nhất mà tôi từng dùng ấy"
+      },
+      {
+        "English": "What excites me the most about Shopee \n is the competitive prices",
+        "Vietnamese": "Điều làm tôi phấn khích nhất về Shopee là giá cả cạnh tranh"
+      },
+      {
+        "English": "You know what? There's always something to buy in life",
+        "Vietnamese": "Cậu biết sao không? Luôn có thứ gì đó để mua ở đời"
+      },
+      {
+        "English": "There's a famous saying that goes \n \"There's no such thing as a free lunch\"",
+        "Vietnamese": "Có một câu nói nổi tiếng nói thế này \"Chả có gì là miễn phí đâu\""
+      },
+      {
+        "English": "Plus that rule doesn't apply to me at all",
+        "Vietnamese": "Với lại quy luật đó đâu có áp dụng với tôi đâu"
+      },
+      {
+        "English": "Actually I don't like deals hunting whatsoever",
+        "Vietnamese": "Thực ra tôi chả thích săn sale chút nào"
+      },
+      {
+        "English": "What you're talking about has to do with conversion rate",
+        "Vietnamese": "Thứ cậu đang nói có liên quan đến tỉ lệ chuyển đổi ấy"
+      },
+      {
+        "English": "According to me digital economy is just the matter of time",
+        "Vietnamese": "Theo tôi, nền kinh tế số chỉ là vấn đề thời gian thôi"
+      },
+      {
+        "English": "You must have misheard him I'm sure he didn't say that",
+        "Vietnamese": "Chắc là cậu nghe nhầm rồi. Tôi chắc chắn ảnh không có nói vậy"
+      },
+      {
+        "English": "Lately a buddy of mine has been using a lot of sunscreen",
+        "Vietnamese": "Dạo gần đây, một đứa bạn của tôi đã và đang dùng rất nhiều kem chống nắng"
+      },
+      {
+        "English": "I know you're busy so I'll be brief",
+        "Vietnamese": "Tôi biết chị bận nên tôi sẽ ngắn gọn"
+      },
+      {
+        "English": "My brother is numerate enough to become a BD for Tiki",
+        "Vietnamese": "Anh trai tôi đủ giỏi số để trở thành BD cho Tiki"
+      },
+      {
+        "English": "Point is there's not many platforms out there can do this",
+        "Vietnamese": "Vấn đề là, không có nhiều nền tảng ngoài kia có thể làm chuyện này"
+      },
+      {
+        "English": "If you never take initiative \n you'll never get what you want",
+        "Vietnamese": "Nếu bạn không bao giờ chủ động, cậu sẽ không bao giờ có cái bạn muốn"
+      }
+    ],
+    "Review": [
+      {
+        "English": "Our churn rate is too high",
+        "Vietnamese": "Churn rate của ta quá cao"
+      },
+      {
+        "English": "No, I'm not that numerous",
+        "Vietnamese": "Không, tôi đâu có giỏi số đến vậy"
+      },
+      {
+        "English": "Metrics will be extremely helpful",
+        "Vietnamese": "Những thông số đo là cực kỳ hữu ích"
+      },
+      {
+        "English": "How to close the deal faster?",
+        "Vietnamese": "Làm sao để chốt deal nhanh hơn?"
+      },
+      {
+        "English": "We're working on the retention rate",
+        "Vietnamese": "Ta đang cải thiện retention rate"
+      },
+      {
+        "English": "How to perform a transaction?",
+        "Vietnamese": "Làm sao để thực hiện một giao dịch?"
+      },
+      {
+        "English": "What does COD stand for?",
+        "Vietnamese": "COD là viết tắt cho cái gì?"
+      },
+      {
+        "English": "No way, I don't buy it",
+        "Vietnamese": "Làm gì có chuyện đó, tui chả tin"
+      },
+      {
+        "English": "How to deal with border congestion?",
+        "Vietnamese": "Làm sao để đối phó với tắt nghẽn biên giới?"
+      },
+      {
+        "English": "Lemme put it this way, I love shopping",
+        "Vietnamese": "Để tui nói vầy đi, tôi thích shopping"
+      },
+      {
+        "English": "It's not a good idea to argue with the customers",
+        "Vietnamese": "Tranh cãi với khách hàng không phải là ý hay"
+      },
+      {
+        "English": "Inventory management",
+        "Vietnamese": "Quản lý hàng hóa"
+      },
+      {
+        "English": "Performing mass recruitment",
+        "Vietnamese": "Thực hiện tuyển hàng loạt"
+      },
+      {
+        "English": "How to shorten delivery time?",
+        "Vietnamese": "Làm sao để giảm thời gian giao hàng"
+      },
+      {
+        "English": "I gotta go, see you around",
+        "Vietnamese": "Chị phải đi, gặp cậu sau"
+      },
+      {
+        "English": "Why didn't they buy this watch?",
+        "Vietnamese": "Sao họ không mua cái đồng hồ này nhỉ?"
+      },
+      {
+        "English": "There're 3 orders pending",
+        "Vietnamese": "Có 3 cái order đang pending"
+      },
+      {
+        "English": "It shows no sign of stopping",
+        "Vietnamese": "Không có dấu hiệu của việc dừng lại"
+      },
+      {
+        "English": "It shows no sign of slowing down",
+        "Vietnamese": "Không có dấu hiệu của việc chậm lại"
+      },
+      {
+        "English": "Who doesn't love shopping today?",
+        "Vietnamese": "Ngày nay ai mà không thích shopping?"
+      },
+      {
+        "English": "It's odd, there's no visitor on the web",
+        "Vietnamese": "Lạ thiệt, chả có khách nào trên trang web"
+      },
+      {
+        "English": "What concerns you the most right now?",
+        "Vietnamese": "Điều làm cậu băn khoăn nhất bây giờ là gì?"
+      },
+      {
+        "English": "Let me put it this way,",
+        "Vietnamese": "Để tui nói vầy đi,"
+      },
+      {
+        "English": "Point is, COD is quite incovenient",
+        "Vietnamese": "Vấn đề là, COD khá là bất tiện"
+      },
+      {
+        "English": "That is an undeliverable area",
+        "Vietnamese": "Đó là một khu vực không thể giao hàng"
+      },
+      {
+        "English": "I like that lucky name",
+        "Vietnamese": "Tui thích cái tên phong thủy đó"
+      },
+      {
+        "English": "Niche market is a market",
+        "Vietnamese": "Thị trường ngách là một thị trường"
+      },
+      {
+        "English": "They prefer paying in cash",
+        "Vietnamese": "Họ thích trả tiền mặt hơn"
+      },
+      {
+        "English": "To some extent, they prefer paying in cash",
+        "Vietnamese": "Ở một mức độ nào đó, \n họ thích trả tiền mặt hơn"
+      },
+      {
+        "English": "How to stimulate the domestic market?",
+        "Vietnamese": "Làm sao để kích thích thị trường nội địa?"
+      },
+      {
+        "English": "Enhance shopping experience",
+        "Vietnamese": "Tăng cường trải nghiệm mua sắm"
+      },
+      {
+        "English": "This is a cash-burning game",
+        "Vietnamese": "Đây là một trò chơi đốt tiền"
+      },
+      {
+        "English": "I'm a big fan of Amazon",
+        "Vietnamese": "tôi là fan ruột của Amazon"
+      },
+      {
+        "English": "They just see see look look",
+        "Vietnamese": "Họ chỉ dòm dòm ngó ngó thôi"
+      },
+      {
+        "English": "I have to pass the group interview",
+        "Vietnamese": "Tôi phải pass cái phỏng vấn nhóm"
+      },
+      {
+        "English": "Are you an impulsive spender?",
+        "Vietnamese": "Cậu là người chi tiêu tùy hứng à?"
+      },
+      {
+        "English": "This  solution doesn't work!",
+        "Vietnamese": "Cách này không có work!"
+      },
+      {
+        "English": "You're not in the good mood?",
+        "Vietnamese": "Cậu không có tâm trạng vui à?"
+      },
+      {
+        "English": "I think this price is affordable",
+        "Vietnamese": "Tớ nghĩ giá này là phải chăng rồi"
+      },
+      {
+        "English": "I said I suck at convincing sellers",
+        "Vietnamese": "Tôi đã bảo tôi dở thuyết phục seller lắm"
+      },
+      {
+        "English": "Plus it's just the matter of time",
+        "Vietnamese": "Với lại đó chỉ là vấn đề thời gian thôi"
+      },
+      {
+        "English": "Actually I like vouchers better",
+        "Vietnamese": "Thực ra tôi thích voucher hơn"
+      },
+      {
+        "English": "Since when did you love Sendo?",
+        "Vietnamese": "Từ khi nào cậu thích Sendo vậy?"
+      },
+      {
+        "English": "It's so boring to hang around in the mall",
+        "Vietnamese": "Dạo lòng vòng trong mall chán lắm"
+      },
+      {
+        "English": "I don't like that attitude at all",
+        "Vietnamese": "Tôi không thích thái độ đó tí nào"
+      },
+      {
+        "English": "Our conversion rate is quite low",
+        "Vietnamese": "Tỉ lệ chuyển đổi của ta khá là thấp"
+      },
+      {
+        "English": "Labor cost accounts for 30%",
+        "Vietnamese": "Chi phí nhân công chiếm 30%"
+      },
+      {
+        "English": "How to dominate the digital market?",
+        "Vietnamese": "Làm sao để thống lĩnh thị trường số?"
+      },
+      {
+        "English": "Digital wallet is the best solution nowadays",
+        "Vietnamese": "Ví điện tử là giải pháp tốt nhất ngày nay"
+      },
+      {
+        "English": "I'm talking about sales funnel",
+        "Vietnamese": "Tôi đang nói về phễu bán hàng"
+      }
+    ]
+  }
+}

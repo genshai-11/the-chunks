@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D14 - L9- Electronic Mail",
+  "categories": {
+    "Slang": [
+      {
+        "English": "Yet... / ... though",
+        "Vietnamese": "DẪU VẬY"
+      },
+      {
+        "English": "In a way / in a sense",
+        "Vietnamese": "MỘT CÁCH NÀO ĐÓ"
+      },
+      {
+        "English": "DUH... / Tell me about it",
+        "Vietnamese": "VẬY CŨNG NÓI / HỎI"
+      },
+      {
+        "English": "For the time being / At the moment",
+        "Vietnamese": "Ở THỜI ĐIỂM HIỆN TẠI"
+      },
+      {
+        "English": "This entire time / this whole time / for a while now",
+        "Vietnamese": "NÃY GIỜ"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Uneasy / uncomfortable",
+        "Vietnamese": "Áy náy"
+      },
+      {
+        "English": "Cut short",
+        "Vietnamese": "Cắt ngắn"
+      },
+      {
+        "English": "Farewell emails / goodbye emails",
+        "Vietnamese": "Email chia tay"
+      },
+      {
+        "English": "Having said that / that being said",
+        "Vietnamese": "Nói đi thì cũng nói lại"
+      },
+      {
+        "English": "Good talker",
+        "Vietnamese": "Người giỏi ăn nói"
+      },
+      {
+        "English": "Officially",
+        "Vietnamese": "Một cách chính thức"
+      },
+      {
+        "English": "My design team",
+        "Vietnamese": "Đội design của tôi"
+      },
+      {
+        "English": "Announce / inform",
+        "Vietnamese": "Thông báo"
+      },
+      {
+        "English": "This April 30th",
+        "Vietnamese": "Ngày 30/4 này"
+      },
+      {
+        "English": "Last working day",
+        "Vietnamese": "Ngày làm việc cuối cùng của tôi"
+      },
+      {
+        "English": "Especially,...",
+        "Vietnamese": "Đặc biệt,..."
+      },
+      {
+        "English": "Wonder / ask yourself",
+        "Vietnamese": "Tự hỏi"
+      },
+      {
+        "English": "In the first place / right from the start / right off the bat / from the get-go",
+        "Vietnamese": "Ngay từ đầu"
+      },
+      {
+        "English": "Back then",
+        "Vietnamese": "Hồi đó"
+      },
+      {
+        "English": "Figure out",
+        "Vietnamese": "Mường tượng ra"
+      },
+      {
+        "English": "Deep inside",
+        "Vietnamese": "Sâu bên trong"
+      },
+      {
+        "English": "This kind of situation",
+        "Vietnamese": "Cái kiểu tình huống này"
+      },
+      {
+        "English": "Relate to A",
+        "Vietnamese": "Có liên quan tới A"
+      },
+      {
+        "English": "I was inspired",
+        "Vietnamese": "Tôi bị truyền cảm hứng"
+      },
+      {
+        "English": "Commence speech",
+        "Vietnamese": "Bài diễn văn tốt nghiệp"
+      },
+      {
+        "English": "Truth be told / matter of fact",
+        "Vietnamese": "Thật sự mà nói,..."
+      },
+      {
+        "English": "My words",
+        "Vietnamese": "Những lời của tôi"
+      },
+      {
+        "English": "Blow sb's mind",
+        "Vietnamese": "Làm ai đó kinh ngạc"
+      },
+      {
+        "English": "At the time / at that time",
+        "Vietnamese": "Lúc đó"
+      },
+      {
+        "English": "Admire",
+        "Vietnamese": "Ngưỡng mộ"
+      },
+      {
+        "English": "Perpective / viewpoint",
+        "Vietnamese": "Cách nghĩ / góc nhìn"
+      },
+      {
+        "English": "Attitude toward life",
+        "Vietnamese": "Thái độ đối với cuộc sống"
+      },
+      {
+        "English": "Like me & Unlike me",
+        "Vietnamese": "Cũng như tôi & không như tôi"
+      },
+      {
+        "English": "Drop out of school",
+        "Vietnamese": "Bỏ học"
+      },
+      {
+        "English": "University of Banking",
+        "Vietnamese": "Trường DH Ngân Hàng"
+      },
+      {
+        "English": "Start over",
+        "Vietnamese": "Bắt đầu lại"
+      },
+      {
+        "English": "Scary / frightening / intimidating",
+        "Vietnamese": "Đáng sợ"
+      },
+      {
+        "English": "UI / UX",
+        "Vietnamese": "Giao diện & trải nghiệm người dùng"
+      },
+      {
+        "English": "A once said...",
+        "Vietnamese": "A từng bảo..."
+      },
+      {
+        "English": "Settle",
+        "Vietnamese": "Ổn định / thôi tìm kiếm"
+      },
+      {
+        "English": "Ever since / since then",
+        "Vietnamese": "Từ đó"
+      },
+      {
+        "English": "Haunt",
+        "Vietnamese": "Ám ảnh"
+      },
+      {
+        "English": "Grateful to A for B",
+        "Vietnamese": "Biết ơn A về B"
+      },
+      {
+        "English": "Forgive / look past",
+        "Vietnamese": "Tha / bỏ qua"
+      },
+      {
+        "English": "Mistakes / shortcomings",
+        "Vietnamese": "Những lỗi lầm"
+      },
+      {
+        "English": "We human",
+        "Vietnamese": "Con người chúng ta"
+      },
+      {
+        "English": "Uncertainty",
+        "Vietnamese": "Sự bất định/vô thường"
+      },
+      {
+        "English": "Face with... / encounter",
+        "Vietnamese": "Đối mặt với..."
+      },
+      {
+        "English": "What if...?",
+        "Vietnamese": "Nhỡ... thì sao?"
+      },
+      {
+        "English": "Who know, maybe",
+        "Vietnamese": "Hổng chừng..."
+      },
+      {
+        "English": "Holy Moses / holy cow / OMG",
+        "Vietnamese": "Trời đất ơi"
+      },
+      {
+        "English": "What a surprise!",
+        "Vietnamese": "Ngạc nhiên thế!"
+      },
+      {
+        "English": "It seems... / It appears...",
+        "Vietnamese": "Hình như..."
+      },
+      {
+        "English": "Assistant coach",
+        "Vietnamese": "Trợ lý HLV"
+      },
+      {
+        "English": "A piece of advertisement",
+        "Vietnamese": "Một mẩu quảng cáo"
+      },
+      {
+        "English": "Official fanpage",
+        "Vietnamese": "Fanpage chính thức"
+      },
+      {
+        "English": "Listen,...",
+        "Vietnamese": "(Nghe) này,..."
+      },
+      {
+        "English": "Legendary",
+        "Vietnamese": "Huyền thoại"
+      },
+      {
+        "English": "Footballer / soccer player",
+        "Vietnamese": "Cầu thủ"
+      },
+      {
+        "English": "5 years ago",
+        "Vietnamese": "5 năm trước"
+      },
+      {
+        "English": "Happen to do sth / do sth by chance",
+        "Vietnamese": "Tình cờ làm gì đó"
+      },
+      {
+        "English": "Stay in touch",
+        "Vietnamese": "Giữ liên lạc nhé"
+      },
+      {
+        "English": "Football match",
+        "Vietnamese": "Một trận đá banh"
+      },
+      {
+        "English": "By Sunday",
+        "Vietnamese": "Chậm nhất là Chủ Nhật"
+      },
+      {
+        "English": "Endless inspiration",
+        "Vietnamese": "Nguồn cảm hứng bất tận"
+      },
+      {
+        "English": "Kind words",
+        "Vietnamese": "Những lời tử tế"
+      },
+      {
+        "English": "Mistake A for B / confuse A and B",
+        "Vietnamese": "Nhầm A với B"
+      },
+      {
+        "English": "My 3-year-old son",
+        "Vietnamese": "Cậu con trai 3 tuổi của tôi"
+      },
+      {
+        "English": "... either / ... too / ... as well / ... too / also",
+        "Vietnamese": "Cũng..."
+      },
+      {
+        "English": "I myself always...",
+        "Vietnamese": "Chính tôi luôn..."
+      },
+      {
+        "English": "Look up to A / look down on B",
+        "Vietnamese": "Ngưỡng mộ A / Khinh thường B"
+      },
+      {
+        "English": "Stand up for A",
+        "Vietnamese": "Đứng lên bênh vực cho A"
+      },
+      {
+        "English": "Out there",
+        "Vietnamese": "Ngoài kia"
+      },
+      {
+        "English": "I'm flattered",
+        "Vietnamese": "Tôi rất cảm kích"
+      },
+      {
+        "English": "The other day & the other night",
+        "Vietnamese": "Hôm bữa & tối hôm bữa"
+      },
+      {
+        "English": "One day / some day",
+        "Vietnamese": "Một ngày nào đó"
+      },
+      {
+        "English": "Good at... & suck at...",
+        "Vietnamese": "Giỏi... & dở..."
+      },
+      {
+        "English": "Ask for sb's autograph",
+        "Vietnamese": "Xin chữ ký ai đó"
+      },
+      {
+        "English": "Pleasure / honor",
+        "Vietnamese": "Niềm vui / vinh dự"
+      },
+      {
+        "English": "I'm supposed / I should",
+        "Vietnamese": "Tôi nên..."
+      },
+      {
+        "English": "A proper cover letter",
+        "Vietnamese": "Một cái cover letter chỉnh chu"
+      },
+      {
+        "English": "Articulate",
+        "Vietnamese": "Diễn tả bằng lời"
+      },
+      {
+        "English": "Thoughts / thinking",
+        "Vietnamese": "Những suy nghĩ"
+      },
+      {
+        "English": "3 days in a row / straight",
+        "Vietnamese": "3 ngày liền"
+      },
+      {
+        "English": "Make an impact",
+        "Vietnamese": "Tạo ra tác động"
+      },
+      {
+        "English": "Vietnamese national football team",
+        "Vietnamese": "Đội tuyển bóng đá VN"
+      },
+      {
+        "English": "Brother in law",
+        "Vietnamese": "Anh rể"
+      },
+      {
+        "English": "Exaggerate",
+        "Vietnamese": "Nói quá / nổ"
+      },
+      {
+        "English": "A phenomenon",
+        "Vietnamese": "Một hiện tượng"
+      },
+      {
+        "English": "Overqualified",
+        "Vietnamese": "Quá tiêu chuẩn"
+      },
+      {
+        "English": "A big name",
+        "Vietnamese": "Một tên tuổi lớn"
+      },
+      {
+        "English": "... in person / directly",
+        "Vietnamese": "... trực tiếp"
+      },
+      {
+        "English": "Profitable",
+        "Vietnamese": "Có lời"
+      },
+      {
+        "English": "Professional footballer",
+        "Vietnamese": "Một cầu thủ chuyên nghiệp"
+      },
+      {
+        "English": "The last / past 2 years",
+        "Vietnamese": "Trong 2 năm vừa qua"
+      },
+      {
+        "English": "Football strategy",
+        "Vietnamese": "Chiến lược bóng đá"
+      },
+      {
+        "English": "Football clubs",
+        "Vietnamese": "Những câu lạc bộ bóng đá"
+      },
+      {
+        "English": "Dedicated",
+        "Vietnamese": "Có tâm"
+      },
+      {
+        "English": "Nowhere near...",
+        "Vietnamese": "Còn khuya mới..."
+      },
+      {
+        "English": "Start from scratch / zero",
+        "Vietnamese": "Bắt đầu từ đầu / số 0"
+      },
+      {
+        "English": "... of all time",
+        "Vietnamese": "... mọi thời đại"
+      },
+      {
+        "English": "..., so to speak",
+        "Vietnamese": "..., có thể nói vậy"
+      },
+      {
+        "English": "Management",
+        "Vietnamese": "Quản trị"
+      },
+      {
+        "English": "Philosophy / principle",
+        "Vietnamese": "Triết học / nguyên tắc sống"
+      },
+      {
+        "English": "Work on / improve",
+        "Vietnamese": "Cải thiện"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "Don't get me wrong",
+        "Vietnamese": "Đừng hiểu nhầm ý tôi"
+      },
+      {
+        "English": "I find it very interesting",
+        "Vietnamese": "Tôi thấy nó rất thú vị"
+      },
+      {
+        "English": "Yet he still came to help",
+        "Vietnamese": "Dẫu vậy ảnh vẫn tới để giúp"
+      },
+      {
+        "English": "A would be a better choice for me",
+        "Vietnamese": "A sẽ là sự lựa chọn tốt hơn cho tôi"
+      },
+      {
+        "English": "All good things must come to an end",
+        "Vietnamese": "Bữa tiệc nào rồi cũng có lúc tàn"
+      },
+      {
+        "English": "If you're interested in finance",
+        "Vietnamese": "Nếu cậu có quan tâm đến tài chính"
+      },
+      {
+        "English": "I'm very sad to announce that...",
+        "Vietnamese": "Tôi rất buồn để thông báo rằng..."
+      },
+      {
+        "English": "This May 1st will be my birthday",
+        "Vietnamese": "1/5 này sẽ là sinh nhật tôi"
+      },
+      {
+        "English": "Tomorrow will be my last working day",
+        "Vietnamese": "Ngày mai sẽ là ngày làm việc cuối cùng của tôi"
+      },
+      {
+        "English": "From the bottom of my heart",
+        "Vietnamese": "Từ tận đáy lòng"
+      },
+      {
+        "English": "Some of you might be wondering",
+        "Vietnamese": "Một vài người các bạn có thể là đang tự hỏi"
+      },
+      {
+        "English": "I didn't see it back then",
+        "Vietnamese": "Hồi đó tôi không nhìn ra"
+      },
+      {
+        "English": "I had it all figured out",
+        "Vietnamese": "Tôi đã mường tượng ra mọi thứ"
+      },
+      {
+        "English": "I majored in accounting",
+        "Vietnamese": "Tôi học chuyên ngành kế toán"
+      },
+      {
+        "English": "My gut tells me that...",
+        "Vietnamese": "Linh cảm bảo tôi rằng..."
+      },
+      {
+        "English": "A is not my thing",
+        "Vietnamese": "A không phải thứ cho tôi"
+      },
+      {
+        "English": "This situation relates to everyone",
+        "Vietnamese": "Hoàn cảnh này có liên quan đến mọi người (Ai cũng feel được)"
+      },
+      {
+        "English": "I was inspired by that poem",
+        "Vietnamese": "Tôi được truyền cảm hứng bởi bài thơ đó"
+      },
+      {
+        "English": "If you've been using iphone 8",
+        "Vietnamese": "Nếu cậu đang dùng iphone 8"
+      },
+      {
+        "English": "If you've been reading that fiction",
+        "Vietnamese": "Nếu cậu đang đọc cuốn tiểu thuyết đó"
+      },
+      {
+        "English": "What can blow your mind?",
+        "Vietnamese": "Điều gì có thể làm tôi kinh ngạc?"
+      },
+      {
+        "English": "It was quite scary back then",
+        "Vietnamese": "Hồi đó nó khá là đáng sợ"
+      },
+      {
+        "English": "I spent the next 2 years learning English",
+        "Vietnamese": "Tôi đã dành 2 năm kế tiếp để học Tiếng Anh"
+      },
+      {
+        "English": "That was one of the best decisions",
+        "Vietnamese": "Đó là một trong những quyết định tốt nhất"
+      },
+      {
+        "English": "The only way to live forever is not to die",
+        "Vietnamese": "Cách duy nhất để sống mãi là đừng chết"
+      },
+      {
+        "English": "Keep searching, don't settle",
+        "Vietnamese": "Cứ tìm kiếm, đừng ổn định"
+      },
+      {
+        "English": "If you haven't found it yet",
+        "Vietnamese": "Nếu cậu chưa tìm ra nó"
+      },
+      {
+        "English": "Those words haunted me ever since",
+        "Vietnamese": "Những chữ đó đã ám tôi từ đó"
+      },
+      {
+        "English": "No one knows what will happen tomorrow",
+        "Vietnamese": "Chả ai biết chuyện gì sẽ xảy ra ngày mai đâu"
+      },
+      {
+        "English": "I'm so grateful for that",
+        "Vietnamese": "Tôi rất biết ơn về điều đó"
+      },
+      {
+        "English": "I'm so grateful for having a chance to work here",
+        "Vietnamese": "Tôi rất biết ơn về việc đã có cơ hội làm việc ở đây"
+      },
+      {
+        "English": "To be a part of this team",
+        "Vietnamese": "Là một phần của team này"
+      },
+      {
+        "English": "Please forgive my mistakes",
+        "Vietnamese": "Xin hãy tha cho những thiếu sót của tôi"
+      },
+      {
+        "English": "The thing is we're so scared",
+        "Vietnamese": "Vấn đề là chúng ta quá sợ"
+      },
+      {
+        "English": "We human are so scared of that",
+        "Vietnamese": "Con người chúng ta quá sợ điều đó"
+      },
+      {
+        "English": "The uncertainty of the future",
+        "Vietnamese": "Tính bất định của tương lai"
+      },
+      {
+        "English": "Have the courage to forgive",
+        "Vietnamese": "Có can đảm để tha thứ"
+      },
+      {
+        "English": "How to face with this question?",
+        "Vietnamese": "Làm sao để đối mặt với câu hỏi đó?"
+      },
+      {
+        "English": "What if we never find it?",
+        "Vietnamese": "Nhỡ chúng ta không bao giờ tìm ra thì sao?"
+      },
+      {
+        "English": "I have no idea / I don't know / I know nothing",
+        "Vietnamese": "Tôi không biết"
+      },
+      {
+        "English": "To wrap it up, I'll show you this",
+        "Vietnamese": "Để kết lại, tôi sẽ show mọi người cái này"
+      },
+      {
+        "English": "Who knows, maybe she will come",
+        "Vietnamese": "Hổng chừng cổ sẽ đến"
+      },
+      {
+        "English": "Have the 2nd chance to work with each other",
+        "Vietnamese": "Có cơ hội lần thứ hai để làm việc cùng nhau"
+      },
+      {
+        "English": "I hope you had a wonderful trip",
+        "Vietnamese": "Tôi mong ông đã có một chuyến đi tuyệt vời"
+      },
+      {
+        "English": "Holy Moses, Who am I talking to now?!?",
+        "Vietnamese": "Trời đất ơi, tôi đang nói chuyện với ai đây?!?"
+      },
+      {
+        "English": "What a surprise! You know my boss?",
+        "Vietnamese": "Ngạc nhiên thật! Cậu biết sếp tôi à?"
+      },
+      {
+        "English": "It seems you're looking for this",
+        "Vietnamese": "Hình như cô đang kiếm gì cái này"
+      },
+      {
+        "English": "Head coach & assistant coach",
+        "Vietnamese": "HLV trưởng & trợ lý HLV"
+      },
+      {
+        "English": "You must have seen that movie",
+        "Vietnamese": "Hẳn là cậu đã coi phim đó rồi"
+      },
+      {
+        "English": "There's a piece of advertisement on the fanpage",
+        "Vietnamese": "Có một mẩu quảng cáo trên fanpage của chúng ta"
+      },
+      {
+        "English": "There's an event on our official fanpage",
+        "Vietnamese": "Có một event trên trang fanpage chính thức"
+      },
+      {
+        "English": "I've been thinking if I should...",
+        "Vietnamese": "Tôi đã và đang nghĩ rằng liệu tôi có nên..."
+      },
+      {
+        "English": "Should I apply for that job?",
+        "Vietnamese": "Tôi có nên apply vào cái job đó không?"
+      },
+      {
+        "English": "Come on, stop pulling my leg",
+        "Vietnamese": "Thôiiii, đừng có mà chọc tui nữa"
+      },
+      {
+        "English": "Ronaldo is a legendary footballer",
+        "Vietnamese": "Ronaldo là một cầu thủ huyền thoại"
+      },
+      {
+        "English": "Drop me an email by Sunday",
+        "Vietnamese": "Gửi tôi cái email chậm nhất là CN"
+      },
+      {
+        "English": "I know it sounds crazy but...",
+        "Vietnamese": "Tôi biết là nó nghe crazy nhưng mà..."
+      },
+      {
+        "English": "Everything happens for a reason",
+        "Vietnamese": "Cái gì cũng có lý do của nó hết"
+      },
+      {
+        "English": "I happened to see A in a café",
+        "Vietnamese": "Tôi tình cờ gặp A trong 1 quán cafe"
+      },
+      {
+        "English": "I've been following that guy",
+        "Vietnamese": "Tôi đang follow cái anh đó"
+      },
+      {
+        "English": "I've been chosen that journey ever since",
+        "Vietnamese": "Tôi đã chọn cái hành trình đó từ đó"
+      },
+      {
+        "English": "An endless inspiration for me",
+        "Vietnamese": "Một nguồn cảm hứng bất tận cho tôi"
+      },
+      {
+        "English": "Thank you for your kind words",
+        "Vietnamese": "Cám ơn vì những lời tử tế của cậu"
+      },
+      {
+        "English": "You must have mistaken me for your lover",
+        "Vietnamese": "Chắc hẳn cậu đã nhầm tôi với người yêu tôi rồi"
+      },
+      {
+        "English": "My son is a big fan of Barcelona",
+        "Vietnamese": "Con trai tôi là fan ruột của Barcelona"
+      },
+      {
+        "English": "My boss loves Barcelona either",
+        "Vietnamese": "Sếp tôi cũng thích Barcelona"
+      },
+      {
+        "English": "I always look up to my daddy",
+        "Vietnamese": "Tôi luôn nể phục ba tôi"
+      },
+      {
+        "English": "I always stand up for others",
+        "Vietnamese": "Tôi luôn đứng lên bênh vực cho người khác"
+      },
+      {
+        "English": "There's not many coaches out there",
+        "Vietnamese": "Không có nhiều HLV ngoài kia"
+      },
+      {
+        "English": "It's such a small world!",
+        "Vietnamese": "TG thật là tròn/nhỏ!"
+      },
+      {
+        "English": "The other day, I just discussed with boss",
+        "Vietnamese": "Hôm bữa, tôi vừa mới bàn với sếp"
+      },
+      {
+        "English": "I wish one day I could go to the US",
+        "Vietnamese": "Tôi ước một ngày nào đó tôi có thể đi Mỹ"
+      },
+      {
+        "English": "Can I ask for your autograph?",
+        "Vietnamese": "Tôi xin chữ ký cậu được không?"
+      },
+      {
+        "English": "It's my pleasure to be here",
+        "Vietnamese": "Tôi rất vui khi đến đây"
+      },
+      {
+        "English": "I know I'm supposed to say hi",
+        "Vietnamese": "Tôi biết tôi nên say hi"
+      },
+      {
+        "English": "Write him a cover letter",
+        "Vietnamese": "Viết ảnh một cái cover letter"
+      },
+      {
+        "English": "How to articulate my thoughts?",
+        "Vietnamese": "Làm sao để diễn tả suy nghĩ ra bằng lời?"
+      },
+      {
+        "English": "This entire time, you've been serious?",
+        "Vietnamese": "Nãy giờ, cậu nghiêm túc á hả?"
+      },
+      {
+        "English": "It took me 3 days in a row to arrive Laos",
+        "Vietnamese": "Tôi mất 3 ngày liền để đến được Laos"
+      },
+      {
+        "English": "DUH, who doesn't love football?",
+        "Vietnamese": "Vậy cũng nói, ai lại không thích đá banh?"
+      },
+      {
+        "English": "How to make an impact to all?",
+        "Vietnamese": "Làm sao để gây tác động lên tất cả"
+      },
+      {
+        "English": "Just like the way you did before",
+        "Vietnamese": "Cũng như cái cách mà cậu làm trước đây"
+      },
+      {
+        "English": "My brother in law is a German",
+        "Vietnamese": "Anh rể tui là người Đức"
+      },
+      {
+        "English": "I'm not trying to exaggerate",
+        "Vietnamese": "Tôi không có đang cố để nói quá lên"
+      },
+      {
+        "English": "Her project was quite a phenomenon",
+        "Vietnamese": "Dự án của cổ cũng là một hiện tượng"
+      },
+      {
+        "English": "He's a bit overqualified for this position",
+        "Vietnamese": "Ảnh hơi bị vượt quá tiêu chuẩn cho cái vị trí này"
+      },
+      {
+        "English": "This project is expected to be profitable",
+        "Vietnamese": "Dự án này được kỳ vọng sẽ có lời"
+      },
+      {
+        "English": "I've spent 2 weeks researching about the history",
+        "Vietnamese": "Tôi đã dành 2 tuần nghiên cứu về lịch sử"
+      },
+      {
+        "English": "Have you ever managed a fanpage?",
+        "Vietnamese": "Cậu có bao giờ quản lý một fanpage chưa?"
+      },
+      {
+        "English": "I was just assigned to become sales supervisor",
+        "Vietnamese": "Tôi vừa được giao để trở thành giám sát bán hàng"
+      },
+      {
+        "English": "I'm nowhere near as careful as you",
+        "Vietnamese": "Tôi còn khuya mới cẩn thận bằng cậu"
+      },
+      {
+        "English": "I had to start from scratch",
+        "Vietnamese": "Tôi phải bắt đầu lại từ đầu"
+      },
+      {
+        "English": "He's the best singer of all time",
+        "Vietnamese": "Ảnh là ca sĩ hay nhất mọi thời đại"
+      },
+      {
+        "English": "She's good at teamwork, so to speak",
+        "Vietnamese": "Cổ giỏi team work, có thể nói vậy"
+      },
+      {
+        "English": "In terms of management / when it comes to management",
+        "Vietnamese": "Nói về quản trí"
+      },
+      {
+        "English": "A always comes first",
+        "Vietnamese": "A là ưu tiên hàng đầu"
+      },
+      {
+        "English": "I said that doesn't mean...",
+        "Vietnamese": "Tôi nói vậy cũng không có nghĩa là..."
+      },
+      {
+        "English": "I've been working on my English",
+        "Vietnamese": "Tôi đã và đang cải thiện tiếng Anh của tôi"
+      },
+      {
+        "English": "I'll sleep on it",
+        "Vietnamese": "Tôi sẽ nghĩ thêm"
+      },
+      {
+        "English": "I can't wait to talk to you in person",
+        "Vietnamese": "Tôi nôn nói chuyện với cậu trực tiếp quá"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "In terms of email, the recipient list always comes first",
+        "Vietnamese": "Nói về email, cái danh sách người nhận luôn là ưu tiên hàng đầu"
+      },
+      {
+        "English": "Don't get me wrong, I haven't said anything doesn't mean I know nothing",
+        "Vietnamese": "Đừng hiểu nhầm ý tôi, tôi không nói gì không có nghĩa là tôi không biết gì"
+      },
+      {
+        "English": "The other day, I happened to see your boss talking to my boss in a café",
+        "Vietnamese": "Hôm bữa, tôi tình cờ thấy sếp cậu đang nói chuyện với sếp tôi trong quán cafe"
+      },
+      {
+        "English": "I'm not trying to exaggerate but it took me a week to read the financial report",
+        "Vietnamese": "Tôi không có đang cố nói quá lên nhưng mà thực sự tôi tốn 1 tuần để đọc cái báo cáo tài chính"
+      },
+      {
+        "English": "I've been wrong this entire time? Turns out I don't have to forward that email?",
+        "Vietnamese": "Nãy giờ tôi sai à? Hóa ra tôi không phải forward cái email đó à?"
+      },
+      {
+        "English": "Everything happens for a reason. Therefore, I was assigned to find out the root causes",
+        "Vietnamese": "Mọi thứ đều có lý do của nó. Cho nên, tôi được giao để tìm ra mấy cái nguyên nhân gốc rễ"
+      },
+      {
+        "English": "We don't have to start from scratch, doing like that will take much time",
+        "Vietnamese": "Chúng ta không cần phải bắt đầu từ số 0, làm như vậy sẽ rất tốn thời gian"
+      },
+      {
+        "English": "Khánh Ly is one of the greatest singers of all time, so I want to ask for her autograph.",
+        "Vietnamese": "Khánh Ly là một trong những ca sĩ vĩ đại nhất mọi thời đại, cho nên tôi muốn xin chữ ký của cổ"
+      },
+      {
+        "English": "Having said that, I think you're overqualified for this job",
+        "Vietnamese": "Nói đi thì cũng phải nói lại, tôi nghĩ tôi đã vượt quá tiêu chuẩn cho cái job này"
+      },
+      {
+        "English": "I'm not a good talker, yet I still wanna try talking to them",
+        "Vietnamese": "Tui không phải là người giỏi ăn nói, dẫu vậy tôi vẫn muốn thử nói chuyện với họ"
+      },
+      {
+        "English": "I wish one day I could write an email in English without having to us Google Translate anymore",
+        "Vietnamese": "Tui ước ngày nào đó tui có thể viết một cái email bằng tiếng Anh mà không còn phải dùng GG Translate nữa"
+      },
+      {
+        "English": "It's such a small world! Yesterday I just ran into your mother in law in the market",
+        "Vietnamese": "Trái đất tròn thật ấy! Hôm qua tôi vừa đụng phải mẹ vợ cậu ngoài chợ"
+      },
+      {
+        "English": "I've spent the last 2 weeks researching the way to compose a better email",
+        "Vietnamese": "Tôi đã dành 2 tuần vừa rồi nghiên cứu cái cách để soạn thảo ra một cái email tốt hơn"
+      },
+      {
+        "English": "Have you ever forgotten the attachment before sending?",
+        "Vietnamese": "Cậu có bao giờ quên cái attachment trước khi gửi chưa?"
+      },
+      {
+        "English": "In this department, Ms. Van is always the one who(m) I look up to",
+        "Vietnamese": "Trong bộ phận này, chị Vân luôn là người mà tôi nể trọng nhất"
+      },
+      {
+        "English": "I know my English is not good enough but don't worry, I've been working on that",
+        "Vietnamese": "Tôi biết tiếng Anh của tôi chưa đủ tốt nhưng mà đừng lo, tôi đã và đang cải thiện nó đây"
+      },
+      {
+        "English": "If you are a big fan of Barcelona, you must have heard of this name",
+        "Vietnamese": "Nếu cậu là fan ruột của Barcelona, hẳn là cậu đã nghe về cái tên này"
+      },
+      {
+        "English": "Your perspectives and attitudes toward life are the endles inspirations for me",
+        "Vietnamese": "Góc nhìn và thái độ về cuộc sống của bạn chính là nguồn cảm hứng bất tận cho tôi"
+      },
+      {
+        "English": "I know I'm supposed to say sorry but I couldn't",
+        "Vietnamese": "Tôi biết tôi nên nói sorry nhưng mà tôi không thể"
+      },
+      {
+        "English": "I'm nowhere near as careful as your boss. He's famous for this",
+        "Vietnamese": "Tôi còn khuya mới cẩn thận được như sếp cậu. Ổng nổi tiếng về chuyện này mà"
+      }
+    ],
+    "Review": [
+      {
+        "English": "Yet I find it quite uneasy to say this",
+        "Vietnamese": "Dẫu vậy, tôi thấy khá là áy náy để nói thế này"
+      },
+      {
+        "English": "Cut short farewell emails",
+        "Vietnamese": "Cắt ngắn mấy cái email chia tay"
+      },
+      {
+        "English": "Having said that",
+        "Vietnamese": "Nói đi thì cũng phải nói lại"
+      },
+      {
+        "English": "I will officially become finance manager",
+        "Vietnamese": "Tôi sẽ chính thức trở thành trưởng phòng tài chính"
+      },
+      {
+        "English": "My philosophy is quite simple",
+        "Vietnamese": "Nguyên tắc của tôi khá là đơn giản"
+      },
+      {
+        "English": "I'll sleep on it",
+        "Vietnamese": "Tôi sẽ nghĩ thêm về cái này"
+      },
+      {
+        "English": "In the first place",
+        "Vietnamese": "Ngay từ đầu"
+      },
+      {
+        "English": "It took me a day to figure it out",
+        "Vietnamese": "Tôi tốn một ngày để mường tượng ra"
+      },
+      {
+        "English": "What is commencement speech?",
+        "Vietnamese": "Bài diễn văn tốt nghiệp là gì?"
+      },
+      {
+        "English": "We all relate to this",
+        "Vietnamese": "Tất cả chúng ta đều liên quan đến cái này"
+      },
+      {
+        "English": "Back then, my dad was so handsome",
+        "Vietnamese": "Hồi đó, ba tui rất là đẹp trai"
+      },
+      {
+        "English": "That idea really blew my mind",
+        "Vietnamese": "Cái ý tưởng đó thực sự làm tôi kinh ngạc"
+      },
+      {
+        "English": "I was inspired by that perspective",
+        "Vietnamese": "Tôi được truyền cảm hứng bởi cái quan điểm đó"
+      },
+      {
+        "English": "I admire those who dare to start over",
+        "Vietnamese": "Tôi ngưỡng mộ những ai dám khởi đầu lại"
+      },
+      {
+        "English": "Like me, he dropped out of school",
+        "Vietnamese": "Cũng như tôi, ảnh bỏ học"
+      },
+      {
+        "English": "It was quite scary at the time",
+        "Vietnamese": "Lúc đó cũng khá là đáng sợ"
+      },
+      {
+        "English": "Perspectives and attitudes toward life",
+        "Vietnamese": "Góc nhìn và thái độ về cuộc sống"
+      },
+      {
+        "English": "In a way, I suck at UI / UX",
+        "Vietnamese": "Một cách nào đó, tôi rất là cùi UI / UX"
+      },
+      {
+        "English": "Keep searching, don't settle",
+        "Vietnamese": "Cứ tìm kiếm tiếp, đừng dừng lại"
+      },
+      {
+        "English": "My dad once told me (that)...",
+        "Vietnamese": "Bố tôi từng bảo tôi rằng..."
+      },
+      {
+        "English": "Please forgive my mistakes",
+        "Vietnamese": "Xin hãy tha cho những lỗi lầm của tôi"
+      },
+      {
+        "English": "This entire time, I thought your name is Katie",
+        "Vietnamese": "Nãy giờ, tôi tưởng tên cậu là Katie"
+      },
+      {
+        "English": "For the time being, email is not my thing",
+        "Vietnamese": "Ở hiện tại, email không phải là sở thích của tôi"
+      },
+      {
+        "English": "The uncertainty of the future",
+        "Vietnamese": "Tính bất định của tương lai"
+      },
+      {
+        "English": "I'm grateful for everything I have today",
+        "Vietnamese": "Tôi biết ơn về mọi thứ tôi có ngày hôm nay"
+      },
+      {
+        "English": "What if boss doesn't approve?",
+        "Vietnamese": "Nhỡ sếp không approve thì sao?"
+      },
+      {
+        "English": "I can't wait to see Michelle in person",
+        "Vietnamese": "Tôi rất là nôn gặp Michelle trực tiếp"
+      },
+      {
+        "English": "There's a piece of advertisement in a paper",
+        "Vietnamese": "Có một mẩu quảng cáo trên báo"
+      },
+      {
+        "English": "It's not hard to write a CV, so to speak",
+        "Vietnamese": "Nó không khó để viết 1 CV, có thể nói vậy"
+      },
+      {
+        "English": "I happened to talk to your boss yesterday",
+        "Vietnamese": "Tôi tình cờ nói chuyện với sếp cậu hôm qua"
+      },
+      {
+        "English": "DUH, ofcourse we will start from scratch",
+        "Vietnamese": "Vậy cũng hỏi, đương nhiên chúng ta sẽ bắt đầu từ số 0"
+      },
+      {
+        "English": "I need to see you by Sunday",
+        "Vietnamese": "Tui cần gặp cậu trễ nhất là CN"
+      },
+      {
+        "English": "Money is the endless inspiration for me",
+        "Vietnamese": "Tiền là nguồn cảm hứng bất tận với tôi"
+      },
+      {
+        "English": "Don't mistake me for someone else",
+        "Vietnamese": "Đừng có nhầm tôi với ai đó khác"
+      },
+      {
+        "English": "I myself always look up to boss",
+        "Vietnamese": "Chính bản thân tôi luôn nể trọng sếp"
+      },
+      {
+        "English": "Never look down on others",
+        "Vietnamese": "Đừng bao giờ coi thường người khác"
+      },
+      {
+        "English": "You have to stand up for yourself",
+        "Vietnamese": "Cậu phải đứng lên bênh vực cho chính mình"
+      },
+      {
+        "English": "My gut tells me that...",
+        "Vietnamese": "Linh cảm mách bảo tôi rằng..."
+      },
+      {
+        "English": "The other day, what you said?",
+        "Vietnamese": "Hôm bữa, cậu nói gì?"
+      },
+      {
+        "English": "I wish one day I could speak English fluently",
+        "Vietnamese": "Tôi ước ngày nào đó tôi có thể nói tiếng Anh lưu loát"
+      },
+      {
+        "English": "I used to suck at communication",
+        "Vietnamese": "Tôi từng rất là cùi bắp về giao tiếp"
+      },
+      {
+        "English": "Ask for his autograph",
+        "Vietnamese": "Xin chữ ký ảnh"
+      },
+      {
+        "English": "What am I supposed to do now?",
+        "Vietnamese": "Giờ tôi nên làm gì đây?"
+      },
+      {
+        "English": "Articulate your thoughts",
+        "Vietnamese": "Diễn đạt suy nghĩ của cậu ra"
+      },
+      {
+        "English": "3 days in a row",
+        "Vietnamese": "3 ngày liền"
+      },
+      {
+        "English": "I wanna make a possitive impact",
+        "Vietnamese": "Tôi muốn tạo ra một tác động tích cực"
+      },
+      {
+        "English": "You must have been to Dalat",
+        "Vietnamese": "Hẳn là cậu đã từng đến Dalat rồi"
+      },
+      {
+        "English": "You're overqualified for this job",
+        "Vietnamese": "Cậu đã vượt quá tiêu chuẩn cho cái job này"
+      },
+      {
+        "English": "I've been working on my softskills",
+        "Vietnamese": "Tôi đã và đang cải thiện những kỹ năng mềm của tôi"
+      },
+      {
+        "English": "I'm nowhere near as careful as you",
+        "Vietnamese": "Tôi còn khuya mới cẩn thận được như cậu"
+      }
+    ]
+  }
+}

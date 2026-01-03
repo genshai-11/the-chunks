@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D12 - L8- Viettel",
+  "categories": {
+    "Slang": [
+      {
+        "English": "First and foremost,... / Above all,... / Primarily,...",
+        "Vietnamese": "ĐẦU TIÊN VÀ TRÊN HẾT,..."
+      },
+      {
+        "English": "As you already know / As you well know",
+        "Vietnamese": "NHƯ CẬU CŨNG BIẾT RỒI"
+      },
+      {
+        "English": "Now that you mention it",
+        "Vietnamese": "SẴN TIỆN CẬU NHẮC ĐẾN CHUYỆN ĐÓ"
+      },
+      {
+        "English": "Totally / Agree / sure / right on / absolutely",
+        "Vietnamese": "CHẮC CHẮN RỒI"
+      },
+      {
+        "English": "You know what?",
+        "Vietnamese": "CẬU BIẾT SAO KHÔNG?"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Resume / CV",
+        "Vietnamese": "Sơ yếu lý lịch"
+      },
+      {
+        "English": "It seems... / it appears",
+        "Vietnamese": "Có vẻ như là..."
+      },
+      {
+        "English": "Skills & abilities / capabilities",
+        "Vietnamese": "Kỹ năng và khả năng"
+      },
+      {
+        "English": "concerned about / care about / hold dear",
+        "Vietnamese": "Quan tâm về"
+      },
+      {
+        "English": "Regional HR manager",
+        "Vietnamese": "Trưởng phòng HR khu vực"
+      },
+      {
+        "English": "Conduct / perform",
+        "Vietnamese": "Thực hiện"
+      },
+      {
+        "English": "Personally / privately / individually",
+        "Vietnamese": "Một cách cá nhân / riêng tư"
+      },
+      {
+        "English": "Lunch time / lunch break",
+        "Vietnamese": "Giờ nghỉ trưa"
+      },
+      {
+        "English": "Hang on / hold on / wait a minute",
+        "Vietnamese": "Khoan đã"
+      },
+      {
+        "English": "A pen",
+        "Vietnamese": "Một cây viết"
+      },
+      {
+        "English": "A piece of paper",
+        "Vietnamese": "Một mẩu giấy"
+      },
+      {
+        "English": "Confirmation email",
+        "Vietnamese": "Email xác nhận"
+      },
+      {
+        "English": "Address of the interview place",
+        "Vietnamese": "Địa chỉ cái chỗ phỏng vấn"
+      },
+      {
+        "English": "Jot it down / Note it down / put it down",
+        "Vietnamese": "Ghi xuống nè"
+      },
+      {
+        "English": "By 6pm / No later than 6pm",
+        "Vietnamese": "Chậm nhất là 6pm"
+      },
+      {
+        "English": "There will be...",
+        "Vietnamese": "Sẽ có..."
+      },
+      {
+        "English": "You'd better... / You should...",
+        "Vietnamese": "Cậu tốt hơn nên..."
+      },
+      {
+        "English": "Print it out",
+        "Vietnamese": "In nó ra"
+      },
+      {
+        "English": "Agenda of the interview",
+        "Vietnamese": "Lịch trình buổi phỏng vấn"
+      },
+      {
+        "English": "On that day",
+        "Vietnamese": "Vào ngày hôm đó"
+      },
+      {
+        "English": "Quite the same / pretty much the same",
+        "Vietnamese": "Khá là giống nhau"
+      },
+      {
+        "English": "Consist of / include / contain",
+        "Vietnamese": "Bao gồm..."
+      },
+      {
+        "English": "..., including me / , me included",
+        "Vietnamese": "..., tính cả tôi"
+      },
+      {
+        "English": "Screening interview",
+        "Vietnamese": "Phỏng vấn sàn lọc"
+      },
+      {
+        "English": "Characteristics / personalities / traits",
+        "Vietnamese": "Tính cách"
+      },
+      {
+        "English": "A moment ago / a while ago",
+        "Vietnamese": "Hồi nãy"
+      },
+      {
+        "English": "Group activities",
+        "Vietnamese": "Những hoạt động nhóm"
+      },
+      {
+        "English": "Promising / potential",
+        "Vietnamese": "Đầy hứa hẹn"
+      },
+      {
+        "English": "9 candidates",
+        "Vietnamese": "9 thí sinh"
+      },
+      {
+        "English": "Until the interview day",
+        "Vietnamese": "Cho đến ngày phỏng vấn"
+      },
+      {
+        "English": "Have some preparation",
+        "Vietnamese": "Có sự chuẩn bị"
+      },
+      {
+        "English": "To be able to...",
+        "Vietnamese": "Có thể..."
+      },
+      {
+        "English": "Confidently",
+        "Vietnamese": "Một cách tự tin"
+      },
+      {
+        "English": "A French expat",
+        "Vietnamese": "Một expat người Pháp"
+      },
+      {
+        "English": "I see / I understand / I get it",
+        "Vietnamese": "Tôi hiểu rồi"
+      },
+      {
+        "English": "Starting salary",
+        "Vietnamese": "Lương khởi điểm"
+      },
+      {
+        "English": "At the moment / at present / currently",
+        "Vietnamese": "Ở hiện tại"
+      },
+      {
+        "English": "... though / yet... / but don't...",
+        "Vietnamese": "Dẫu vậy,..."
+      },
+      {
+        "English": "Working enviroment",
+        "Vietnamese": "Môi trường làm việc"
+      },
+      {
+        "English": "A (big) plus",
+        "Vietnamese": "Một điểm cộng lớn"
+      },
+      {
+        "English": "Highly appreciate / highly value",
+        "Vietnamese": "Đánh giá cao"
+      },
+      {
+        "English": "Night shift security guard / officer",
+        "Vietnamese": "Bảo vệ ca đêm"
+      },
+      {
+        "English": "Reward handsomely / generously",
+        "Vietnamese": "Trả công hậu hĩnh"
+      },
+      {
+        "English": "Dutch Lady",
+        "Vietnamese": "Cô gái Hà Lan"
+      },
+      {
+        "English": "You did say that",
+        "Vietnamese": "Cậu có nói như vậy"
+      },
+      {
+        "English": "Make a phone call",
+        "Vietnamese": "Gọi điện thoại"
+      },
+      {
+        "English": "Hold the line / don't hang up",
+        "Vietnamese": "Giữ máy"
+      },
+      {
+        "English": "For a while",
+        "Vietnamese": "Một lúc"
+      },
+      {
+        "English": "Thank you, dear / honey / sweatheart / darling",
+        "Vietnamese": "Cám ơn con / cưng"
+      },
+      {
+        "English": "All afternoon / the whole afternoon",
+        "Vietnamese": "Cả buổi chiều"
+      },
+      {
+        "English": "Condensed milk",
+        "Vietnamese": "Sữa đặc"
+      },
+      {
+        "English": "Turns out / turned out",
+        "Vietnamese": "Hóa ra"
+      },
+      {
+        "English": "... At all / whatsoever",
+        "Vietnamese": "... chút nào"
+      },
+      {
+        "English": "Out of the expectation",
+        "Vietnamese": "Vượt quá kỳ vọng"
+      },
+      {
+        "English": "Interrupt / stop",
+        "Vietnamese": "Ngắt lời"
+      },
+      {
+        "English": "Definition",
+        "Vietnamese": "Cái định nghĩa"
+      },
+      {
+        "English": "Valuable comments",
+        "Vietnamese": "Những comment giá trị"
+      },
+      {
+        "English": "Research & Development (R&D)",
+        "Vietnamese": "Nghiên cứu phát triển"
+      },
+      {
+        "English": "Ridiculous / odd",
+        "Vietnamese": "Hề hước / lố bịch"
+      },
+      {
+        "English": "Holy cow / Holy Jesus / Oh my goodness",
+        "Vietnamese": "Trời đất ơi!"
+      },
+      {
+        "English": "You read my mind! / \n You're such a mind reader!",
+        "Vietnamese": "Cậu đi guốc trong bụng tôi rồi!"
+      },
+      {
+        "English": "This morning",
+        "Vietnamese": "Sáng nay"
+      },
+      {
+        "English": "Then she went / said...",
+        "Vietnamese": "Sau đó cổ nói..."
+      },
+      {
+        "English": "Old man",
+        "Vietnamese": "Ông già"
+      },
+      {
+        "English": "I feel you",
+        "Vietnamese": "Tôi có thể thấu hiệu được"
+      },
+      {
+        "English": "Recently / lately / in the recent time",
+        "Vietnamese": "Gần đây (thời gian)"
+      },
+      {
+        "English": "Quite identical / similar",
+        "Vietnamese": "Khá là giống hệt"
+      },
+      {
+        "English": "Most of the time / for the most part / almost always",
+        "Vietnamese": "Hầu hết mọi lúc"
+      },
+      {
+        "English": "Single - used",
+        "Vietnamese": "Dùng 1 lần"
+      },
+      {
+        "English": "Shampoo sachet / packet / pouch",
+        "Vietnamese": "Gói dầu gội đầu"
+      },
+      {
+        "English": "..., you know? / you know what I mean? / you know what I'm saying?",
+        "Vietnamese": "Cậu hiểu ý tôi không?"
+      },
+      {
+        "English": "Product quality",
+        "Vietnamese": "Chất lượng sản phẩm"
+      },
+      {
+        "English": "Loyal customers / regular customers",
+        "Vietnamese": "Những khách hàng trung thành"
+      },
+      {
+        "English": "Increase steadily",
+        "Vietnamese": "Tăng đều"
+      },
+      {
+        "English": "Very often / regularly",
+        "Vietnamese": "Rất thường xuyên"
+      },
+      {
+        "English": "Effort / attempt / endeavor",
+        "Vietnamese": "Nỗ lực"
+      },
+      {
+        "English": "On-trend flavors",
+        "Vietnamese": "Những hương vị hợp xu hướng"
+      },
+      {
+        "English": "Innovate / modernize",
+        "Vietnamese": "Cải tiến"
+      },
+      {
+        "English": "Dairy products",
+        "Vietnamese": "Những sản phẩm từ sữa"
+      },
+      {
+        "English": "Speaking of flavor / In terms of flavor",
+        "Vietnamese": "Nói về hương vị"
+      },
+      {
+        "English": "A breakthrough",
+        "Vietnamese": "Một bước đột phá"
+      },
+      {
+        "English": "Rude",
+        "Vietnamese": "Thô lỗ"
+      },
+      {
+        "English": "Dishwater",
+        "Vietnamese": "Nước rửa chén"
+      },
+      {
+        "English": "Immediate / temporary solution",
+        "Vietnamese": "Giải pháp tức thì / tạm thời"
+      },
+      {
+        "English": "Coworker / colleague / fellow worker",
+        "Vietnamese": "Đồng nghiệp"
+      },
+      {
+        "English": "Piss me off / drive me crazy / drive me nuts / blow my top",
+        "Vietnamese": "Làm tôi bực"
+      },
+      {
+        "English": "Whose... is this?",
+        "Vietnamese": "Cái... này của ai?"
+      },
+      {
+        "English": "Speak up / speak louder",
+        "Vietnamese": "Nói lớn lên"
+      },
+      {
+        "English": "Contract",
+        "Vietnamese": "Hợp đồng"
+      },
+      {
+        "English": "It tastes like...",
+        "Vietnamese": "Nó có vị như kiểu..."
+      },
+      {
+        "English": "Fit (with) this job",
+        "Vietnamese": "Hợp cái job này"
+      },
+      {
+        "English": "Fluently / smoothly",
+        "Vietnamese": "Một cách lưu loát"
+      },
+      {
+        "English": "Coherently",
+        "Vietnamese": "Một cách mạch lạc"
+      },
+      {
+        "English": "Stakeholders / shareholders",
+        "Vietnamese": "Những cổ đông"
+      },
+      {
+        "English": "Viettel call center / switchboard",
+        "Vietnamese": "Tổng đài Viettel"
+      },
+      {
+        "English": "Lenghthy / wordy",
+        "Vietnamese": "Dài dòng"
+      },
+      {
+        "English": "Middle East",
+        "Vietnamese": "Trung Đông"
+      },
+      {
+        "English": "I'm about to... / I'm gonna...",
+        "Vietnamese": "Tôi sắp..."
+      },
+      {
+        "English": "Tedious / boring / monotonous / dull",
+        "Vietnamese": "Buồn tẻ"
+      },
+      {
+        "English": "... regarding/concerning/involving A",
+        "Vietnamese": "... có liên quan đến A"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "May I speak to Tèo?",
+        "Vietnamese": "Tôi nói chuyện với Tèo được không?"
+      },
+      {
+        "English": "I'm calling from Viettel call center",
+        "Vietnamese": "Tôi gọi từ tổng đài Viettel"
+      },
+      {
+        "English": "I'm calling to ask you something about salary",
+        "Vietnamese": "Tôi gọi để hỏi bạn vài thứ về lương bổng"
+      },
+      {
+        "English": "I have special skills and abilities",
+        "Vietnamese": "Tôi có những kỹ năng và khả năng đặc biệt"
+      },
+      {
+        "English": "I've been concerned about packaging design",
+        "Vietnamese": "Tôi đã và đang quan tâm đến thiết kế bao bì"
+      },
+      {
+        "English": "Mr. Tan is our regional HR manager",
+        "Vietnamese": "Anh Tân là trưởng phòng HR khu vực của ta"
+      },
+      {
+        "English": "I have flown to Middle East \n to see the customers",
+        "Vietnamese": "Tôi đã bay sang Trung Đông \n để gặp khách hàng"
+      },
+      {
+        "English": "Conduct an interview directly",
+        "Vietnamese": "Thực hiện 1 buổi PV trực tiếp"
+      },
+      {
+        "English": "She had me fix her laptop",
+        "Vietnamese": "Cổ nhờ tui sửa giùm laptop cổ"
+      },
+      {
+        "English": "Before lunch time next Sunday",
+        "Vietnamese": "Trước giờ ăn trưa CN tơi"
+      },
+      {
+        "English": "Can you make it? / can you come?",
+        "Vietnamese": "Cậu tới được không?"
+      },
+      {
+        "English": "See you on Friday",
+        "Vietnamese": "Gặp cậu T6 nha"
+      },
+      {
+        "English": "You can grab a pen and a piece of paper",
+        "Vietnamese": "Cậu có thể lấy một cây viết \n với một miếng giấy đi"
+      },
+      {
+        "English": "I forgot to send her the confirmation email",
+        "Vietnamese": "Tôi quên gửi cổ cái email xác nhận"
+      },
+      {
+        "English": "I'll send it to you by 10pm tonight",
+        "Vietnamese": "Tôi sẽ gửi nó cho cậu trước 10h tối nay"
+      },
+      {
+        "English": "There will be a lot of customers in the room",
+        "Vietnamese": "Sẽ có rất nhiều khách trong phòng"
+      },
+      {
+        "English": "You'd better do as she said",
+        "Vietnamese": "Cậu tốt hơn nên làm như cổ bảo"
+      },
+      {
+        "English": "Do you know the agenda of the event today?",
+        "Vietnamese": "Cậu có biết lịch trình \n buổi event hôm nay không?"
+      },
+      {
+        "English": "Don't forget to bring it with you",
+        "Vietnamese": "Đừng quên mang nó bên mình"
+      },
+      {
+        "English": "Have you ever seen Dutch lady before?",
+        "Vietnamese": "Cậu từng gặp cô gái Hà Lan \n trước đây chưa?"
+      },
+      {
+        "English": "It looks quite the same with mine",
+        "Vietnamese": "Nó trông khá là giống với cái của tôi"
+      },
+      {
+        "English": "This event will consist of 3 parts",
+        "Vietnamese": "Sự kiện này sẽ bao gồm 3 phần"
+      },
+      {
+        "English": "Most of us love football, including me",
+        "Vietnamese": "Hầu hết bọn tôi thích bóng đá, \nbao gồm cả tôi"
+      },
+      {
+        "English": "I wanna know whether his background fits this job",
+        "Vietnamese": "Tôi muốn biết liệu background của ảnh có phù hợp công việc này hay không"
+      },
+      {
+        "English": "This is the thing I just mentioned a moment ago",
+        "Vietnamese": "Đây là cái thứ tôi vừa đề cập lúc nãy ấy"
+      },
+      {
+        "English": "Group activities are my strengths",
+        "Vietnamese": "Hoạt động nhóm chính là thế mạnh của tôi"
+      },
+      {
+        "English": "There're totally 9 promising candidates",
+        "Vietnamese": "Có tổng cộng 9 thí sinh đầy hứa hẹn"
+      },
+      {
+        "English": "The content of the contract \nwill be kept confidential",
+        "Vietnamese": "Nội dung của bản hợp đồng \nsẽ được giữ bí mật"
+      },
+      {
+        "English": "Lemme give you a heads up",
+        "Vietnamese": "Để tôi báo trước với anh"
+      },
+      {
+        "English": "This event will be in English 100%",
+        "Vietnamese": "Sự kiện này sẽ là bằng tiếng Anh 100%"
+      },
+      {
+        "English": "You need 3 years to be able to do that",
+        "Vietnamese": "You need 3 years to be able to do that"
+      },
+      {
+        "English": "To be able to speak English \nfluently and coherently",
+        "Vietnamese": "To be able to speak English \nfluently and coherently"
+      },
+      {
+        "English": "What you said? / What did you just say?",
+        "Vietnamese": "What you said? / What did you just say?"
+      },
+      {
+        "English": "Could you speak up a bit, please?",
+        "Vietnamese": "Could you speak up a bit, please?"
+      },
+      {
+        "English": "Those information regarding this campaign",
+        "Vietnamese": "Those information regarding this campaign"
+      },
+      {
+        "English": "If you do your homework",
+        "Vietnamese": "If you do your homework"
+      },
+      {
+        "English": "The benefit here is a big plus",
+        "Vietnamese": "The benefit here is a big plus"
+      },
+      {
+        "English": "I highly appreciate your effort",
+        "Vietnamese": "I highly appreciate your effort"
+      },
+      {
+        "English": "What is night shift security guard?",
+        "Vietnamese": "What is night shift security guard?"
+      },
+      {
+        "English": "Shopee will reward you handsomely",
+        "Vietnamese": "Shopee will reward you handsomely"
+      },
+      {
+        "English": "You think about it",
+        "Vietnamese": "Cậu cứ suy nghĩ đic"
+      },
+      {
+        "English": "Boss will cover this topic in the meeting",
+        "Vietnamese": "Sếp sẽ cover chủ đề này trong buổi họp"
+      },
+      {
+        "English": "Thanks for calling Unilever",
+        "Vietnamese": "Cám ơn đã gọi đến Unilever"
+      },
+      {
+        "English": "How may I help you, sir?",
+        "Vietnamese": "Em có thể giúp gi được cho anh ạ?"
+      },
+      {
+        "English": "Can you hear me okay?",
+        "Vietnamese": "Cậu nghe tôi okay không?"
+      },
+      {
+        "English": "I wanna pick up where we left off yesterday",
+        "Vietnamese": "Tôi muốn nói tiếp chỗ chúng ta \ndừng lại hôm qua"
+      },
+      {
+        "English": "You did say that to the stakehoders",
+        "Vietnamese": "Cậu có nói vậy với cổ đông"
+      },
+      {
+        "English": "Their problems haven't been solved",
+        "Vietnamese": "Những vấn đề của họ \nchưa được giải quyết"
+      },
+      {
+        "English": "May I have your name?",
+        "Vietnamese": "Tôi biết tên cậu được không?"
+      },
+      {
+        "English": "Write in English, if you don't mind",
+        "Vietnamese": "Viết bằng tiếng Anh, \nnếu anh không phiền"
+      },
+      {
+        "English": "Could you hold the line for a while?",
+        "Vietnamese": "Cậu giữ máy một lát được không?"
+      },
+      {
+        "English": "It took me all afternoon to write this email",
+        "Vietnamese": "Tôi tốn cả buổi chiều để viết ra email này"
+      },
+      {
+        "English": "Whose pack of condensed milk is this?",
+        "Vietnamese": "Cái thùng sữa đặc này là của a vậy?"
+      },
+      {
+        "English": "I don't like condensed milk whatsoever",
+        "Vietnamese": "Tôi chả thích sữa đặc chút nào"
+      },
+      {
+        "English": "I'm not sure I get what you mean",
+        "Vietnamese": "Tôi không chắc tôi hiểu ý cậu"
+      },
+      {
+        "English": "Sorry to interrupt you right there",
+        "Vietnamese": "Xin lỗi ngắt lời cậu ngay đó"
+      },
+      {
+        "English": "What is your definition of happiness?",
+        "Vietnamese": "Định nghĩa về hạnh phúc của cậu là gì?"
+      },
+      {
+        "English": "I hear what you're saying / I hear you",
+        "Vietnamese": "Tôi nghe thì hiểu anh nói gì rồi"
+      },
+      {
+        "English": "I love your comments on this",
+        "Vietnamese": "Tôi thích mấy cái comments của anh về chuyện đó"
+      },
+      {
+        "English": "I'll pass it down to sales team",
+        "Vietnamese": "Tôi sẽ pass nó xuống cho team sales"
+      },
+      {
+        "English": "The thing I'm about to tell is...",
+        "Vietnamese": "Cái vấn đề tôi sắp kể là..."
+      },
+      {
+        "English": "I knew what you were gonna say",
+        "Vietnamese": "Tui biết ngay cậu sẽ nói vậy mà"
+      },
+      {
+        "English": "You're such a mind-reader / You're good at mind reading",
+        "Vietnamese": "Cậu đọc suy nghĩ giỏi thật ấy"
+      },
+      {
+        "English": "A looked daggers at B",
+        "Vietnamese": "A nhìn B bằng đôi mắt hình viên đạn"
+      },
+      {
+        "English": "A got no hair / A was bald",
+        "Vietnamese": "A không có tóc"
+      },
+      {
+        "English": "We've been receiving a lot of complaints",
+        "Vietnamese": "Ta đã và đang nhận rất nhiều lời phàn nàn"
+      },
+      {
+        "English": "Single-use shampoo sachet",
+        "Vietnamese": "Gói dầu gội dùng 1 lần"
+      },
+      {
+        "English": "A's got nothing to do with B / A is not relevant to B",
+        "Vietnamese": "A thì chẳng có gì liên quan đến B"
+      },
+      {
+        "English": "A means a lot to B",
+        "Vietnamese": "A rất có ý nghĩa với B"
+      },
+      {
+        "English": "Thanks for bringing this to our attention",
+        "Vietnamese": "Cám ơn vì đã làm chúng tôi để ý đến cái đó"
+      },
+      {
+        "English": "During the course of 10 years",
+        "Vietnamese": "Trong suốt thời gian 10 năm"
+      },
+      {
+        "English": "The number of laptop users has been increasing steadily",
+        "Vietnamese": "Số người dùng laptop đã và \nđang tăng ổn định"
+      },
+      {
+        "English": "Meet market demand",
+        "Vietnamese": "Thỏa nhu cầu thị trường"
+      },
+      {
+        "English": "We've put a lot of effort in this project",
+        "Vietnamese": "Ta đã bỏ rất nhiều nỗ lực vào dự án này"
+      },
+      {
+        "English": "Dairy products got nothing to do with me",
+        "Vietnamese": "Các sản phẩm về sữa \nthì có liên quan gì đến tui"
+      },
+      {
+        "English": "Our dairy product is a breakthrough",
+        "Vietnamese": "Các sản phẩm về sữa của ta là \nmột bước đột phá"
+      },
+      {
+        "English": "I don't mean to be rude but...",
+        "Vietnamese": "Tui không có ý thô lỗ nhưng mà..."
+      },
+      {
+        "English": "This coffee tastes like dishwater",
+        "Vietnamese": "Cà phê này vị nhạt như nước ốc"
+      },
+      {
+        "English": "Lemme see if I have/got this right",
+        "Vietnamese": "Để tui xem tôi nghe có đúng ý cậu không"
+      },
+      {
+        "English": "You're telling me that...",
+        "Vietnamese": "Ý cậu đang nói tui là..."
+      },
+      {
+        "English": "As an immediate solution, I will...",
+        "Vietnamese": "Để chữa cháy, tôi sẽ..."
+      },
+      {
+        "English": "You know what? It doesn't matter",
+        "Vietnamese": "Cậu biết sao không? Không sao đâu"
+      },
+      {
+        "English": "It was really different talking to you",
+        "Vietnamese": "Nói chuyện với cậu rất là khác"
+      },
+      {
+        "English": "Mr. Thành did say that to me yesterday",
+        "Vietnamese": "Ông Thành có nói vậy với tôi hôm qua"
+      },
+      {
+        "English": "It took me 2 months to be able to sing",
+        "Vietnamese": "Tôi tốn 2 tháng để có thể hát được"
+      },
+      {
+        "English": "Your resume is way too lengthy",
+        "Vietnamese": "Resume cậu dài lê thê quá"
+      },
+      {
+        "English": "I highly appreciate your support",
+        "Vietnamese": "Tôi đánh giá cao sự support của cậu"
+      },
+      {
+        "English": "Before lunch time, can you see me a bit?",
+        "Vietnamese": "Trước giờ ăn trưa, \ncậu gặp tôi một lát được không?"
+      },
+      {
+        "English": "How to join this special group activities?",
+        "Vietnamese": "Làm sao để tham gia vào các \nhoạt động nhóm đặc biệt"
+      },
+      {
+        "English": "You must be able to speak French",
+        "Vietnamese": "Cậu phải (có thể) nói được Tiếng Pháp"
+      },
+      {
+        "English": "You must be able to sing this song in Korean",
+        "Vietnamese": "Cậu phải hát được bài này bằng tiếng Hàn"
+      },
+      {
+        "English": "First and foremost, you need to \nupdate your resume",
+        "Vietnamese": "Đầu tiên và trên hết, cậu cần phải \nupdate resume của cậu"
+      },
+      {
+        "English": "As you already know, \nmarketing is not easy at all",
+        "Vietnamese": "Như cậu đã biết rồi, \nmarketing chả dễ chút nào"
+      },
+      {
+        "English": "You know what? Screening interview is \nso tedious",
+        "Vietnamese": "Cậu biết sao không? Phỏng vấn sàn lọc rất là tẻ nhạt"
+      },
+      {
+        "English": "Totally! This is the saddest movie \nI've ever watched",
+        "Vietnamese": "Hẳn là vậy rồi! Đây là bộ phim buồn nhất tôi từng xem"
+      },
+      {
+        "English": "Hey, how'd it go? / How are things going? / How's it going?",
+        "Vietnamese": "Hey, (vụ đó) sao rồi?"
+      },
+      {
+        "English": "Now that you mention it, how'd it go?",
+        "Vietnamese": "Sẵn tiện cậu nói về cái đó, vụ đó sao rồi?"
+      },
+      {
+        "English": "Lemme brief you about / on the agenda",
+        "Vietnamese": "Để tôi brief cậu qua về cái lịch trình"
+      },
+      {
+        "English": "Tomorrow is my birthday, can you make it?",
+        "Vietnamese": "Ngày mai là sinh nhật tôi, \ncậu đến được không?"
+      },
+      {
+        "English": "The game will consist of 3 parts",
+        "Vietnamese": "Trò chơi sẽ bao gồm 3 phần"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "As you already know, Mr. Alexander will be assigned \n to be our regional HR manager",
+        "Vietnamese": "Như cậu đã biết rồi, Ông Alexander sẽ được giao làm trưởng phòng HR khu vực của chúng ta"
+      },
+      {
+        "English": "Now that you mention it, nobody loves OT, including me",
+        "Vietnamese": "Nhân tiện cậu nhắc đến chuyện đó, đâu có ai thích OT đâu, tính cả tôi"
+      },
+      {
+        "English": "Totally, I know I have to be able to speak Japanese \n in this company",
+        "Vietnamese": "Chắc chắn rồi, tôi biết tôi phải nói được tiếng Nhật trong công ty này"
+      },
+      {
+        "English": "You know what? I'll send you the confirmation email by 7am tomorrow morning",
+        "Vietnamese": "Cậu biết sao không? Tôi sẽ send cậu cái email xác nhận trước 7h sáng mai"
+      },
+      {
+        "English": "I'm calling from Viettel call center, how may I help you, sir?",
+        "Vietnamese": "Em đang gọi từ tổng đài Viettel, em giúp gì được cho anh ạ?"
+      },
+      {
+        "English": "First and foremost, I just want you to know that your boss himself had me call you",
+        "Vietnamese": "Đầu tiên và trên hết, tôi chỉ muốn cậu biết rằng chính sếp cậu nhờ tôi gọi cho cậu"
+      },
+      {
+        "English": "Hold on, I thought boss will conduct the interview directly?",
+        "Vietnamese": "Khoan, \n tôi tưởng sếp sẽ thực hiện phỏng vấn trực tiếp chứ?"
+      },
+      {
+        "English": "This interview will consist of 4 rounds, \n including screening interview",
+        "Vietnamese": "Buổi phỏng vấn này sẽ gồm 4 vòng, tính luôn cả phỏng vấn sàn lọc"
+      },
+      {
+        "English": "Let me brief you about the agenda of the event so that you could have some preparation",
+        "Vietnamese": "Để tui brief cậu qua về cái lịch trình buổi event để cậu có thể có sự chuẩn bị"
+      },
+      {
+        "English": "I keep wondering if I fit (with) this job",
+        "Vietnamese": "Tôi cứ thắc mắc liệu tôi có hợp với cái job này không"
+      },
+      {
+        "English": "I'm afraid the content of the call would be kept confidential until that day",
+        "Vietnamese": "Tôi e rằng nội dung cuộc gọi sẽ được giữ bí mật cho đến ngày hôm đó"
+      },
+      {
+        "English": "There're totally 5 promising candidates in the last round",
+        "Vietnamese": "Có tổng cộng 5 thí sinh đầy hứa hẹn ở vòng cuối cùng"
+      },
+      {
+        "English": "Lemme give you a heads up, \n my boss prefers to be called Mr. Wonderful",
+        "Vietnamese": "Để tui báo cậu biết trước, \n sếp tui thích được gọi là Mr. Wonderful"
+      },
+      {
+        "English": "You know what? You'd better listen to yourself",
+        "Vietnamese": "Cậu biết sao không? \n Cậu tốt hơn nên lắng nghe chính mình"
+      },
+      {
+        "English": "I'm talking about Mr. Wonderful, \n the one I just mentioned a moment ago",
+        "Vietnamese": "Tôi đang nói về Mr. Wonderful, \n cái người tôi vừa nhắc đến lúc nãy đó"
+      },
+      {
+        "English": "If you do your homework, \n you will understand what I'm talking about",
+        "Vietnamese": "Nếu cậu có tìm hiểu trước, \n cậu sẽ hiểu tôi đang nói về cái gì"
+      },
+      {
+        "English": "I don't think Dutch Lady will reward handsomely \n for this position",
+        "Vietnamese": "Tôi không nghĩ cô gái Hà Lan sẽ trả công hậu hĩnh cho vị trí này đâu"
+      },
+      {
+        "English": "To be able to speak English fluently and coherently, \n you have to know a lot of phrases",
+        "Vietnamese": "Để nói được tiếng Anh lưu loát và rành mạch, cậu phải biết rất nhiều cụm từ"
+      },
+      {
+        "English": "The working environment at Vin is also a big plus",
+        "Vietnamese": "Môi trường làm việc ở Vin cũng là một điểm cộng lớn"
+      },
+      {
+        "English": "I hear what you're saying, I'll send it to you this afternoon",
+        "Vietnamese": "Tôi nghe thì hiểu những gì cậu đang nói, tôi sẽ gửi nó cho cậu chiều nay"
+      }
+    ],
+    "Review": [
+      {
+        "English": "I highly appreciate your resume",
+        "Vietnamese": "Tôi đánh giá cao cái resume của cậu"
+      },
+      {
+        "English": "It seems the interview will be in English",
+        "Vietnamese": "Có vẻ như buổi PV sẽ là bằng tiếng Anh"
+      },
+      {
+        "English": "That's what I've been concerned",
+        "Vietnamese": "Đó là những gì mà tôi quan tâm"
+      },
+      {
+        "English": "Who's your regional HR manager?",
+        "Vietnamese": "Ai là trưởng phòng nhân sự vùng của cậu?"
+      },
+      {
+        "English": "I will conduct the interview directly",
+        "Vietnamese": "Tôi sẽ thực hiện phỏng vấn trực tiếp"
+      },
+      {
+        "English": "Tom wanna see you after lunch time",
+        "Vietnamese": "Tom muốn gặp cậu sau giờ ăn trưa đấy"
+      },
+      {
+        "English": "You will need a piece of paper",
+        "Vietnamese": "Cậu sẽ cần một miếng giấy"
+      },
+      {
+        "English": "I prefer to be called Chloe",
+        "Vietnamese": "Tôi thích được gọi là Chloe hơn"
+      },
+      {
+        "English": "Okay, jot it down, 2 Nguyen Binh Khiem",
+        "Vietnamese": "Okay, ghi xuống này, số 2 Nguyễn Bỉnh Khiem"
+      },
+      {
+        "English": "The agenda of the interview",
+        "Vietnamese": "Lịch trình buổi PV"
+      },
+      {
+        "English": "I'll brief you about the agenda",
+        "Vietnamese": "Tôi sẽ brief cậu qua về cái lịch trình"
+      },
+      {
+        "English": "Condensed milk is not condensed",
+        "Vietnamese": "Sữa đặc không có đặc"
+      },
+      {
+        "English": "3 promising candidates",
+        "Vietnamese": "3 thí sinh đầy hứa hẹn"
+      },
+      {
+        "English": "This exam will consist of 9 rounds",
+        "Vietnamese": "Kỳ thi này sẽ bao gồm 9 vòng"
+      },
+      {
+        "English": "What is screening interview?",
+        "Vietnamese": "Phỏng vấn sàn lọc là gì?"
+      },
+      {
+        "English": "Make a phone call in English",
+        "Vietnamese": "Thực hiện một cuộc gọi bằng tiếng Anh"
+      },
+      {
+        "English": "Everybody loves comedy, including me",
+        "Vietnamese": "Mọi người đều thích hài kịch, kể cả tôi"
+      },
+      {
+        "English": "My boss is a Singaporean expat",
+        "Vietnamese": "Sếp tôi là một expat người Sin"
+      },
+      {
+        "English": "Turns out that's a group activity",
+        "Vietnamese": "Hóa ra đó là một hoạt động nhóm"
+      },
+      {
+        "English": "Hold the line for a while",
+        "Vietnamese": "Giữ máy một lát nhé"
+      },
+      {
+        "English": "I highly appreciate your effort",
+        "Vietnamese": "Tôi đánh giá cao nỗ lực của cậu"
+      },
+      {
+        "English": "I highly appreciate that, though",
+        "Vietnamese": "Dẫu vậy, Tôi đánh giá cao điều đó"
+      },
+      {
+        "English": "Single-used shampoo sachet",
+        "Vietnamese": "Gói dầu gội dùng một lần"
+      },
+      {
+        "English": "On-trend flavors",
+        "Vietnamese": "Những hương vị hợp với xu hướng"
+      },
+      {
+        "English": "I can't have diary products",
+        "Vietnamese": "Tôi không ăn được các sản phẩm về sữa"
+      },
+      {
+        "English": "What's your definition of interview?",
+        "Vietnamese": "Định nghĩa của cậu về phỏng vấn là gì?"
+      },
+      {
+        "English": "You'd better have some preparation",
+        "Vietnamese": "Cậu tốt hơn nên có sự chuẩn bị"
+      },
+      {
+        "English": "Night shift security guard",
+        "Vietnamese": "Bảo vệ ca đêm"
+      },
+      {
+        "English": "Unilever rewards very handsomely",
+        "Vietnamese": "Unilever trả công rất là hậu hĩnh"
+      },
+      {
+        "English": "I don't like group interview at all",
+        "Vietnamese": "Tôi không thích PV nhóm chút nào"
+      },
+      {
+        "English": "Lemme give you a heads up",
+        "Vietnamese": "Để tui báo cậu biết trước"
+      },
+      {
+        "English": "Starting salary is not handsome enough",
+        "Vietnamese": "Lương khởi điểm không đủ hấp dẫn"
+      },
+      {
+        "English": "This job is not sexy enough",
+        "Vietnamese": "Job này không đủ \"bánh cuốn\""
+      },
+      {
+        "English": "Working environment there is a big plus",
+        "Vietnamese": "Môi trường làm việc ở đó là một điểm cộng lớn"
+      },
+      {
+        "English": "Wow! You read my mind!",
+        "Vietnamese": "Wow! Cậu đi guốc trong bụng tôi rồi!"
+      },
+      {
+        "English": "Could you speak up a bit?",
+        "Vietnamese": "Cậu nói lớn hơn chút được không?"
+      },
+      {
+        "English": "This coffee tastes like dishwater!",
+        "Vietnamese": "Cà phê này vị nhạt như nước ốc thế!"
+      },
+      {
+        "English": "A lengthy contract",
+        "Vietnamese": "Một cái hợp đồng dài dòng"
+      },
+      {
+        "English": "This customer complains very often",
+        "Vietnamese": "Khách hàng này rất hay complain"
+      },
+      {
+        "English": "Innovate our products",
+        "Vietnamese": "Cải tiến sản phẩm của chúng ta"
+      },
+      {
+        "English": "What's your immediate solution?",
+        "Vietnamese": "Giải pháp tức thời của cậu là gì?"
+      },
+      {
+        "English": "Speaking of flavors, chocolate is the best",
+        "Vietnamese": "Nói về hương vị, socola là nhất"
+      },
+      {
+        "English": "This morning, I just received a complaint from P&G",
+        "Vietnamese": "Sáng nay, tôi vừa ăn một complain từ P&G"
+      },
+      {
+        "English": "Where's Middle East?",
+        "Vietnamese": "Trung Đông nằm đâu?"
+      },
+      {
+        "English": "Hey, you did say that yesterday!",
+        "Vietnamese": "Hey, cậu có nói vậy ngày hôm qua nha!"
+      },
+      {
+        "English": "My salary has been increasing steadily",
+        "Vietnamese": "Lương tôi đã và đang tăng lên một cách ổn định"
+      },
+      {
+        "English": "There will be 3 Japanese people in the interview",
+        "Vietnamese": "Sẽ có 3 người Nhật trong buổi PV"
+      },
+      {
+        "English": "The interview was quite tedious",
+        "Vietnamese": "Buổi PV khá là tẻ nhạt"
+      },
+      {
+        "English": "Dutch Lady is a lady",
+        "Vietnamese": "Cô gái Hà Lan là một cô gái"
+      },
+      {
+        "English": "Thank you, dear",
+        "Vietnamese": "Cám ơn, cưng"
+      }
+    ]
+  }
+}

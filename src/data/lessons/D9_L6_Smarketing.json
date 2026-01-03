@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D9 - L6- Smarketing",
+  "categories": {
+    "Slang": [
+      {
+        "English": "There’s no reason why…",
+        "Vietnamese": "Chẳng có lý (do) gì..."
+      },
+      {
+        "English": "Here we go again!",
+        "Vietnamese": "Lại nữa!"
+      },
+      {
+        "English": "Who knows, maybe…",
+        "Vietnamese": "Hổng chừng..."
+      },
+      {
+        "English": "Simply put",
+        "Vietnamese": "Nói đơn giản"
+      },
+      {
+        "English": "You wish!",
+        "Vietnamese": "Mơ đi cưng!"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "A dollar and a half / 1.5 dollars",
+        "Vietnamese": "Một “đô” rưỡi"
+      },
+      {
+        "English": "Naked truth",
+        "Vietnamese": "Sự thật trần trụi"
+      },
+      {
+        "English": "Field / industry",
+        "Vietnamese": "Ngành"
+      },
+      {
+        "English": "Term / terminology",
+        "Vietnamese": "Cụm từ thuật ngữ"
+      },
+      {
+        "English": "Customer insight / customer perspective",
+        "Vietnamese": "Insight khách hàng"
+      },
+      {
+        "English": "At the end of the day / eventually",
+        "Vietnamese": "Suy cho cùng"
+      },
+      {
+        "English": "Marketable product / salable product",
+        "Vietnamese": "Sản phẩm bán được"
+      },
+      {
+        "English": "Tactic & Strategy",
+        "Vietnamese": "Chiến thuật & chiến lược"
+      },
+      {
+        "English": "Successfully",
+        "Vietnamese": "Một cách thành công"
+      },
+      {
+        "English": "Sandwich / sub / banh mi",
+        "Vietnamese": "Bánh mì"
+      },
+      {
+        "English": "Dirt cheap",
+        "Vietnamese": "Rẻ bèo"
+      },
+      {
+        "English": "This day and age / today / these days",
+        "Vietnamese": "Ngày nay"
+      },
+      {
+        "English": "Sales gimmick / sales trick",
+        "Vietnamese": "Mánh kinh doanh"
+      },
+      {
+        "English": "Attract",
+        "Vietnamese": "Cuốn hút"
+      },
+      {
+        "English": "Sale page / landing page",
+        "Vietnamese": "Trang bán hàng"
+      },
+      {
+        "English": "Once...",
+        "Vietnamese": "Một khi..."
+      },
+      {
+        "English": "Step in/out",
+        "Vietnamese": "Bước vào/ra"
+      },
+      {
+        "English": "A typical customer",
+        "Vietnamese": "Một khách hàng thông thường"
+      },
+      {
+        "English": "Make sense? / reasonable?",
+        "Vietnamese": "Hợp lý chứ?"
+      },
+      {
+        "English": "Pricing",
+        "Vietnamese": "Định giá"
+      },
+      {
+        "English": "The so-called...",
+        "Vietnamese": "Cái gọi là..."
+      },
+      {
+        "English": "Decoy effect",
+        "Vietnamese": "Hiệu ứng chim mồi"
+      },
+      {
+        "English": "Pricing strategies",
+        "Vietnamese": "Những chiến lược định giá"
+      },
+      {
+        "English": "Customer-friendly",
+        "Vietnamese": "Thân thiện với khách hàng"
+      },
+      {
+        "English": "Affect / influence",
+        "Vietnamese": "Tác động"
+      },
+      {
+        "English": "Imagine... / Suppose...",
+        "Vietnamese": "Tưởng tượng..."
+      },
+      {
+        "English": "2 options",
+        "Vietnamese": "2 lựa chọn"
+      },
+      {
+        "English": "While... / meanwhile,...",
+        "Vietnamese": "Trong khi..."
+      },
+      {
+        "English": "Most of us / none of us / some of us",
+        "Vietnamese": "Hầu hết chúng ta"
+      },
+      {
+        "English": "Be willing to...",
+        "Vietnamese": "Sẵn lòng..."
+      },
+      {
+        "English": "Since then / ever since",
+        "Vietnamese": "Từ đó"
+      },
+      {
+        "English": "Speculation",
+        "Vietnamese": "Đầu cơ"
+      },
+      {
+        "English": "Available resources",
+        "Vietnamese": "Nguồn lực sẵn có"
+      },
+      {
+        "English": "Quick question",
+        "Vietnamese": "Hỏi nhanh cái"
+      },
+      {
+        "English": "Packaging design",
+        "Vietnamese": "Thiết kế bao bì"
+      },
+      {
+        "English": "At first / first off / firstly",
+        "Vietnamese": "Đầu tiên"
+      },
+      {
+        "English": "Minor / insignificant issues",
+        "Vietnamese": "Những vấn đề nhỏ"
+      },
+      {
+        "English": "Fly to Kuala Lumpur",
+        "Vietnamese": "Bay sang Kuala Lumpur"
+      },
+      {
+        "English": "Go over the budget",
+        "Vietnamese": "Vượt quá budget"
+      },
+      {
+        "English": "Niche market",
+        "Vietnamese": "Thị trường ngách"
+      },
+      {
+        "English": "Keep going / I'm all ears",
+        "Vietnamese": "Cứ nói tiếp đi"
+      },
+      {
+        "English": "Exclusive distribution",
+        "Vietnamese": "Phân phối độc quyền"
+      },
+      {
+        "English": "Intensive distribution",
+        "Vietnamese": "Phân phối đại trà"
+      },
+      {
+        "English": "Keep it short / brief / concise / succint",
+        "Vietnamese": "Ngắn gọn"
+      },
+      {
+        "English": "Purchasing power",
+        "Vietnamese": "Sức mua"
+      },
+      {
+        "English": "At the moment / now",
+        "Vietnamese": "Vào lúc này"
+      },
+      {
+        "English": "The point is / the problem is...",
+        "Vietnamese": "Vấn đề là..."
+      },
+      {
+        "English": "Market coverage",
+        "Vietnamese": "Sự bao phủ thị trường"
+      },
+      {
+        "English": "Door-to-door sales",
+        "Vietnamese": "Tiếp thị đến từng nhà"
+      },
+      {
+        "English": "Word of mouth",
+        "Vietnamese": "Truyền miệng"
+      },
+      {
+        "English": "Revenue / cost / profit",
+        "Vietnamese": "Doanh thu / chi phí / lợi nhuận"
+      },
+      {
+        "English": "Long term target",
+        "Vietnamese": "Mục tiêu dài hạn"
+      },
+      {
+        "English": "Break-even analysis",
+        "Vietnamese": "Phân tích điểm hòa vốn"
+      },
+      {
+        "English": "Root cause",
+        "Vietnamese": "Lý do gốc rễ"
+      },
+      {
+        "English": "Pinpoint / point out / clarify",
+        "Vietnamese": "Chỉ ra"
+      },
+      {
+        "English": "Rest assured!",
+        "Vietnamese": "Yên chí!"
+      },
+      {
+        "English": "digital wallet / e-wallet",
+        "Vietnamese": "Ví điện tử"
+      },
+      {
+        "English": "Not to mention...",
+        "Vietnamese": "Chưa kể đến việc..."
+      },
+      {
+        "English": "(Red) invoice",
+        "Vietnamese": "Hóa đơn đỏ"
+      },
+      {
+        "English": "Exactly!",
+        "Vietnamese": "Chính xác"
+      },
+      {
+        "English": "Income",
+        "Vietnamese": "Thu nhập"
+      },
+      {
+        "English": "walk-in customers",
+        "Vietnamese": "Khách vãng lai"
+      },
+      {
+        "English": "Potential market",
+        "Vietnamese": "Thị trường tiềm năng"
+      },
+      {
+        "English": "Unfair competition",
+        "Vietnamese": "Cạnh tranh không lành mạnh"
+      },
+      {
+        "English": "It seems / it appears...",
+        "Vietnamese": "Hình như"
+      },
+      {
+        "English": "Face (with)... / encounter...",
+        "Vietnamese": "Đối mặt với..."
+      },
+      {
+        "English": "I got it / I see",
+        "Vietnamese": "Tôi hiểu rồi"
+      },
+      {
+        "English": "Let's see / We'll see",
+        "Vietnamese": "Để xem"
+      },
+      {
+        "English": "Penetrate / enter",
+        "Vietnamese": "Thâm nhập"
+      },
+      {
+        "English": "Integrate",
+        "Vietnamese": "Tích hợp"
+      },
+      {
+        "English": "Feature",
+        "Vietnamese": "Tính năng"
+      },
+      {
+        "English": "Spending habit",
+        "Vietnamese": "Thói quen tiêu dùng"
+      },
+      {
+        "English": "Inbound call / incoming call",
+        "Vietnamese": "Cuộc gọi tới"
+      },
+      {
+        "English": "Company logo",
+        "Vietnamese": "Logo công ty"
+      },
+      {
+        "English": "Typo / Typing mistake",
+        "Vietnamese": "Lỗi đánh máy"
+      },
+      {
+        "English": "KOL / influencer",
+        "Vietnamese": "KOL / người có sức ảnh hưởng"
+      },
+      {
+        "English": "Concept / insight / understanding",
+        "Vietnamese": "Khái niệm / Ý niệm"
+      },
+      {
+        "English": "Commercial / ads",
+        "Vietnamese": "Quảng cáo"
+      },
+      {
+        "English": "Outsource",
+        "Vietnamese": "Outsource / thuê ngoài"
+      },
+      {
+        "English": "Choosy / picky",
+        "Vietnamese": "Kén chọn / Kén cá chọn canh"
+      },
+      {
+        "English": "Flier / leaflets",
+        "Vietnamese": "Tờ rơi"
+      },
+      {
+        "English": "Demanding / irritating / annoying",
+        "Vietnamese": "Hay đòi hỏi / khó chiều"
+      },
+      {
+        "English": "Receipt",
+        "Vietnamese": "Biên nhận thanh toán"
+      },
+      {
+        "English": "Current trend",
+        "Vietnamese": "Xu hướng hiện tại"
+      },
+      {
+        "English": "Interface",
+        "Vietnamese": "Giao diện"
+      },
+      {
+        "English": "Target customer",
+        "Vietnamese": "Khách hàng mục tiêu"
+      },
+      {
+        "English": "Statistics",
+        "Vietnamese": "Thống kê"
+      },
+      {
+        "English": "Eliminate / get rid of / remove",
+        "Vietnamese": "Loại bỏ"
+      },
+      {
+        "English": "Wholesaler / retailer / distributor",
+        "Vietnamese": "Nhà bán sỉ / Nhà bán lẻ / Nhà phân phối"
+      },
+      {
+        "English": "Bahavior",
+        "Vietnamese": "Hành vi"
+      },
+      {
+        "English": "Pain point",
+        "Vietnamese": "Điều nhức nhối"
+      },
+      {
+        "English": "Theoretically / in theory",
+        "Vietnamese": "Về lý thuyết"
+      },
+      {
+        "English": "Regain",
+        "Vietnamese": "Giành lại"
+      },
+      {
+        "English": "Convenient / inconvenient",
+        "Vietnamese": "Tiện lợi / bất tiện"
+      },
+      {
+        "English": "Brand recognition / awareness",
+        "Vietnamese": "Sự nhận diện thương hiệu"
+      },
+      {
+        "English": "Customize / modify",
+        "Vietnamese": "Độ / điều chỉnh lại"
+      },
+      {
+        "English": "... matter(s) / is very important",
+        "Vietnamese": "...rất quan trọng"
+      },
+      {
+        "English": "Cut costs",
+        "Vietnamese": "Cắt giảm chi phí"
+      },
+      {
+        "English": "Variety / diversity",
+        "Vietnamese": "Sự đa dạng"
+      },
+      {
+        "English": "Free market",
+        "Vietnamese": "Thị trường tự do"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "As far as I'm concerned / As I know",
+        "Vietnamese": "Theo như tôi biết"
+      },
+      {
+        "English": "What can you buy today with only 20.000đ?",
+        "Vietnamese": "Ngày nay bạn có thể mua được gì chỉ với 20.000đ?"
+      },
+      {
+        "English": "That's the reason why we all care about finance",
+        "Vietnamese": "Đó là tại sao tất cả chúng ta đều care về tài chính"
+      },
+      {
+        "English": "Once you decided to learn English",
+        "Vietnamese": "Một khi bạn đã quyết định học \n tiếng Anh"
+      },
+      {
+        "English": "Decoy effect is very famous",
+        "Vietnamese": "Hiệu ứng chim mồi rất nổi tiếng"
+      },
+      {
+        "English": "My dad is a master at this",
+        "Vietnamese": "Bố tôi là master cái này"
+      },
+      {
+        "English": "This is not a marketable/salable product",
+        "Vietnamese": "Đây không phải là \n một sản phẩm bán được"
+      },
+      {
+        "English": "You heard it right",
+        "Vietnamese": "Bạn nghe đúng rồi đó"
+      },
+      {
+        "English": "I didn't lose my mind",
+        "Vietnamese": "Tui đâu có mất trí"
+      },
+      {
+        "English": "Attract them to the sale page",
+        "Vietnamese": "Thu hút họ đến trang bán hàng"
+      },
+      {
+        "English": "9 times out of 10",
+        "Vietnamese": "Hết 9 trên 10 lần"
+      },
+      {
+        "English": "It works like a charm",
+        "Vietnamese": "Nó hiệu quả như thuốc tiên"
+      },
+      {
+        "English": "I grab myself a coffee",
+        "Vietnamese": "Tôi lụm (cho mình) một ly cà phê"
+      },
+      {
+        "English": "When it comes to... / Speaking of... / \n in terms of...",
+        "Vietnamese": "Nói về ..."
+      },
+      {
+        "English": "In this finance world",
+        "Vietnamese": "Trong cái thế giới tài chính này"
+      },
+      {
+        "English": "There's no one that doesn't know that...",
+        "Vietnamese": "Không có ai mà không biết rằng..."
+      },
+      {
+        "English": "It has (something) to do with... / \n It's relevant to...",
+        "Vietnamese": "Nó liên quan đến ..."
+      },
+      {
+        "English": "Take... (for example)",
+        "Vietnamese": "Lấy ví dụ..."
+      },
+      {
+        "English": "If they only give 2 options, \n what will you do?",
+        "Vietnamese": "Nếu họ chỉ cho 2 lựa chọn, \n cậu sẽ làm gì?"
+      },
+      {
+        "English": "It will cost you $5",
+        "Vietnamese": "Nó sẽ tốn của cậu 5 đô"
+      },
+      {
+        "English": "Which option will you go for?",
+        "Vietnamese": "Cậu sẽ chọn option nào?"
+      },
+      {
+        "English": "Be on the right track",
+        "Vietnamese": "Đi đúng hướng"
+      },
+      {
+        "English": "I believe we're on the right track",
+        "Vietnamese": "Tui tin là chúng ta đang đi đúng hướng"
+      },
+      {
+        "English": "There's not many people willing to learn German",
+        "Vietnamese": "Không có nhiều người sẵn sàng học \n tiếng Đức"
+      },
+      {
+        "English": "Fall right between A and B",
+        "Vietnamese": "Rơi vào ngay giữa A và B"
+      },
+      {
+        "English": "Phones have been around since then",
+        "Vietnamese": "điện thoại đã xuất hiện từ lúc đó rồi"
+      },
+      {
+        "English": "May I speak to Linh?",
+        "Vietnamese": "Cho tôi nói chuyện với Linh được không?"
+      },
+      {
+        "English": "What's up?",
+        "Vietnamese": "Có chuyện gì thế?"
+      },
+      {
+        "English": "Sorry to call you at this hour",
+        "Vietnamese": "Xin lỗi gọi cậu giờ này"
+      },
+      {
+        "English": "Are you available to talk now?",
+        "Vietnamese": "Giờ cậu rảnh nói chuyện không?"
+      },
+      {
+        "English": "I'm on vacation",
+        "Vietnamese": "Tui đang đi nghỉ mát"
+      },
+      {
+        "English": "I has assigned this task to Thu",
+        "Vietnamese": "Tui đã giao cái task này cho Thu"
+      },
+      {
+        "English": "I planned to do it myself",
+        "Vietnamese": "Tôi (đã) định tự làm"
+      },
+      {
+        "English": "There's some minor issues here",
+        "Vietnamese": "Có vài cái vấn đề nhỏ ở đây"
+      },
+      {
+        "English": "I don't know if he told you yet",
+        "Vietnamese": "Tôi không biết là liệu ảnh có nói cậu chưa"
+      },
+      {
+        "English": "He went three time over the budget",
+        "Vietnamese": "Ảnh đã 3 lần vượt budget/ngân sách"
+      },
+      {
+        "English": "Lemme explain, I didn't say anything",
+        "Vietnamese": "Để tui giải thích, tui đâu có nói gì đâu"
+      },
+      {
+        "English": "This tool was designed for engineer",
+        "Vietnamese": "Cái tool này được thiết kế cho kỹ sư"
+      },
+      {
+        "English": "Keep it short",
+        "Vietnamese": "Ngắn ngọn thôi"
+      },
+      {
+        "English": "I don't have all day",
+        "Vietnamese": "Tôi không có nhiều thời gian"
+      },
+      {
+        "English": "Lemme finish",
+        "Vietnamese": "Để tôi nói xong đã"
+      },
+      {
+        "English": "This wine is not strong enough",
+        "Vietnamese": "Rượu này không đủ mạnh"
+      },
+      {
+        "English": "Increase market coverage",
+        "Vietnamese": "Tăng độ phủ thị trường"
+      },
+      {
+        "English": "What's the difference?",
+        "Vietnamese": "Có gì là khác?"
+      },
+      {
+        "English": "Word of mouth will help increase revenue",
+        "Vietnamese": "Truyền miệng sẽ giúp tăng doanh thu"
+      },
+      {
+        "English": "Issue an invoice",
+        "Vietnamese": "Xuất hóa đơn (đỏ)"
+      },
+      {
+        "English": "I got good news for you",
+        "Vietnamese": "Tôi có tin tốt cho cậu"
+      },
+      {
+        "English": "If my memory serves (me) (right/correctly)",
+        "Vietnamese": "Nếu tôi nhớ đúng thì"
+      },
+      {
+        "English": "Who's handled the design?",
+        "Vietnamese": "Ai handle cái design vậy?"
+      },
+      {
+        "English": "Lemme get this straight",
+        "Vietnamese": "Để tôi nói thẳng nhé"
+      },
+      {
+        "English": "Who doesn't like marketable products",
+        "Vietnamese": "Ai chẳng thích mấy cái sản phẩm bán được"
+      },
+      {
+        "English": "Have you finished the report?",
+        "Vietnamese": "Cậu xong cái report chưa?"
+      },
+      {
+        "English": "Who can pinpoint the root causes?",
+        "Vietnamese": "Ai có thể chỉ ra cái nguyên nhân gốc rễ?"
+      },
+      {
+        "English": "Doing like that will take much time",
+        "Vietnamese": "Làm như vậy sẽ mất nhiều thời gian"
+      },
+      {
+        "English": "I don't know how to put it but..  / I don't know what to say",
+        "Vietnamese": "Tụi không biết nói sao (nữa)"
+      },
+      {
+        "English": "Withdraw/ recall the products",
+        "Vietnamese": "Thu hồi các sản phẩm"
+      },
+      {
+        "English": "He's a master at managing risks",
+        "Vietnamese": "Ổng là master quản lý rủi ro"
+      },
+      {
+        "English": "I'll let you handle this",
+        "Vietnamese": "Tôi sẽ để cậu handle cái này"
+      },
+      {
+        "English": "I'll leave that to you",
+        "Vietnamese": "Tôi sẽ để nó cho cậu"
+      },
+      {
+        "English": "What worries me now is....",
+        "Vietnamese": "Điều làm tôi cho lắng bây giờ là...."
+      },
+      {
+        "English": "Penetrate Asian market",
+        "Vietnamese": "Thâm nhập thị trường HK"
+      },
+      {
+        "English": "Integrate a new feature",
+        "Vietnamese": "Tích hợp một chức năng mới"
+      },
+      {
+        "English": "Receive 50 inbound calls",
+        "Vietnamese": "Nhận 50 cuộc gọi tới"
+      },
+      {
+        "English": "A T-shirt with a company logo",
+        "Vietnamese": "Một cái áo thun với logo công ty"
+      },
+      {
+        "English": "There's a lot of typos",
+        "Vietnamese": "Có rất nhiều lỗi đánh máy"
+      },
+      {
+        "English": "How does KOLs system work?",
+        "Vietnamese": "Cái hệ thống KOL hoạt động ra sao nhỉ?"
+      },
+      {
+        "English": "That's a great concept",
+        "Vietnamese": "Đó là một concept hay"
+      },
+      {
+        "English": "What's the budget for this commercial?",
+        "Vietnamese": "Ngân sách cho cái quảng cáo này là nhiêu?"
+      },
+      {
+        "English": "Who knows, maybe we have to outsource",
+        "Vietnamese": "Ai mà biết, có thể chúng ta phải outsource"
+      },
+      {
+        "English": "Here we go againnn, don't be so chooosy",
+        "Vietnamese": "Lại nữaaa, đừng có kén chọn quá"
+      },
+      {
+        "English": "I myself don't like fliers",
+        "Vietnamese": "Bản thân tôi không thích mấy cái \n tờ rơi"
+      },
+      {
+        "English": "This is not the current trend",
+        "Vietnamese": "Đây không phải là xu hướng hiện tại"
+      },
+      {
+        "English": "I'm not your target customer",
+        "Vietnamese": "Tôi không phải khách hàng mục tiêu của cậu"
+      },
+      {
+        "English": "Our interface sucks",
+        "Vietnamese": "Cái giao diện của chúng ta rất là bắt mắt"
+      },
+      {
+        "English": "Eliminate a competitor",
+        "Vietnamese": "Loại bỏ một đối thủ cạnh tranh"
+      },
+      {
+        "English": "Vietnam is an emerging market",
+        "Vietnamese": "Vietnam là một thị trường mới nổi"
+      },
+      {
+        "English": "My boss is quite demanding",
+        "Vietnamese": "Sếp tôi khá là đòi hỏi"
+      },
+      {
+        "English": "One of our big pain points is...",
+        "Vietnamese": "Đây là điểm nhức nhối lớn của ta"
+      },
+      {
+        "English": "Theoretically, celebrity is a KOL",
+        "Vietnamese": "Về lý thuyết, người nổi tiếng chính là một KOL"
+      },
+      {
+        "English": "Regain the market share",
+        "Vietnamese": "Giành lại thị phần"
+      },
+      {
+        "English": "It's quite inconvenient",
+        "Vietnamese": "Nó khá là bất tiện"
+      },
+      {
+        "English": "Brand recognition is the point",
+        "Vietnamese": "Việc nhận diện thương hiệu chính là vấn đề"
+      },
+      {
+        "English": "How to customize this phone?",
+        "Vietnamese": "Làm sao để độ cái điện thoại này?"
+      },
+      {
+        "English": "First impression matters",
+        "Vietnamese": "Ấn tượng đầu tiên rất quan trọng"
+      },
+      {
+        "English": "We need to cut costs in half",
+        "Vietnamese": "Chúng ta cần cắt chi phí đi một nửa"
+      },
+      {
+        "English": "Improve website traffic",
+        "Vietnamese": "Cải thiện lượng truy cập trang web"
+      },
+      {
+        "English": "As a result",
+        "Vietnamese": "Kết quả là..."
+      },
+      {
+        "English": "As a consequence",
+        "Vietnamese": "Hậu quả là..."
+      },
+      {
+        "English": "I just discussed this with Alex",
+        "Vietnamese": "Tôi vừa mới bàn cái này với Alex"
+      },
+      {
+        "English": "How to deal with a tough client?",
+        "Vietnamese": "Làm sao để deal với một khách hàng khó tính?"
+      },
+      {
+        "English": "How to track those metrics?",
+        "Vietnamese": "Làm sao để theo dõi mấy cái số liệu đó"
+      },
+      {
+        "English": "Free market is necessary",
+        "Vietnamese": "Thị trường tự do là cần thiết"
+      },
+      {
+        "English": "SEO means Search Engine Optimization",
+        "Vietnamese": "SEO nghĩa là Tối ưu hóa công cụ tìm kiếm"
+      },
+      {
+        "English": "Consumer behavior is very important",
+        "Vietnamese": "Hành vi người tiêu dùng rất quan trọng"
+      },
+      {
+        "English": "Statistics show that...",
+        "Vietnamese": "Thống kê chỉ ra rằng..."
+      },
+      {
+        "English": "What affects buying behavior?",
+        "Vietnamese": "Cái gì ảnh hưởng đến đến hành vi mua sắm?"
+      },
+      {
+        "English": "Satisfy their needs",
+        "Vietnamese": "Thỏa mãn các nhu cầu của họ"
+      },
+      {
+        "English": "According to behavioral science",
+        "Vietnamese": "Theo khoa học hành vi"
+      },
+      {
+        "English": "It's influenced by many factors",
+        "Vietnamese": "Nó bị ảnh hưởng bởi nhiều yếu tố"
+      },
+      {
+        "English": "I like the variety of this product",
+        "Vietnamese": "Tôi thích sự đa dạng của cái sản phẩm này"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "In order to regain the market share, \n we have to eliminate this competitor",
+        "Vietnamese": "Để dành lại thị phần, \n ta phải loại bỏ đối thủ cạnh tranh này"
+      },
+      {
+        "English": "First impressions matter. \n Make sure the report doesn't contain too much typos",
+        "Vietnamese": "Những ấn tượng đầu là rất quan trọng. \n Hãy đảm bảo cái report không chứa quá nhiều lỗi đánh máy"
+      },
+      {
+        "English": "As a consequence, I'm afraid we can not penetrate the US market",
+        "Vietnamese": "Hậu quả là, tui e rằng ta không thể thâm nhập được vào thị trường Mỹ"
+      },
+      {
+        "English": "Statistics show that consumer behavior could become very complicated",
+        "Vietnamese": "Thống kê chỉ ra rằng hành vi của khách \n có thể trở nên rất là phức tạp"
+      },
+      {
+        "English": "Here we go again! \n I've been talking about the brand recognition",
+        "Vietnamese": "Lại nữa! Tui đang nói về nhận diện thương hiệu nha"
+      },
+      {
+        "English": "Vietnam is still an emerging market. There's no reason why we can not be successful in this market",
+        "Vietnamese": "Vietnam vẫn là một thị trường mới nổi. \n Chẳng có lý gì ta không thể thành công được ở \n thị trường này"
+      },
+      {
+        "English": "Sorry to call you at this hour. \n I just wanna ask you something about word of mouth",
+        "Vietnamese": "Xin lỗi gọi cậu giờ này. \n Tui chỉ muốn hỏi cậu vài thứ về truyền miệng"
+      },
+      {
+        "English": "Who knows, maybe we have to withdraw the products this time. You know what I mean?",
+        "Vietnamese": "Không chừng chúng ta phải thu hồi sản phẩm lần này, \n cậu hiểu ý tôi không?"
+      },
+      {
+        "English": "My boss is very demanding. Especially when it comes to finance",
+        "Vietnamese": "Sếp tui rất là đòi hỏi. Đặc biệt là khi nói về tài chính"
+      },
+      {
+        "English": "If you wanna create a marketable product, \n you have to be master at customer insight",
+        "Vietnamese": "Nếu cậu muốn tạo ra một sản phẩm bán được, cậu phải master customer insight"
+      },
+      {
+        "English": "Simply put, you have to track the metrics to know how this KOL system works",
+        "Vietnamese": "Nói đơn giản, cậu phải theo dõi các thông số đo \n để biết cái hệ thống KOL này work ra sao"
+      },
+      {
+        "English": "Theoretically, it's not too hard to figure out the pain points of the customers",
+        "Vietnamese": "Về mặt lý thuyềt, nó không quá khó để nhận ra mấy cái nỗi đau của khách hàng"
+      },
+      {
+        "English": "I don't know how to put it but I don't really know about the current trends",
+        "Vietnamese": "Tui ko biết nói sao nhưng mà tui không thực sự biết về những xu hướng hiện tại"
+      },
+      {
+        "English": "I got good news for you, you don't have to issue invoices",
+        "Vietnamese": "Tui có tin tốt cho cậu đây, cậu không phải xuất hóa đơn"
+      },
+      {
+        "English": "Simply put, interface has to do with brand recognition",
+        "Vietnamese": "Nói một cách đơn giản, \n giao diện thì có liên quan đến nhận diện thương hiệu"
+      },
+      {
+        "English": "I don't know if boss told you yet but I will be on vacation until May 1",
+        "Vietnamese": "Tui không biết liệu sếp nói cậu chưa nhưng mà tui sẽ đi nghỉ mát đến ngày 1 tháng 5"
+      },
+      {
+        "English": "The variety of the products will help us \n penetrate the Asian market",
+        "Vietnamese": "Sự đa dạng của sản phẩm sẽ giúp ta thâm nhập vào thị trường châu Á"
+      },
+      {
+        "English": "Take Brazil, those sales gimmicks there work like a charm",
+        "Vietnamese": "Lấy ví dụ, Brazil, mấy cái mánh kinh doanh ở đó work như thuốc tiên ấy"
+      },
+      {
+        "English": "If my memory serves, the budget for this commercial will be less than $500",
+        "Vietnamese": "Nếu tui nhớ không nhầm thì, budget cho cái quảng cáo này sẽ thấp hơn $500"
+      },
+      {
+        "English": "There's no one that doesn't know that integrating this feature will cost us $200",
+        "Vietnamese": "Chẳng có ai mà không biết rằng tích hợp tính năng này vào sẽ tốn của ta $200"
+      }
+    ],
+    "Review": [
+      {
+        "English": "Are you willing to become a KOL?",
+        "Vietnamese": "Cậu có sẵn lòng trở thành KOL không?"
+      },
+      {
+        "English": "Simply put, it's called unfair competition",
+        "Vietnamese": "Nói đơn giản thì, nó gọi là cạnh tranh không lành mạnh"
+      },
+      {
+        "English": "Waik-in customers & regular customers",
+        "Vietnamese": "Khách vãng lai & khách ruột"
+      },
+      {
+        "English": "When should we issue an invoice?",
+        "Vietnamese": "Khi nào thì ta nên xuất hóa đơn đỏ?"
+      },
+      {
+        "English": "Not to mention the costs are very high",
+        "Vietnamese": "Chưa kể đến việc chi phí rất cao"
+      },
+      {
+        "English": "Tom is an expert at this",
+        "Vietnamese": "Tom là master cái này"
+      },
+      {
+        "English": "Rest assured!",
+        "Vietnamese": "Yên chí đi!"
+      },
+      {
+        "English": "Break-even analysis is not hard",
+        "Vietnamese": "Phân tích điểm hòa vốn không có khó"
+      },
+      {
+        "English": "Receipt is different from invoice",
+        "Vietnamese": "Biên nhận khác với hóa đơn đỏ"
+      },
+      {
+        "English": "Exclusive distribution & intensive distribution",
+        "Vietnamese": "Phân phối độc quyền & phân phối đại trà"
+      },
+      {
+        "English": "Decoy effect",
+        "Vietnamese": "Hiện tượng chim mồi"
+      },
+      {
+        "English": "Rice cooker has been around since 1955",
+        "Vietnamese": "Nồi cơm điện đã có từ năm 1955"
+      },
+      {
+        "English": "I'm willing to pay more",
+        "Vietnamese": "Tui sẵn lòng trả thêm"
+      },
+      {
+        "English": "What's your long-term target?",
+        "Vietnamese": "Mục tiêu dài hạn của cậu là gì?"
+      },
+      {
+        "English": "Word of mouth is not a tactic",
+        "Vietnamese": "Truyền miệng không phải chiến thuật"
+      },
+      {
+        "English": "Increase market coverage",
+        "Vietnamese": "Tăng độ phủ thị trường lên"
+      },
+      {
+        "English": "There's a lot of walk-in customers",
+        "Vietnamese": "Có nhiều khách vãng lai"
+      },
+      {
+        "English": "I'll have to fly to Bangkok tomorrow",
+        "Vietnamese": "Tui phải bay qua Bangkok ngày mai"
+      },
+      {
+        "English": "The so-called purchasing power",
+        "Vietnamese": "Cái gọi là sức mua"
+      },
+      {
+        "English": "The so-called pricing strategy",
+        "Vietnamese": "Cái gọi là chiến lược định giá"
+      },
+      {
+        "English": "Digital wallet is not the root cause",
+        "Vietnamese": "Ví điện tử không phải là nguyên nhân gốc rễ"
+      },
+      {
+        "English": "Door-to-door sales",
+        "Vietnamese": "Tiếp thị đến từng nhà"
+      },
+      {
+        "English": "9 times out of 10, word of mouth will work",
+        "Vietnamese": "Hết 9 trên 10 lần, truyền miệng sẽ work"
+      },
+      {
+        "English": "Niche market is a market",
+        "Vietnamese": "Thị trường ngách là một thị trường"
+      },
+      {
+        "English": "Keep it short, I don't have all day!",
+        "Vietnamese": "Ngắn gọn thôi, tui không có rảnh cả ngày nha!"
+      },
+      {
+        "English": "Issue an invoice",
+        "Vietnamese": "Xuất một hóa đơn (đỏ)"
+      },
+      {
+        "English": "How to increase market coverage?",
+        "Vietnamese": "Làm sao để tăng độ phủ thị trường?"
+      },
+      {
+        "English": "A design that is very customer-friendly",
+        "Vietnamese": "Một thiết kế rất là thân thiện người dùng"
+      },
+      {
+        "English": "Africa is a potential market",
+        "Vietnamese": "Châu Phi là một thị trường tiềm năng"
+      },
+      {
+        "English": "We are 3 times over the budget",
+        "Vietnamese": "Ta đang vượt budget 3 lần"
+      },
+      {
+        "English": "Are you available to talk now?",
+        "Vietnamese": "Giờ cậu có rảnh nói chuyện không?"
+      },
+      {
+        "English": "Once you decided to buy this",
+        "Vietnamese": "Một khi cậu đã quyết định mua cái này"
+      },
+      {
+        "English": "They didn't lose their mind",
+        "Vietnamese": "Bọn họ đâu có mất trí"
+      },
+      {
+        "English": "It has to do with marketing",
+        "Vietnamese": "Nó có liên quan đến marketing"
+      },
+      {
+        "English": "Sorry to call you at this hour",
+        "Vietnamese": "Sorry gọi anh giờ này"
+      },
+      {
+        "English": "Take China, this market is very potential",
+        "Vietnamese": "Lấy ví dụ TQ, thị trường này rất là tiềm năng"
+      },
+      {
+        "English": "This is a salable product",
+        "Vietnamese": "Đây là một sản phẩm bán được"
+      },
+      {
+        "English": "Every morning, I grab myself a Highlands",
+        "Vietnamese": "Mỗi sáng, tôi đều lụm cho mình một ly Highlands"
+      },
+      {
+        "English": "This project is on the right track",
+        "Vietnamese": "Dự án này đang đúng lộ trình"
+      },
+      {
+        "English": "Who has assigned this task to you?",
+        "Vietnamese": "Ai giao cái task này cho cậu"
+      },
+      {
+        "English": "Who's handled this campaign?",
+        "Vietnamese": "Ai handle cái chiến dịch này thế?"
+      },
+      {
+        "English": "Who doesn't like word of mouth?",
+        "Vietnamese": "Ai lại không thích truyền miệng?"
+      },
+      {
+        "English": "Get to the point, I don't have all day",
+        "Vietnamese": "Nói vào đề, tui không có rảnh cả ngày nha"
+      },
+      {
+        "English": "There's not many people like beating up boss",
+        "Vietnamese": "Chẳng có mấy người thích đánh sếp"
+      },
+      {
+        "English": "Don't be so choosy!",
+        "Vietnamese": "Đừng có kén chọn quá!"
+      },
+      {
+        "English": "Available resources are very important",
+        "Vietnamese": "Nguồn lực sẵn có là rất quan trọng"
+      },
+      {
+        "English": "50 inbound calls every day",
+        "Vietnamese": "50 cuộc gọi đến mỗi ngày"
+      },
+      {
+        "English": "Speculation is not a good idea",
+        "Vietnamese": "Đầu cơ không phải là ý hay"
+      },
+      {
+        "English": "It's quite inconvenient",
+        "Vietnamese": "Nó khá là bất tiện"
+      },
+      {
+        "English": "A typical customer will say no",
+        "Vietnamese": "Một khách hàng điển hình sẽ từ chối"
+      }
+    ]
+  }
+}

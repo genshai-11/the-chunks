@@ -1,0 +1,1115 @@
+{
+  "lesson_name": "D11 - L7 - Chart",
+  "categories": {
+    "Slang": [
+      {
+        "English": "Word on the street is that...",
+        "Vietnamese": "NGOÀI ĐƯỜNG NGƯỜI TA ĐỒN RẰNG..."
+      },
+      {
+        "English": "If that's the case,... / if that's true",
+        "Vietnamese": "NẾU ĐÚNG LÀ VẬY"
+      },
+      {
+        "English": "Having said that / that said / (with) that being said",
+        "Vietnamese": "NÓI ĐI THÌ CŨNG PHẢI NÓI LẠI"
+      },
+      {
+        "English": "At first glance / sight",
+        "Vietnamese": "THOẠT NHÌN"
+      },
+      {
+        "English": "To be accurate / to be exact",
+        "Vietnamese": "NÓI CHO CHÍNH XÁC"
+      }
+    ],
+    "Vocab": [
+      {
+        "English": "Pleasure / honor",
+        "Vietnamese": "Niềm vinh dự"
+      },
+      {
+        "English": "Pitch",
+        "Vietnamese": "Trình bày gọi vốn"
+      },
+      {
+        "English": "Level off / out",
+        "Vietnamese": "Đi ngang"
+      },
+      {
+        "English": "recognizable",
+        "Vietnamese": "Được nhận diện / ra"
+      },
+      {
+        "English": "Brand",
+        "Vietnamese": "Nhãn hiệu"
+      },
+      {
+        "English": "Undeniable",
+        "Vietnamese": "Không thể phủ nhận"
+      },
+      {
+        "English": "Revolutionize",
+        "Vietnamese": "Cách mạng hóa"
+      },
+      {
+        "English": "How long ago...?",
+        "Vietnamese": "... Lâu chưa?"
+      },
+      {
+        "English": "Founded",
+        "Vietnamese": "Được found / thành lập"
+      },
+      {
+        "English": "26th birthday",
+        "Vietnamese": "Sinh nhật lần thứ 26"
+      },
+      {
+        "English": "Statistics",
+        "Vietnamese": "Thống kê"
+      },
+      {
+        "English": "Probability",
+        "Vietnamese": "Xác suất"
+      },
+      {
+        "English": "Global smartphone market",
+        "Vietnamese": "Thị trường smartphone toàn cầu"
+      },
+      {
+        "English": "That means... / ..., which means...",
+        "Vietnamese": "Điều đó có nghĩa là..."
+      },
+      {
+        "English": "1 out of every 4 people",
+        "Vietnamese": "Cứ 4 người thì có 1 người"
+      },
+      {
+        "English": "Pie chart / bar chart / line chart",
+        "Vietnamese": "Biểu đồ tròn / biểu đồ cột / biểu đồ đường thẳng"
+      },
+      {
+        "English": "Add up / make sense / be reasonable",
+        "Vietnamese": "Hợp lý"
+      },
+      {
+        "English": "on the top left coner",
+        "Vietnamese": "Ở góc trái phía trên"
+      },
+      {
+        "English": "Quarterly revenue",
+        "Vietnamese": "Doanh thu hàng quý"
+      },
+      {
+        "English": "Category",
+        "Vietnamese": "Thể loại"
+      },
+      {
+        "English": "Segment / sector",
+        "Vietnamese": "Mảng"
+      },
+      {
+        "English": "Account for / make up 3%",
+        "Vietnamese": "Chiếm 3%"
+      },
+      {
+        "English": "A half of... / 50% of...",
+        "Vietnamese": "Một nửa của..."
+      },
+      {
+        "English": "iphone sales",
+        "Vietnamese": "Doanh thu iphone"
+      },
+      {
+        "English": "In general / overall",
+        "Vietnamese": "Nói chung,..."
+      },
+      {
+        "English": "0.2975",
+        "Vietnamese": "0.2975"
+      },
+      {
+        "English": "The first quarter of 2022",
+        "Vietnamese": "Quý đầu tiên của năm 2022"
+      },
+      {
+        "English": "Year over year / year on year",
+        "Vietnamese": "So với cùng kỳ năm ngoái"
+      },
+      {
+        "English": "Some of you",
+        "Vietnamese": "Vài người trong số các bạn"
+      },
+      {
+        "English": "On the right",
+        "Vietnamese": "Ở bên phải"
+      },
+      {
+        "English": "The starting price",
+        "Vietnamese": "Giá khởi điểm"
+      },
+      {
+        "English": "Fluctuate",
+        "Vietnamese": "Dao động"
+      },
+      {
+        "English": "Retail at $3",
+        "Vietnamese": "Bán lẻ ở giá 3 đô"
+      },
+      {
+        "English": "Currently / At the moment / now / \n for the time being",
+        "Vietnamese": "Hiện tại"
+      },
+      {
+        "English": "Our latest iPhone",
+        "Vietnamese": "Mẫu iPhone mới nhất"
+      },
+      {
+        "English": "1400",
+        "Vietnamese": "1400"
+      },
+      {
+        "English": "Wholesale revenue / retail revenue",
+        "Vietnamese": "Doanh thu bán sỉ / bán lẻ"
+      },
+      {
+        "English": "Unit variable cost",
+        "Vietnamese": "Chi phí thay đổi đơn vị"
+      },
+      {
+        "English": "Unit fixed cost",
+        "Vietnamese": "Chi phí cố định đơn vị"
+      },
+      {
+        "English": "Profit margin",
+        "Vietnamese": "Tỉ suất lợi nhuận"
+      },
+      {
+        "English": "Approximately / more or less / around",
+        "Vietnamese": "Đâu đó"
+      },
+      {
+        "English": "Once...",
+        "Vietnamese": "Một khi..."
+      },
+      {
+        "English": "Break even",
+        "Vietnamese": "Hòa vốn"
+      },
+      {
+        "English": "It seems / it appears...",
+        "Vietnamese": "Hình như..."
+      },
+      {
+        "English": "Labor cost",
+        "Vietnamese": "Chi phí nhân cao"
+      },
+      {
+        "English": "Way too high / far too high / too high",
+        "Vietnamese": "Quá là cao"
+      },
+      {
+        "English": "Therefore / so",
+        "Vietnamese": "Cho nên / Vì thế"
+      },
+      {
+        "English": "Earlier this year",
+        "Vietnamese": "Đầu năm nay"
+      },
+      {
+        "English": "Logistically / In terms of logistics",
+        "Vietnamese": "Về mặt logistics"
+      },
+      {
+        "English": "Saigon port / Saigon harbor",
+        "Vietnamese": "Cảng Sài Gòn"
+      },
+      {
+        "English": "The thing is / The point is / the problem is",
+        "Vietnamese": "Vấn đề là"
+      },
+      {
+        "English": "A's directly proportional to B / A is in direct proportion to B",
+        "Vietnamese": "A tỷ lệ thuận với B"
+      },
+      {
+        "English": "At least 30%",
+        "Vietnamese": "Ít nhất 30%"
+      },
+      {
+        "English": "Pass it on to Mr.A",
+        "Vietnamese": "Nhường lời lại cho ông A"
+      },
+      {
+        "English": "Go ahead / don't hesitate",
+        "Vietnamese": "Cứ tự nhiên"
+      },
+      {
+        "English": "First off / first up / first / firstly / at first",
+        "Vietnamese": "Đầu tiên"
+      },
+      {
+        "English": "To be honest / honestly / actually",
+        "Vietnamese": "Thực ra thì"
+      },
+      {
+        "English": "First impression",
+        "Vietnamese": "Ấn tượng đầu tiên"
+      },
+      {
+        "English": "Constantly / continuously",
+        "Vietnamese": "Liên tiếp"
+      },
+      {
+        "English": "A decade / 10 years",
+        "Vietnamese": "Một thập kỷ"
+      },
+      {
+        "English": "In the long run / in the long term",
+        "Vietnamese": "Về lâu về dài"
+      },
+      {
+        "English": "On the screen",
+        "Vietnamese": "Trên màn hình"
+      },
+      {
+        "English": "Reinvestment",
+        "Vietnamese": "Tái đầu tư"
+      },
+      {
+        "English": "Dethrone",
+        "Vietnamese": "Soán ngôi"
+      },
+      {
+        "English": "Notice / pay attention",
+        "Vietnamese": "Để ý"
+      },
+      {
+        "English": "Occur / happen / take place",
+        "Vietnamese": "Xảy ra"
+      },
+      {
+        "English": "The launch / the roll out",
+        "Vietnamese": "Việc ra mắt"
+      },
+      {
+        "English": "A is caused by B",
+        "Vietnamese": "A là do B"
+      },
+      {
+        "English": "recall / withdraw",
+        "Vietnamese": "Thu hồi"
+      },
+      {
+        "English": "No wonder / no doubt / no question",
+        "Vietnamese": "Hèn chi"
+      },
+      {
+        "English": "Do you know...?",
+        "Vietnamese": "Đố bạn...?"
+      },
+      {
+        "English": "Plunge / plummet / drop",
+        "Vietnamese": "Rơi / chúi đầu"
+      },
+      {
+        "English": "Back then / back in the day",
+        "Vietnamese": "Hồi đó"
+      },
+      {
+        "English": "Admit",
+        "Vietnamese": "Thừa nhận"
+      },
+      {
+        "English": "Originate from...",
+        "Vietnamese": "Xuất xứ từ..."
+      },
+      {
+        "English": "Faulty battery",
+        "Vietnamese": "Pin bị lỗi"
+      },
+      {
+        "English": "In the newspaper / in the paper",
+        "Vietnamese": "Trên báo"
+      },
+      {
+        "English": "Overheat",
+        "Vietnamese": "Quá nhiệt"
+      },
+      {
+        "English": "Catch fire",
+        "Vietnamese": "Bắt lửa"
+      },
+      {
+        "English": "While charging",
+        "Vietnamese": "Trong lúc sạc"
+      },
+      {
+        "English": "ASAP / the sooner the possible",
+        "Vietnamese": "Càng sớm càng tốt"
+      },
+      {
+        "English": "Rocket / increase / soar",
+        "Vietnamese": "Tăng vọt"
+      },
+      {
+        "English": "Legendary",
+        "Vietnamese": "Huyền thoại"
+      },
+      {
+        "English": "Pretty much / almost",
+        "Vietnamese": "Gần như"
+      },
+      {
+        "English": "Release calendar",
+        "Vietnamese": "Lịch ra mắt"
+      },
+      {
+        "English": "Motivation / aspiraton",
+        "Vietnamese": "Động lực"
+      },
+      {
+        "English": "At the moment / now / for the time being",
+        "Vietnamese": "Bây giờ"
+      },
+      {
+        "English": "Mature market",
+        "Vietnamese": "Thị trường đã phát triển"
+      },
+      {
+        "English": "Annual operating costs / \n operating costs every year",
+        "Vietnamese": "Chi phí vận hành hàng năm"
+      },
+      {
+        "English": "Machinery and equipment",
+        "Vietnamese": "Máy móc và thiết bị"
+      },
+      {
+        "English": "Supply chain",
+        "Vietnamese": "Chuỗi cung ứng"
+      },
+      {
+        "English": "Shortage / scarcity",
+        "Vietnamese": "Thiếu hụt"
+      },
+      {
+        "English": "Pandemic",
+        "Vietnamese": "Đại dịch"
+      },
+      {
+        "English": "Chinese government",
+        "Vietnamese": "Chính phủ Trung Quốc"
+      },
+      {
+        "English": "Shut down",
+        "Vietnamese": "đóng cửa"
+      },
+      {
+        "English": "Real pain point",
+        "Vietnamese": "Nỗi đau thật sự"
+      },
+      {
+        "English": "Shanghai",
+        "Vietnamese": "Thượng Hải"
+      },
+      {
+        "English": "Gas prices",
+        "Vietnamese": "Giá xăng"
+      },
+      {
+        "English": "A Korean newspaper",
+        "Vietnamese": "Báo Hàn"
+      },
+      {
+        "English": "Retail / wholesale sales",
+        "Vietnamese": "Doanh số bán lẻ / bán sỉ"
+      }
+    ],
+    "Phrase": [
+      {
+        "English": "This is the first time I've been to... / \n this is my first time in...",
+        "Vietnamese": "Đây là lần đầu tiên tui ở..."
+      },
+      {
+        "English": "It's my pleasure to...",
+        "Vietnamese": "Thật là vinh dự cho tôi để..."
+      },
+      {
+        "English": "Pitch a new project to somebody",
+        "Vietnamese": "Pitch một dự án mới đến ai đó"
+      },
+      {
+        "English": "This is one of the most famous brands",
+        "Vietnamese": "Đây là một trong những nhãn hàng nổi tiếng nhất"
+      },
+      {
+        "English": "In the world",
+        "Vietnamese": "Trên TG"
+      },
+      {
+        "English": "Do you know what percentage of Vietnamese love football?",
+        "Vietnamese": "Đố bạn biết bao nhiêu % người Việt thích bóng đá?"
+      },
+      {
+        "English": "It's undeniable that...",
+        "Vietnamese": "Thật là không thể tránh khỏi khi mà..."
+      },
+      {
+        "English": "Revolutionize the way...",
+        "Vietnamese": "Cách mạng hóa cái cách..."
+      },
+      {
+        "English": "Tesla has been revolutionizing the way we drive",
+        "Vietnamese": "Tesla đã và đang CM hóa cái cách chúng ta lái"
+      },
+      {
+        "English": "How long ago did you buy this laptop?",
+        "Vietnamese": "Cậu mua cái laptop này bao lâu rồi?"
+      },
+      {
+        "English": "How long ago was Tesla founded?",
+        "Vietnamese": "Tesla được thành lập bao lâu rồi"
+      },
+      {
+        "English": "The last January was our 26th birthday",
+        "Vietnamese": "Tháng một vừa rồi là sinh nhật thứ 26 của chúng tôi"
+      },
+      {
+        "English": "Statistics show that...",
+        "Vietnamese": "Thống kê chỉ ra rằng..."
+      },
+      {
+        "English": "In general",
+        "Vietnamese": "Nói chung,..."
+      },
+      {
+        "English": "Choose A over/rather than B",
+        "Vietnamese": "Chọn A thay vì B"
+      },
+      {
+        "English": "Tesla controls 80% of the e-car market",
+        "Vietnamese": "Tesla control 80% thị trường xe điện"
+      },
+      {
+        "English": "1 out of every 4 people choose us rather than Tesla",
+        "Vietnamese": "Cứ 4 người thì có 1 người chọn chúng ta thay vì Tesla"
+      },
+      {
+        "English": "The line chart on the top left corner",
+        "Vietnamese": "Biểu đồ đường thẳng ở góc trái phía trên"
+      },
+      {
+        "English": "Quarterly revenue accounts for 25% of our total revenue",
+        "Vietnamese": "Doanh thu hàng quý chiếm 25% tổng doanh thu"
+      },
+      {
+        "English": "The revenue from the iphone segment",
+        "Vietnamese": "Doanh thu từ mảng iphone"
+      },
+      {
+        "English": "More than a half of \n our revenue came from...",
+        "Vietnamese": "Hơn một nửa doanh thu của ta đến từ..."
+      },
+      {
+        "English": "Our revenue has increased at a rate of 15%",
+        "Vietnamese": "Doanh thu của ta đã tăng ở tốc độ 15%"
+      },
+      {
+        "English": "In the most recent quarter",
+        "Vietnamese": "Ở quý gần nhất"
+      },
+      {
+        "English": "If that's the case/ if that's true",
+        "Vietnamese": "Nếu đúng là như vậy"
+      },
+      {
+        "English": "Up 9% over the same period last year",
+        "Vietnamese": "Tăng 9% so với cùng kỳ năm ngoái"
+      },
+      {
+        "English": "Some of you might be wondering that...",
+        "Vietnamese": "Vài người trong số các bạn có thể là đang thắc mắc rằng..."
+      },
+      {
+        "English": "Break-even analysis",
+        "Vietnamese": "Phân tích điểm hòa vốn"
+      },
+      {
+        "English": "The prices have been fluctuating a lot",
+        "Vietnamese": "Giá cả đã và đang dao động rất nhiều"
+      },
+      {
+        "English": "Lastest iphone",
+        "Vietnamese": "Mẫu iphone mới nhất"
+      },
+      {
+        "English": "This chair retails between $10 and $20",
+        "Vietnamese": "Cái ghế này bán lẻ với giá giữa 10 và 20 đô"
+      },
+      {
+        "English": "The starting prices could be up to $100",
+        "Vietnamese": "Giá khởi điểm có thể tăng lên đến 100 đô"
+      },
+      {
+        "English": "We will have the profit margin of 10%",
+        "Vietnamese": "Chúng ta sẽ có tỉ suất lợi nhuận 10%"
+      },
+      {
+        "English": "As I mentioned in the email",
+        "Vietnamese": "Như tôi đã đề cập trong email"
+      },
+      {
+        "English": "What concerns/worries me the most is...",
+        "Vietnamese": "Điều làm tôi lo lắng nhất là..."
+      },
+      {
+        "English": "Based on these numbers",
+        "Vietnamese": "Dựa trên những con số này"
+      },
+      {
+        "English": "If we divide 100 by 5",
+        "Vietnamese": "Nếu ta chia 100 cho 5"
+      },
+      {
+        "English": "Once we sell 50 laptops",
+        "Vietnamese": "Một khi chúng ta bán được 50 cái lap"
+      },
+      {
+        "English": "We would break even soon",
+        "Vietnamese": "Ta sẽ hòa vốn sớm thôi"
+      },
+      {
+        "English": "How to hit the break even point?",
+        "Vietnamese": "Làm sao để đạt điểm hòa vốn?"
+      },
+      {
+        "English": "It took me 2 days to hit \n the break even point",
+        "Vietnamese": "Tôi tốn 2 ngày để đạt điểm hòa vốn"
+      },
+      {
+        "English": "Actually this price is not that bad",
+        "Vietnamese": "Thực ra giá này không tệ đến thế"
+      },
+      {
+        "English": "Boss is not really happy about the costs",
+        "Vietnamese": "Sếp không thực sự happy về chi phí"
+      },
+      {
+        "English": "He wishes we could cut the costs down",
+        "Vietnamese": "Ảnh ước chúng ta có thể giảm chi phí xuống"
+      },
+      {
+        "English": "An opportunity for cooperation",
+        "Vietnamese": "Một cơ hội cộng tác"
+      },
+      {
+        "English": "Move some of the production to VN",
+        "Vietnamese": "Di chuyển một vài hoạt động SX qua VN"
+      },
+      {
+        "English": "Da Nang makes the most sense to start up",
+        "Vietnamese": "Da Nang là hợp lý nhất để start up"
+      },
+      {
+        "English": "Boss wants us to reduce the costs by 30%",
+        "Vietnamese": "Sếp muốn chúng ta giảm chi phí đi 30%"
+      },
+      {
+        "English": "This project is expected to reduce \n the labor cost",
+        "Vietnamese": "Dự án này được kỳ vọng sẽ giảm \n chi phí nhân công"
+      },
+      {
+        "English": "Before I pass it on to Mr. Obama",
+        "Vietnamese": "Trước khi tôi nhường lời lại cho ông Obama"
+      },
+      {
+        "English": "If you have any questions, please go ahead",
+        "Vietnamese": "Nếu cậu có bất kỳ câu hỏi nào, \n cứ thoải mái"
+      },
+      {
+        "English": "I was impressed by...",
+        "Vietnamese": "Tôi bị ấn tượng bởi..."
+      },
+      {
+        "English": "Mr Obama, you can go/say first",
+        "Vietnamese": "Ông Obama, ông có thể nói trước"
+      },
+      {
+        "English": "My first impression looking at your chart",
+        "Vietnamese": "Ấn tượng đầu tiên của tôi khi nhìn vào cái chart của cậu"
+      },
+      {
+        "English": "May I ask you why?",
+        "Vietnamese": "Tôi có thể hỏi cậu tại sao không?"
+      },
+      {
+        "English": "It shocked me that...",
+        "Vietnamese": "Nó làm tôi shock vì..."
+      },
+      {
+        "English": "Tesla has been outperforming Vinfast",
+        "Vietnamese": "Tesla đã và đang perform tốt hơn Vinfast"
+      },
+      {
+        "English": "Thoughout a decade",
+        "Vietnamese": "Trong suốt một thập kỷ"
+      },
+      {
+        "English": "Stand no chance of winning",
+        "Vietnamese": "Không có cửa thắng"
+      },
+      {
+        "English": "I don't think Vinfast stands a chance of winning",
+        "Vietnamese": "Tôi không nghĩ Vinfast có cửa thắng đâu"
+      },
+      {
+        "English": "What is being shown on the screen",
+        "Vietnamese": "Những thứ đang được show trên màn hình"
+      },
+      {
+        "English": "I'll give you that",
+        "Vietnamese": "Cái đó thì tôi đồng ý"
+      },
+      {
+        "English": "Could you go into details?",
+        "Vietnamese": "Cậu có thể đi vào chi tiết không?"
+      },
+      {
+        "English": "I'm well aware of the fact that...",
+        "Vietnamese": "Tôi biết rõ sự thật là..."
+      },
+      {
+        "English": "It took me double time to read a chart",
+        "Vietnamese": "Tôi mất gấp đôi thời gian để đọc một cái đồ thị"
+      },
+      {
+        "English": "I also noticed that...",
+        "Vietnamese": "Tôi cũng đã nhận ra rằng..."
+      },
+      {
+        "English": "Is it because of...?",
+        "Vietnamese": "Có phải là vì ... không?"
+      },
+      {
+        "English": "I personally believe that...",
+        "Vietnamese": "Cá nhân tôi tin rằng..."
+      },
+      {
+        "English": "Vinfast has dropped to 2nd place",
+        "Vietnamese": "Vinfast đã rớt xuống vị trí thứ hai"
+      },
+      {
+        "English": "For the 3rd time in the decade",
+        "Vietnamese": "Lần thứ ba trong thập kỷ"
+      },
+      {
+        "English": "Our sales have plunged by 25%",
+        "Vietnamese": "Doanh số bán hàng của chúng ta đã giảm 25%"
+      },
+      {
+        "English": "That's a pity",
+        "Vietnamese": "Thật là đáng tiếc"
+      },
+      {
+        "English": "Line of product / product line",
+        "Vietnamese": "Dòng sản phẩm"
+      },
+      {
+        "English": "I admit that I'm a big fan of Facebook",
+        "Vietnamese": "Tôi thừa nhận tôi là fan ruột của FB"
+      },
+      {
+        "English": "I once read about this in the newspaper",
+        "Vietnamese": "Tôi có lần đọc cái này trên báo"
+      },
+      {
+        "English": "It's very easy to catch fire",
+        "Vietnamese": "Nó rất dễ bắt lửa"
+      },
+      {
+        "English": "They have made it clear that...",
+        "Vietnamese": "Họ đã nói rõ rằng"
+      },
+      {
+        "English": "90% of US customers",
+        "Vietnamese": "90% khách hàng Mỹ"
+      },
+      {
+        "English": "Return A in exchange for B",
+        "Vietnamese": "Trả A để đổi lấy B"
+      },
+      {
+        "English": "How could it rocket to 20 million that fast?",
+        "Vietnamese": "Sao mà nó tăng 20 triệu nhanh đến thế nhỉ?"
+      },
+      {
+        "English": "The labor cost must be the reason here",
+        "Vietnamese": "Phí nhân công hẳn là lý do ở đây"
+      },
+      {
+        "English": "Hit the bottom",
+        "Vietnamese": "Chạm đáy"
+      },
+      {
+        "English": "In the middle of the year",
+        "Vietnamese": "Giữa năm"
+      },
+      {
+        "English": "Late September & early October",
+        "Vietnamese": "Cuối tháng 9 và đầu tháng 10"
+      },
+      {
+        "English": "Something doesn't add up here",
+        "Vietnamese": "Có cái gì đó không hợp lý ở đây"
+      },
+      {
+        "English": "It boggles / bends / twists my mind that...",
+        "Vietnamese": "Nó làm tôi rối não rằng...."
+      },
+      {
+        "English": "What attracts Tesla to invest VN?",
+        "Vietnamese": "Cái gì thu hút Testla đầu tư VN?"
+      },
+      {
+        "English": "It's way too obvious/clear/explicit",
+        "Vietnamese": "Quá rõ"
+      },
+      {
+        "English": "There's nothing really new in this market",
+        "Vietnamese": "Không có cái gì mới trong \n thị trường này cả"
+      },
+      {
+        "English": "How to run a factory?",
+        "Vietnamese": "Làm thế nào để điều hành \n một cái nhà máy?"
+      },
+      {
+        "English": "Most of the costs come from...",
+        "Vietnamese": "Hầu hết chi phí đến từ"
+      },
+      {
+        "English": "Supply chain shortage \nis the problem",
+        "Vietnamese": "Sự thiếu hụt chuỗi cung ứng là vấn để"
+      },
+      {
+        "English": "Due to COVID pandemic / because of COVID pandemic",
+        "Vietnamese": "Do đại dịch COVID"
+      },
+      {
+        "English": "She can be much of a help",
+        "Vietnamese": "Cô ấy có thể giúp ích rất nhiều"
+      },
+      {
+        "English": "I'm out / in",
+        "Vietnamese": "Tôi rút / tôi tham gia"
+      },
+      {
+        "English": "This event occured in Shanghai",
+        "Vietnamese": "Sự kiện này đã diễn ra ở Thượng Hải"
+      },
+      {
+        "English": "Our pain points are variable costs",
+        "Vietnamese": "Vấn đề nhức nhối của chúng tôi là chi phí biến đổi"
+      },
+      {
+        "English": "Constantly/continuously fluctuate",
+        "Vietnamese": "Liên tục biến động"
+      },
+      {
+        "English": "House prices have been constantly fluctuating",
+        "Vietnamese": "Giá nhà đã và đang dao động liên tục"
+      },
+      {
+        "English": "House prices are directly proportional to gas prices",
+        "Vietnamese": "Giá nhà tỷ lệ thuận với giá xăng"
+      },
+      {
+        "English": "Retail revenues fell dramatically / significantly / considerably",
+        "Vietnamese": "Doanh thu bán lẻ giảm mạnh"
+      }
+    ],
+    "Sentence": [
+      {
+        "English": "It's undeniable that \"Vinamilk\" has been revolutionizing \n the way we drink milk",
+        "Vietnamese": "Không thể phủ nhận rằng Vinamilk đã và đang cách mạng hóa cách mà chúng ta uống sữa"
+      },
+      {
+        "English": "Having said that, how long ago was Tesla dethroned?",
+        "Vietnamese": "Nói đi cũng phải nói lại, Tesla đã bị truất ngôi hồi nào?"
+      },
+      {
+        "English": "Statistics show that our retail sales have increased by 3%",
+        "Vietnamese": "Thống kê chỉ ra rằng doanh số bán lẻ của chúng ta đã tăng 3%"
+      },
+      {
+        "English": "At first glance, \n this is quarterly revenue and that is total revenue",
+        "Vietnamese": "Nhìn sơ qua, đây là doanh thu hằng quý và đó là tổng doanh thu"
+      },
+      {
+        "English": "To be accurate, \n our revenues mostly come from energy segment",
+        "Vietnamese": "Chính xác mà nói, doanh thu của chúng ta hầu phần lớn đến từ mảng năng lượng"
+      },
+      {
+        "English": "Word on the street is that goverment revenues fell dramatically in the last quarter of 2020",
+        "Vietnamese": "Người ta đồn rằng doanh thu của chính phủ đã giảm mạnh vào quý cuối năm 2020"
+      },
+      {
+        "English": "4 out of every 5 people will choose Tesla \n rather than another e-car brands",
+        "Vietnamese": "4 trên 5 người sẽ chọn Tesla \n thay vì các hãng xe điện khác"
+      },
+      {
+        "English": "Our revenue this month just hit the bottom \n for the 5th time in the decade",
+        "Vietnamese": "Doanh thu tháng này của chúng ta mới chạm sàn lần thứ 5 trong thập kỷ"
+      },
+      {
+        "English": "Before I pass it on to Mr. Trump, \n can I have some comments from Mr. Obama?",
+        "Vietnamese": "Trước khi tôi chuyển lời cho ông Trump, \n tôi có thể có vài lời từ ông Obama không?"
+      },
+      {
+        "English": "Labor cost this quarter has doubled, \n up 100% over the same period last year",
+        "Vietnamese": "Chi phí công nhân trong tháng này đã tăng gấp đôi, tăng 100% so với cùng kỳ năm ngoái"
+      },
+      {
+        "English": "Break-even analysis will help you run your company\n  more effectively",
+        "Vietnamese": "Phân tích hòa vốn sẽ giúp ta vận hành công ty \n hiệu quả hơn"
+      },
+      {
+        "English": "At first glance, our retail sales mostly come from iphone sales",
+        "Vietnamese": "Thoạt nhìn, doanh thu bán lẻ phần lớn đến từ doanh thu iPhone"
+      },
+      {
+        "English": "Having said that, our profits for the last 6 months \n have increased at a rate of 12%",
+        "Vietnamese": "Nói đi cũng phải nói lại, lợi nhuận của chúng ta trong 6 tháng qua đã tăng với tốc độ 12%"
+      },
+      {
+        "English": "Our starting prices are way too high, \n maybe we'll have to cut down our maintenance costs",
+        "Vietnamese": "Giá bán khởi đầu của chúng ta quá cao, \n có thể chúng ta phải cắt giảm chi phí bảo trì"
+      },
+      {
+        "English": "If that's the case, we'll have a profit margin of more than 35%",
+        "Vietnamese": "Nếu đúng vậy, chúng ta sẽ có tỷ suất lợi nhận hơn 35%"
+      },
+      {
+        "English": "The rate of reinvestment has been fluctuating around 10%",
+        "Vietnamese": "Tỷ lệ tái đầu tư dao động khoảng 10%"
+      },
+      {
+        "English": "Logistically, Saigon port makes the most sense to import fruits from Thailand",
+        "Vietnamese": "Về mặt hậu cần, cảng SG là hợp nhất cho việc nhập khẩu trái cây từ Thái Lan"
+      },
+      {
+        "English": "Having said that, we've been looking for an opportunity for cooperation in Africa",
+        "Vietnamese": "Nói đi cũng phải nói lại, chúng tôi đã tìm kiếm cơ hội hợp tác ở Châu Phi"
+      },
+      {
+        "English": "Revenues are directly proportional to profits while costs are inversely proportional to profits",
+        "Vietnamese": "Doanh thu tỷ lệ thuận với lợi nhuận khi chi phí tỷ lệ nghịch với lợi nhuận"
+      },
+      {
+        "English": "Due to the COVID pandemic, our revenues have plunged by 99%",
+        "Vietnamese": "Do đại dịch COVID, doanh thu chúng ta đã giảm 99%"
+      }
+    ],
+    "Review": [
+      {
+        "English": "Pretty much every year",
+        "Vietnamese": "Gần như mỗi năm"
+      },
+      {
+        "English": "I wanna pitch my new project",
+        "Vietnamese": "Tôi muốn pitch về dự án mới của tôi"
+      },
+      {
+        "English": "To be accurate, that is a social project",
+        "Vietnamese": "Nói cho chính xác, đó là một dự án XH"
+      },
+      {
+        "English": "It's undeniable that costs are increasing",
+        "Vietnamese": "Không thể chối cãi được là chi phí đang tăng lên"
+      },
+      {
+        "English": "Revolutionize the way we entertain",
+        "Vietnamese": "Cách mạng hóa cách chúng ta giải trí"
+      },
+      {
+        "English": "How long ago did you buy this machine?",
+        "Vietnamese": "Cậu mua cái máy này lâu chưa?"
+      },
+      {
+        "English": "Statistics is different from probability",
+        "Vietnamese": "Thống kê thì khác với xác suất"
+      },
+      {
+        "English": "1 out of every 5 people",
+        "Vietnamese": "Cứ 5 người thì có 1 người"
+      },
+      {
+        "English": "Pie chart looks like a pie",
+        "Vietnamese": "Biểu đồ tròn trông như cái bánh"
+      },
+      {
+        "English": "on the top right corner",
+        "Vietnamese": "Ở góc trên bên phải"
+      },
+      {
+        "English": "iphone segment always generates more sales",
+        "Vietnamese": "Mảng iphone luôn tạo ra nhiều doanh số hơn"
+      },
+      {
+        "English": "At first glance, a half of 100 is 50",
+        "Vietnamese": "Thoạt nhìn, một nửa của 100 là 50"
+      },
+      {
+        "English": "Iphone sales are going down",
+        "Vietnamese": "Doanh số iphone đang đi xuống"
+      },
+      {
+        "English": "In the first 2 quaters",
+        "Vietnamese": "Trong 2 quý đầu"
+      },
+      {
+        "English": "Revenue has increased over the same period last year",
+        "Vietnamese": "Doanh thu đã tăng lên so với cùng kỳ năm ngoái"
+      },
+      {
+        "English": "Starting price for this model is $10",
+        "Vietnamese": "Giá khởi điểm cho mẫu này là $10"
+      },
+      {
+        "English": "The costs have been fluctuating a lot",
+        "Vietnamese": "Chi phí đã và đang dao động rất nhiều"
+      },
+      {
+        "English": "This book retails at $9.5",
+        "Vietnamese": "Cuốn sách này bán lẻ ở mức $9.5"
+      },
+      {
+        "English": "85% of the US customers",
+        "Vietnamese": "85% khách hàng Mỹ"
+      },
+      {
+        "English": "Fixed cost and variable cost",
+        "Vietnamese": "Chi phí cố định và chi phí thay đổi"
+      },
+      {
+        "English": "Profit margin of 25%",
+        "Vietnamese": "Tỉ suất lợi nhuận 25%"
+      },
+      {
+        "English": "How to break even?",
+        "Vietnamese": "Làm sao để hòa vốn?"
+      },
+      {
+        "English": "Earlier this year, I once said that...",
+        "Vietnamese": "Hồi đầu năm nay, tôi có lần từng bảo rằng..."
+      },
+      {
+        "English": "Logistically, this is impossible",
+        "Vietnamese": "Về mặt logistics, điều này là không thể"
+      },
+      {
+        "English": "Saigon port will be convenient for us",
+        "Vietnamese": "Cảng SG sẽ là tiện cho chúng tôi"
+      },
+      {
+        "English": "Our revenue is levelling off",
+        "Vietnamese": "Doanh thu của ta đang đi ngang"
+      },
+      {
+        "English": "A is directly proportional to B",
+        "Vietnamese": "A tỉ lệ thuận vớI B"
+      },
+      {
+        "English": "Due to the COVID pandemic",
+        "Vietnamese": "Vì đại dịch COVID"
+      },
+      {
+        "English": "Before I pass it on to Mr.A",
+        "Vietnamese": "Trước khi tôi nhường lời lại cho ông A"
+      },
+      {
+        "English": "As you can see on the screen",
+        "Vietnamese": "Như các bạn có thể thấy trên màn hình"
+      },
+      {
+        "English": "Reinvestment is a good idea",
+        "Vietnamese": "Tái đầu tư là một ý hay"
+      },
+      {
+        "English": "Iphone wants to dethrone Samsung",
+        "Vietnamese": "Apple muốn soán ngôi Samsung"
+      },
+      {
+        "English": "Increase by 300%",
+        "Vietnamese": "Tăng thêm 300%"
+      },
+      {
+        "English": "No wonder retail prices are that high",
+        "Vietnamese": "Hèn gì giá bán lẻ cao đến vậy"
+      },
+      {
+        "English": "Labor cost dropped dramatically",
+        "Vietnamese": "Chi phí nhân công rớt thê thảm"
+      },
+      {
+        "English": "This was salable back then",
+        "Vietnamese": "Hồi đó cái này bán được"
+      },
+      {
+        "English": "This term originated from marketing",
+        "Vietnamese": "Cụm từ này bắt nguồn từ marketing"
+      },
+      {
+        "English": "Don't let it hit the bottom",
+        "Vietnamese": "Đừng có để nó chạm đáy"
+      },
+      {
+        "English": "I read about this in the paper",
+        "Vietnamese": "Tôi đọc về cái này ở trong báo"
+      },
+      {
+        "English": "I don't think I can be much of a help",
+        "Vietnamese": "Tôi không nghĩ tôi có thể giúp được gì nhiều"
+      },
+      {
+        "English": "This material is very easy to catch fire",
+        "Vietnamese": "Vật liệu này dễ bắt lửa lắm"
+      },
+      {
+        "English": "Our revenue has rocketted by 100%",
+        "Vietnamese": "Doanh thu của ta đã tăng vọt lên thêm 100%"
+      },
+      {
+        "English": "What's your motivation?",
+        "Vietnamese": "Động lực của cậu là gì?"
+      },
+      {
+        "English": "Annual operating costs",
+        "Vietnamese": "Chi phí vận hành hàng năm"
+      },
+      {
+        "English": "Supply chain matters",
+        "Vietnamese": "Chuỗi cung ứng rất là quan trọng"
+      },
+      {
+        "English": "Supply chain shortage is our pain point",
+        "Vietnamese": "Việc khan hiếm chuỗi cung ứng chính là nỗi đau của ta"
+      },
+      {
+        "English": "Shutdown 2 factories in Shanghai",
+        "Vietnamese": "Đóng cửa 2 nhà máy ở Thượng Hải"
+      },
+      {
+        "English": "If that's the case",
+        "Vietnamese": "Nếu đúng là vậy"
+      },
+      {
+        "English": "Gas prices and house prices",
+        "Vietnamese": "Giá xăng và giá nhà"
+      },
+      {
+        "English": "Something doesn't add up here",
+        "Vietnamese": "Cái gì đó không hợp lý lắm ở đây"
+      }
+    ]
+  }
+}
