@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, AlertTriangle, Clock } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, AlertTriangle, Clock, ChevronDown } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
@@ -9,6 +9,39 @@ import { getAnalysisConfig } from '@/config/analysisConfig';
 import { AnalysisResult } from '@/types/curriculum';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+} from '@/components/ui/dropdown-menu';
+
+// Deepgram Aura voices
+const DEEPGRAM_VOICES = [
+  { id: 'aura-asteria-en', name: 'Asteria', gender: 'female', accent: 'American' },
+  { id: 'aura-luna-en', name: 'Luna', gender: 'female', accent: 'American' },
+  { id: 'aura-stella-en', name: 'Stella', gender: 'female', accent: 'American' },
+  { id: 'aura-athena-en', name: 'Athena', gender: 'female', accent: 'British' },
+  { id: 'aura-hera-en', name: 'Hera', gender: 'female', accent: 'American' },
+  { id: 'aura-orion-en', name: 'Orion', gender: 'male', accent: 'American' },
+  { id: 'aura-arcas-en', name: 'Arcas', gender: 'male', accent: 'American' },
+  { id: 'aura-perseus-en', name: 'Perseus', gender: 'male', accent: 'American' },
+  { id: 'aura-angus-en', name: 'Angus', gender: 'male', accent: 'Irish' },
+  { id: 'aura-orpheus-en', name: 'Orpheus', gender: 'male', accent: 'American' },
+  { id: 'aura-helios-en', name: 'Helios', gender: 'male', accent: 'British' },
+  { id: 'aura-zeus-en', name: 'Zeus', gender: 'male', accent: 'American' },
+] as const;
+
+type DeepgramVoice = typeof DEEPGRAM_VOICES[number];
+
+const getStoredVoice = (): string => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('deepgram-voice') || 'aura-asteria-en';
+  }
+  return 'aura-asteria-en';
+};
 
 export const PracticeModal: React.FC = () => {
   const { selectedItem, setSelectedItem, currentLessonId, recordPracticeSession, userProgress } = useApp();
@@ -21,6 +54,14 @@ export const PracticeModal: React.FC = () => {
   const [analyzerData, setAnalyzerData] = useState<Uint8Array | null>(null);
   const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [selectedVoice, setSelectedVoice] = useState<string>(getStoredVoice);
+
+  const handleVoiceChange = (voiceId: string) => {
+    setSelectedVoice(voiceId);
+    localStorage.setItem('deepgram-voice', voiceId);
+  };
+
+  const currentVoice = DEEPGRAM_VOICES.find(v => v.id === selectedVoice) || DEEPGRAM_VOICES[0];
 
   const mediaRecorderRef = useRef<MediaRecorder | null>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
@@ -199,7 +240,7 @@ export const PracticeModal: React.FC = () => {
     
     setIsSpeaking(true);
     try {
-      // Use Deepgram TTS
+      // Use Deepgram TTS with selected voice
       const response = await fetch(
         `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/deepgram-tts`,
         {
@@ -209,7 +250,7 @@ export const PracticeModal: React.FC = () => {
           },
           body: JSON.stringify({ 
             text: selectedItem.English,
-            model: 'aura-asteria-en' // Natural female voice
+            model: selectedVoice
           }),
         }
       );
@@ -287,21 +328,59 @@ export const PracticeModal: React.FC = () => {
         <div className="p-6">
           {/* Target phrase */}
           <div className="text-center mb-8">
-            <button
-              onClick={speakTarget}
-              disabled={isSpeaking}
-              className={cn(
-                "inline-flex items-center gap-2 px-4 py-2 rounded-full bg-muted hover:bg-accent transition-colors mb-4",
-                isSpeaking && "opacity-70"
-              )}
-            >
-              {isSpeaking ? (
-                <Loader2 size={18} className="animate-spin" />
-              ) : (
-                <Volume2 size={18} />
-              )}
-              <span className="text-sm font-medium">{isSpeaking ? 'Playing...' : 'Listen'}</span>
-            </button>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <button
+                onClick={speakTarget}
+                disabled={isSpeaking}
+                className={cn(
+                  "inline-flex items-center gap-2 px-4 py-2 rounded-l-full bg-muted hover:bg-accent transition-colors",
+                  isSpeaking && "opacity-70"
+                )}
+              >
+                {isSpeaking ? (
+                  <Loader2 size={18} className="animate-spin" />
+                ) : (
+                  <Volume2 size={18} />
+                )}
+                <span className="text-sm font-medium">{isSpeaking ? 'Playing...' : 'Listen'}</span>
+              </button>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <button 
+                    className="inline-flex items-center gap-1 px-3 py-2 rounded-r-full bg-muted hover:bg-accent transition-colors border-l border-border"
+                    disabled={isSpeaking}
+                  >
+                    <span className="text-xs text-muted-foreground">{currentVoice.name}</span>
+                    <ChevronDown size={14} />
+                  </button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="center" className="max-h-64 overflow-y-auto">
+                  <DropdownMenuLabel>Female Voices</DropdownMenuLabel>
+                  {DEEPGRAM_VOICES.filter(v => v.gender === 'female').map(voice => (
+                    <DropdownMenuItem
+                      key={voice.id}
+                      onClick={() => handleVoiceChange(voice.id)}
+                      className={cn(selectedVoice === voice.id && "bg-accent")}
+                    >
+                      <span className="font-medium">{voice.name}</span>
+                      <span className="ml-2 text-xs text-muted-foreground">{voice.accent}</span>
+                    </DropdownMenuItem>
+                  ))}
+                  <DropdownMenuSeparator />
+                  <DropdownMenuLabel>Male Voices</DropdownMenuLabel>
+                  {DEEPGRAM_VOICES.filter(v => v.gender === 'male').map(voice => (
+                    <DropdownMenuItem
+                      key={voice.id}
+                      onClick={() => handleVoiceChange(voice.id)}
+                      className={cn(selectedVoice === voice.id && "bg-accent")}
+                    >
+                      <span className="font-medium">{voice.name}</span>
+                      <span className="ml-2 text-xs text-muted-foreground">{voice.accent}</span>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
             <p className="text-2xl font-medium text-foreground leading-relaxed">
               {selectedItem.English}
             </p>
