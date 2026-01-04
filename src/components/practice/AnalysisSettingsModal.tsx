@@ -7,10 +7,10 @@ import {
   saveAudioThresholds 
 } from '@/types/audioAnalysis';
 import { 
-  ScoringConfig, 
-  defaultScoringConfig, 
-  getScoringConfig, 
-  saveScoringConfig 
+  EmotionScoringConfig, 
+  defaultEmotionScoringConfig, 
+  getEmotionScoringConfig, 
+  saveEmotionScoringConfig 
 } from '@/types/scoringConfig';
 import { getAnalysisConfig, saveAnalysisConfig } from '@/config/analysisConfig';
 import { cn } from '@/lib/utils';
@@ -26,7 +26,7 @@ interface AnalysisSettingsModalProps {
 
 export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ isOpen, onClose }) => {
   const [thresholds, setThresholds] = useState<AudioMetricsThresholds>(defaultAudioThresholds);
-  const [scoring, setScoring] = useState<ScoringConfig>(defaultScoringConfig);
+  const [scoring, setScoring] = useState<EmotionScoringConfig>(defaultEmotionScoringConfig);
   const [masteryThreshold, setMasteryThreshold] = useState(80);
   const [activeTab, setActiveTab] = useState('thresholds');
 
@@ -35,21 +35,21 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
       const config = getAnalysisConfig();
       setThresholds(config.thresholds);
       setMasteryThreshold(config.masteryThreshold);
-      setScoring(getScoringConfig());
+      setScoring(getEmotionScoringConfig());
     }
   }, [isOpen]);
 
   const handleSave = () => {
     saveAudioThresholds(thresholds);
     saveAnalysisConfig({ masteryThreshold, thresholds });
-    saveScoringConfig(scoring);
+    saveEmotionScoringConfig(scoring);
     toast.success('Settings saved!');
     onClose();
   };
 
   const handleReset = () => {
     setThresholds(defaultAudioThresholds);
-    setScoring(defaultScoringConfig);
+    setScoring(defaultEmotionScoringConfig);
     setMasteryThreshold(80);
     toast.info('Reset to defaults (save to apply)');
   };
@@ -408,50 +408,39 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
               </Tabs>
             </TabsContent>
 
-            {/* Scoring Tab */}
+            {/* Scoring Tab - Simplified Emotion-based */}
             <TabsContent value="scoring" className="space-y-4">
               <p className="text-xs text-muted-foreground mb-4">
-                Cấu hình cách tính điểm cho từng chỉ số. Điểm = 0 nếu vượt ngưỡng.
+                Chỉ tính điểm Emotion (cảm xúc). Nếu đạt mục tiêu = 100% trọng số. Dưới ngưỡng = 0 điểm.
               </p>
 
               {/* Volume Scoring */}
               <div className="p-4 bg-muted rounded-xl space-y-3">
-                <h4 className="text-sm font-medium">🔊 Điểm âm lượng (trọng số: {scoring.volume.weight}%)</h4>
-                <p className="text-xs text-muted-foreground">Âm lượng lớn hơn = điểm cao hơn. Quá nhỏ hoặc quá lớn = 0 điểm.</p>
+                <h4 className="text-sm font-medium">🔊 Âm lượng (trọng số: {scoring.volume.weight}%)</h4>
+                <p className="text-xs text-muted-foreground">Âm lượng lớn = điểm cao. Dưới ngưỡng = 0.</p>
                 
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <Label className="text-xs">Mục tiêu (dB)</Label>
+                    <Label className="text-xs">Ngưỡng (dB) - dưới = 0 điểm</Label>
                     <Slider
-                      value={[scoring.volume.targetDb]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, volume: { ...prev.volume, targetDb: v } }))}
-                      min={-40}
-                      max={-10}
-                      step={1}
-                    />
-                    <span className="text-xs font-mono text-green-600">{scoring.volume.targetDb}</span>
-                  </div>
-                  <div className="space-y-1">
-                    <Label className="text-xs">Tối thiểu (dB)</Label>
-                    <Slider
-                      value={[scoring.volume.minDb]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, volume: { ...prev.volume, minDb: v } }))}
+                      value={[scoring.volume.threshold]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, volume: { ...prev.volume, threshold: v } }))}
                       min={-60}
                       max={-30}
                       step={1}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.volume.minDb}</span>
+                    <span className="text-xs font-mono text-red-600">{scoring.volume.threshold} dB</span>
                   </div>
                   <div className="space-y-1">
-                    <Label className="text-xs">Tối đa (dB)</Label>
+                    <Label className="text-xs">Mục tiêu (dB) - đạt = 100%</Label>
                     <Slider
-                      value={[scoring.volume.maxDb]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, volume: { ...prev.volume, maxDb: v } }))}
-                      min={-20}
-                      max={0}
+                      value={[scoring.volume.target]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, volume: { ...prev.volume, target: v } }))}
+                      min={-40}
+                      max={-10}
                       step={1}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.volume.maxDb}</span>
+                    <span className="text-xs font-mono text-green-600">{scoring.volume.target} dB</span>
                   </div>
                 </div>
 
@@ -469,42 +458,31 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
 
               {/* Speed Scoring */}
               <div className="p-4 bg-muted rounded-xl space-y-3">
-                <h4 className="text-sm font-medium">🎤 Điểm tốc độ (trọng số: {scoring.speechRate.weight}%)</h4>
-                <p className="text-xs text-muted-foreground">Nhanh hơn = điểm cao hơn. Quá chậm hoặc quá nhanh = 0 điểm.</p>
+                <h4 className="text-sm font-medium">🎤 Tốc độ nói (trọng số: {scoring.speechRate.weight}%)</h4>
+                <p className="text-xs text-muted-foreground">Nhanh hơn = điểm cao. Dưới ngưỡng = 0.</p>
                 
-                <div className="grid grid-cols-3 gap-2">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <Label className="text-xs">Mục tiêu (WPM)</Label>
+                    <Label className="text-xs">Ngưỡng (WPM) - dưới = 0 điểm</Label>
                     <Slider
-                      value={[scoring.speechRate.targetWpm]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, speechRate: { ...prev.speechRate, targetWpm: v } }))}
-                      min={100}
-                      max={180}
-                      step={5}
-                    />
-                    <span className="text-xs font-mono text-green-600">{scoring.speechRate.targetWpm}</span>
-                  </div>
-                  <div className="space-y-1">
-                    <Label className="text-xs">Tối thiểu (WPM)</Label>
-                    <Slider
-                      value={[scoring.speechRate.minWpm]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, speechRate: { ...prev.speechRate, minWpm: v } }))}
+                      value={[scoring.speechRate.threshold]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, speechRate: { ...prev.speechRate, threshold: v } }))}
                       min={50}
                       max={120}
                       step={5}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.speechRate.minWpm}</span>
+                    <span className="text-xs font-mono text-red-600">{scoring.speechRate.threshold} WPM</span>
                   </div>
                   <div className="space-y-1">
-                    <Label className="text-xs">Tối đa (WPM)</Label>
+                    <Label className="text-xs">Mục tiêu (WPM) - đạt = 100%</Label>
                     <Slider
-                      value={[scoring.speechRate.maxWpm]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, speechRate: { ...prev.speechRate, maxWpm: v } }))}
-                      min={150}
-                      max={250}
+                      value={[scoring.speechRate.target]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, speechRate: { ...prev.speechRate, target: v } }))}
+                      min={100}
+                      max={200}
                       step={5}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.speechRate.maxWpm}</span>
+                    <span className="text-xs font-mono text-green-600">{scoring.speechRate.target} WPM</span>
                   </div>
                 </div>
 
@@ -522,10 +500,10 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
 
               {/* Pause Scoring */}
               <div className="p-4 bg-muted rounded-xl space-y-3">
-                <h4 className="text-sm font-medium">⏸️ Điểm ngắt nghỉ (trọng số: {scoring.pauseDuration.weight}%)</h4>
-                <p className="text-xs text-muted-foreground">Ít ngắt nghỉ hơn = điểm cao hơn. Tổng thời gian ngắt quá dài = 0 điểm.</p>
+                <h4 className="text-sm font-medium">⏸️ Ngắt nghỉ (trọng số: {scoring.pauseDuration.weight}%)</h4>
+                <p className="text-xs text-muted-foreground">Ít ngắt nghỉ = điểm cao. Tổng ngắt quá dài = 0.</p>
                 
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1">
                     <Label className="text-xs">Tối đa mỗi lần (ms)</Label>
                     <Slider
@@ -535,18 +513,18 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
                       max={3000}
                       step={100}
                     />
-                    <span className="text-xs font-mono">{scoring.pauseDuration.maxAcceptableMs}</span>
+                    <span className="text-xs font-mono">{scoring.pauseDuration.maxAcceptableMs} ms</span>
                   </div>
                   <div className="space-y-1">
-                    <Label className="text-xs">Tổng tối đa (ms)</Label>
+                    <Label className="text-xs">Tổng tối đa (ms) - vượt = 0</Label>
                     <Slider
-                      value={[scoring.pauseDuration.maxTotalPauseMs]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, pauseDuration: { ...prev.pauseDuration, maxTotalPauseMs: v } }))}
+                      value={[scoring.pauseDuration.maxTotalMs]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, pauseDuration: { ...prev.pauseDuration, maxTotalMs: v } }))}
                       min={2000}
                       max={10000}
                       step={500}
                     />
-                    <span className="text-xs font-mono">{scoring.pauseDuration.maxTotalPauseMs}</span>
+                    <span className="text-xs font-mono text-red-600">{scoring.pauseDuration.maxTotalMs} ms</span>
                   </div>
                 </div>
 
@@ -564,31 +542,31 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
 
               {/* Latency Scoring */}
               <div className="p-4 bg-muted rounded-xl space-y-3">
-                <h4 className="text-sm font-medium">⏱️ Điểm độ trễ (trọng số: {scoring.responseLatency.weight}%)</h4>
-                <p className="text-xs text-muted-foreground">Phản hồi nhanh hơn = điểm cao hơn. Quá chậm = 0 điểm.</p>
+                <h4 className="text-sm font-medium">⏱️ Độ trễ phản hồi (trọng số: {scoring.responseLatency.weight}%)</h4>
+                <p className="text-xs text-muted-foreground">Phản hồi nhanh = điểm cao. Quá chậm = 0.</p>
                 
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-1">
-                    <Label className="text-xs">Mục tiêu (ms)</Label>
+                    <Label className="text-xs">Mục tiêu (ms) - đạt = 100%</Label>
                     <Slider
-                      value={[scoring.responseLatency.targetMs]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, responseLatency: { ...prev.responseLatency, targetMs: v } }))}
+                      value={[scoring.responseLatency.target]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, responseLatency: { ...prev.responseLatency, target: v } }))}
                       min={200}
                       max={1000}
                       step={50}
                     />
-                    <span className="text-xs font-mono text-green-600">{scoring.responseLatency.targetMs}</span>
+                    <span className="text-xs font-mono text-green-600">{scoring.responseLatency.target} ms</span>
                   </div>
                   <div className="space-y-1">
-                    <Label className="text-xs">Tối đa (ms)</Label>
+                    <Label className="text-xs">Ngưỡng (ms) - vượt = 0 điểm</Label>
                     <Slider
-                      value={[scoring.responseLatency.maxMs]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, responseLatency: { ...prev.responseLatency, maxMs: v } }))}
+                      value={[scoring.responseLatency.threshold]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, responseLatency: { ...prev.responseLatency, threshold: v } }))}
                       min={1500}
                       max={5000}
                       step={100}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.responseLatency.maxMs}</span>
+                    <span className="text-xs font-mono text-red-600">{scoring.responseLatency.threshold} ms</span>
                   </div>
                 </div>
 
@@ -606,22 +584,22 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
 
               {/* End Intensity Scoring */}
               <div className="p-4 bg-muted rounded-xl space-y-3">
-                <h4 className="text-sm font-medium">📈 Điểm cường độ cuối (trọng số: {scoring.endIntensity.weight}%)</h4>
+                <h4 className="text-sm font-medium">📈 Cường độ cuối bài (trọng số: {scoring.endIntensity.weight}%)</h4>
                 <p className="text-xs text-muted-foreground">
-                  Cả âm lượng và tốc độ tăng ở cuối = điểm tối đa. Chỉ một tăng = giảm điểm.
+                  Cả âm lượng VÀ tốc độ tăng ở cuối = điểm tối đa.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-2">
                   <div className="space-y-1">
-                    <Label className="text-xs">Cả hai tăng</Label>
+                    <Label className="text-xs">🎯 Cả hai tăng</Label>
                     <Slider
-                      value={[scoring.endIntensity.bothIncreasingBonus]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, endIntensity: { ...prev.endIntensity, bothIncreasingBonus: v } }))}
+                      value={[scoring.endIntensity.bothIncreasingScore]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, endIntensity: { ...prev.endIntensity, bothIncreasingScore: v } }))}
                       min={80}
                       max={100}
                       step={5}
                     />
-                    <span className="text-xs font-mono text-green-600">{scoring.endIntensity.bothIncreasingBonus}</span>
+                    <span className="text-xs font-mono text-green-600">{scoring.endIntensity.bothIncreasingScore}%</span>
                   </div>
                   <div className="space-y-1">
                     <Label className="text-xs">Chỉ một tăng</Label>
@@ -632,7 +610,7 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
                       max={80}
                       step={5}
                     />
-                    <span className="text-xs font-mono text-yellow-600">{scoring.endIntensity.oneIncreasingScore}</span>
+                    <span className="text-xs font-mono text-yellow-600">{scoring.endIntensity.oneIncreasingScore}%</span>
                   </div>
                   <div className="space-y-1">
                     <Label className="text-xs">Ổn định</Label>
@@ -643,18 +621,18 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
                       max={70}
                       step={5}
                     />
-                    <span className="text-xs font-mono">{scoring.endIntensity.stableScore}</span>
+                    <span className="text-xs font-mono">{scoring.endIntensity.stableScore}%</span>
                   </div>
                   <div className="space-y-1">
                     <Label className="text-xs">Giảm dần</Label>
                     <Slider
-                      value={[scoring.endIntensity.decreasingPenalty]}
-                      onValueChange={([v]) => setScoring(prev => ({ ...prev, endIntensity: { ...prev.endIntensity, decreasingPenalty: v } }))}
+                      value={[scoring.endIntensity.decreasingScore]}
+                      onValueChange={([v]) => setScoring(prev => ({ ...prev, endIntensity: { ...prev.endIntensity, decreasingScore: v } }))}
                       min={0}
                       max={40}
                       step={5}
                     />
-                    <span className="text-xs font-mono text-red-600">{scoring.endIntensity.decreasingPenalty}</span>
+                    <span className="text-xs font-mono text-red-600">{scoring.endIntensity.decreasingScore}%</span>
                   </div>
                 </div>
 

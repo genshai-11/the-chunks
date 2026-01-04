@@ -86,6 +86,35 @@ interface PauseSegment {
   isExcessive: boolean;
 }
 
+// Simplified Emotion Scoring Config - matches frontend
+interface EmotionScoringConfig {
+  volume: { weight: number; threshold: number; target: number };
+  speechRate: { weight: number; threshold: number; target: number };
+  pauseDuration: { weight: number; maxAcceptableMs: number; maxTotalMs: number };
+  responseLatency: { weight: number; target: number; threshold: number };
+  endIntensity: {
+    weight: number;
+    bothIncreasingScore: number;
+    oneIncreasingScore: number;
+    stableScore: number;
+    decreasingScore: number;
+  };
+}
+
+const defaultScoringConfig: EmotionScoringConfig = {
+  volume: { weight: 20, threshold: -45, target: -20 },
+  speechRate: { weight: 25, threshold: 80, target: 150 },
+  pauseDuration: { weight: 15, maxAcceptableMs: 1500, maxTotalMs: 5000 },
+  responseLatency: { weight: 15, target: 500, threshold: 3000 },
+  endIntensity: {
+    weight: 25,
+    bothIncreasingScore: 100,
+    oneIncreasingScore: 70,
+    stableScore: 50,
+    decreasingScore: 20,
+  },
+};
+
 const defaultThresholds: AudioMetricsThresholds = {
   volume: {
     quiet: { min: -60, max: -40 },
@@ -648,6 +677,108 @@ function calculateExpressionScore(words: DeepgramWord[]): { score: number; note:
   return { score, note };
 }
 
+// Linear score: below threshold = 0, at/above target = 100
+function calculateLinearScore(value: number, threshold: number, target: number): number {
+  if (value < threshold) return 0;
+  if (value >= target) return 100;
+  return Math.round(((value - threshold) / (target - threshold)) * 100);
+}
+
+// Inverse linear score: at/below target = 100, above threshold = 0
+function calculateInverseLinearScore(value: number, target: number, threshold: number): number {
+  if (value <= target) return 100;
+  if (value >= threshold) return 0;
+  return Math.round(((threshold - value) / (threshold - target)) * 100);
+}
+
+// Calculate weighted emotion score
+function calculateWeightedEmotionScore(
+  scoringConfig: EmotionScoringConfig,
+  volumeDb: number,
+  speechRateWpm: number,
+  totalPauseMs: number,
+  longestPauseMs: number,
+  latencyMs: number,
+  volumeIncreasing: boolean,
+  speedIncreasing: boolean,
+  volumeDecreasing: boolean,
+  speedDecreasing: boolean
+): {
+  total: number;
+  breakdown: {
+    volume: { raw: number; weighted: number };
+    speechRate: { raw: number; weighted: number };
+    pause: { raw: number; weighted: number };
+    latency: { raw: number; weighted: number };
+    endIntensity: { raw: number; weighted: number; volumeIncreasing: boolean; speedIncreasing: boolean };
+  };
+} {
+  const config = scoringConfig;
+  
+  // Volume score (louder = better)
+  const volumeScore = calculateLinearScore(volumeDb, config.volume.threshold, config.volume.target);
+  
+  // Speech rate score (faster = better)
+  const speechRateScore = calculateLinearScore(speechRateWpm, config.speechRate.threshold, config.speechRate.target);
+  
+  // Pause score (less pause = better)
+  let pauseScore = 100;
+  if (totalPauseMs > config.pauseDuration.maxTotalMs) {
+    pauseScore = 0;
+  } else if (longestPauseMs > config.pauseDuration.maxAcceptableMs) {
+    pauseScore = Math.max(0, 100 - Math.round((longestPauseMs - config.pauseDuration.maxAcceptableMs) / 50));
+  } else {
+    pauseScore = Math.round(100 - (totalPauseMs / config.pauseDuration.maxTotalMs) * 100);
+  }
+  
+  // Latency score (faster response = better)
+  const latencyScore = calculateInverseLinearScore(latencyMs, config.responseLatency.target, config.responseLatency.threshold);
+  
+  // End intensity score (both increasing = best)
+  let endIntensityScore: number;
+  if (volumeIncreasing && speedIncreasing) {
+    endIntensityScore = config.endIntensity.bothIncreasingScore;
+  } else if (volumeIncreasing || speedIncreasing) {
+    endIntensityScore = config.endIntensity.oneIncreasingScore;
+  } else if (volumeDecreasing || speedDecreasing) {
+    endIntensityScore = config.endIntensity.decreasingScore;
+  } else {
+    endIntensityScore = config.endIntensity.stableScore;
+  }
+  
+  // Calculate weighted scores
+  const totalWeight = config.volume.weight + config.speechRate.weight + config.pauseDuration.weight + config.responseLatency.weight + config.endIntensity.weight;
+  
+  const breakdown = {
+    volume: {
+      raw: volumeScore,
+      weighted: Math.round((volumeScore * config.volume.weight) / totalWeight),
+    },
+    speechRate: {
+      raw: speechRateScore,
+      weighted: Math.round((speechRateScore * config.speechRate.weight) / totalWeight),
+    },
+    pause: {
+      raw: pauseScore,
+      weighted: Math.round((pauseScore * config.pauseDuration.weight) / totalWeight),
+    },
+    latency: {
+      raw: latencyScore,
+      weighted: Math.round((latencyScore * config.responseLatency.weight) / totalWeight),
+    },
+    endIntensity: {
+      raw: endIntensityScore,
+      weighted: Math.round((endIntensityScore * config.endIntensity.weight) / totalWeight),
+      volumeIncreasing,
+      speedIncreasing,
+    },
+  };
+  
+  const total = breakdown.volume.weighted + breakdown.speechRate.weighted + breakdown.pause.weighted + breakdown.latency.weighted + breakdown.endIntensity.weighted;
+  
+  return { total, breakdown };
+}
+
 // ============ MAIN HANDLER ============
 
 serve(async (req) => {
@@ -660,6 +791,7 @@ serve(async (req) => {
     const audioFile = formData.get('audio') as File;
     const targetText = formData.get('targetText') as string;
     const thresholdsJson = formData.get('thresholds') as string;
+    const scoringConfigJson = formData.get('scoringConfig') as string;
     
     if (!audioFile || !targetText) {
       throw new Error('Audio file and target text are required');
@@ -668,9 +800,14 @@ serve(async (req) => {
     const thresholds: AudioMetricsThresholds = thresholdsJson 
       ? { ...defaultThresholds, ...JSON.parse(thresholdsJson) }
       : defaultThresholds;
+    
+    const scoringConfig: EmotionScoringConfig = scoringConfigJson
+      ? { ...defaultScoringConfig, ...JSON.parse(scoringConfigJson) }
+      : defaultScoringConfig;
 
     console.log('Analyzing speech for target:', targetText);
     console.log('Audio file size:', audioFile.size, 'bytes');
+    console.log('Scoring config:', JSON.stringify(scoringConfig));
 
     const DEEPGRAM_API_KEY = Deno.env.get("DEEPGRAM_API_KEY");
     if (!DEEPGRAM_API_KEY) {
@@ -723,6 +860,7 @@ serve(async (req) => {
         fluency: 0,
         emotion: 0,
         overallScore: 0,
+        emotionBreakdown: null,
         volumeAnalysis: { segments: [], overallAvgDb: -60, overallMinDb: -60, overallMaxDb: -60, score: 0, note: "No audio detected" },
         speechRateAnalysis: { segments: [], overallWpm: 0, overallSyllablesPerSecond: 0, speedVariation: 0, score: 0, note: "No speech detected" },
         responseLatencyAnalysis: { delayMs: audioDurationMs, isAcceptable: false, score: 0, note: "No speech detected" },
@@ -730,14 +868,16 @@ serve(async (req) => {
         endIntensityAnalysis: { 
           finalSegmentDb: 0, previousSegmentDb: 0, overallAvgDb: 0, stdDevFromMean: 0,
           finalSegmentWpm: 0, previousSegmentWpm: 0, overallAvgWpm: 0,
-          isAbnormalVolume: false, isAbnormalSpeed: false, score: 0, note: "No speech detected"
+          isAbnormalVolume: false, isAbnormalSpeed: false, score: 0, note: "No speech detected",
+          volumeIncreasing: false, speedIncreasing: false
         },
         transcription: "[silence]",
         speechDetected: false,
         audioDurationMs,
         wordCount: 0,
         feedback: ["No speech was detected. Please speak clearly into the microphone."],
-        thresholds
+        thresholds,
+        scoringConfig
       }), {
         headers: { ...corsHeaders, "Content-Type": "application/json" },
       });
@@ -757,70 +897,99 @@ serve(async (req) => {
     );
     const expressionResult = calculateExpressionScore(words);
 
-    // Calculate composite scores
-    const fluencyScore = Math.round(
-      (speechRateAnalysis.score * 0.3) + 
-      (pauseDurationAnalysis.score * 0.3) + 
-      (responseLatencyAnalysis.score * 0.25) +
-      (endIntensityAnalysis.score * 0.15)
-    );
+    // Determine if volume/speed are increasing or decreasing at end
+    const volumeIncreasing = endIntensityAnalysis.finalSegmentDb > endIntensityAnalysis.previousSegmentDb;
+    const speedIncreasing = endIntensityAnalysis.finalSegmentWpm > endIntensityAnalysis.previousSegmentWpm;
+    const volumeDecreasing = endIntensityAnalysis.finalSegmentDb < endIntensityAnalysis.previousSegmentDb - 3;
+    const speedDecreasing = endIntensityAnalysis.finalSegmentWpm < endIntensityAnalysis.previousSegmentWpm - 10;
+
+    // Calculate EMOTION score using weighted config (this is the main score now)
+    const longestPauseMs = pauseDurationAnalysis.pauses.length > 0 
+      ? Math.max(...pauseDurationAnalysis.pauses.map(p => p.durationMs))
+      : 0;
     
-    const overallScore = Math.round(
-      (accuracyResult.score * 0.4) + 
-      (fluencyScore * 0.35) + 
-      (expressionResult.score * 0.25)
+    const emotionScoreResult = calculateWeightedEmotionScore(
+      scoringConfig,
+      volumeAnalysis.overallAvgDb,
+      speechRateAnalysis.overallWpm,
+      pauseDurationAnalysis.totalPauseTime,
+      longestPauseMs,
+      responseLatencyAnalysis.delayMs,
+      volumeIncreasing,
+      speedIncreasing,
+      volumeDecreasing,
+      speedDecreasing
     );
 
-    // Generate feedback
+    // The overall score is now ONLY the emotion score (weighted)
+    const overallScore = emotionScoreResult.total;
+
+    // Generate feedback based on emotion breakdown
     const feedback: string[] = [];
+    const breakdown = emotionScoreResult.breakdown;
     
-    if (accuracyResult.missedWords.length > 0) {
-      feedback.push(`Missed words: "${accuracyResult.missedWords.slice(0, 3).join('", "')}"`);
+    if (breakdown.volume.raw < 60) {
+      feedback.push(`Âm lượng thấp (${Math.round(volumeAnalysis.overallAvgDb)} dB). Hãy nói to hơn.`);
     }
     
-    if (responseLatencyAnalysis.score < 70) {
-      feedback.push(responseLatencyAnalysis.note);
+    if (breakdown.speechRate.raw < 60) {
+      feedback.push(`Tốc độ chậm (${Math.round(speechRateAnalysis.overallWpm)} WPM). Hãy nói nhanh hơn.`);
     }
     
-    if (pauseDurationAnalysis.score < 70) {
-      feedback.push(pauseDurationAnalysis.note);
+    if (breakdown.pause.raw < 60) {
+      feedback.push(`Ngắt nghỉ quá nhiều. Hãy nói liền mạch hơn.`);
     }
     
-    if (speechRateAnalysis.score < 70) {
-      feedback.push(speechRateAnalysis.note);
+    if (breakdown.latency.raw < 60) {
+      feedback.push(`Phản hồi chậm (${responseLatencyAnalysis.delayMs}ms). Hãy bắt đầu nhanh hơn.`);
     }
     
-    if (volumeAnalysis.score < 70) {
-      feedback.push(volumeAnalysis.note);
-    }
-    
-    if (endIntensityAnalysis.score < 80) {
-      feedback.push(endIntensityAnalysis.note);
+    // End intensity feedback with tags
+    if (breakdown.endIntensity.volumeIncreasing && breakdown.endIntensity.speedIncreasing) {
+      feedback.push(`✨ Xuất sắc! Âm lượng VÀ tốc độ tăng dần ở cuối.`);
+    } else if (breakdown.endIntensity.volumeIncreasing) {
+      feedback.push(`Âm lượng tăng ở cuối, nhưng tốc độ không tăng.`);
+    } else if (breakdown.endIntensity.speedIncreasing) {
+      feedback.push(`Tốc độ tăng ở cuối, nhưng âm lượng không tăng.`);
+    } else if (volumeDecreasing || speedDecreasing) {
+      feedback.push(`Cường độ giảm dần ở cuối. Hãy giữ năng lượng!`);
     }
     
     if (feedback.length === 0) {
-      feedback.push("Excellent performance! Great pronunciation, fluency, and expression.");
+      feedback.push("Xuất sắc! Thể hiện cảm xúc tốt.");
     }
+
+    // Add end intensity flags to analysis
+    const enhancedEndIntensityAnalysis = {
+      ...endIntensityAnalysis,
+      volumeIncreasing,
+      speedIncreasing,
+      volumeDecreasing,
+      speedDecreasing,
+    };
 
     const result = {
       accuracy: accuracyResult.score,
-      fluency: fluencyScore,
-      emotion: expressionResult.score,
-      overallScore,
+      fluency: expressionResult.score, // Keep for compatibility
+      emotion: overallScore, // Now the main weighted score
+      overallScore, // Same as emotion - weighted emotion score
+      emotionBreakdown: emotionScoreResult.breakdown,
       volumeAnalysis,
       speechRateAnalysis,
       responseLatencyAnalysis,
       pauseDurationAnalysis,
-      endIntensityAnalysis,
+      endIntensityAnalysis: enhancedEndIntensityAnalysis,
       transcription: transcript,
       speechDetected: true,
       audioDurationMs,
       wordCount: words.length,
       feedback,
-      thresholds
+      thresholds,
+      scoringConfig
     };
 
-    console.log("Analysis complete. Overall score:", overallScore);
+    console.log("Analysis complete. Emotion score:", overallScore);
+    console.log("Breakdown:", JSON.stringify(emotionScoreResult.breakdown));
 
     return new Response(JSON.stringify(result), {
       headers: { ...corsHeaders, "Content-Type": "application/json" },
