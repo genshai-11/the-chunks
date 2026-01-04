@@ -504,15 +504,94 @@ export const PracticeModal: React.FC = () => {
                 </div>
               </div>
 
-              {/* Quick Stats */}
-              <div className="grid grid-cols-4 gap-2 text-xs">
+              {/* Speech Level Indicators */}
+              <div className="grid grid-cols-2 gap-3">
+                {/* Speed Level */}
+                <div className="bg-muted rounded-lg p-3">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs text-muted-foreground">Speed</span>
+                    <span className={cn(
+                      "px-2 py-0.5 rounded-full text-xs font-medium",
+                      analysisResult.speechRateAnalysis.overallWpm < 100 
+                        ? "bg-blue-500/10 text-blue-600" 
+                        : analysisResult.speechRateAnalysis.overallWpm > 160 
+                          ? "bg-orange-500/10 text-orange-600"
+                          : "bg-green-500/10 text-green-600"
+                    )}>
+                      {analysisResult.speechRateAnalysis.overallWpm < 100 
+                        ? "Slow" 
+                        : analysisResult.speechRateAnalysis.overallWpm > 160 
+                          ? "Fast" 
+                          : "Normal"}
+                    </span>
+                  </div>
+                  <div className="text-lg font-bold">{Math.round(analysisResult.speechRateAnalysis.overallWpm)} <span className="text-xs font-normal text-muted-foreground">WPM</span></div>
+                  <div className="mt-1 h-1.5 bg-background rounded-full overflow-hidden">
+                    <div 
+                      className={cn(
+                        "h-full rounded-full transition-all",
+                        analysisResult.speechRateAnalysis.overallWpm < 100 
+                          ? "bg-blue-500" 
+                          : analysisResult.speechRateAnalysis.overallWpm > 160 
+                            ? "bg-orange-500"
+                            : "bg-green-500"
+                      )}
+                      style={{ width: `${Math.min(100, (analysisResult.speechRateAnalysis.overallWpm / 200) * 100)}%` }}
+                    />
+                  </div>
+                  <div className="flex justify-between text-[10px] text-muted-foreground mt-1">
+                    <span>Slow</span>
+                    <span>Normal</span>
+                    <span>Fast</span>
+                  </div>
+                </div>
+
+                {/* Volume Level */}
+                <div className="bg-muted rounded-lg p-3">
+                  <div className="flex items-center justify-between mb-2">
+                    <span className="text-xs text-muted-foreground">Volume</span>
+                    <span className={cn(
+                      "px-2 py-0.5 rounded-full text-xs font-medium",
+                      analysisResult.volumeAnalysis.overallAvgDb < -40 
+                        ? "bg-blue-500/10 text-blue-600" 
+                        : analysisResult.volumeAnalysis.overallAvgDb > -20 
+                          ? "bg-orange-500/10 text-orange-600"
+                          : "bg-green-500/10 text-green-600"
+                    )}>
+                      {analysisResult.volumeAnalysis.overallAvgDb < -40 
+                        ? "Quiet" 
+                        : analysisResult.volumeAnalysis.overallAvgDb > -20 
+                          ? "Loud" 
+                          : "Normal"}
+                    </span>
+                  </div>
+                  <div className="text-lg font-bold">{Math.round(analysisResult.volumeAnalysis.overallAvgDb)} <span className="text-xs font-normal text-muted-foreground">dB</span></div>
+                  <div className="mt-1 h-1.5 bg-background rounded-full overflow-hidden">
+                    <div 
+                      className={cn(
+                        "h-full rounded-full transition-all",
+                        analysisResult.volumeAnalysis.overallAvgDb < -40 
+                          ? "bg-blue-500" 
+                          : analysisResult.volumeAnalysis.overallAvgDb > -20 
+                            ? "bg-orange-500"
+                            : "bg-green-500"
+                      )}
+                      style={{ width: `${Math.min(100, ((analysisResult.volumeAnalysis.overallAvgDb + 60) / 60) * 100)}%` }}
+                    />
+                  </div>
+                  <div className="flex justify-between text-[10px] text-muted-foreground mt-1">
+                    <span>Quiet</span>
+                    <span>Normal</span>
+                    <span>Loud</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* Additional Quick Stats */}
+              <div className="grid grid-cols-3 gap-2 text-xs">
                 <div className="bg-muted rounded-lg p-2 text-center">
                   <div className="font-bold text-foreground">{analysisResult.responseLatencyAnalysis.delayMs}ms</div>
-                  <div className="text-muted-foreground">Start</div>
-                </div>
-                <div className="bg-muted rounded-lg p-2 text-center">
-                  <div className="font-bold text-foreground">{Math.round(analysisResult.speechRateAnalysis.overallWpm)}</div>
-                  <div className="text-muted-foreground">WPM</div>
+                  <div className="text-muted-foreground">Response Time</div>
                 </div>
                 <div className="bg-muted rounded-lg p-2 text-center">
                   <div className="font-bold text-foreground">{analysisResult.pauseDurationAnalysis.pauses.length}</div>
