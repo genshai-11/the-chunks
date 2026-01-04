@@ -1,12 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, AlertTriangle, Clock, ChevronDown } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, ChevronDown, BarChart3 } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
+import { AudioMetricsCharts } from './AudioMetricsCharts';
 import { cn } from '@/lib/utils';
 import { curriculum } from '@/data/curriculum';
 import { getAnalysisConfig } from '@/config/analysisConfig';
-import { AnalysisResult } from '@/types/curriculum';
+import { ComprehensiveAudioAnalysis } from '@/types/audioAnalysis';
 import { supabase } from '@/integrations/supabase/client';
 import { toast } from 'sonner';
 import {
@@ -52,8 +53,9 @@ export const PracticeModal: React.FC = () => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [recordingTime, setRecordingTime] = useState(0);
   const [analyzerData, setAnalyzerData] = useState<Uint8Array | null>(null);
-  const [analysisResult, setAnalysisResult] = useState<AnalysisResult | null>(null);
+  const [analysisResult, setAnalysisResult] = useState<ComprehensiveAudioAnalysis | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
+  const [showDetailedCharts, setShowDetailedCharts] = useState(false);
   const [selectedVoice, setSelectedVoice] = useState<string>(getStoredVoice);
 
   const handleVoiceChange = (voiceId: string) => {
@@ -160,6 +162,7 @@ export const PracticeModal: React.FC = () => {
     setIsPlaying(false);
     setRecordingTime(0);
     setAnalysisResult(null);
+    setShowDetailedCharts(false);
   };
 
   const getWeekId = () => {
@@ -179,11 +182,11 @@ export const PracticeModal: React.FC = () => {
     try {
       const config = getAnalysisConfig();
       
-      // Create form data with audio file
+      // Create form data with audio file and thresholds
       const formData = new FormData();
       formData.append('audio', audioBlob, 'recording.webm');
       formData.append('targetText', selectedItem.English);
-      formData.append('config', JSON.stringify(config));
+      formData.append('thresholds', JSON.stringify(config.thresholds));
 
       // Call the edge function
       const response = await fetch(
@@ -207,7 +210,7 @@ export const PracticeModal: React.FC = () => {
         throw new Error(error.error || 'Analysis failed');
       }
 
-      const result: AnalysisResult = await response.json();
+      const result: ComprehensiveAudioAnalysis = await response.json();
       setAnalysisResult(result);
       
       // Record the practice session
@@ -497,45 +500,29 @@ export const PracticeModal: React.FC = () => {
                 </div>
                 <div className="bg-muted rounded-lg p-3 text-center">
                   <div className="text-lg font-bold text-primary">{analysisResult.emotion}</div>
-                  <div className="text-xs text-muted-foreground">Emotion</div>
+                  <div className="text-xs text-muted-foreground">Expression</div>
                 </div>
               </div>
 
-              {/* Pause Analysis */}
-              {analysisResult.pauseAnalysis && (
-                <div className={cn(
-                  "rounded-lg p-3",
-                  analysisResult.pauseAnalysis.hasProblem 
-                    ? "bg-amber-500/10 border border-amber-500/20" 
-                    : "bg-muted"
-                )}>
-                  <div className="flex items-center gap-2 mb-2">
-                    {analysisResult.pauseAnalysis.hasProblem ? (
-                      <AlertTriangle size={14} className="text-amber-600" />
-                    ) : (
-                      <Clock size={14} className="text-muted-foreground" />
-                    )}
-                    <span className="text-sm font-medium">Timing Analysis</span>
-                  </div>
-                  <div className="grid grid-cols-3 gap-2 text-xs">
-                    <div>
-                      <span className="text-muted-foreground">Start delay: </span>
-                      <span className="font-medium">{analysisResult.pauseAnalysis.startDelayMs}ms</span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Longest pause: </span>
-                      <span className={cn(
-                        "font-medium",
-                        analysisResult.pauseAnalysis.hasProblem && "text-amber-600"
-                      )}>{analysisResult.pauseAnalysis.longestPauseMs}ms</span>
-                    </div>
-                    <div>
-                      <span className="text-muted-foreground">Pauses: </span>
-                      <span className="font-medium">{analysisResult.pauseAnalysis.pauseCount}</span>
-                    </div>
-                  </div>
+              {/* Quick Stats */}
+              <div className="grid grid-cols-4 gap-2 text-xs">
+                <div className="bg-muted rounded-lg p-2 text-center">
+                  <div className="font-bold text-foreground">{analysisResult.responseLatencyAnalysis.delayMs}ms</div>
+                  <div className="text-muted-foreground">Start</div>
                 </div>
-              )}
+                <div className="bg-muted rounded-lg p-2 text-center">
+                  <div className="font-bold text-foreground">{Math.round(analysisResult.speechRateAnalysis.overallWpm)}</div>
+                  <div className="text-muted-foreground">WPM</div>
+                </div>
+                <div className="bg-muted rounded-lg p-2 text-center">
+                  <div className="font-bold text-foreground">{analysisResult.pauseDurationAnalysis.pauses.length}</div>
+                  <div className="text-muted-foreground">Pauses</div>
+                </div>
+                <div className="bg-muted rounded-lg p-2 text-center">
+                  <div className="font-bold text-foreground">{analysisResult.wordCount}</div>
+                  <div className="text-muted-foreground">Words</div>
+                </div>
+              </div>
 
               {/* Transcription */}
               {analysisResult.transcription && (
@@ -560,6 +547,22 @@ export const PracticeModal: React.FC = () => {
                 </div>
               )}
 
+              {/* Show Detailed Charts Toggle */}
+              <button
+                onClick={() => setShowDetailedCharts(!showDetailedCharts)}
+                className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-muted hover:bg-accent transition-colors text-sm font-medium"
+              >
+                <BarChart3 size={16} />
+                {showDetailedCharts ? 'Hide' : 'Show'} Detailed Charts
+              </button>
+
+              {/* Detailed Audio Metrics Charts */}
+              {showDetailedCharts && (
+                <div className="pt-2">
+                  <AudioMetricsCharts analysis={analysisResult} />
+                </div>
+              )}
+
               {/* Previous stats */}
               {existingProgress && (
                 <p className="text-xs text-muted-foreground text-center">
@@ -580,14 +583,14 @@ export const PracticeModal: React.FC = () => {
                 {isAnalyzing ? (
                   <span className="flex items-center gap-2">
                     <Loader2 size={18} className="animate-spin" />
-                    Analyzing with AI...
+                    Analyzing...
                   </span>
                 ) : (
                   "Analyze Speech"
                 )}
               </button>
               <p className="text-xs text-muted-foreground mt-2">
-                AI will evaluate accuracy, fluency & emotion
+                Volume, speed, timing & expression
               </p>
             </div>
           )}

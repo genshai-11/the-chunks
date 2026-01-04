@@ -39,32 +39,20 @@ export interface PracticeItem extends LessonItem {
   id: string;
 }
 
-export interface AnalysisResult {
-  accuracy: number;
-  fluency: number;
-  emotion: number;
-  overallScore: number;
-  feedback: string[];
-  transcription?: string;
-  pauseAnalysis?: {
-    startDelayMs: number;
-    longestPauseMs: number;
-    pauseCount: number;
-    hasProblem: boolean;
-  };
-  detailedBreakdown?: {
-    pronunciation: string;
-    rhythm: string;
-    intonation: string;
-  };
-  config?: {
-    pauseThresholdMs: number;
-    accuracyWeight: number;
-    fluencyWeight: number;
-    emotionWeight: number;
-    strictness: string;
-  };
-}
+// Re-export comprehensive audio analysis types
+export type { 
+  ComprehensiveAudioAnalysis,
+  VolumeAnalysis,
+  SpeechRateAnalysis,
+  ResponseLatencyAnalysis,
+  PauseDurationAnalysis,
+  EndIntensityAnalysis,
+  AudioMetricsThresholds
+} from './audioAnalysis';
+
+// Legacy AnalysisResult type - now uses ComprehensiveAudioAnalysis
+import type { ComprehensiveAudioAnalysis } from './audioAnalysis';
+export type AnalysisResult = ComprehensiveAudioAnalysis;
 
 export interface UserProgress {
   lessonId: string;
