@@ -3,6 +3,7 @@ import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, 
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
+import { PlaybackWaveform } from './PlaybackWaveform';
 import { AudioMetricsCharts } from './AudioMetricsCharts';
 import { AnalysisSettingsModal } from './AnalysisSettingsModal';
 import { cn } from '@/lib/utils';
@@ -399,10 +400,10 @@ export const PracticeModal: React.FC = () => {
             {isRecording && analyzerData ? (
               <AudioVisualizer data={analyzerData} />
             ) : audioUrl ? (
-              <div className="flex items-center gap-4">
-                <span className="text-sm text-muted-foreground">Recording ready</span>
-                <span className="text-lg font-mono text-foreground">{formatTime(recordingTime)}</span>
-              </div>
+              <PlaybackWaveform 
+                audioUrl={audioUrl} 
+                isPlaying={isPlaying} 
+              />
             ) : (
               <div className="flex items-center gap-1">
                 {[...Array(8)].map((_, i) => (
