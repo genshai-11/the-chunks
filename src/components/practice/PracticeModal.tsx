@@ -185,11 +185,16 @@ export const PracticeModal: React.FC = () => {
     try {
       const config = getAnalysisConfig();
       
-      // Create form data with audio file and thresholds
+      // Get emotion scoring config
+      const { getEmotionScoringConfig } = await import('@/types/scoringConfig');
+      const scoringConfig = getEmotionScoringConfig();
+      
+      // Create form data with audio file, thresholds, and scoring config
       const formData = new FormData();
       formData.append('audio', audioBlob, 'recording.webm');
       formData.append('targetText', selectedItem.English);
       formData.append('thresholds', JSON.stringify(config.thresholds));
+      formData.append('scoringConfig', JSON.stringify(scoringConfig));
 
       // Call the edge function
       const response = await fetch(

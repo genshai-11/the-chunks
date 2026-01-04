@@ -1,102 +1,84 @@
-// Scoring Configuration Types - Configurable scoring rules for audio analysis
+// Scoring Configuration Types - Simplified emotion-based scoring
+// Only uses: weight (%), threshold (min), target
+// Score = 0 if below threshold, linear scale from threshold to target, 100 if at/above target
 
-export interface MetricScoringConfig {
-  // Weight for this metric in overall score (0-100)
-  weight: number;
-  // Whether higher values = higher score (true) or lower values = higher score (false)
-  higherIsBetter: boolean;
-  // Zero score threshold - values beyond this get 0
-  zeroThreshold?: number;
-  // Perfect score threshold - values beyond this get max score  
-  perfectThreshold?: number;
-}
-
-export interface ScoringConfig {
+export interface EmotionScoringConfig {
   volume: {
-    // Score based on how loud (closer to target = better, too quiet = 0)
-    targetDb: number;
-    minDb: number; // Below this = 0 score
-    maxDb: number; // Above this = 0 score (too loud)
-    weight: number;
+    weight: number; // Weight %
+    threshold: number; // Below this = 0 score (dB)
+    target: number; // At/above this = 100% of weight (dB)
   };
   speechRate: {
-    // Faster = higher score, but too fast = 0
-    targetWpm: number;
-    minWpm: number; // Below this = 0 score (too slow)
-    maxWpm: number; // Above this = 0 score (too fast)
-    weight: number;
+    weight: number; // Weight %
+    threshold: number; // Below this = 0 score (WPM)
+    target: number; // At/above this = 100% of weight (WPM)
   };
   pauseDuration: {
-    // Fewer pauses and shorter = better
-    maxAcceptableMs: number; // Above this per pause = penalty
-    maxTotalPauseMs: number; // Total pause time above this = 0
-    weight: number;
+    weight: number; // Weight %
+    maxAcceptableMs: number; // Single pause exceeds this = penalty
+    maxTotalMs: number; // Total pause exceeds this = 0 score
   };
   responseLatency: {
-    // Faster response = higher score
-    targetMs: number; // This or faster = perfect
-    maxMs: number; // Above this = 0
-    weight: number;
+    weight: number; // Weight %
+    target: number; // At/below this = 100% (ms)
+    threshold: number; // Above this = 0 score (ms)
   };
   endIntensity: {
-    // Both increasing at end = perfect score
-    bothIncreasingBonus: number; // Bonus when both volume and speed increase
-    oneIncreasingScore: number; // Score when only one increases
-    stableScore: number; // Score when stable
-    decreasingPenalty: number; // Penalty when decreasing
-    weight: number;
+    weight: number; // Weight %
+    bothIncreasingScore: number; // Both volume & speed increasing = this score
+    oneIncreasingScore: number; // Only one increasing = this score
+    stableScore: number; // Neither changing = this score
+    decreasingScore: number; // Decreasing = this score
   };
 }
 
-export const defaultScoringConfig: ScoringConfig = {
+export const defaultEmotionScoringConfig: EmotionScoringConfig = {
   volume: {
-    targetDb: -25, // Target volume
-    minDb: -45, // Too quiet = 0
-    maxDb: -10, // Too loud = 0
     weight: 20,
+    threshold: -45, // Below -45 dB = 0
+    target: -20, // At -20 dB or louder = 100%
   },
   speechRate: {
-    targetWpm: 150, // Target speed
-    minWpm: 80, // Too slow = 0
-    maxWpm: 200, // Too fast = 0
     weight: 25,
+    threshold: 80, // Below 80 WPM = 0
+    target: 150, // At 150 WPM or faster = 100%
   },
   pauseDuration: {
-    maxAcceptableMs: 1500, // Max acceptable pause
-    maxTotalPauseMs: 5000, // Total pause above this = 0
     weight: 15,
+    maxAcceptableMs: 1500, // Single pause > 1.5s = penalty
+    maxTotalMs: 5000, // Total pause > 5s = 0
   },
   responseLatency: {
-    targetMs: 500, // Perfect response time
-    maxMs: 3000, // Too slow = 0
     weight: 15,
+    target: 500, // <= 500ms = 100%
+    threshold: 3000, // > 3000ms = 0
   },
   endIntensity: {
-    bothIncreasingBonus: 100, // Perfect when both increase
-    oneIncreasingScore: 70, // Good when one increases
-    stableScore: 50, // Okay when stable
-    decreasingPenalty: 20, // Low when decreasing
     weight: 25,
+    bothIncreasingScore: 100, // Perfect - both volume and speed increase
+    oneIncreasingScore: 70, // Good - only one increases
+    stableScore: 50, // Okay - stable
+    decreasingScore: 20, // Poor - decreasing
   },
 };
 
-const SCORING_CONFIG_KEY = 'chunks_scoring_config';
+const SCORING_CONFIG_KEY = 'chunks_emotion_scoring_config';
 
-export function getScoringConfig(): ScoringConfig {
+export function getEmotionScoringConfig(): EmotionScoringConfig {
   try {
     const stored = localStorage.getItem(SCORING_CONFIG_KEY);
     if (stored) {
-      return { ...defaultScoringConfig, ...JSON.parse(stored) };
+      return { ...defaultEmotionScoringConfig, ...JSON.parse(stored) };
     }
   } catch (e) {
     console.error('Failed to load scoring config:', e);
   }
-  return defaultScoringConfig;
+  return defaultEmotionScoringConfig;
 }
 
-export function saveScoringConfig(config: Partial<ScoringConfig>): void {
+export function saveEmotionScoringConfig(config: Partial<EmotionScoringConfig>): void {
   try {
-    const current = getScoringConfig();
+    const current = getEmotionScoringConfig();
     const updated = { ...current, ...config };
     localStorage.setItem(SCORING_CONFIG_KEY, JSON.stringify(updated));
   } catch (e) {
@@ -104,24 +86,136 @@ export function saveScoringConfig(config: Partial<ScoringConfig>): void {
   }
 }
 
-// Calculate score based on config
-export function calculateMetricScore(
+// Calculate linear score between threshold and target
+// For metrics where higher is better (volume, speechRate)
+export function calculateLinearScore(
+  value: number,
+  threshold: number,
+  target: number
+): number {
+  if (value < threshold) return 0;
+  if (value >= target) return 100;
+  return Math.round(((value - threshold) / (target - threshold)) * 100);
+}
+
+// For metrics where lower is better (latency)
+export function calculateInverseLinearScore(
   value: number,
   target: number,
-  min: number,
-  max: number,
-  higherIsBetter: boolean = true
+  threshold: number
 ): number {
-  // Out of bounds = 0
-  if (value < min || value > max) return 0;
-  
-  if (higherIsBetter) {
-    // Higher is better: scale from min to target
-    if (value >= target) return 100;
-    return Math.round(((value - min) / (target - min)) * 100);
-  } else {
-    // Lower is better: scale from max to target
-    if (value <= target) return 100;
-    return Math.round(((max - value) / (max - target)) * 100);
+  if (value <= target) return 100;
+  if (value >= threshold) return 0;
+  return Math.round(((threshold - value) / (threshold - target)) * 100);
+}
+
+// Calculate weighted total emotion score
+export function calculateEmotionScore(
+  config: EmotionScoringConfig,
+  metrics: {
+    volumeDb: number;
+    speechRateWpm: number;
+    totalPauseMs: number;
+    longestPauseMs: number;
+    latencyMs: number;
+    volumeIncreasing: boolean;
+    speedIncreasing: boolean;
   }
+): {
+  total: number;
+  breakdown: {
+    volume: { score: number; weighted: number };
+    speechRate: { score: number; weighted: number };
+    pause: { score: number; weighted: number };
+    latency: { score: number; weighted: number };
+    endIntensity: { score: number; weighted: number };
+  };
+} {
+  // Volume score (louder = better)
+  const volumeScore = calculateLinearScore(
+    metrics.volumeDb,
+    config.volume.threshold,
+    config.volume.target
+  );
+
+  // Speech rate score (faster = better)
+  const speechRateScore = calculateLinearScore(
+    metrics.speechRateWpm,
+    config.speechRate.threshold,
+    config.speechRate.target
+  );
+
+  // Pause score (less pause = better)
+  let pauseScore = 100;
+  if (metrics.totalPauseMs > config.pauseDuration.maxTotalMs) {
+    pauseScore = 0;
+  } else if (metrics.longestPauseMs > config.pauseDuration.maxAcceptableMs) {
+    // Penalty for long single pauses
+    pauseScore = Math.max(0, 100 - Math.round(
+      (metrics.longestPauseMs - config.pauseDuration.maxAcceptableMs) / 50
+    ));
+  } else {
+    // Linear scale based on total pause time
+    pauseScore = Math.round(
+      100 - (metrics.totalPauseMs / config.pauseDuration.maxTotalMs) * 100
+    );
+  }
+
+  // Latency score (faster response = better)
+  const latencyScore = calculateInverseLinearScore(
+    metrics.latencyMs,
+    config.responseLatency.target,
+    config.responseLatency.threshold
+  );
+
+  // End intensity score (both increasing = best)
+  let endIntensityScore: number;
+  if (metrics.volumeIncreasing && metrics.speedIncreasing) {
+    endIntensityScore = config.endIntensity.bothIncreasingScore;
+  } else if (metrics.volumeIncreasing || metrics.speedIncreasing) {
+    endIntensityScore = config.endIntensity.oneIncreasingScore;
+  } else {
+    // Check if decreasing (would need more data, assume stable for now)
+    endIntensityScore = config.endIntensity.stableScore;
+  }
+
+  // Calculate weighted scores
+  const totalWeight = 
+    config.volume.weight + 
+    config.speechRate.weight + 
+    config.pauseDuration.weight + 
+    config.responseLatency.weight + 
+    config.endIntensity.weight;
+
+  const breakdown = {
+    volume: {
+      score: volumeScore,
+      weighted: Math.round((volumeScore * config.volume.weight) / totalWeight),
+    },
+    speechRate: {
+      score: speechRateScore,
+      weighted: Math.round((speechRateScore * config.speechRate.weight) / totalWeight),
+    },
+    pause: {
+      score: pauseScore,
+      weighted: Math.round((pauseScore * config.pauseDuration.weight) / totalWeight),
+    },
+    latency: {
+      score: latencyScore,
+      weighted: Math.round((latencyScore * config.responseLatency.weight) / totalWeight),
+    },
+    endIntensity: {
+      score: endIntensityScore,
+      weighted: Math.round((endIntensityScore * config.endIntensity.weight) / totalWeight),
+    },
+  };
+
+  const total = 
+    breakdown.volume.weighted +
+    breakdown.speechRate.weighted +
+    breakdown.pause.weighted +
+    breakdown.latency.weighted +
+    breakdown.endIntensity.weighted;
+
+  return { total, breakdown };
 }
