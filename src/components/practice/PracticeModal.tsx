@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, ChevronDown, BarChart3 } from 'lucide-react';
+import { X, Mic, Square, Play, Pause, RefreshCw, Volume2, Loader2, CheckCircle, ChevronDown, BarChart3, Settings } from 'lucide-react';
 import { useApp } from '@/context/AppContext';
 import { CategoryBadge } from '@/components/lesson/CategoryBadge';
 import { AudioVisualizer } from './AudioVisualizer';
 import { AudioMetricsCharts } from './AudioMetricsCharts';
+import { AnalysisSettingsModal } from './AnalysisSettingsModal';
 import { cn } from '@/lib/utils';
 import { curriculum } from '@/data/curriculum';
 import { getAnalysisConfig } from '@/config/analysisConfig';
@@ -56,6 +57,7 @@ export const PracticeModal: React.FC = () => {
   const [analysisResult, setAnalysisResult] = useState<ComprehensiveAudioAnalysis | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [showDetailedCharts, setShowDetailedCharts] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
   const [selectedVoice, setSelectedVoice] = useState<string>(getStoredVoice);
 
   const handleVoiceChange = (voiceId: string) => {
@@ -626,14 +628,23 @@ export const PracticeModal: React.FC = () => {
                 </div>
               )}
 
-              {/* Show Detailed Charts Toggle */}
-              <button
-                onClick={() => setShowDetailedCharts(!showDetailedCharts)}
-                className="w-full flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-muted hover:bg-accent transition-colors text-sm font-medium"
-              >
-                <BarChart3 size={16} />
-                {showDetailedCharts ? 'Hide' : 'Show'} Detailed Charts
-              </button>
+              {/* Chart Controls */}
+              <div className="flex gap-2">
+                <button
+                  onClick={() => setShowDetailedCharts(!showDetailedCharts)}
+                  className="flex-1 flex items-center justify-center gap-2 py-2 px-4 rounded-lg bg-muted hover:bg-accent transition-colors text-sm font-medium"
+                >
+                  <BarChart3 size={16} />
+                  {showDetailedCharts ? 'Hide' : 'Show'} Charts
+                </button>
+                <button
+                  onClick={() => setShowSettings(true)}
+                  className="p-2 rounded-lg bg-muted hover:bg-accent transition-colors"
+                  title="Analysis Settings"
+                >
+                  <Settings size={16} />
+                </button>
+              </div>
 
               {/* Detailed Audio Metrics Charts */}
               {showDetailedCharts && (
@@ -675,6 +686,9 @@ export const PracticeModal: React.FC = () => {
           )}
         </div>
       </div>
+
+      {/* Settings Modal */}
+      <AnalysisSettingsModal isOpen={showSettings} onClose={() => setShowSettings(false)} />
     </div>
   );
 };

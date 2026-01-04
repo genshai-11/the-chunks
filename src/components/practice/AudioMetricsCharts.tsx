@@ -10,6 +10,7 @@ import {
   Tooltip,
   ResponsiveContainer,
   ReferenceLine,
+  ReferenceArea,
   Cell,
 } from 'recharts';
 import {
@@ -55,7 +56,7 @@ const VolumeChart: React.FC<{ segments: VolumeSegment[]; thresholds: Comprehensi
   segments,
   thresholds,
 }) => {
-  const data = segments.map((seg, i) => ({
+  const data = segments.map((seg) => ({
     time: `${seg.startTime.toFixed(1)}s`,
     avgDb: seg.avgDb,
     level: seg.level,
@@ -64,24 +65,50 @@ const VolumeChart: React.FC<{ segments: VolumeSegment[]; thresholds: Comprehensi
   const getBarColor = (level: string) => {
     switch (level) {
       case 'quiet':
-        return 'hsl(var(--warning))';
+        return '#3b82f6'; // blue
       case 'loud':
-        return 'hsl(var(--destructive))';
+        return '#f97316'; // orange
       default:
-        return 'hsl(var(--primary))';
+        return '#22c55e'; // green
     }
   };
 
   return (
     <ResponsiveContainer width="100%" height="100%">
       <BarChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
+        {/* Background zones */}
+        <defs>
+          <linearGradient id="quietZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.15} />
+          </linearGradient>
+          <linearGradient id="normalZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
+          </linearGradient>
+          <linearGradient id="loudZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#f97316" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#f97316" stopOpacity={0.15} />
+          </linearGradient>
+        </defs>
         <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+        {/* Zone backgrounds using ReferenceArea */}
+        <ReferenceArea y1={-60} y2={thresholds.quiet.max} fill="url(#quietZone)" />
+        <ReferenceArea y1={thresholds.quiet.max} y2={thresholds.loud.min} fill="url(#normalZone)" />
+        <ReferenceArea y1={thresholds.loud.min} y2={0} fill="url(#loudZone)" />
         <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
         <YAxis
           domain={[-60, 0]}
           tick={{ fontSize: 10 }}
           stroke="hsl(var(--muted-foreground))"
-          label={{ value: 'dB', angle: -90, position: 'insideLeft', fontSize: 10 }}
+          ticks={[-60, thresholds.quiet.max, thresholds.loud.min, 0]}
+          tickFormatter={(v) => {
+            if (v === -60) return 'Quiet';
+            if (v === thresholds.quiet.max) return `${v}`;
+            if (v === thresholds.loud.min) return `${v}`;
+            if (v === 0) return 'Loud';
+            return `${v}`;
+          }}
         />
         <Tooltip
           contentStyle={{
@@ -90,10 +117,14 @@ const VolumeChart: React.FC<{ segments: VolumeSegment[]; thresholds: Comprehensi
             borderRadius: '8px',
             fontSize: '12px',
           }}
-          formatter={(value: number) => [`${value.toFixed(1)} dB`, 'Volume']}
+          formatter={(value: number, name: string, props: { payload: { level: string } }) => [
+            `${value.toFixed(1)} dB (${props.payload.level})`, 
+            'Volume'
+          ]}
         />
-        <ReferenceLine y={thresholds.targetMin} stroke="hsl(var(--success))" strokeDasharray="3 3" />
-        <ReferenceLine y={thresholds.targetMax} stroke="hsl(var(--success))" strokeDasharray="3 3" />
+        {/* Zone boundary lines */}
+        <ReferenceLine y={thresholds.quiet.max} stroke="#3b82f6" strokeWidth={2} label={{ value: 'Quiet↑', position: 'right', fontSize: 9, fill: '#3b82f6' }} />
+        <ReferenceLine y={thresholds.loud.min} stroke="#f97316" strokeWidth={2} label={{ value: 'Loud↓', position: 'right', fontSize: 9, fill: '#f97316' }} />
         <Bar dataKey="avgDb" radius={[4, 4, 0, 0]}>
           {data.map((entry, index) => (
             <Cell key={`cell-${index}`} fill={getBarColor(entry.level)} />
@@ -114,27 +145,62 @@ const SpeechRateChart: React.FC<{
     level: seg.level,
   }));
 
-  const getColor = (level: string) => {
+  const getLineColor = (level: string) => {
     switch (level) {
       case 'slow':
-        return 'hsl(var(--warning))';
+        return '#3b82f6'; // blue
       case 'fast':
-        return 'hsl(var(--destructive))';
+        return '#f97316'; // orange
       default:
-        return 'hsl(var(--primary))';
+        return '#22c55e'; // green
     }
   };
+
+  // Calculate predominant level for line color
+  const levels = data.map(d => d.level);
+  const predominantLevel = levels.length > 0 ? 
+    (levels.filter(l => l === 'slow').length > levels.length / 2 ? 'slow' :
+     levels.filter(l => l === 'fast').length > levels.length / 2 ? 'fast' : 'normal') : 'normal';
 
   return (
     <ResponsiveContainer width="100%" height="100%">
       <AreaChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
+        <defs>
+          <linearGradient id="slowZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.15} />
+          </linearGradient>
+          <linearGradient id="normalSpeedZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
+          </linearGradient>
+          <linearGradient id="fastZone" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stopColor="#f97316" stopOpacity={0.15} />
+            <stop offset="100%" stopColor="#f97316" stopOpacity={0.15} />
+          </linearGradient>
+          <linearGradient id="speedGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="5%" stopColor={getLineColor(predominantLevel)} stopOpacity={0.6} />
+            <stop offset="95%" stopColor={getLineColor(predominantLevel)} stopOpacity={0.1} />
+          </linearGradient>
+        </defs>
         <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+        {/* Zone backgrounds */}
+        <ReferenceArea y1={0} y2={thresholds.slow.max} fill="url(#slowZone)" />
+        <ReferenceArea y1={thresholds.slow.max} y2={thresholds.fast.min} fill="url(#normalSpeedZone)" />
+        <ReferenceArea y1={thresholds.fast.min} y2={250} fill="url(#fastZone)" />
         <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
         <YAxis
           domain={[0, 250]}
           tick={{ fontSize: 10 }}
           stroke="hsl(var(--muted-foreground))"
-          label={{ value: 'WPM', angle: -90, position: 'insideLeft', fontSize: 10 }}
+          ticks={[0, thresholds.slow.max, thresholds.fast.min, 250]}
+          tickFormatter={(v) => {
+            if (v === 0) return 'Slow';
+            if (v === thresholds.slow.max) return `${v}`;
+            if (v === thresholds.fast.min) return `${v}`;
+            if (v === 250) return 'Fast';
+            return `${v}`;
+          }}
         />
         <Tooltip
           contentStyle={{
@@ -143,20 +209,18 @@ const SpeechRateChart: React.FC<{
             borderRadius: '8px',
             fontSize: '12px',
           }}
-          formatter={(value: number) => [`${Math.round(value)} WPM`, 'Speed']}
+          formatter={(value: number, name: string, props: { payload: { level: string } }) => [
+            `${Math.round(value)} WPM (${props.payload.level})`, 
+            'Speed'
+          ]}
         />
-        <ReferenceLine y={thresholds.targetMin} stroke="hsl(var(--success))" strokeDasharray="3 3" />
-        <ReferenceLine y={thresholds.targetMax} stroke="hsl(var(--success))" strokeDasharray="3 3" />
-        <defs>
-          <linearGradient id="speedGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor="hsl(var(--primary))" stopOpacity={0.8} />
-            <stop offset="95%" stopColor="hsl(var(--primary))" stopOpacity={0.1} />
-          </linearGradient>
-        </defs>
+        {/* Zone boundary lines */}
+        <ReferenceLine y={thresholds.slow.max} stroke="#3b82f6" strokeWidth={2} label={{ value: 'Slow↓', position: 'right', fontSize: 9, fill: '#3b82f6' }} />
+        <ReferenceLine y={thresholds.fast.min} stroke="#f97316" strokeWidth={2} label={{ value: 'Fast↑', position: 'right', fontSize: 9, fill: '#f97316' }} />
         <Area
           type="monotone"
           dataKey="wpm"
-          stroke="hsl(var(--primary))"
+          stroke={getLineColor(predominantLevel)}
           fill="url(#speedGradient)"
           strokeWidth={2}
         />
