@@ -25,440 +25,518 @@ interface AudioMetricsChartsProps {
   analysis: ComprehensiveAudioAnalysis;
 }
 
+// Helper to get Vietnamese labels
+const getVolumeLabel = (level: string) => {
+  switch (level) {
+    case 'quiet': return 'Nhỏ';
+    case 'loud': return 'Lớn';
+    default: return 'Vừa';
+  }
+};
+
+const getSpeedLabel = (level: string) => {
+  switch (level) {
+    case 'slow': return 'Chậm';
+    case 'fast': return 'Nhanh';
+    default: return 'Vừa';
+  }
+};
+
 const ChartCard: React.FC<{
   title: string;
   score: number;
-  note: string;
+  label?: string;
+  labelColor?: string;
   children: React.ReactNode;
-}> = ({ title, score, note, children }) => (
+}> = ({ title, score, label, labelColor, children }) => (
   <div className="bg-muted rounded-xl p-4">
     <div className="flex items-center justify-between mb-3">
       <h4 className="text-sm font-semibold text-foreground">{title}</h4>
-      <span
-        className={cn(
-          'text-sm font-bold px-2 py-0.5 rounded-full',
-          score >= 80
-            ? 'bg-green-500/10 text-green-600'
-            : score >= 60
-            ? 'bg-yellow-500/10 text-yellow-600'
-            : 'bg-red-500/10 text-red-600'
+      <div className="flex items-center gap-2">
+        {label && (
+          <span className={cn('text-xs font-medium px-2 py-0.5 rounded-full', labelColor)}>
+            {label}
+          </span>
         )}
-      >
-        {score}
-      </span>
+        <span
+          className={cn(
+            'text-sm font-bold px-2 py-0.5 rounded-full',
+            score >= 80
+              ? 'bg-green-500/10 text-green-600'
+              : score >= 60
+              ? 'bg-yellow-500/10 text-yellow-600'
+              : 'bg-red-500/10 text-red-600'
+          )}
+        >
+          {score}
+        </span>
+      </div>
     </div>
-    <div className="h-32 mb-2">{children}</div>
-    <p className="text-xs text-muted-foreground">{note}</p>
+    {children}
   </div>
 );
 
-const VolumeChart: React.FC<{ segments: VolumeSegment[]; thresholds: ComprehensiveAudioAnalysis['thresholds']['volume'] }> = ({
-  segments,
-  thresholds,
-}) => {
+// Volume Chart with correct orientation (higher = louder)
+const VolumeChart: React.FC<{ 
+  segments: VolumeSegment[]; 
+  thresholds: ComprehensiveAudioAnalysis['thresholds']['volume'];
+  overallLevel: string;
+}> = ({ segments, thresholds, overallLevel }) => {
+  // Convert dB to positive scale for intuitive visualization (0 = silent, 60 = loudest)
   const data = segments.map((seg) => ({
     time: `${seg.startTime.toFixed(1)}s`,
-    avgDb: seg.avgDb,
+    volume: seg.avgDb + 60, // Convert -60~0 to 0~60
     level: seg.level,
+    originalDb: seg.avgDb,
   }));
+
+  const quietThreshold = thresholds.quiet.max + 60;
+  const loudThreshold = thresholds.loud.min + 60;
 
   const getBarColor = (level: string) => {
     switch (level) {
-      case 'quiet':
-        return '#3b82f6'; // blue
-      case 'loud':
-        return '#f97316'; // orange
-      default:
-        return '#22c55e'; // green
+      case 'quiet': return '#3b82f6';
+      case 'loud': return '#f97316';
+      default: return '#22c55e';
     }
   };
 
   return (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
-        {/* Background zones */}
-        <defs>
-          <linearGradient id="quietZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.15} />
-          </linearGradient>
-          <linearGradient id="normalZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
-          </linearGradient>
-          <linearGradient id="loudZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#f97316" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#f97316" stopOpacity={0.15} />
-          </linearGradient>
-        </defs>
-        <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-        {/* Zone backgrounds using ReferenceArea */}
-        <ReferenceArea y1={-60} y2={thresholds.quiet.max} fill="url(#quietZone)" />
-        <ReferenceArea y1={thresholds.quiet.max} y2={thresholds.loud.min} fill="url(#normalZone)" />
-        <ReferenceArea y1={thresholds.loud.min} y2={0} fill="url(#loudZone)" />
-        <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
-        <YAxis
-          domain={[-60, 0]}
-          tick={{ fontSize: 10 }}
-          stroke="hsl(var(--muted-foreground))"
-          ticks={[-60, thresholds.quiet.max, thresholds.loud.min, 0]}
-          tickFormatter={(v) => {
-            if (v === -60) return 'Quiet';
-            if (v === thresholds.quiet.max) return `${v}`;
-            if (v === thresholds.loud.min) return `${v}`;
-            if (v === 0) return 'Loud';
-            return `${v}`;
-          }}
-        />
-        <Tooltip
-          contentStyle={{
-            backgroundColor: 'hsl(var(--popover))',
-            border: '1px solid hsl(var(--border))',
-            borderRadius: '8px',
-            fontSize: '12px',
-          }}
-          formatter={(value: number, name: string, props: { payload: { level: string } }) => [
-            `${value.toFixed(1)} dB (${props.payload.level})`, 
-            'Volume'
-          ]}
-        />
-        {/* Zone boundary lines */}
-        <ReferenceLine y={thresholds.quiet.max} stroke="#3b82f6" strokeWidth={2} label={{ value: 'Quiet↑', position: 'right', fontSize: 9, fill: '#3b82f6' }} />
-        <ReferenceLine y={thresholds.loud.min} stroke="#f97316" strokeWidth={2} label={{ value: 'Loud↓', position: 'right', fontSize: 9, fill: '#f97316' }} />
-        <Bar dataKey="avgDb" radius={[4, 4, 0, 0]}>
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={getBarColor(entry.level)} />
-          ))}
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
+    <div className="space-y-2">
+      {/* Legend */}
+      <div className="flex justify-center gap-4 text-xs">
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Nhỏ</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Vừa ✓</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Lớn</span>
+      </div>
+      
+      <div className="h-28">
+        <ResponsiveContainer width="100%" height="100%">
+          <BarChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 5 }}>
+            <defs>
+              <linearGradient id="quietZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.1} />
+                <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.1} />
+              </linearGradient>
+              <linearGradient id="normalZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
+                <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
+              </linearGradient>
+              <linearGradient id="loudZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#f97316" stopOpacity={0.1} />
+                <stop offset="100%" stopColor="#f97316" stopOpacity={0.1} />
+              </linearGradient>
+            </defs>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+            <ReferenceArea y1={0} y2={quietThreshold} fill="url(#quietZoneBg)" />
+            <ReferenceArea y1={quietThreshold} y2={loudThreshold} fill="url(#normalZoneBg)" />
+            <ReferenceArea y1={loudThreshold} y2={60} fill="url(#loudZoneBg)" />
+            <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
+            <YAxis
+              domain={[0, 60]}
+              tick={{ fontSize: 9 }}
+              stroke="hsl(var(--muted-foreground))"
+              ticks={[0, quietThreshold, loudThreshold, 60]}
+              tickFormatter={(v) => {
+                if (v === 0) return '🔇';
+                if (v === 60) return '🔊';
+                return '';
+              }}
+            />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: 'hsl(var(--popover))',
+                border: '1px solid hsl(var(--border))',
+                borderRadius: '8px',
+                fontSize: '12px',
+              }}
+              formatter={(value: number, name: string, props: { payload: { level: string; originalDb: number } }) => [
+                `${props.payload.originalDb.toFixed(1)} dB (${getVolumeLabel(props.payload.level)})`,
+                'Âm lượng'
+              ]}
+            />
+            <ReferenceLine y={quietThreshold} stroke="#3b82f6" strokeWidth={1} strokeDasharray="3 3" />
+            <ReferenceLine y={loudThreshold} stroke="#f97316" strokeWidth={1} strokeDasharray="3 3" />
+            <Bar dataKey="volume" radius={[4, 4, 0, 0]}>
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={getBarColor(entry.level)} />
+              ))}
+            </Bar>
+          </BarChart>
+        </ResponsiveContainer>
+      </div>
+    </div>
   );
 };
 
+// Speech Rate Chart with zones
 const SpeechRateChart: React.FC<{
   segments: SpeechRateSegment[];
   thresholds: ComprehensiveAudioAnalysis['thresholds']['speechRate'];
-}> = ({ segments, thresholds }) => {
+  overallLevel: string;
+  overallWpm: number;
+}> = ({ segments, thresholds, overallLevel, overallWpm }) => {
   const data = segments.map((seg) => ({
     time: `${seg.startTime.toFixed(1)}s`,
     wpm: seg.wpm,
     level: seg.level,
   }));
 
-  const getLineColor = (level: string) => {
-    switch (level) {
-      case 'slow':
-        return '#3b82f6'; // blue
-      case 'fast':
-        return '#f97316'; // orange
-      default:
-        return '#22c55e'; // green
+  const getLineColor = () => {
+    switch (overallLevel) {
+      case 'slow': return '#3b82f6';
+      case 'fast': return '#f97316';
+      default: return '#22c55e';
     }
-  };
-
-  // Calculate predominant level for line color
-  const levels = data.map(d => d.level);
-  const predominantLevel = levels.length > 0 ? 
-    (levels.filter(l => l === 'slow').length > levels.length / 2 ? 'slow' :
-     levels.filter(l => l === 'fast').length > levels.length / 2 ? 'fast' : 'normal') : 'normal';
-
-  return (
-    <ResponsiveContainer width="100%" height="100%">
-      <AreaChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
-        <defs>
-          <linearGradient id="slowZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.15} />
-          </linearGradient>
-          <linearGradient id="normalSpeedZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
-          </linearGradient>
-          <linearGradient id="fastZone" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="0%" stopColor="#f97316" stopOpacity={0.15} />
-            <stop offset="100%" stopColor="#f97316" stopOpacity={0.15} />
-          </linearGradient>
-          <linearGradient id="speedGradient" x1="0" y1="0" x2="0" y2="1">
-            <stop offset="5%" stopColor={getLineColor(predominantLevel)} stopOpacity={0.6} />
-            <stop offset="95%" stopColor={getLineColor(predominantLevel)} stopOpacity={0.1} />
-          </linearGradient>
-        </defs>
-        <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-        {/* Zone backgrounds */}
-        <ReferenceArea y1={0} y2={thresholds.slow.max} fill="url(#slowZone)" />
-        <ReferenceArea y1={thresholds.slow.max} y2={thresholds.fast.min} fill="url(#normalSpeedZone)" />
-        <ReferenceArea y1={thresholds.fast.min} y2={250} fill="url(#fastZone)" />
-        <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
-        <YAxis
-          domain={[0, 250]}
-          tick={{ fontSize: 10 }}
-          stroke="hsl(var(--muted-foreground))"
-          ticks={[0, thresholds.slow.max, thresholds.fast.min, 250]}
-          tickFormatter={(v) => {
-            if (v === 0) return 'Slow';
-            if (v === thresholds.slow.max) return `${v}`;
-            if (v === thresholds.fast.min) return `${v}`;
-            if (v === 250) return 'Fast';
-            return `${v}`;
-          }}
-        />
-        <Tooltip
-          contentStyle={{
-            backgroundColor: 'hsl(var(--popover))',
-            border: '1px solid hsl(var(--border))',
-            borderRadius: '8px',
-            fontSize: '12px',
-          }}
-          formatter={(value: number, name: string, props: { payload: { level: string } }) => [
-            `${Math.round(value)} WPM (${props.payload.level})`, 
-            'Speed'
-          ]}
-        />
-        {/* Zone boundary lines */}
-        <ReferenceLine y={thresholds.slow.max} stroke="#3b82f6" strokeWidth={2} label={{ value: 'Slow↓', position: 'right', fontSize: 9, fill: '#3b82f6' }} />
-        <ReferenceLine y={thresholds.fast.min} stroke="#f97316" strokeWidth={2} label={{ value: 'Fast↑', position: 'right', fontSize: 9, fill: '#f97316' }} />
-        <Area
-          type="monotone"
-          dataKey="wpm"
-          stroke={getLineColor(predominantLevel)}
-          fill="url(#speedGradient)"
-          strokeWidth={2}
-        />
-      </AreaChart>
-    </ResponsiveContainer>
-  );
-};
-
-const PauseChart: React.FC<{
-  pauses: PauseSegment[];
-  thresholds: ComprehensiveAudioAnalysis['thresholds']['pauseDuration'];
-  audioDuration: number;
-}> = ({ pauses, thresholds, audioDuration }) => {
-  // Create timeline with speech vs pause segments
-  const data: { time: string; value: number; type: 'speech' | 'pause' | 'excessive' }[] = [];
-  let lastEnd = 0;
-
-  pauses.forEach((pause) => {
-    // Add speech segment before pause
-    if (pause.startTime > lastEnd) {
-      data.push({
-        time: `${lastEnd.toFixed(1)}s`,
-        value: 1,
-        type: 'speech',
-      });
-    }
-    // Add pause segment
-    data.push({
-      time: `${pause.startTime.toFixed(1)}s`,
-      value: -pause.durationMs / 1000,
-      type: pause.isExcessive ? 'excessive' : 'pause',
-    });
-    lastEnd = pause.endTime;
-  });
-
-  // Add final speech segment
-  if (lastEnd < audioDuration / 1000) {
-    data.push({
-      time: `${lastEnd.toFixed(1)}s`,
-      value: 1,
-      type: 'speech',
-    });
-  }
-
-  const getBarColor = (type: string) => {
-    switch (type) {
-      case 'excessive':
-        return 'hsl(var(--destructive))';
-      case 'pause':
-        return 'hsl(var(--warning))';
-      default:
-        return 'hsl(var(--primary))';
-    }
-  };
-
-  return (
-    <ResponsiveContainer width="100%" height="100%">
-      <BarChart data={data} margin={{ top: 5, right: 5, left: -20, bottom: 5 }}>
-        <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
-        <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
-        <YAxis
-          domain={[-3, 2]}
-          tick={{ fontSize: 10 }}
-          stroke="hsl(var(--muted-foreground))"
-          tickFormatter={(v) => (v >= 0 ? 'Speech' : `${Math.abs(v).toFixed(1)}s`)}
-        />
-        <Tooltip
-          contentStyle={{
-            backgroundColor: 'hsl(var(--popover))',
-            border: '1px solid hsl(var(--border))',
-            borderRadius: '8px',
-            fontSize: '12px',
-          }}
-          formatter={(value: number, name: string, props: { payload: { type: string } }) =>
-            props.payload.type === 'speech'
-              ? ['Active', 'Speech']
-              : [`${(Math.abs(value) * 1000).toFixed(0)}ms`, 'Pause']
-          }
-        />
-        <ReferenceLine y={-thresholds.acceptable / 1000} stroke="hsl(var(--warning))" strokeDasharray="3 3" />
-        <Bar dataKey="value" radius={[4, 4, 0, 0]}>
-          {data.map((entry, index) => (
-            <Cell key={`cell-${index}`} fill={getBarColor(entry.type)} />
-          ))}
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
-  );
-};
-
-const LatencyIndicator: React.FC<{
-  latency: ComprehensiveAudioAnalysis['responseLatencyAnalysis'];
-  thresholds: ComprehensiveAudioAnalysis['thresholds']['responseLatency'];
-}> = ({ latency, thresholds }) => {
-  const percentage = Math.min(100, (latency.delayMs / thresholds.poor) * 100);
-  const getColor = () => {
-    if (latency.delayMs <= thresholds.excellent) return 'bg-green-500';
-    if (latency.delayMs <= thresholds.acceptable) return 'bg-yellow-500';
-    return 'bg-red-500';
   };
 
   return (
     <div className="space-y-2">
-      <div className="flex items-center justify-between text-sm">
-        <span className="text-muted-foreground">Response Time</span>
-        <span className="font-mono font-bold">{latency.delayMs}ms</span>
+      {/* Legend */}
+      <div className="flex justify-center gap-4 text-xs">
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Chậm</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Vừa ✓</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Nhanh</span>
       </div>
-      <div className="h-3 bg-muted-foreground/20 rounded-full overflow-hidden">
-        <div
-          className={cn('h-full rounded-full transition-all', getColor())}
-          style={{ width: `${percentage}%` }}
-        />
-      </div>
-      <div className="flex justify-between text-xs text-muted-foreground">
-        <span>0ms</span>
-        <span className="text-green-600">{thresholds.excellent}ms</span>
-        <span className="text-yellow-600">{thresholds.acceptable}ms</span>
-        <span className="text-red-600">{thresholds.poor}ms</span>
+      
+      <div className="h-28">
+        <ResponsiveContainer width="100%" height="100%">
+          <AreaChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 5 }}>
+            <defs>
+              <linearGradient id="slowZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#3b82f6" stopOpacity={0.1} />
+                <stop offset="100%" stopColor="#3b82f6" stopOpacity={0.1} />
+              </linearGradient>
+              <linearGradient id="normalSpeedZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#22c55e" stopOpacity={0.15} />
+                <stop offset="100%" stopColor="#22c55e" stopOpacity={0.15} />
+              </linearGradient>
+              <linearGradient id="fastZoneBg" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stopColor="#f97316" stopOpacity={0.1} />
+                <stop offset="100%" stopColor="#f97316" stopOpacity={0.1} />
+              </linearGradient>
+              <linearGradient id="speedFill" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="5%" stopColor={getLineColor()} stopOpacity={0.5} />
+                <stop offset="95%" stopColor={getLineColor()} stopOpacity={0.1} />
+              </linearGradient>
+            </defs>
+            <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
+            <ReferenceArea y1={0} y2={thresholds.slow.max} fill="url(#slowZoneBg)" />
+            <ReferenceArea y1={thresholds.slow.max} y2={thresholds.fast.min} fill="url(#normalSpeedZoneBg)" />
+            <ReferenceArea y1={thresholds.fast.min} y2={250} fill="url(#fastZoneBg)" />
+            <XAxis dataKey="time" tick={{ fontSize: 10 }} stroke="hsl(var(--muted-foreground))" />
+            <YAxis
+              domain={[0, 250]}
+              tick={{ fontSize: 9 }}
+              stroke="hsl(var(--muted-foreground))"
+              ticks={[0, thresholds.slow.max, thresholds.fast.min, 250]}
+              tickFormatter={(v) => {
+                if (v === 0) return '🐢';
+                if (v === 250) return '🐇';
+                return '';
+              }}
+            />
+            <Tooltip
+              contentStyle={{
+                backgroundColor: 'hsl(var(--popover))',
+                border: '1px solid hsl(var(--border))',
+                borderRadius: '8px',
+                fontSize: '12px',
+              }}
+              formatter={(value: number, name: string, props: { payload: { level: string } }) => [
+                `${Math.round(value)} WPM (${getSpeedLabel(props.payload.level)})`,
+                'Tốc độ'
+              ]}
+            />
+            <ReferenceLine y={thresholds.slow.max} stroke="#3b82f6" strokeWidth={1} strokeDasharray="3 3" />
+            <ReferenceLine y={thresholds.fast.min} stroke="#f97316" strokeWidth={1} strokeDasharray="3 3" />
+            {/* Current position indicator */}
+            <ReferenceLine y={overallWpm} stroke={getLineColor()} strokeWidth={2} label={{ value: `${Math.round(overallWpm)}`, position: 'right', fontSize: 10, fill: getLineColor() }} />
+            <Area
+              type="monotone"
+              dataKey="wpm"
+              stroke={getLineColor()}
+              fill="url(#speedFill)"
+              strokeWidth={2}
+            />
+          </AreaChart>
+        </ResponsiveContainer>
       </div>
     </div>
   );
 };
 
-const EndIntensityChart: React.FC<{
-  analysis: ComprehensiveAudioAnalysis['endIntensityAnalysis'];
-}> = ({ analysis }) => {
-  const data = [
-    { name: 'Prev', volume: analysis.previousSegmentDb, speed: analysis.previousSegmentWpm },
-    { name: 'Final', volume: analysis.finalSegmentDb, speed: analysis.finalSegmentWpm },
-    { name: 'Avg', volume: analysis.overallAvgDb, speed: analysis.overallAvgWpm },
-  ];
+// Pause Analysis as Statistics View
+const PauseStats: React.FC<{
+  pauseAnalysis: ComprehensiveAudioAnalysis['pauseDurationAnalysis'];
+  thresholds: ComprehensiveAudioAnalysis['thresholds']['pauseDuration'];
+}> = ({ pauseAnalysis, thresholds }) => {
+  const hasPauses = pauseAnalysis.pauses.length > 0;
+  const excessivePauses = pauseAnalysis.pauses.filter(p => p.isExcessive).length;
+  const longestPause = hasPauses ? Math.max(...pauseAnalysis.pauses.map(p => p.durationMs)) : 0;
+  
+  const getPauseStatus = () => {
+    if (!hasPauses) return { label: 'Không ngắt', color: 'bg-green-500/10 text-green-600', icon: '✓' };
+    if (excessivePauses > 0) return { label: 'Ngắt quá lâu', color: 'bg-red-500/10 text-red-600', icon: '⚠️' };
+    if (pauseAnalysis.averagePauseDuration > thresholds.acceptable) return { label: 'Ngắt hơi lâu', color: 'bg-yellow-500/10 text-yellow-600', icon: '⏸️' };
+    return { label: 'Ngắt tự nhiên', color: 'bg-green-500/10 text-green-600', icon: '✓' };
+  };
+  
+  const status = getPauseStatus();
 
   return (
-    <div className="grid grid-cols-2 gap-4">
-      <div>
-        <div className="text-xs text-muted-foreground mb-2 text-center">Volume Comparison</div>
-        <ResponsiveContainer width="100%" height={80}>
-          <BarChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 5 }}>
-            <XAxis dataKey="name" tick={{ fontSize: 9 }} stroke="hsl(var(--muted-foreground))" />
-            <YAxis tick={{ fontSize: 9 }} stroke="hsl(var(--muted-foreground))" />
-            <Bar dataKey="volume" radius={[4, 4, 0, 0]}>
-              {data.map((entry, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={
-                    entry.name === 'Final' && analysis.isAbnormalVolume
-                      ? 'hsl(var(--destructive))'
-                      : 'hsl(var(--primary))'
-                  }
-                />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+    <div className="space-y-3">
+      {/* Status Badge */}
+      <div className="flex justify-center">
+        <span className={cn('px-3 py-1.5 rounded-full text-sm font-medium', status.color)}>
+          {status.icon} {status.label}
+        </span>
       </div>
-      <div>
-        <div className="text-xs text-muted-foreground mb-2 text-center">Speed Comparison</div>
-        <ResponsiveContainer width="100%" height={80}>
-          <BarChart data={data} margin={{ top: 5, right: 5, left: -15, bottom: 5 }}>
-            <XAxis dataKey="name" tick={{ fontSize: 9 }} stroke="hsl(var(--muted-foreground))" />
-            <YAxis tick={{ fontSize: 9 }} stroke="hsl(var(--muted-foreground))" />
-            <Bar dataKey="speed" radius={[4, 4, 0, 0]}>
-              {data.map((entry, index) => (
-                <Cell
-                  key={`cell-${index}`}
-                  fill={
-                    entry.name === 'Final' && analysis.isAbnormalSpeed
-                      ? 'hsl(var(--destructive))'
-                      : 'hsl(var(--primary))'
-                  }
-                />
-              ))}
-            </Bar>
-          </BarChart>
-        </ResponsiveContainer>
+      
+      {/* Stats Grid */}
+      <div className="grid grid-cols-3 gap-2 text-center">
+        <div className="bg-background rounded-lg p-2">
+          <div className="text-lg font-bold">{pauseAnalysis.pauses.length}</div>
+          <div className="text-[10px] text-muted-foreground">Số lần ngắt</div>
+        </div>
+        <div className="bg-background rounded-lg p-2">
+          <div className="text-lg font-bold">{hasPauses ? Math.round(pauseAnalysis.averagePauseDuration) : 0}</div>
+          <div className="text-[10px] text-muted-foreground">TB (ms)</div>
+        </div>
+        <div className="bg-background rounded-lg p-2">
+          <div className="text-lg font-bold">{Math.round(longestPause)}</div>
+          <div className="text-[10px] text-muted-foreground">Dài nhất (ms)</div>
+        </div>
       </div>
-      {(analysis.isAbnormalVolume || analysis.isAbnormalSpeed) && (
-        <div className="col-span-2 text-xs text-amber-600 bg-amber-500/10 rounded-lg p-2">
-          ⚠️ {analysis.isAbnormalVolume && 'Volume '}
-          {analysis.isAbnormalVolume && analysis.isAbnormalSpeed && '& '}
-          {analysis.isAbnormalSpeed && 'Speed '}
-          spike detected at end ({analysis.stdDevFromMean.toFixed(1)} std dev)
+
+      {/* Threshold Reference */}
+      <div className="text-xs text-muted-foreground text-center">
+        Tự nhiên: &lt;{thresholds.natural}ms • Chấp nhận: &lt;{thresholds.acceptable}ms • Quá lâu: &gt;{thresholds.excessive}ms
+      </div>
+
+      {/* Pause List if any excessive */}
+      {excessivePauses > 0 && (
+        <div className="text-xs text-red-600 bg-red-500/10 rounded-lg p-2">
+          ⚠️ {excessivePauses} lần ngắt quá {thresholds.excessive}ms
         </div>
       )}
     </div>
   );
 };
 
+// Response Latency
+const LatencyIndicator: React.FC<{
+  latency: ComprehensiveAudioAnalysis['responseLatencyAnalysis'];
+  thresholds: ComprehensiveAudioAnalysis['thresholds']['responseLatency'];
+}> = ({ latency, thresholds }) => {
+  const percentage = Math.min(100, (latency.delayMs / thresholds.poor) * 100);
+  
+  const getStatus = () => {
+    if (latency.delayMs <= thresholds.excellent) return { label: 'Nhanh', color: 'bg-green-500', textColor: 'text-green-600' };
+    if (latency.delayMs <= thresholds.acceptable) return { label: 'Bình thường', color: 'bg-yellow-500', textColor: 'text-yellow-600' };
+    return { label: 'Chậm', color: 'bg-red-500', textColor: 'text-red-600' };
+  };
+
+  const status = getStatus();
+
+  return (
+    <div className="space-y-3">
+      <div className="flex items-center justify-between">
+        <span className="text-muted-foreground text-sm">Thời gian phản hồi</span>
+        <div className="flex items-center gap-2">
+          <span className="font-mono font-bold">{latency.delayMs}ms</span>
+          <span className={cn('px-2 py-0.5 rounded-full text-xs font-medium', status.color + '/10', status.textColor)}>
+            {status.label}
+          </span>
+        </div>
+      </div>
+      <div className="h-3 bg-muted-foreground/20 rounded-full overflow-hidden">
+        <div
+          className={cn('h-full rounded-full transition-all', status.color)}
+          style={{ width: `${percentage}%` }}
+        />
+      </div>
+      <div className="flex justify-between text-xs text-muted-foreground">
+        <span>0ms</span>
+        <span className="text-green-600">Nhanh (&lt;{thresholds.excellent})</span>
+        <span className="text-yellow-600">OK (&lt;{thresholds.acceptable})</span>
+        <span className="text-red-600">Chậm</span>
+      </div>
+    </div>
+  );
+};
+
+// End Intensity Analysis with Labels
+const EndIntensityStats: React.FC<{
+  analysis: ComprehensiveAudioAnalysis['endIntensityAnalysis'];
+}> = ({ analysis }) => {
+  // Calculate changes
+  const volumeChange = analysis.finalSegmentDb - analysis.previousSegmentDb;
+  const speedChange = analysis.finalSegmentWpm - analysis.previousSegmentWpm;
+  const volumeVsAvg = analysis.finalSegmentDb - analysis.overallAvgDb;
+  const speedVsAvg = analysis.finalSegmentWpm - analysis.overallAvgWpm;
+
+  const getVolumeStatus = () => {
+    if (analysis.isAbnormalVolume) {
+      return volumeChange > 0 
+        ? { label: 'Lớn hơn ở cuối', icon: '🔊↑', color: 'text-orange-600 bg-orange-500/10' }
+        : { label: 'Nhỏ hơn ở cuối', icon: '🔇↓', color: 'text-blue-600 bg-blue-500/10' };
+    }
+    return { label: 'Ổn định', icon: '✓', color: 'text-green-600 bg-green-500/10' };
+  };
+
+  const getSpeedStatus = () => {
+    if (analysis.isAbnormalSpeed) {
+      return speedChange > 0 
+        ? { label: 'Nhanh hơn ở cuối', icon: '🐇↑', color: 'text-orange-600 bg-orange-500/10' }
+        : { label: 'Chậm hơn ở cuối', icon: '🐢↓', color: 'text-blue-600 bg-blue-500/10' };
+    }
+    return { label: 'Ổn định', icon: '✓', color: 'text-green-600 bg-green-500/10' };
+  };
+
+  const volumeStatus = getVolumeStatus();
+  const speedStatus = getSpeedStatus();
+
+  // Combined status
+  const getCombinedStatus = () => {
+    if (analysis.isAbnormalVolume && analysis.isAbnormalSpeed) {
+      const bothIncreasing = volumeChange > 0 && speedChange > 0;
+      const bothDecreasing = volumeChange < 0 && speedChange < 0;
+      if (bothIncreasing) return { label: 'Cả âm lượng và tốc độ tăng ở cuối!', color: 'text-red-600 bg-red-500/10', icon: '⚠️' };
+      if (bothDecreasing) return { label: 'Cả âm lượng và tốc độ giảm ở cuối', color: 'text-yellow-600 bg-yellow-500/10', icon: '📉' };
+      return { label: 'Biến động cuối bài', color: 'text-yellow-600 bg-yellow-500/10', icon: '⚡' };
+    }
+    if (analysis.isAbnormalVolume || analysis.isAbnormalSpeed) {
+      return { label: 'Có biến động nhẹ', color: 'text-yellow-600 bg-yellow-500/10', icon: '📊' };
+    }
+    return { label: 'Kết thúc ổn định', color: 'text-green-600 bg-green-500/10', icon: '✓' };
+  };
+
+  const combinedStatus = getCombinedStatus();
+
+  return (
+    <div className="space-y-3">
+      {/* Combined Status */}
+      <div className="flex justify-center">
+        <span className={cn('px-3 py-1.5 rounded-full text-sm font-medium', combinedStatus.color)}>
+          {combinedStatus.icon} {combinedStatus.label}
+        </span>
+      </div>
+
+      {/* Individual metrics */}
+      <div className="grid grid-cols-2 gap-3">
+        {/* Volume */}
+        <div className="bg-background rounded-lg p-3 text-center">
+          <div className="text-xs text-muted-foreground mb-1">Âm lượng</div>
+          <span className={cn('px-2 py-1 rounded text-xs font-medium', volumeStatus.color)}>
+            {volumeStatus.icon} {volumeStatus.label}
+          </span>
+          <div className="mt-2 text-[10px] text-muted-foreground">
+            Cuối: {analysis.finalSegmentDb.toFixed(0)}dB vs TB: {analysis.overallAvgDb.toFixed(0)}dB
+          </div>
+        </div>
+
+        {/* Speed */}
+        <div className="bg-background rounded-lg p-3 text-center">
+          <div className="text-xs text-muted-foreground mb-1">Tốc độ</div>
+          <span className={cn('px-2 py-1 rounded text-xs font-medium', speedStatus.color)}>
+            {speedStatus.icon} {speedStatus.label}
+          </span>
+          <div className="mt-2 text-[10px] text-muted-foreground">
+            Cuối: {Math.round(analysis.finalSegmentWpm)}WPM vs TB: {Math.round(analysis.overallAvgWpm)}WPM
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis }) => {
+  // Determine overall levels for labels
+  const volumeLevel = analysis.volumeAnalysis.overallAvgDb < analysis.thresholds.volume.quiet.max 
+    ? 'quiet' 
+    : analysis.volumeAnalysis.overallAvgDb > analysis.thresholds.volume.loud.min 
+      ? 'loud' 
+      : 'normal';
+
+  const speedLevel = analysis.speechRateAnalysis.overallWpm < analysis.thresholds.speechRate.slow.max 
+    ? 'slow' 
+    : analysis.speechRateAnalysis.overallWpm > analysis.thresholds.speechRate.fast.min 
+      ? 'fast' 
+      : 'normal';
+
+  const getVolumeLabelColor = () => {
+    switch (volumeLevel) {
+      case 'quiet': return 'bg-blue-500/10 text-blue-600';
+      case 'loud': return 'bg-orange-500/10 text-orange-600';
+      default: return 'bg-green-500/10 text-green-600';
+    }
+  };
+
+  const getSpeedLabelColor = () => {
+    switch (speedLevel) {
+      case 'slow': return 'bg-blue-500/10 text-blue-600';
+      case 'fast': return 'bg-orange-500/10 text-orange-600';
+      default: return 'bg-green-500/10 text-green-600';
+    }
+  };
+
   return (
     <div className="space-y-4">
       {/* Volume Analysis */}
       <ChartCard
-        title="📊 Volume Analysis"
+        title="📊 Phân tích âm lượng"
         score={analysis.volumeAnalysis.score}
-        note={analysis.volumeAnalysis.note}
+        label={getVolumeLabel(volumeLevel)}
+        labelColor={getVolumeLabelColor()}
       >
-        <VolumeChart segments={analysis.volumeAnalysis.segments} thresholds={analysis.thresholds.volume} />
+        <VolumeChart 
+          segments={analysis.volumeAnalysis.segments} 
+          thresholds={analysis.thresholds.volume}
+          overallLevel={volumeLevel}
+        />
       </ChartCard>
 
       {/* Speech Rate */}
       <ChartCard
-        title="🎤 Speech Rate"
+        title="🎤 Tốc độ nói"
         score={analysis.speechRateAnalysis.score}
-        note={analysis.speechRateAnalysis.note}
+        label={`${getSpeedLabel(speedLevel)} (${Math.round(analysis.speechRateAnalysis.overallWpm)} WPM)`}
+        labelColor={getSpeedLabelColor()}
       >
-        <SpeechRateChart segments={analysis.speechRateAnalysis.segments} thresholds={analysis.thresholds.speechRate} />
+        <SpeechRateChart 
+          segments={analysis.speechRateAnalysis.segments} 
+          thresholds={analysis.thresholds.speechRate}
+          overallLevel={speedLevel}
+          overallWpm={analysis.speechRateAnalysis.overallWpm}
+        />
       </ChartCard>
 
       {/* Response Latency */}
       <ChartCard
-        title="⏱️ Response Latency"
+        title="⏱️ Độ trễ phản hồi"
         score={analysis.responseLatencyAnalysis.score}
-        note={analysis.responseLatencyAnalysis.note}
       >
         <LatencyIndicator latency={analysis.responseLatencyAnalysis} thresholds={analysis.thresholds.responseLatency} />
       </ChartCard>
 
-      {/* Pause Duration */}
+      {/* Pause Duration - Statistics View */}
       <ChartCard
-        title="⏸️ Pause Analysis"
+        title="⏸️ Phân tích ngắt nghỉ"
         score={analysis.pauseDurationAnalysis.score}
-        note={analysis.pauseDurationAnalysis.note}
       >
-        <PauseChart
-          pauses={analysis.pauseDurationAnalysis.pauses}
+        <PauseStats 
+          pauseAnalysis={analysis.pauseDurationAnalysis}
           thresholds={analysis.thresholds.pauseDuration}
-          audioDuration={analysis.audioDurationMs}
         />
       </ChartCard>
 
-      {/* End Intensity */}
+      {/* End Intensity - Statistics View with Labels */}
       <ChartCard
-        title="📈 End Intensity"
+        title="📈 Cường độ cuối bài"
         score={analysis.endIntensityAnalysis.score}
-        note={analysis.endIntensityAnalysis.note}
       >
-        <EndIntensityChart analysis={analysis.endIntensityAnalysis} />
+        <EndIntensityStats analysis={analysis.endIntensityAnalysis} />
       </ChartCard>
     </div>
   );
