@@ -26,20 +26,20 @@ interface AudioMetricsChartsProps {
   emotionBreakdown?: ComprehensiveAudioAnalysis['emotionBreakdown'];
 }
 
-// Helper to get Vietnamese labels
+// Helper to get English labels
 const getVolumeLabel = (level: string) => {
   switch (level) {
-    case 'quiet': return 'Nhỏ';
-    case 'loud': return 'Lớn';
-    default: return 'Vừa';
+    case 'quiet': return 'Quiet';
+    case 'loud': return 'Loud';
+    default: return 'Normal';
   }
 };
 
 const getSpeedLabel = (level: string) => {
   switch (level) {
-    case 'slow': return 'Chậm';
-    case 'fast': return 'Nhanh';
-    default: return 'Vừa';
+    case 'slow': return 'Slow';
+    case 'fast': return 'Fast';
+    default: return 'Normal';
   }
 };
 
@@ -106,9 +106,9 @@ const VolumeChart: React.FC<{
     <div className="space-y-2">
       {/* Legend */}
       <div className="flex justify-center gap-4 text-xs">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Nhỏ</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Vừa ✓</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Lớn</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Quiet</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Normal ✓</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Loud</span>
       </div>
       
       <div className="h-28">
@@ -153,7 +153,7 @@ const VolumeChart: React.FC<{
               }}
               formatter={(value: number, name: string, props: { payload: { level: string; originalDb: number } }) => [
                 `${props.payload.originalDb.toFixed(1)} dB (${getVolumeLabel(props.payload.level)})`,
-                'Âm lượng'
+                'Volume'
               ]}
             />
             <ReferenceLine y={quietThreshold} stroke="#3b82f6" strokeWidth={1} strokeDasharray="3 3" />
@@ -195,9 +195,9 @@ const SpeechRateChart: React.FC<{
     <div className="space-y-2">
       {/* Legend */}
       <div className="flex justify-center gap-4 text-xs">
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Chậm</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Vừa ✓</span>
-        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Nhanh</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-blue-500"></span> Slow</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-green-500"></span> Normal ✓</span>
+        <span className="flex items-center gap-1"><span className="w-3 h-3 rounded bg-orange-500"></span> Fast</span>
       </div>
       
       <div className="h-28">
@@ -246,7 +246,7 @@ const SpeechRateChart: React.FC<{
               }}
               formatter={(value: number, name: string, props: { payload: { level: string } }) => [
                 `${Math.round(value)} WPM (${getSpeedLabel(props.payload.level)})`,
-                'Tốc độ'
+                'Speed'
               ]}
             />
             <ReferenceLine y={thresholds.slow.max} stroke="#3b82f6" strokeWidth={1} strokeDasharray="3 3" />
@@ -277,10 +277,10 @@ const PauseStats: React.FC<{
   const longestPause = hasPauses ? Math.max(...pauseAnalysis.pauses.map(p => p.durationMs)) : 0;
   
   const getPauseStatus = () => {
-    if (!hasPauses) return { label: 'Không ngắt', color: 'bg-green-500/10 text-green-600', icon: '✓' };
-    if (excessivePauses > 0) return { label: 'Ngắt quá lâu', color: 'bg-red-500/10 text-red-600', icon: '⚠️' };
-    if (pauseAnalysis.averagePauseDuration > thresholds.acceptable) return { label: 'Ngắt hơi lâu', color: 'bg-yellow-500/10 text-yellow-600', icon: '⏸️' };
-    return { label: 'Ngắt tự nhiên', color: 'bg-green-500/10 text-green-600', icon: '✓' };
+    if (!hasPauses) return { label: 'No pauses', color: 'bg-green-500/10 text-green-600', icon: '✓' };
+    if (excessivePauses > 0) return { label: 'Too long pauses', color: 'bg-red-500/10 text-red-600', icon: '⚠️' };
+    if (pauseAnalysis.averagePauseDuration > thresholds.acceptable) return { label: 'Slightly long', color: 'bg-yellow-500/10 text-yellow-600', icon: '⏸️' };
+    return { label: 'Natural pauses', color: 'bg-green-500/10 text-green-600', icon: '✓' };
   };
   
   const status = getPauseStatus();
@@ -298,27 +298,27 @@ const PauseStats: React.FC<{
       <div className="grid grid-cols-3 gap-2 text-center">
         <div className="bg-background rounded-lg p-2">
           <div className="text-lg font-bold">{pauseAnalysis.pauses.length}</div>
-          <div className="text-[10px] text-muted-foreground">Số lần ngắt</div>
+          <div className="text-[10px] text-muted-foreground">Pauses</div>
         </div>
         <div className="bg-background rounded-lg p-2">
           <div className="text-lg font-bold">{hasPauses ? Math.round(pauseAnalysis.averagePauseDuration) : 0}</div>
-          <div className="text-[10px] text-muted-foreground">TB (ms)</div>
+          <div className="text-[10px] text-muted-foreground">Avg (ms)</div>
         </div>
         <div className="bg-background rounded-lg p-2">
           <div className="text-lg font-bold">{Math.round(longestPause)}</div>
-          <div className="text-[10px] text-muted-foreground">Dài nhất (ms)</div>
+          <div className="text-[10px] text-muted-foreground">Longest (ms)</div>
         </div>
       </div>
 
       {/* Threshold Reference */}
       <div className="text-xs text-muted-foreground text-center">
-        Tự nhiên: &lt;{thresholds.natural}ms • Chấp nhận: &lt;{thresholds.acceptable}ms • Quá lâu: &gt;{thresholds.excessive}ms
+        Natural: &lt;{thresholds.natural}ms • OK: &lt;{thresholds.acceptable}ms • Too long: &gt;{thresholds.excessive}ms
       </div>
 
       {/* Pause List if any excessive */}
       {excessivePauses > 0 && (
         <div className="text-xs text-red-600 bg-red-500/10 rounded-lg p-2">
-          ⚠️ {excessivePauses} lần ngắt quá {thresholds.excessive}ms
+          ⚠️ {excessivePauses} pauses over {thresholds.excessive}ms
         </div>
       )}
     </div>
@@ -333,9 +333,9 @@ const LatencyIndicator: React.FC<{
   const percentage = Math.min(100, (latency.delayMs / thresholds.poor) * 100);
   
   const getStatus = () => {
-    if (latency.delayMs <= thresholds.excellent) return { label: 'Nhanh', color: 'bg-green-500', textColor: 'text-green-600' };
-    if (latency.delayMs <= thresholds.acceptable) return { label: 'Bình thường', color: 'bg-yellow-500', textColor: 'text-yellow-600' };
-    return { label: 'Chậm', color: 'bg-red-500', textColor: 'text-red-600' };
+    if (latency.delayMs <= thresholds.excellent) return { label: 'Fast', color: 'bg-green-500', textColor: 'text-green-600' };
+    if (latency.delayMs <= thresholds.acceptable) return { label: 'Normal', color: 'bg-yellow-500', textColor: 'text-yellow-600' };
+    return { label: 'Slow', color: 'bg-red-500', textColor: 'text-red-600' };
   };
 
   const status = getStatus();
@@ -343,7 +343,7 @@ const LatencyIndicator: React.FC<{
   return (
     <div className="space-y-3">
       <div className="flex items-center justify-between">
-        <span className="text-muted-foreground text-sm">Thời gian phản hồi</span>
+        <span className="text-muted-foreground text-sm">Response Time</span>
         <div className="flex items-center gap-2">
           <span className="font-mono font-bold">{latency.delayMs}ms</span>
           <span className={cn('px-2 py-0.5 rounded-full text-xs font-medium', status.color + '/10', status.textColor)}>
@@ -359,9 +359,9 @@ const LatencyIndicator: React.FC<{
       </div>
       <div className="flex justify-between text-xs text-muted-foreground">
         <span>0ms</span>
-        <span className="text-green-600">Nhanh (&lt;{thresholds.excellent})</span>
+        <span className="text-green-600">Fast (&lt;{thresholds.excellent})</span>
         <span className="text-yellow-600">OK (&lt;{thresholds.acceptable})</span>
-        <span className="text-red-600">Chậm</span>
+        <span className="text-red-600">Slow</span>
       </div>
     </div>
   );
@@ -380,19 +380,19 @@ const EndIntensityStats: React.FC<{
   const getVolumeStatus = () => {
     if (analysis.isAbnormalVolume) {
       return volumeChange > 0 
-        ? { label: 'Lớn hơn ở cuối', icon: '🔊↑', color: 'text-orange-600 bg-orange-500/10' }
-        : { label: 'Nhỏ hơn ở cuối', icon: '🔇↓', color: 'text-blue-600 bg-blue-500/10' };
+        ? { label: 'Louder at end', icon: '🔊↑', color: 'text-orange-600 bg-orange-500/10' }
+        : { label: 'Quieter at end', icon: '🔇↓', color: 'text-blue-600 bg-blue-500/10' };
     }
-    return { label: 'Ổn định', icon: '✓', color: 'text-green-600 bg-green-500/10' };
+    return { label: 'Stable', icon: '✓', color: 'text-green-600 bg-green-500/10' };
   };
 
   const getSpeedStatus = () => {
     if (analysis.isAbnormalSpeed) {
       return speedChange > 0 
-        ? { label: 'Nhanh hơn ở cuối', icon: '🐇↑', color: 'text-orange-600 bg-orange-500/10' }
-        : { label: 'Chậm hơn ở cuối', icon: '🐢↓', color: 'text-blue-600 bg-blue-500/10' };
+        ? { label: 'Faster at end', icon: '🐇↑', color: 'text-orange-600 bg-orange-500/10' }
+        : { label: 'Slower at end', icon: '🐢↓', color: 'text-blue-600 bg-blue-500/10' };
     }
-    return { label: 'Ổn định', icon: '✓', color: 'text-green-600 bg-green-500/10' };
+    return { label: 'Stable', icon: '✓', color: 'text-green-600 bg-green-500/10' };
   };
 
   const volumeStatus = getVolumeStatus();
@@ -403,14 +403,14 @@ const EndIntensityStats: React.FC<{
     if (analysis.isAbnormalVolume && analysis.isAbnormalSpeed) {
       const bothIncreasing = volumeChange > 0 && speedChange > 0;
       const bothDecreasing = volumeChange < 0 && speedChange < 0;
-      if (bothIncreasing) return { label: 'Cả âm lượng và tốc độ tăng ở cuối!', color: 'text-red-600 bg-red-500/10', icon: '⚠️' };
-      if (bothDecreasing) return { label: 'Cả âm lượng và tốc độ giảm ở cuối', color: 'text-yellow-600 bg-yellow-500/10', icon: '📉' };
-      return { label: 'Biến động cuối bài', color: 'text-yellow-600 bg-yellow-500/10', icon: '⚡' };
+      if (bothIncreasing) return { label: 'Volume & speed increasing!', color: 'text-red-600 bg-red-500/10', icon: '⚠️' };
+      if (bothDecreasing) return { label: 'Volume & speed decreasing', color: 'text-yellow-600 bg-yellow-500/10', icon: '📉' };
+      return { label: 'End variation', color: 'text-yellow-600 bg-yellow-500/10', icon: '⚡' };
     }
     if (analysis.isAbnormalVolume || analysis.isAbnormalSpeed) {
-      return { label: 'Có biến động nhẹ', color: 'text-yellow-600 bg-yellow-500/10', icon: '📊' };
+      return { label: 'Slight variation', color: 'text-yellow-600 bg-yellow-500/10', icon: '📊' };
     }
-    return { label: 'Kết thúc ổn định', color: 'text-green-600 bg-green-500/10', icon: '✓' };
+    return { label: 'Stable ending', color: 'text-green-600 bg-green-500/10', icon: '✓' };
   };
 
   const combinedStatus = getCombinedStatus();
@@ -428,23 +428,23 @@ const EndIntensityStats: React.FC<{
       <div className="grid grid-cols-2 gap-3">
         {/* Volume */}
         <div className="bg-background rounded-lg p-3 text-center">
-          <div className="text-xs text-muted-foreground mb-1">Âm lượng</div>
+          <div className="text-xs text-muted-foreground mb-1">Volume</div>
           <span className={cn('px-2 py-1 rounded text-xs font-medium', volumeStatus.color)}>
             {volumeStatus.icon} {volumeStatus.label}
           </span>
           <div className="mt-2 text-[10px] text-muted-foreground">
-            Cuối: {analysis.finalSegmentDb.toFixed(0)}dB vs TB: {analysis.overallAvgDb.toFixed(0)}dB
+            End: {analysis.finalSegmentDb.toFixed(0)}dB vs Avg: {analysis.overallAvgDb.toFixed(0)}dB
           </div>
         </div>
 
         {/* Speed */}
         <div className="bg-background rounded-lg p-3 text-center">
-          <div className="text-xs text-muted-foreground mb-1">Tốc độ</div>
+          <div className="text-xs text-muted-foreground mb-1">Speed</div>
           <span className={cn('px-2 py-1 rounded text-xs font-medium', speedStatus.color)}>
             {speedStatus.icon} {speedStatus.label}
           </span>
           <div className="mt-2 text-[10px] text-muted-foreground">
-            Cuối: {Math.round(analysis.finalSegmentWpm)}WPM vs TB: {Math.round(analysis.overallAvgWpm)}WPM
+            End: {Math.round(analysis.finalSegmentWpm)}WPM vs Avg: {Math.round(analysis.overallAvgWpm)}WPM
           </div>
         </div>
       </div>
@@ -489,7 +489,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
     <div className="space-y-4">
       {/* Volume Analysis */}
       <ChartCard
-        title="📊 Phân tích âm lượng"
+        title="📊 Volume Analysis"
         score={emotionBreakdown?.volume.raw ?? analysis.volumeAnalysis.score}
         label={getVolumeLabel(volumeLevel)}
         labelColor={getVolumeLabelColor()}
@@ -503,7 +503,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
 
       {/* Speech Rate */}
       <ChartCard
-        title="🎤 Tốc độ nói"
+        title="🎤 Speech Rate"
         score={emotionBreakdown?.speechRate.raw ?? analysis.speechRateAnalysis.score}
         label={`${getSpeedLabel(speedLevel)} (${Math.round(analysis.speechRateAnalysis.overallWpm)} WPM)`}
         labelColor={getSpeedLabelColor()}
@@ -518,7 +518,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
 
       {/* Response Latency */}
       <ChartCard
-        title="⏱️ Độ trễ phản hồi"
+        title="⏱️ Response Latency"
         score={emotionBreakdown?.latency.raw ?? analysis.responseLatencyAnalysis.score}
       >
         <LatencyIndicator latency={analysis.responseLatencyAnalysis} thresholds={analysis.thresholds.responseLatency} />
@@ -526,7 +526,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
 
       {/* Pause Duration - Statistics View */}
       <ChartCard
-        title="⏸️ Phân tích ngắt nghỉ"
+        title="⏸️ Pause Analysis"
         score={emotionBreakdown?.pause.raw ?? analysis.pauseDurationAnalysis.score}
       >
         <PauseStats 
@@ -537,7 +537,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
 
       {/* End Intensity - Statistics View with Labels */}
       <ChartCard
-        title="📈 Cường độ cuối bài"
+        title="📈 End Intensity"
         score={emotionBreakdown?.endIntensity.raw ?? analysis.endIntensityAnalysis.score}
       >
         <EndIntensityStats analysis={analysis.endIntensityAnalysis} />
