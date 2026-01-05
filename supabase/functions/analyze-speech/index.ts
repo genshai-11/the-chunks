@@ -856,9 +856,6 @@ serve(async (req) => {
     if (!speechDetected) {
       console.log('No speech detected');
       return new Response(JSON.stringify({
-        accuracy: 0,
-        fluency: 0,
-        emotion: 0,
         overallScore: 0,
         emotionBreakdown: null,
         volumeAnalysis: { segments: [], overallAvgDb: -60, overallMinDb: -60, overallMaxDb: -60, score: 0, note: "No audio detected" },
@@ -875,7 +872,7 @@ serve(async (req) => {
         speechDetected: false,
         audioDurationMs,
         wordCount: 0,
-        feedback: ["No speech was detected. Please speak clearly into the microphone."],
+        feedback: ["Không phát hiện giọng nói. Hãy nói to và rõ ràng hơn."],
         thresholds,
         scoringConfig
       }), {
@@ -969,10 +966,7 @@ serve(async (req) => {
     };
 
     const result = {
-      accuracy: accuracyResult.score,
-      fluency: expressionResult.score, // Keep for compatibility
-      emotion: overallScore, // Now the main weighted score
-      overallScore, // Same as emotion - weighted emotion score
+      overallScore,
       emotionBreakdown: emotionScoreResult.breakdown,
       volumeAnalysis,
       speechRateAnalysis,
