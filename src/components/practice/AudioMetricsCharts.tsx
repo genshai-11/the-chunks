@@ -23,6 +23,7 @@ import { cn } from '@/lib/utils';
 
 interface AudioMetricsChartsProps {
   analysis: ComprehensiveAudioAnalysis;
+  emotionBreakdown?: ComprehensiveAudioAnalysis['emotionBreakdown'];
 }
 
 // Helper to get Vietnamese labels
@@ -452,6 +453,9 @@ const EndIntensityStats: React.FC<{
 };
 
 export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis }) => {
+  // Use emotionBreakdown scores (from scoring config) instead of old analysis scores
+  const emotionBreakdown = analysis.emotionBreakdown;
+
   // Determine overall levels for labels
   const volumeLevel = analysis.volumeAnalysis.overallAvgDb < analysis.thresholds.volume.quiet.max 
     ? 'quiet' 
@@ -486,7 +490,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
       {/* Volume Analysis */}
       <ChartCard
         title="📊 Phân tích âm lượng"
-        score={analysis.volumeAnalysis.score}
+        score={emotionBreakdown?.volume.raw ?? analysis.volumeAnalysis.score}
         label={getVolumeLabel(volumeLevel)}
         labelColor={getVolumeLabelColor()}
       >
@@ -500,7 +504,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
       {/* Speech Rate */}
       <ChartCard
         title="🎤 Tốc độ nói"
-        score={analysis.speechRateAnalysis.score}
+        score={emotionBreakdown?.speechRate.raw ?? analysis.speechRateAnalysis.score}
         label={`${getSpeedLabel(speedLevel)} (${Math.round(analysis.speechRateAnalysis.overallWpm)} WPM)`}
         labelColor={getSpeedLabelColor()}
       >
@@ -515,7 +519,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
       {/* Response Latency */}
       <ChartCard
         title="⏱️ Độ trễ phản hồi"
-        score={analysis.responseLatencyAnalysis.score}
+        score={emotionBreakdown?.latency.raw ?? analysis.responseLatencyAnalysis.score}
       >
         <LatencyIndicator latency={analysis.responseLatencyAnalysis} thresholds={analysis.thresholds.responseLatency} />
       </ChartCard>
@@ -523,7 +527,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
       {/* Pause Duration - Statistics View */}
       <ChartCard
         title="⏸️ Phân tích ngắt nghỉ"
-        score={analysis.pauseDurationAnalysis.score}
+        score={emotionBreakdown?.pause.raw ?? analysis.pauseDurationAnalysis.score}
       >
         <PauseStats 
           pauseAnalysis={analysis.pauseDurationAnalysis}
@@ -534,7 +538,7 @@ export const AudioMetricsCharts: React.FC<AudioMetricsChartsProps> = ({ analysis
       {/* End Intensity - Statistics View with Labels */}
       <ChartCard
         title="📈 Cường độ cuối bài"
-        score={analysis.endIntensityAnalysis.score}
+        score={emotionBreakdown?.endIntensity.raw ?? analysis.endIntensityAnalysis.score}
       >
         <EndIntensityStats analysis={analysis.endIntensityAnalysis} />
       </ChartCard>
