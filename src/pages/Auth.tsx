@@ -6,8 +6,9 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { toast } from 'sonner';
-import { Loader2, LogIn, UserPlus } from 'lucide-react';
+import { Loader2, LogIn, UserPlus, Shield } from 'lucide-react';
 import { z } from 'zod';
+import { supabase } from '@/integrations/supabase/client';
 
 const authSchema = z.object({
   email: z.string().email('Invalid email address'),
@@ -22,6 +23,7 @@ const Auth = () => {
   const [password, setPassword] = useState('');
   const [displayName, setDisplayName] = useState('');
   const [loading, setLoading] = useState(false);
+  const [setupLoading, setSetupLoading] = useState(false);
   const [errors, setErrors] = useState<{ email?: string; password?: string }>({});
 
   useEffect(() => {
@@ -86,6 +88,26 @@ const Auth = () => {
       toast.success('Account created! Welcome!');
       navigate('/');
     }
+  };
+
+  const handleSetupAdmin = async () => {
+    setSetupLoading(true);
+    try {
+      const { data, error } = await supabase.functions.invoke('setup-admin');
+      
+      if (error) {
+        toast.error(error.message || 'Failed to setup admin');
+      } else if (data?.error) {
+        toast.error(data.error);
+      } else {
+        toast.success('Admin account created! Email: admin@admin.com, Password: admin123');
+        setEmail('admin@admin.com');
+        setPassword('admin123');
+      }
+    } catch (err) {
+      toast.error('Failed to setup admin');
+    }
+    setSetupLoading(false);
   };
 
   if (authLoading) {
@@ -201,6 +223,21 @@ const Auth = () => {
               </form>
             </TabsContent>
           </Tabs>
+
+          <div className="mt-4 pt-4 border-t border-border">
+            <Button
+              variant="outline"
+              className="w-full gap-2"
+              onClick={handleSetupAdmin}
+              disabled={setupLoading}
+            >
+              {setupLoading ? <Loader2 className="h-4 w-4 animate-spin" /> : <Shield size={16} />}
+              Setup Admin Account
+            </Button>
+            <p className="text-xs text-muted-foreground text-center mt-2">
+              Creates admin@admin.com / admin123 (first time only)
+            </p>
+          </div>
         </div>
       </div>
     </div>
