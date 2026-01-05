@@ -14,16 +14,189 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      lessons: {
+        Row: {
+          categories: Json
+          created_at: string
+          created_by: string | null
+          id: string
+          lesson_file: string
+          lesson_name: string
+          updated_at: string
+        }
+        Insert: {
+          categories?: Json
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          lesson_file: string
+          lesson_name: string
+          updated_at?: string
+        }
+        Update: {
+          categories?: Json
+          created_at?: string
+          created_by?: string | null
+          id?: string
+          lesson_file?: string
+          lesson_name?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      practice_history: {
+        Row: {
+          analysis_result: Json | null
+          category: string
+          created_at: string
+          id: string
+          item_id: string
+          lesson_id: string
+          score: number
+          user_id: string
+        }
+        Insert: {
+          analysis_result?: Json | null
+          category: string
+          created_at?: string
+          id?: string
+          item_id: string
+          lesson_id: string
+          score?: number
+          user_id: string
+        }
+        Update: {
+          analysis_result?: Json | null
+          category?: string
+          created_at?: string
+          id?: string
+          item_id?: string
+          lesson_id?: string
+          score?: number
+          user_id?: string
+        }
+        Relationships: []
+      }
+      profiles: {
+        Row: {
+          created_at: string
+          display_name: string | null
+          email: string | null
+          id: string
+          updated_at: string
+        }
+        Insert: {
+          created_at?: string
+          display_name?: string | null
+          email?: string | null
+          id: string
+          updated_at?: string
+        }
+        Update: {
+          created_at?: string
+          display_name?: string | null
+          email?: string | null
+          id?: string
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      scoring_config: {
+        Row: {
+          config: Json
+          config_key: string
+          id: string
+          updated_at: string
+          updated_by: string | null
+        }
+        Insert: {
+          config: Json
+          config_key?: string
+          id?: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Update: {
+          config?: Json
+          config_key?: string
+          id?: string
+          updated_at?: string
+          updated_by?: string | null
+        }
+        Relationships: []
+      }
+      user_progress: {
+        Row: {
+          attempts: number
+          best_score: number
+          category: string
+          id: string
+          item_id: string
+          last_attempt: string
+          lesson_id: string
+          mastered: boolean
+          user_id: string
+        }
+        Insert: {
+          attempts?: number
+          best_score?: number
+          category: string
+          id?: string
+          item_id: string
+          last_attempt?: string
+          lesson_id: string
+          mastered?: boolean
+          user_id: string
+        }
+        Update: {
+          attempts?: number
+          best_score?: number
+          category?: string
+          id?: string
+          item_id?: string
+          last_attempt?: string
+          lesson_id?: string
+          mastered?: boolean
+          user_id?: string
+        }
+        Relationships: []
+      }
+      user_roles: {
+        Row: {
+          created_at: string
+          id: string
+          role: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          role?: Database["public"]["Enums"]["app_role"]
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      has_role: {
+        Args: {
+          _role: Database["public"]["Enums"]["app_role"]
+          _user_id: string
+        }
+        Returns: boolean
+      }
     }
     Enums: {
-      [_ in never]: never
+      app_role: "admin" | "user"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -150,6 +323,8 @@ export type CompositeTypes<
 
 export const Constants = {
   public: {
-    Enums: {},
+    Enums: {
+      app_role: ["admin", "user"],
+    },
   },
 } as const
