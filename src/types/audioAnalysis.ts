@@ -70,6 +70,11 @@ export interface EndIntensityAnalysis {
   isAbnormalSpeed: boolean;
   score: number;
   note: string;
+  // Flags added by backend for scoring/feedback
+  volumeIncreasing?: boolean;
+  speedIncreasing?: boolean;
+  volumeDecreasing?: boolean;
+  speedDecreasing?: boolean;
 }
 
 export interface AudioMetricsThresholds {
@@ -104,27 +109,38 @@ export interface AudioMetricsThresholds {
   };
 }
 
+export interface EmotionScoreBreakdown {
+  volume: { raw: number; weighted: number };
+  speechRate: { raw: number; weighted: number };
+  pause: { raw: number; weighted: number };
+  latency: { raw: number; weighted: number };
+  endIntensity: {
+    raw: number;
+    weighted: number;
+    volumeIncreasing: boolean;
+    speedIncreasing: boolean;
+  };
+}
+
 export interface ComprehensiveAudioAnalysis {
-  // Core scores (existing)
-  accuracy: number;
-  fluency: number;
-  emotion: number;
+  // Emotion-only scoring
   overallScore: number;
-  
-  // Detailed metrics (new)
+  emotionBreakdown: EmotionScoreBreakdown | null;
+
+  // Detailed metrics
   volumeAnalysis: VolumeAnalysis;
   speechRateAnalysis: SpeechRateAnalysis;
   responseLatencyAnalysis: ResponseLatencyAnalysis;
   pauseDurationAnalysis: PauseDurationAnalysis;
   endIntensityAnalysis: EndIntensityAnalysis;
-  
+
   // Metadata
   transcription: string;
   speechDetected: boolean;
   audioDurationMs: number;
   wordCount: number;
   feedback: string[];
-  
+
   // Config used
   thresholds: AudioMetricsThresholds;
 }
