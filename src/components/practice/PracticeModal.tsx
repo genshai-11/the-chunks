@@ -118,9 +118,14 @@ export const PracticeModal: React.FC = () => {
         const blob = new Blob(chunks, { type: mimeType });
         setAudioBlob(blob);
         setAudioUrl(URL.createObjectURL(blob));
+        setAnalysisResult(null);
+        setShowDetailedCharts(false);
         stream.getTracks().forEach(track => track.stop());
         if (animationRef.current) cancelAnimationFrame(animationRef.current);
         setAnalyzerData(null);
+
+        // Auto-analyze immediately after recording ends
+        setTimeout(() => analyzeWithAI(blob), 0);
       };
 
       mediaRecorderRef.current.start();
@@ -177,50 +182,39 @@ export const PracticeModal: React.FC = () => {
     return 1;
   };
 
-  const analyzeWithAI = async () => {
-    if (!selectedItem || !audioBlob) return;
-    
+  const analyzeWithAI = async (blobOverride?: Blob) => {
+    if (!selectedItem) return;
+
+    const blobToAnalyze = blobOverride ?? audioBlob;
+    if (!blobToAnalyze) return;
+
     setIsAnalyzing(true);
-    
+
     try {
       const config = getAnalysisConfig();
-      
+
       // Get emotion scoring config
       const { getEmotionScoringConfig } = await import('@/types/scoringConfig');
       const scoringConfig = getEmotionScoringConfig();
-      
+
       // Create form data with audio file, thresholds, and scoring config
       const formData = new FormData();
-      formData.append('audio', audioBlob, 'recording.webm');
+      formData.append('audio', blobToAnalyze, 'recording.webm');
       formData.append('targetText', selectedItem.English);
       formData.append('thresholds', JSON.stringify(config.thresholds));
       formData.append('scoringConfig', JSON.stringify(scoringConfig));
 
-      // Call the edge function
-      const response = await fetch(
-        `${import.meta.env.VITE_SUPABASE_URL}/functions/v1/analyze-speech`,
-        {
-          method: 'POST',
-          body: formData,
-        }
-      );
+      const { data, error } = await supabase.functions.invoke('analyze-speech', {
+        body: formData,
+      });
 
-      if (!response.ok) {
-        const error = await response.json();
-        if (response.status === 429) {
-          toast.error('Rate limit reached. Please try again in a moment.');
-          return;
-        }
-        if (response.status === 402) {
-          toast.error('Usage limit reached. Please add credits.');
-          return;
-        }
-        throw new Error(error.error || 'Analysis failed');
+      if (error) {
+        throw error;
       }
 
-      const result: ComprehensiveAudioAnalysis = await response.json();
+      const result = data as ComprehensiveAudioAnalysis;
       setAnalysisResult(result);
-      
+
       // Record the practice session
       recordPracticeSession({
         lessonId: currentLessonId,
@@ -496,21 +490,34 @@ export const PracticeModal: React.FC = () => {
                 </p>
               </div>
 
-              {/* Score Breakdown */}
-              <div className="grid grid-cols-3 gap-3">
-                <div className="bg-muted rounded-lg p-3 text-center">
-                  <div className="text-lg font-bold text-primary">{analysisResult.accuracy}</div>
-                  <div className="text-xs text-muted-foreground">Accuracy</div>
+              {/* Emotion-only breakdown (raw → weighted points) */}
+              {analysisResult.emotionBreakdown && (
+                <div className="bg-muted rounded-lg p-3">
+                  <div className="text-xs text-muted-foreground mb-2">Breakdown (điểm thô → điểm theo trọng số)</div>
+                  <div className="grid grid-cols-2 gap-2 text-sm">
+                    <div className="flex items-center justify-between bg-background rounded-md px-2 py-1">
+                      <span>Âm lượng</span>
+                      <span className="font-mono">{analysisResult.emotionBreakdown.volume.raw} → {analysisResult.emotionBreakdown.volume.weighted}</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-background rounded-md px-2 py-1">
+                      <span>Tốc độ</span>
+                      <span className="font-mono">{analysisResult.emotionBreakdown.speechRate.raw} → {analysisResult.emotionBreakdown.speechRate.weighted}</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-background rounded-md px-2 py-1">
+                      <span>Ngắt nghỉ</span>
+                      <span className="font-mono">{analysisResult.emotionBreakdown.pause.raw} → {analysisResult.emotionBreakdown.pause.weighted}</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-background rounded-md px-2 py-1">
+                      <span>Độ trễ</span>
+                      <span className="font-mono">{analysisResult.emotionBreakdown.latency.raw} → {analysisResult.emotionBreakdown.latency.weighted}</span>
+                    </div>
+                    <div className="flex items-center justify-between bg-background rounded-md px-2 py-1 col-span-2">
+                      <span>Cường độ cuối bài</span>
+                      <span className="font-mono">{analysisResult.emotionBreakdown.endIntensity.raw} → {analysisResult.emotionBreakdown.endIntensity.weighted}</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="bg-muted rounded-lg p-3 text-center">
-                  <div className="text-lg font-bold text-primary">{analysisResult.fluency}</div>
-                  <div className="text-xs text-muted-foreground">Fluency</div>
-                </div>
-                <div className="bg-muted rounded-lg p-3 text-center">
-                  <div className="text-lg font-bold text-primary">{analysisResult.emotion}</div>
-                  <div className="text-xs text-muted-foreground">Expression</div>
-                </div>
-              </div>
+              )}
 
               {/* Speech Level Indicators */}
               <div className="grid grid-cols-2 gap-3">
@@ -672,7 +679,7 @@ export const PracticeModal: React.FC = () => {
           {audioUrl && !analysisResult && (
             <div className="mt-6 text-center">
               <button
-                onClick={analyzeWithAI}
+                onClick={() => analyzeWithAI()}
                 disabled={isAnalyzing}
                 className="px-6 py-3 rounded-xl bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-medium shadow-primary hover:opacity-90 transition-all disabled:opacity-50"
               >
@@ -686,7 +693,7 @@ export const PracticeModal: React.FC = () => {
                 )}
               </button>
               <p className="text-xs text-muted-foreground mt-2">
-                Volume, speed, timing & expression
+                Emotion: âm lượng • tốc độ • ngắt nghỉ • độ trễ • cường độ cuối
               </p>
             </div>
           )}
