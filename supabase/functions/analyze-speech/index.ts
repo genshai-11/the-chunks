@@ -872,7 +872,7 @@ serve(async (req) => {
         speechDetected: false,
         audioDurationMs,
         wordCount: 0,
-        feedback: ["Không phát hiện giọng nói. Hãy nói to và rõ ràng hơn."],
+        feedback: ["No speech detected. Please speak louder and clearer."],
         thresholds,
         scoringConfig
       }), {
@@ -926,34 +926,34 @@ serve(async (req) => {
     const breakdown = emotionScoreResult.breakdown;
     
     if (breakdown.volume.raw < 60) {
-      feedback.push(`Âm lượng thấp (${Math.round(volumeAnalysis.overallAvgDb)} dB). Hãy nói to hơn.`);
+      feedback.push(`Low volume (${Math.round(volumeAnalysis.overallAvgDb)} dB). Speak louder.`);
     }
     
     if (breakdown.speechRate.raw < 60) {
-      feedback.push(`Tốc độ chậm (${Math.round(speechRateAnalysis.overallWpm)} WPM). Hãy nói nhanh hơn.`);
+      feedback.push(`Slow speed (${Math.round(speechRateAnalysis.overallWpm)} WPM). Speak faster.`);
     }
     
     if (breakdown.pause.raw < 60) {
-      feedback.push(`Ngắt nghỉ quá nhiều. Hãy nói liền mạch hơn.`);
+      feedback.push(`Too many pauses. Speak more fluently.`);
     }
     
     if (breakdown.latency.raw < 60) {
-      feedback.push(`Phản hồi chậm (${responseLatencyAnalysis.delayMs}ms). Hãy bắt đầu nhanh hơn.`);
+      feedback.push(`Slow response (${responseLatencyAnalysis.delayMs}ms). Start speaking faster.`);
     }
     
     // End intensity feedback with tags
     if (breakdown.endIntensity.volumeIncreasing && breakdown.endIntensity.speedIncreasing) {
-      feedback.push(`✨ Xuất sắc! Âm lượng VÀ tốc độ tăng dần ở cuối.`);
+      feedback.push(`✨ Excellent! Volume AND speed increasing at the end.`);
     } else if (breakdown.endIntensity.volumeIncreasing) {
-      feedback.push(`Âm lượng tăng ở cuối, nhưng tốc độ không tăng.`);
+      feedback.push(`Volume increasing at end, but speed is not.`);
     } else if (breakdown.endIntensity.speedIncreasing) {
-      feedback.push(`Tốc độ tăng ở cuối, nhưng âm lượng không tăng.`);
+      feedback.push(`Speed increasing at end, but volume is not.`);
     } else if (volumeDecreasing || speedDecreasing) {
-      feedback.push(`Cường độ giảm dần ở cuối. Hãy giữ năng lượng!`);
+      feedback.push(`Intensity decreasing at end. Maintain your energy!`);
     }
     
     if (feedback.length === 0) {
-      feedback.push("Xuất sắc! Thể hiện cảm xúc tốt.");
+      feedback.push("Excellent! Great emotional expression.");
     }
 
     // Add end intensity flags to analysis

@@ -386,10 +386,16 @@ export const PracticeModal: React.FC = () => {
                 </DropdownMenuContent>
               </DropdownMenu>
             </div>
-            <p className="text-2xl font-medium text-foreground leading-relaxed">
-              {selectedItem.English}
-            </p>
-            <p className="text-muted-foreground mt-2">
+            {/* Hide English text during recording - only show Vietnamese */}
+            {!isRecording && (
+              <p className="text-2xl font-medium text-foreground leading-relaxed">
+                {selectedItem.English}
+              </p>
+            )}
+            <p className={cn(
+              "text-muted-foreground",
+              isRecording ? "text-2xl font-medium text-foreground" : "mt-2"
+            )}>
               {selectedItem.Vietnamese}
             </p>
           </div>
