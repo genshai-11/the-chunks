@@ -1,9 +1,16 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Sidebar } from '@/components/layout/Sidebar';
 import { useApp } from '@/context/AppContext';
+import { useAuth } from '@/context/AuthContext';
+import { useUserData } from '@/hooks/useUserData';
 import { curriculum } from '@/data/curriculum';
-import { Menu, TrendingUp, Target, Award, BookOpen } from 'lucide-react';
+import { 
+  Menu, TrendingUp, Target, Award, BookOpen, Clock, 
+  LogOut, User, ArrowLeft, Loader2 
+} from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import {
   BarChart,
   Bar,
@@ -14,27 +21,38 @@ import {
   RadialBarChart,
   RadialBar,
   Cell,
+  LineChart,
+  Line,
 } from 'recharts';
 
 const Dashboard: React.FC = () => {
-  const { userProgress, practiceSessions, sidebarOpen, setSidebarOpen } = useApp();
+  const navigate = useNavigate();
+  const { sidebarOpen, setSidebarOpen } = useApp();
+  const { user, signOut } = useAuth();
+  const { practiceHistory, userProgress, loading } = useUserData();
 
-  // Calculate stats from real data
+  const handleSignOut = async () => {
+    await signOut();
+    navigate('/auth');
+  };
+
+  // Calculate stats from database data
   const stats = useMemo(() => {
     const masteredItems = userProgress.filter(p => p.mastered).length;
     const totalPracticed = userProgress.length;
     const totalAttempts = userProgress.reduce((acc, p) => acc + p.attempts, 0);
     const averageScore = totalPracticed > 0
-      ? Math.round(userProgress.reduce((acc, p) => acc + p.bestScore, 0) / totalPracticed)
+      ? Math.round(userProgress.reduce((acc, p) => acc + p.best_score, 0) / totalPracticed)
       : 0;
     const masteryPercentage = totalPracticed > 0 
       ? Math.round((masteredItems / totalPracticed) * 100) 
       : 0;
+    const totalSessions = practiceHistory.length;
 
-    return { masteredItems, totalPracticed, totalAttempts, averageScore, masteryPercentage };
-  }, [userProgress]);
+    return { masteredItems, totalPracticed, totalAttempts, averageScore, masteryPercentage, totalSessions };
+  }, [userProgress, practiceHistory]);
 
-  // Calculate category performance from real progress
+  // Calculate category performance from database
   const categoryData = useMemo(() => {
     const categoryMap: Record<string, { totalScore: number; count: number }> = {};
     
@@ -43,7 +61,7 @@ const Dashboard: React.FC = () => {
       if (!categoryMap[cat]) {
         categoryMap[cat] = { totalScore: 0, count: 0 };
       }
-      categoryMap[cat].totalScore += p.bestScore;
+      categoryMap[cat].totalScore += p.best_score;
       categoryMap[cat].count += 1;
     });
 
@@ -53,7 +71,6 @@ const Dashboard: React.FC = () => {
       items: data.count,
     }));
 
-    // If no data, show placeholder categories
     if (categories.length === 0) {
       return [
         { name: 'Vocab', score: 0, items: 0 },
@@ -66,26 +83,31 @@ const Dashboard: React.FC = () => {
     return categories.sort((a, b) => b.score - a.score);
   }, [userProgress]);
 
-  // Calculate weekly progress from sessions
-  const weeklyProgress = useMemo(() => {
-    const weekMap: Record<number, { totalScore: number; count: number }> = {};
+  // Calculate daily progress from sessions (last 7 days)
+  const dailyProgress = useMemo(() => {
+    const days: { date: string; sessions: number; avgScore: number }[] = [];
+    const now = new Date();
     
-    practiceSessions.forEach(s => {
-      if (!weekMap[s.weekId]) {
-        weekMap[s.weekId] = { totalScore: 0, count: 0 };
-      }
-      weekMap[s.weekId].totalScore += s.score;
-      weekMap[s.weekId].count += 1;
-    });
-
-    return curriculum.map(week => ({
-      week: week.name,
-      score: weekMap[week.id] 
-        ? Math.round(weekMap[week.id].totalScore / weekMap[week.id].count) 
-        : 0,
-      items: weekMap[week.id]?.count || 0,
-    }));
-  }, [practiceSessions]);
+    for (let i = 6; i >= 0; i--) {
+      const date = new Date(now);
+      date.setDate(date.getDate() - i);
+      const dateStr = date.toISOString().split('T')[0];
+      
+      const daySessions = practiceHistory.filter(s => 
+        s.created_at.split('T')[0] === dateStr
+      );
+      
+      days.push({
+        date: date.toLocaleDateString('en', { weekday: 'short' }),
+        sessions: daySessions.length,
+        avgScore: daySessions.length > 0 
+          ? Math.round(daySessions.reduce((acc, s) => acc + s.score, 0) / daySessions.length)
+          : 0
+      });
+    }
+    
+    return days;
+  }, [practiceHistory]);
 
   const masteryData = [
     { name: 'Mastery', value: stats.masteryPercentage, fill: 'hsl(var(--primary))' },
@@ -102,19 +124,51 @@ const Dashboard: React.FC = () => {
 
   const hasData = userProgress.length > 0;
 
+  if (loading) {
+    return (
+      <div className="flex min-h-screen w-full bg-background items-center justify-center">
+        <Loader2 className="h-8 w-8 animate-spin text-primary" />
+      </div>
+    );
+  }
+
   return (
     <div className="flex min-h-screen w-full bg-background">
       <Sidebar />
 
       <div className="flex-1 flex flex-col min-w-0">
-        {/* Mobile header */}
-        <div className="md:hidden sticky top-0 z-40 bg-background/80 backdrop-blur-lg border-b border-border px-4 py-3">
-          <button
-            onClick={() => setSidebarOpen(true)}
-            className="p-2 rounded-lg hover:bg-muted transition-colors"
-          >
-            <Menu size={24} />
-          </button>
+        {/* Header with auth */}
+        <div className="sticky top-0 z-40 bg-background/80 backdrop-blur-lg border-b border-border px-4 py-3 flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setSidebarOpen(true)}
+              className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
+            >
+              <Menu size={24} />
+            </button>
+            <Button variant="ghost" size="icon" onClick={() => navigate('/')} className="hidden md:flex">
+              <ArrowLeft size={20} />
+            </Button>
+          </div>
+          
+          <div className="flex items-center gap-2">
+            {user ? (
+              <>
+                <span className="text-sm text-muted-foreground hidden sm:inline">
+                  {user.email}
+                </span>
+                <Button variant="ghost" size="sm" onClick={handleSignOut} className="gap-2">
+                  <LogOut size={16} />
+                  <span className="hidden sm:inline">Sign Out</span>
+                </Button>
+              </>
+            ) : (
+              <Button variant="outline" size="sm" onClick={() => navigate('/auth')} className="gap-2">
+                <User size={16} />
+                Sign In
+              </Button>
+            )}
+          </div>
         </div>
 
         <div className="flex-1 p-4 md:p-8 overflow-y-auto">
@@ -126,14 +180,16 @@ const Dashboard: React.FC = () => {
               </h1>
               <p className="text-muted-foreground">
                 {hasData 
-                  ? "Track your learning journey and performance metrics"
-                  : "Start practicing to see your progress here!"
+                  ? `Welcome back! You've practiced ${stats.totalPracticed} items.`
+                  : user 
+                    ? "Start practicing to see your progress here!"
+                    : "Sign in to track your learning journey"
                 }
               </p>
             </div>
 
             {/* Stats Cards */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
               <Card className="bg-card border-border">
                 <CardContent className="p-4 md:p-6">
                   <div className="flex items-center gap-3">
@@ -185,6 +241,20 @@ const Dashboard: React.FC = () => {
                     <div>
                       <p className="text-2xl font-bold text-foreground">{stats.totalAttempts}</p>
                       <p className="text-xs text-muted-foreground">Attempts</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-card border-border">
+                <CardContent className="p-4 md:p-6">
+                  <div className="flex items-center gap-3">
+                    <div className="p-2 rounded-lg bg-chart-5/10">
+                      <Clock className="h-5 w-5 text-chart-5" />
+                    </div>
+                    <div>
+                      <p className="text-2xl font-bold text-foreground">{stats.totalSessions}</p>
+                      <p className="text-xs text-muted-foreground">Sessions</p>
                     </div>
                   </div>
                 </CardContent>
@@ -278,17 +348,17 @@ const Dashboard: React.FC = () => {
               </Card>
             </div>
 
-            {/* Weekly Progress */}
+            {/* Daily Activity Chart */}
             <Card className="bg-card border-border">
               <CardHeader>
-                <CardTitle className="text-lg font-semibold">Weekly Progress</CardTitle>
+                <CardTitle className="text-lg font-semibold">Last 7 Days Activity</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="h-72">
                   <ResponsiveContainer width="100%" height="100%">
-                    <BarChart data={weeklyProgress}>
+                    <LineChart data={dailyProgress}>
                       <XAxis
-                        dataKey="week"
+                        dataKey="date"
                         tick={{ fill: 'hsl(var(--muted-foreground))', fontSize: 12 }}
                       />
                       <YAxis
@@ -302,18 +372,21 @@ const Dashboard: React.FC = () => {
                           borderRadius: '8px',
                         }}
                         labelStyle={{ color: 'hsl(var(--foreground))' }}
-                        formatter={(value: number, name: string) => [
-                          value || 'No data',
-                          name === 'score' ? 'Avg Score' : name
-                        ]}
                       />
-                      <Bar
-                        dataKey="score"
-                        fill="hsl(var(--primary))"
-                        radius={[4, 4, 0, 0]}
+                      <Line
+                        type="monotone"
+                        dataKey="avgScore"
+                        stroke="hsl(var(--primary))"
+                        strokeWidth={3}
+                        dot={{ fill: 'hsl(var(--primary))', strokeWidth: 2 }}
                         name="Avg Score"
                       />
-                    </BarChart>
+                      <Bar
+                        dataKey="sessions"
+                        fill="hsl(var(--muted))"
+                        name="Sessions"
+                      />
+                    </LineChart>
                   </ResponsiveContainer>
                 </div>
               </CardContent>
@@ -350,14 +423,14 @@ const Dashboard: React.FC = () => {
             )}
 
             {/* Recent Sessions */}
-            {practiceSessions.length > 0 && (
+            {practiceHistory.length > 0 && (
               <Card className="bg-card border-border">
                 <CardHeader>
                   <CardTitle className="text-lg font-semibold">Recent Practice Sessions</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    {practiceSessions.slice(-10).reverse().map((session) => (
+                    {practiceHistory.slice(0, 10).map((session) => (
                       <div
                         key={session.id}
                         className="flex items-center justify-between p-3 rounded-lg bg-muted/30"
@@ -367,7 +440,7 @@ const Dashboard: React.FC = () => {
                             {session.category}
                           </span>
                           <span className="text-sm text-muted-foreground">
-                            {new Date(session.timestamp).toLocaleDateString()}
+                            {new Date(session.created_at).toLocaleDateString()} {new Date(session.created_at).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                           </span>
                         </div>
                         <span className={`font-bold ${
@@ -375,11 +448,27 @@ const Dashboard: React.FC = () => {
                           session.score >= 60 ? 'text-yellow-600' : 
                           'text-red-600'
                         }`}>
-                          {session.score}
+                          {Math.round(session.score)}
                         </span>
                       </div>
                     ))}
                   </div>
+                </CardContent>
+              </Card>
+            )}
+
+            {/* Empty state for non-logged in users */}
+            {!user && (
+              <Card className="bg-card border-border">
+                <CardContent className="p-8 text-center">
+                  <User className="h-12 w-12 mx-auto text-muted-foreground mb-4" />
+                  <h3 className="text-lg font-semibold mb-2">Sign in to track your progress</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Create an account to save your practice history and see detailed analytics
+                  </p>
+                  <Button onClick={() => navigate('/auth')}>
+                    Sign In or Create Account
+                  </Button>
                 </CardContent>
               </Card>
             )}
