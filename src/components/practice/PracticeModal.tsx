@@ -14,6 +14,7 @@ import {
   Settings,
 } from "lucide-react";
 import { useApp } from "@/context/AppContext";
+import { useAuth } from "@/context/AuthContext";
 import { CategoryBadge } from "@/components/lesson/CategoryBadge";
 import { AudioVisualizer } from "./AudioVisualizer";
 import { PlaybackWaveform } from "./PlaybackWaveform";
@@ -25,6 +26,8 @@ import { getAnalysisConfig } from "@/config/analysisConfig";
 import { ComprehensiveAudioAnalysis } from "@/types/audioAnalysis";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
+import { useScoringConfig } from "@/hooks/useScoringConfig";
+import { useUserData } from "@/hooks/useUserData";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -61,6 +64,10 @@ const getStoredVoice = (): string => {
 
 export const PracticeModal: React.FC = () => {
   const { selectedItem, setSelectedItem, currentLessonId, recordPracticeSession, userProgress } = useApp();
+  const { user } = useAuth();
+  const { config: dbScoringConfig } = useScoringConfig();
+  const { recordPractice } = useUserData();
+  
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isRecording, setIsRecording] = useState(false);
   const [audioBlob, setAudioBlob] = useState<Blob | null>(null);
@@ -206,9 +213,8 @@ export const PracticeModal: React.FC = () => {
     try {
       const config = getAnalysisConfig();
 
-      // Get emotion scoring config
-      const { getEmotionScoringConfig } = await import("@/types/scoringConfig");
-      const scoringConfig = getEmotionScoringConfig();
+      // Use the database scoring config
+      const scoringConfig = dbScoringConfig;
 
       // Create form data with audio file, thresholds, and scoring config
       const formData = new FormData();
@@ -228,7 +234,7 @@ export const PracticeModal: React.FC = () => {
       const result = data as ComprehensiveAudioAnalysis;
       setAnalysisResult(result);
 
-      // Record the practice session
+      // Record the practice session locally (for non-logged in users)
       recordPracticeSession({
         lessonId: currentLessonId,
         itemId: selectedItem.id,
@@ -237,6 +243,17 @@ export const PracticeModal: React.FC = () => {
         weekId: getWeekId(),
         analysisResult: result,
       });
+
+      // Also save to database if user is logged in
+      if (user) {
+        recordPractice({
+          lessonId: currentLessonId,
+          itemId: selectedItem.id,
+          category: selectedItem.category,
+          score: result.overallScore,
+          analysisResult: result,
+        });
+      }
 
       if (result.overallScore >= config.masteryThreshold) {
         toast.success("Great job! Item mastered!");

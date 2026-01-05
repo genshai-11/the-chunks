@@ -1,23 +1,21 @@
 import React, { useState, useEffect } from 'react';
-import { X, Settings, RotateCcw } from 'lucide-react';
+import { X, Settings, RotateCcw, Loader2 } from 'lucide-react';
 import { 
   AudioMetricsThresholds, 
   defaultAudioThresholds, 
-  getAudioThresholds, 
   saveAudioThresholds 
 } from '@/types/audioAnalysis';
 import { 
   EmotionScoringConfig, 
-  defaultEmotionScoringConfig, 
-  getEmotionScoringConfig, 
-  saveEmotionScoringConfig 
+  defaultEmotionScoringConfig 
 } from '@/types/scoringConfig';
 import { getAnalysisConfig, saveAnalysisConfig } from '@/config/analysisConfig';
-import { cn } from '@/lib/utils';
 import { toast } from 'sonner';
 import { Slider } from '@/components/ui/slider';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { useScoringConfig } from '@/hooks/useScoringConfig';
+import { useAuth } from '@/context/AuthContext';
 
 interface AnalysisSettingsModalProps {
   isOpen: boolean;
@@ -25,26 +23,47 @@ interface AnalysisSettingsModalProps {
 }
 
 export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ isOpen, onClose }) => {
+  const { user } = useAuth();
+  const { config: dbScoringConfig, saveConfig: saveScoringToDb, loading: loadingConfig } = useScoringConfig();
+  
   const [thresholds, setThresholds] = useState<AudioMetricsThresholds>(defaultAudioThresholds);
   const [scoring, setScoring] = useState<EmotionScoringConfig>(defaultEmotionScoringConfig);
   const [masteryThreshold, setMasteryThreshold] = useState(80);
   const [activeTab, setActiveTab] = useState('thresholds');
+  const [saving, setSaving] = useState(false);
 
   useEffect(() => {
     if (isOpen) {
       const config = getAnalysisConfig();
       setThresholds(config.thresholds);
       setMasteryThreshold(config.masteryThreshold);
-      setScoring(getEmotionScoringConfig());
+      // Use DB config if available
+      setScoring(dbScoringConfig);
     }
-  }, [isOpen]);
+  }, [isOpen, dbScoringConfig]);
 
-  const handleSave = () => {
-    saveAudioThresholds(thresholds);
-    saveAnalysisConfig({ masteryThreshold, thresholds });
-    saveEmotionScoringConfig(scoring);
-    toast.success('Settings saved!');
-    onClose();
+  const handleSave = async () => {
+    setSaving(true);
+    try {
+      // Save thresholds locally
+      saveAudioThresholds(thresholds);
+      saveAnalysisConfig({ masteryThreshold, thresholds });
+      
+      // Save scoring config to database
+      const result = await saveScoringToDb(scoring, user?.id);
+      
+      if (result.success) {
+        toast.success('Settings saved to database!');
+      } else {
+        toast.error('Failed to save to database, saved locally only');
+      }
+      onClose();
+    } catch (error) {
+      console.error('Error saving settings:', error);
+      toast.error('Error saving settings');
+    } finally {
+      setSaving(false);
+    }
   };
 
   const handleReset = () => {
@@ -679,9 +698,11 @@ export const AnalysisSettingsModal: React.FC<AnalysisSettingsModalProps> = ({ is
             </button>
             <button
               onClick={handleSave}
-              className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-all"
+              disabled={saving}
+              className="px-4 py-2 rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:opacity-90 transition-all disabled:opacity-50 flex items-center gap-2"
             >
-              Lưu thay đổi
+              {saving && <Loader2 size={14} className="animate-spin" />}
+              {saving ? 'Saving...' : 'Lưu thay đổi'}
             </button>
           </div>
         </div>
