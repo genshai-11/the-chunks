@@ -276,10 +276,18 @@ export const PracticeModal: React.FC = () => {
     setIsSpeaking(true);
     try {
       // Use Deepgram TTS with selected voice
+      const { data: { session } } = await supabase.auth.getSession();
+      if (!session?.access_token) {
+        toast.error("Please log in to use text-to-speech");
+        setIsSpeaking(false);
+        return;
+      }
       const response = await fetch(`${import.meta.env.VITE_SUPABASE_URL}/functions/v1/deepgram-tts`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `Bearer ${session.access_token}`,
+          "apikey": import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY,
         },
         body: JSON.stringify({
           text: selectedItem.English,
